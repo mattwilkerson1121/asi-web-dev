@@ -86,10 +86,10 @@
 				Shop by Style <span class="caret"></span>
 			</button>
   			<ul style="width:100%;background:url(http://s7d4.scene7.com/is/image/ASF/spacer-wht?fmt=png-alpha) top left repeat;padding:15px 0;border:0;box-shadow:none !important;border:none !important;margin-bottom:0;" class="dropdown-menu text-center">
-				 <!-- <li class="text-center"><a href="/search/magnolia-home/boho-furniture-style" style="font-size:1.25rem;padding:10px 5px;">Boho</a></li> -->
+				 <li class="text-center"><a href="/search/magnolia-home/boho-furniture-style" style="font-size:1.25rem;padding:10px 5px;">Boho</a></li>
 				 <li class="text-center"><a href="/search/magnolia-home/farmhouse-furniture-style" style="font-size:1.25rem;padding:10px 5px;">Farmhouse</a></li>
 				 <li class="text-center"><a href="/search/magnolia-home/french-inspired-furniture-style" style="font-size:1.25rem;padding:10px 5px;">French Inspired</a></li>
-				 <!-- <li class="text-center"><a href="/search/magnolia-home/industrial-furniture-style" style="font-size:1.25rem;padding:10px 5px;">Industrial</a></li> -->
+				 <li class="text-center"><a href="/search/magnolia-home/industrial-furniture-style" style="font-size:1.25rem;padding:10px 5px;">Industrial</a></li>
 				 <li class="text-center"><a href="/search/magnolia-home/primitive-furniture-style" style="font-size:1.25rem;padding:10px 5px;">Primitive</a></li>
 				 <li class="text-center"><a href="/search/magnolia-home/traditional-furniture-style" style="font-size:1.25rem;padding:10px 5px;">Traditional</a></li>
 			</ul>
@@ -575,7 +575,7 @@ a.thumbnail:hover{
   width: 0;
   position:relative;
   top:0;
-  z-index:auto;
+  /*z-index:auto;*/
   overflow:auto;
 }
 .mhf-style-items{background:white; border:1px solid #ccc;}
@@ -600,62 +600,15 @@ a.mhf-navbar-link:hover{color:#54585a;text-decoration:underline;}
 </style>
 
 <script type="text/javascript">
-
-function GetQueryStringParams(sParam){
-	var sPageURL = window.location.search.substring(1);
-	var sURLVariables = sPageURL.split('&');
-	for (var i = 0; i < sURLVariables.length; i++){
-		var sParameterName = sURLVariables[i].split('=');
-		if (sParameterName[0] == sParam){
-			return sParameterName[1];
-		}
-	}
-}
 $(document).ready(function(){
-var emailURL = GetQueryStringParams('eid');
-var mhsuURL = GetQueryStringParams('mhsu');
-var styleURL = GetQueryStringParams('style');
 var siteDomain = document.domain;
 var siteNameShort;
 var addthis_share = addthis_share || {}
 var twitterHandle;
-var riFormInput = document.getElementById("RI_FORM");
-var riStyleEmail = document.getElementById("style-email");
-var riStyleFormInput = document.getElementById("RI_STYLE_FORM");
-var shareLogoImg = document.getElementById("modal-logo");
-var signUpForm = document.getElementById("mhf-subscription-form");
-var styleForm = document.getElementById("mhf-style-form");
-    
-   if(emailURL != undefined){$("#mhf-style-modal").modal("show");}
-   if((styleURL != undefined) && (emailURL == undefined)){
-   	 $("#mhf-style-modal").modal("show");
-   	 $("#mhf-style-modal .style-hide").hide();
-   	 $("#mhf-style-modal .modal-headline").html('Style Preferences Updated');
-     $("#mhf-style-modal .modal-intro").html('Keep an eye on your inbox for all the latest information about Magnolia Home by Joanna Gaines<sup>&trade;</sup> including design inspiration and tips from Joanna.'); 
-   }
    if(siteDomain.indexOf("valuecityfurniture.com") >= 1){
-   	 signUpForm.action="https://my.valuecityfurniture.com/pub/rf";
-   	 styleForm.action="https://my.valuecityfurniture.com/pub/rf";
-	riFormInput.value="X0Gzc2X%3DYQpglLjHJlYQGmqvyPzeHjzfbSurzeEmUzbzaf18nzdXvezfGCDzcRVwjpnpgHlpgneHmgJoXX0Gzc2X%3DYQpglLjHJlYQGnJRBiGTU1o83fHtRNsTRirDiNAazdzgr3tn";
-	 riStyleFormInput.value="X0Gzc2X%3DYQpglLjHJlYQGoh6LvqyFCiOKa6IGoljP9c7dliUc8quKnVwjpnpgHlpgneHmgJoXX0Gzc2X%3DYQpglLjHJlYQGnjL3FTa4zaJjnPzf2wIRHPuza0KcstAzc1mFn";
-	 
-	 riStyleEmail.value=emailURL;
-	 shareLogoImg.setAttribute("alt","Value City Furniture and Magnolia Homes by Joanna Gaines");
-	 if (shareLogoImg.hasAttribute("src")){
-	 	shareLogoImg.setAttribute("src","https://asf.scene7.com/is/image/ASF/MHF_Modal_DualLogos?fmt=png");
-	 }
 	 var siteNameShort = "VCF";
    }
    if(siteDomain.indexOf("americansignaturefurniture.com") >= 1){
-	 signUpForm.action="https://my.americansignaturefurniture.com/pub/rf";
-	 styleForm.action="https://my.americansignaturefurniture.com/pub/rf";
-	 riFormInput.value="X0Gzc2X%3DYQpglLjHJlYQGNjnA3fBRFj425zblMGeozgLall4sij7IlknVwjpnpgHlpgneHmgJoXX0Gzc2X%3DYQpglLjHJlYQGogXFezgsFnTRoBzbd6bC2mOvJO5KqnPiS7n";
-	 riStyleFormInput.value="X0Gzc2X%3DYQpglLjHJlYQGsradIpLvYDOszejAy5GHRzg2Epb0zdzeGepWOVwjpnpgHlpgneHmgJoXX0Gzc2X%3DYQpglLjHJlYQGlfETTGUzg37Wmh6h1DHfAkzaBYzgL4zgw3akn";
-	 riStyleEmail.value=emailURL;
-	 shareLogoImg.setAttribute("alt","American Signature Furniture and Magnolia Homes by Joanna Gaines");
-	 if (shareLogoImg.hasAttribute("src")){
-	 	shareLogoImg.setAttribute("src","https://asf.scene7.com/is/image/ASF/MHF_Modal_DualLogos_ASF?fmt=png&qlt=100");
-	 }
 	 var siteNameShort = "ASF";
    }
 });
@@ -672,7 +625,7 @@ $('.img-check').on('click', function(){
         $(styleCheckBox).prop('checked', false);
     }
 });
-$(".page-body .clear:eq(0),.page-body .clear:eq(1),.page-body .col-xs-12:eq(0)").remove();
+$(".page-body .clear:eq(0),.page-body .clear:eq(1)").remove();
 $("#pe-container-a5be8c40-4b0a-41f5-b56c-3b5b307961e0, #pe-container, #xsellhiper-button").remove();
 $(".asi-btn").append('<i class="fa fa-angle-right hidden-xs" aria-hidden="true" style="margin-left:8px;"></i>');
 $(".mhf-navbar-link").append('<i class="fa fa-angle-right hidden-xs" aria-hidden="true" style="margin-left:8px;"></i>');
