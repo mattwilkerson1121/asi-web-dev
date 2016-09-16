@@ -603,3 +603,17 @@ $.ajax({
 <script type="text/javascript">
 $('#custom-page-body a').on('click', function(event){  var eventCategory = "click"; var ePosition = $(this).attr('data-position');  var eAction = this.text;  var eLabel = this.href+':pos='+ePosition;  if(!eAction){  var eAction = $(this).find('img').attr('alt');  } console.log('event: '+eventCategory+' | action: '+eAction+' | label: '+eLabel); ga('send', {  hitType: 'event', eventCategory: 'click', eventAction: eAction, eventLabel: eLabel  })});
 </script>
+<script type="text/javascript">
+window.monetateQ = window.monetateQ || [];
+window.monetateQ.push([
+ "setPageType",
+ "category"
+]);
+window.monetateQ.push([
+ "addCategories",
+ ["living-room, living"]
+]);
+window.monetateQ.push([
+ "trackData"
+]);
+</script>
