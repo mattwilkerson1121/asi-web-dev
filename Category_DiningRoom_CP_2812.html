@@ -1,15 +1,19 @@
 <!-- Updated: 9/15/2016 11:50am !-->
 <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/610400/6403752/css/fonts.css" />
 <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-<div class="col-md-12 asi-container">
-	<div class="hidden-xs text-left" id="hawkbreadcrumb" style="display:inline-block;width:100%;">
-	  <span itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
-		<a href="/" itemprop="url"><span style="font-size:14px;color:#CC0000;" itemprop="title">Home</span></a>
-	  </span>
-	  <span style="font-size:14px;color:#888;">&nbsp;|&nbsp;</span>
-	  <span itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
-		<span style="font-size:14px;color:#6d6d6d" itemprop="title"><a href="/dining-room-furniture" itemprop="url">Dining Room Furniture</a></span>
-	  </span>
+<div class="asi-category-breadcrumbs" style="padding:5px 10px;">
+	<div id="asihawkbreadcrumb" class="hiddex-xs text-left">
+		<span itemtype="http://data-vocabulary.org/Breadcrumb" itemscope="">
+			<a itemprop="url" href="/">
+			<span itemprop="title" style="font-size:14px;color:#CC0000;">Home</span>
+			</a>
+		</span>
+		<span style="font-size:14px;color:#888;">&nbsp;|&nbsp;</span>
+		<span itemtype="http://data-vocabulary.org/Breadcrumb" itemscope="">
+			<a itemprop="url" href="/dining-room-furniture">
+			<span itemprop="title" style="font-size:14px;color:#6d6d6d;">Dining Room Furniture</span>
+			</a>
+		</span>
 	</div>
 </div>
 <div class="col-md-12 asi-container">
@@ -589,9 +593,12 @@ div.sub-categories{margin-top:25px;}
 </style>
 <script type="text/javascript">
 var siteDomain = document.domain;
-var blogFeed = "http://"+siteDomain+"/blog/space-planning-tips/dining-room/feed/";
+var blogFeed;
 var dataCategory = "dining-room";
-if(siteDomain.indexOf("americansignaturefurniture.com") >= 1){
+if(siteDomain.indexOf("valuecityfurniture.com") >= 1){
+	var blogFeed = "http://www.valuecityfurniture.com/blog/space-planning-tips/dining-room/feed/";
+}else{
+	var blogFeed = "http://www.americansignaturefurniture.com/blog/space-planning-tips/dining-room/feed/";
     $('#custom-page-body a').each(function(){
   		$(this).attr('href', $(this).attr('href').replace('v/','a/'));
 	});
