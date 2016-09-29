@@ -170,15 +170,33 @@ var nextPageUrl = buyingGuides[nextPageIndex];
 var prevPageUrl = buyingGuides[prevPageIndex];
 
 if (currentPageIndex == 0) {
-	$( "#breadcrumb" ).append( "<p style='float: right;'><a href='"+nextPageUrl+"' target='_self'><button style='padding:5px;'>Next</button></a></p>" );
+	$( "#breadcrumb" ).append( "<p style='float: right;'><a data-position='0' href='"+nextPageUrl+"' target='_self'><button style='padding:5px;'>Next</button></a></p>" );
 }
 else if (currentPageIndex > 0 && currentPageIndex < maxIndex) {
-	$( "#breadcrumb" ).append( "<p style='float: right;'><a href='"+prevPageUrl+"' target='_self'><button style='margin-left:5px;padding:5px;'>Prev</button></a><a href='"+nextPageUrl+"' target='_self'><button style='margin-left:5px;padding:5px;'>Next</button></a></p>" );		
+	$( "#breadcrumb" ).append( "<p style='float: right;'><a data-position='0' href='"+prevPageUrl+"' target='_self'><button style='margin-left:5px;padding:5px;'>Prev</button></a><a data-position='0' href='"+nextPageUrl+"' target='_self'><button style='margin-left:5px;padding:5px;'>Next</button></a></p>" );		
 }
 else if (currentPageIndex == maxIndex) {
-	$( "#breadcrumb" ).append( "<p style='float: right;'><a href='"+prevPageUrl+"' target='_self'><button style='padding:5px;'>Prev</button></a></p>" );		
+	$( "#breadcrumb" ).append( "<p style='float: right;'><a data-position='0' href='"+prevPageUrl+"' target='_self'><button style='padding:5px;'>Prev</button></a></p>" );		
 }
 else {
 	// evaluated to false, do nothing
 }
+
+// GA event code
+$('#breadcrumb a').on('click', function(event){  
+	var eventCategory = 'click'; 
+	var ePosition = $(this).attr('data-position');    
+	var eLabel = this.href+':pos='+ePosition;
+	if(this.text != false) {
+		var eAction = this.text;
+	}else {
+		var eAction = $(this).children('img').attr('alt');
+	} 
+	ga('send', { 
+		hitType: 'event', 
+		eventCategory: 'click', 
+		eventAction: eAction, 
+		eventLabel: eLabel 
+	});
+});
 </script>
