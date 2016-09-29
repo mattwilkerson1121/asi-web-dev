@@ -3,16 +3,16 @@
 <!-- schema breadcrumb markup -->
 <div id="breadcrumb" style="padding-bottom:15px;">
 <span itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
-  <a href="/" itemprop="url"><span itemprop="title">Home</span>
+  <a data-position="0" href="/" itemprop="url"><span itemprop="title">Home</span>
  </a>&nbsp;|&nbsp;
 </span>
 <span itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
- <a href="/buying-guides" itemprop="url">
+ <a data-position="0" href="/buying-guides" itemprop="url">
  <span itemprop="title">Buying Guides</span>
  </a>&nbsp;|&nbsp;
 </span>
 <span itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
- <a href="/buying-guides/top-10-ways-to-get-better-sleep" itemprop="url">
+ <a data-position="0" href="/buying-guides/top-10-ways-to-get-better-sleep" itemprop="url">
  <span itemprop="title">10 Tips for Better Sleep</span>
  </a>
 </span>
@@ -100,6 +100,4 @@
 </p>
 <p class="bottext" style="font-size:18px">Partially adapted from <a data-position="8" href="http://www.clevelandclinicwellness.com/Pages/CCWProductDetails.aspx?category=LivingYoung&cat=WellnessCatalog&pid=9780743292566" target="_blank"> YOU: Staying Young — The Owner’s Manual for Extending Your Warranty</a>, by Michael F. Roizen, MD, and Mehmet C. Oz, MD.</p> 
 <script>/* get the domain name of the current site */var siteDomain = document.domain; /* if domain is asf replace all instances of valuecityfurniture. in any href text with americansignaturefurniture. */if(siteDomain.indexOf("americansignaturefurniture.com") >= 1){    $('#custom-page-body a').each(function(){        $(this).attr('href', $(this).attr('href').replace('valuecityfurniture.','americansignaturefurniture.'));    });}</script>
-<script type="text/javascript">$('#custom-page-body a').on('click', function(event){  var eventCategory = 'click'; var ePosition = $(this).attr('data-position');    var eLabel = this.href+':pos='+ePosition;if(this.text != false){var eAction = this.text;}else{var eAction = $(this).children('img').attr('alt');}
-	ga('send', {  hitType: 'event', eventCategory: 'click', eventAction: eAction, eventLabel: eLabel })});</script>
 <script type="text/javascript" src="http://exclusives.vcf.com/scripts/buying-guide-pager.js"></script>

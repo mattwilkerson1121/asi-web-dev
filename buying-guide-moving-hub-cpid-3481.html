@@ -5,16 +5,16 @@
 <!-- schema breadcrumb markup -->
 <div id="breadcrumb" style="padding-bottom:15px;">
 <span itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
-  <a href="/" itemprop="url"><span itemprop="title">Home</span>
+  <a data-position="0" href="/" itemprop="url"><span itemprop="title">Home</span>
  </a>&nbsp;|&nbsp;
 </span>
 <span itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
- <a href="/buying-guides" itemprop="url">
+ <a data-position="0" href="/buying-guides" itemprop="url">
  <span itemprop="title">Buying Guides</span>
  </a>&nbsp;|&nbsp;
 </span>
 <span itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
- <a href="/buying-guides/moving" itemprop="url">
+ <a data-position="0" href="/buying-guides/moving" itemprop="url">
  <span itemprop="title">Moving</span>
  </a>
 </span>
@@ -123,7 +123,5 @@ COUNTER-HEIGHT DINETTE</p></a>  </div>          </div>    </div>                
 <p><a data-position="5" href="/buying-guides/choosing-the-best-guest-room-mattress" target="_self"><strong>CHOOSING THE BEST GUEST ROOM MATTRESS</strong></a></p>             
 <p>Choosing a mattress is especially difficult when designing a guest room. With different people coming and going, it can be hard to find a mattress that will please everyone. We’re giving you the inside scoop on mattresses to help you pick one that is guaranteed to make your guests' stay perfect.</p>         </div>          </div></div> 
 <script>/* get the domain name of the current site */var siteDomain = document.domain; /* if domain is asf replace all instances of valuecityfurniture. in any href text with americansignaturefurniture. */if(siteDomain.indexOf("americansignaturefurniture.com") >= 1){    $('#custom-page-body a').each(function(){        $(this).attr('href', $(this).attr('href').replace('valuecityfurniture.','americansignaturefurniture.'));    });}</script>
-<script type="text/javascript">$('#custom-page-body a').on('click', function(event){  var eventCategory = 'click'; var ePosition = $(this).attr('data-position');    var eLabel = this.href+':pos='+ePosition;if(this.text != false){var eAction = this.text;}else{var eAction = $(this).children('img').attr('alt');}
-	ga('send', {  hitType: 'event', eventCategory: 'click', eventAction: eAction, eventLabel: eLabel })});</script>
 </div>
 <script type="text/javascript" src="http://exclusives.vcf.com/scripts/buying-guide-pager.js"></script>

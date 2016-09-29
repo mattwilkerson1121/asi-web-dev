@@ -3,16 +3,16 @@
 <!-- schema breadcrumb markup -->
 <div id="breadcrumb" style="padding-bottom:15px;">
 <span itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
-  <a href="/" itemprop="url"><span itemprop="title">Home</span>
+  <a data-position="0" href="/" itemprop="url"><span itemprop="title">Home</span>
  </a>&nbsp;|&nbsp;
 </span>
 <span itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
- <a href="/buying-guides" itemprop="url">
+ <a data-position="0" href="/buying-guides" itemprop="url">
  <span itemprop="title">Buying Guides</span>
  </a>&nbsp;|&nbsp;
 </span>
 <span itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
- <a href="/buying-guides/5-space-saving-furniture-tips" itemprop="url">
+ <a data-position="0" href="/buying-guides/5-space-saving-furniture-tips" itemprop="url">
  <span itemprop="title">Space Saving Tips</span>
  </a>
 </span>
@@ -67,7 +67,4 @@
 <p class="bottext" style="border-top: solid 1px #b1b1b1"> <br />
  When you can reorganize your home to create more space, it’s like taking a breath of fresh air. You won’t feel bogged down in crowded, cramped spaces. Remember to look for pieces that have built-in storage, multiple functions, are narrow, and that you can raise off the floor. You’ll have stylish décor you love <i>and</i> tons of newfound space. Perfect. </p>       <!-- Columns Row -->     
 <script>/* get the domain name of the current site */var siteDomain = document.domain; /* if domain is asf replace all instances of valuecityfurniture. in any href text with americansignaturefurniture. */if(siteDomain.indexOf("americansignaturefurniture.com") >= 1){    $('#custom-page-body a').each(function(){        $(this).attr('href', $(this).attr('href').replace('valuecityfurniture.','americansignaturefurniture.'));    });}</script>
-<script type="text/javascript">$('#custom-page-body a').on('click', function(event){  var eventCategory = 'click'; var ePosition = $(this).attr('data-position');    var eLabel = this.href+':pos='+ePosition;if(this.text != false){var eAction = this.text;}else{var eAction = $(this).children('img').attr('alt');}
-	ga('send', {  hitType: 'event', eventCategory: 'click', eventAction: eAction, eventLabel: eLabel })});
-</script>
 <script type="text/javascript" src="http://exclusives.vcf.com/scripts/buying-guide-pager.js"></script>

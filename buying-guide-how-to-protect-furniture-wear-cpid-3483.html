@@ -6,16 +6,16 @@
 <!-- schema breadcrumb markup -->
 <div id="breadcrumb" style="padding-bottom:15px;">
 <span itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
-  <a href="/" itemprop="url"><span itemprop="title">Home</span>
+  <a data-position="0" href="/" itemprop="url"><span itemprop="title">Home</span>
  </a>&nbsp;|&nbsp;
 </span>
 <span itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
- <a href="/buying-guides" itemprop="url">
+ <a data-position="0" href="/buying-guides" itemprop="url">
  <span itemprop="title">Buying Guides</span>
  </a>&nbsp;|&nbsp;
 </span>
 <span itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
- <a href="/buying-guides/how-to-protect-your-furniture-from-wear-and-tear" itemprop="url">
+ <a data-position="0" href="/buying-guides/how-to-protect-your-furniture-from-wear-and-tear" itemprop="url">
  <span itemprop="title">Protect Furniture Against Wear and Tear</span>
  </a>
 </span>
@@ -85,8 +85,5 @@ Also, remember to store your furniture in a dry or climate-controlled space to a
 <p style="text-align:center"><a data-position="5" href="/search/v/dining-room" target="_blank"><strong>SHOP DINING ROOM</strong></a></p><a data-position="5" href="/search/v/dining-room" target="_blank"><strong> </strong> </a> 
 <p></p>          </div>          </div></div></div>  
 <script>/* get the domain name of the current site */var siteDomain = document.domain; /* if domain is asf replace all instances of valuecityfurniture. in any href text with americansignaturefurniture. */if(siteDomain.indexOf("americansignaturefurniture.com") >= 1){    $('#custom-page-body a').each(function(){        $(this).attr('href', $(this).attr('href').replace('valuecityfurniture.','americansignaturefurniture.'));    });}</script>
-<script type="text/javascript">$('#custom-page-body a').on('click', function(event){  var eventCategory = 'click'; var ePosition = $(this).attr('data-position');    var eLabel = this.href+':pos='+ePosition;if(this.text != false){var eAction = this.text;}else{var eAction = $(this).children('img').attr('alt');}
-	ga('send', {  hitType: 'event', eventCategory: 'click', eventAction: eAction, eventLabel: eLabel })});
-</script>
 <script type="text/javascript" src="http://exclusives.vcf.com/scripts/buying-guide-pager.js"></script>
 </div></div>

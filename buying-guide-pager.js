@@ -56,3 +56,15 @@ else if (currentPageIndex == maxIndex) {
 else {
 	// evaluated to false, do nothing
 }
+$('#custom-page-body a').on('click', function(event){  
+	var eventCategory = 'click'; 
+	var ePosition = $(this).attr('data-position');    
+	var eLabel = this.href+':pos='+ePosition;
+	if(this.text != false) {
+		var eAction = this.text;
+	}
+	else {
+		var eAction = $(this).children('img').attr('alt');
+	}
+	ga('send', {  hitType: 'event', eventCategory: 'click', eventAction: eAction, eventLabel: eLabel })
+});

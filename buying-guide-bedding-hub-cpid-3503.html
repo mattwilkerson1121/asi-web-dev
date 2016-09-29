@@ -5,16 +5,16 @@
 <!-- schema breadcrumb markup -->
 <div id="breadcrumb" style="padding-bottom:15px;">
 <span itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
-  <a href="/" itemprop="url"><span itemprop="title">Home</span>
+  <a data-position="0" href="/" itemprop="url"><span itemprop="title">Home</span>
  </a>&nbsp;|&nbsp;
 </span>
 <span itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
- <a href="/buying-guides" itemprop="url">
+ <a data-position="0" href="/buying-guides" itemprop="url">
  <span itemprop="title">Buying Guides</span>
  </a>&nbsp;|&nbsp;
 </span>
 <span itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
- <a href="/buying-guides/bedding" itemprop="url">
+ <a data-position="0" href="/buying-guides/bedding" itemprop="url">
  <span itemprop="title">Bedding</span>
  </a>
 </span>
@@ -125,8 +125,6 @@ FOUNDATION SET</p></a></div>           </div>          <!-- 4 columns wide -->
 <p><a data-position="5" href="http://www.dreambigmattress.com/sleep-tips/how-to-create-a-space-fit-for-daytime-sleeping" target="_blank"><strong>HOW TO CREATE A SPACE FIT FOR DAYTIME SLEEPING </strong></a></p>             
 <p>Whether you're working the late shift or lying down for an afternoon nap, making a mid-day sleep space can be challenging. Natural sleep patterns train our bodies to tire when the sun goes down and wake when it comes up. But that's not always what works with our schedule. Create a comfortable place to sleep at any hour with these helpful hints.</p>         </div>          </div></div>
 <script>/* get the domain name of the current site */var siteDomain = document.domain; /* if domain is asf replace all instances of valuecityfurniture. in any href text with americansignaturefurniture. */if(siteDomain.indexOf("americansignaturefurniture.com") >= 1){    $('#custom-page-body a').each(function(){        $(this).attr('href', $(this).attr('href').replace('valuecityfurniture.','americansignaturefurniture.'));    });}</script>
-<script>/* get the domain name of the current site */var siteDomain = document.domain; /* Replace the blog link for VCF with the proper blog link on ASF */if(siteDomain.indexOf("americansignaturefurniture.com") >= 1){    $('#custom-page-body a#blog1').each(function(){    $(this).attr('href', $(this).attr('href').replace('/space-planning-tips/bedding/','/planning/bedroom/'));    });}</script>
-<script type="text/javascript">$('#custom-page-body a').on('click', function(event){  var eventCategory = 'click'; var ePosition = $(this).attr('data-position');    var eLabel = this.href+':pos='+ePosition;if(this.text != false){var eAction = this.text;}else{var eAction = $(this).children('img').attr('alt');}
-	ga('send', {  hitType: 'event', eventCategory: 'click', eventAction: eAction, eventLabel: eLabel })});</script>
+<script>/* get the domain name of the current site */var siteDomain = document.domain; /* Replace the blog link for VCF with the proper blog link on ASF */if(siteDomain.indexOf("americansignaturefurniture.com") >= 1){    $('#custom-page-body a#blog1').each(function(){    $(this).attr('href', $(this).attr('href').replace('/space-planning-tips/bedding/','/space-planning-tips/bedroom/'));    });}</script>
 </div>
 <script type="text/javascript" src="http://exclusives.vcf.com/scripts/buying-guide-pager.js"></script>

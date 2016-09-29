@@ -5,16 +5,16 @@
 <!-- schema breadcrumb markup -->
 <div id="breadcrumb" style="padding-bottom:15px;">
 <span itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
-  <a href="/" itemprop="url"><span itemprop="title">Home</span>
+  <a data-position="0" href="/" itemprop="url"><span itemprop="title">Home</span>
  </a>&nbsp;|&nbsp;
 </span>
 <span itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
- <a href="/buying-guides" itemprop="url">
+ <a data-position="0" href="/buying-guides" itemprop="url">
  <span itemprop="title">Buying Guides</span>
  </a>&nbsp;|&nbsp;
 </span>
 <span itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
- <a href="/buying-guides/new-homeowners" itemprop="url">
+ <a data-position="0" href="/buying-guides/new-homeowners" itemprop="url">
  <span itemprop="title">New Homeowners</span>
  </a>
 </span>
@@ -123,7 +123,5 @@ BUNK BED WITH TRUNDLE</p></a>  </div>          </div>    </div>            <!-- 
 <p><a data-position="5" href="/buying-guides/preparing-your-place-for-the-perfect-party" target="_self"><strong>PREPARE YOUR PLACE FOR THE PERFECT PARTY</strong></a></p>
 <p>You want people to have the right amount of room for chatting and even dancing, but you also don’t want your place to feel empty and risk ruining the vibe of the party. We can help you master the three major parts of any party: the greeting, the seating, and the eating.</p>         </div>          </div>        <!-- 6 columns wide --></div>
 <script>/* get the domain name of the current site */var siteDomain = document.domain; /* if domain is asf replace all instances of valuecityfurniture. in any href text with americansignaturefurniture. */if(siteDomain.indexOf("americansignaturefurniture.com") >= 1){    $('#custom-page-body a').each(function(){        $(this).attr('href', $(this).attr('href').replace('valuecityfurniture.','americansignaturefurniture.'));    });}</script>
-<script type="text/javascript">$('#custom-page-body a').on('click', function(event){  var eventCategory = 'click'; var ePosition = $(this).attr('data-position');    var eLabel = this.href+':pos='+ePosition;if(this.text != false){var eAction = this.text;}else{var eAction = $(this).children('img').attr('alt');}
-	ga('send', {  hitType: 'event', eventCategory: 'click', eventAction: eAction, eventLabel: eLabel })});</script>
 </div>
 <script type="text/javascript" src="http://exclusives.vcf.com/scripts/buying-guide-pager.js"></script>
