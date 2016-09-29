@@ -129,14 +129,15 @@ var currentPage = window.location.pathname;
 var fullPath = "http://"+domain+currentPage;
 
 var buyingGuides = ["http://"+domain+"/buying-guides",
-		 "http://"+domain+"/buying-guides/bedding", 
-		 "http://"+domain+"/buying-guides/bedroom",	
-		 "http://"+domain+"/buying-guides/dining-room", 
 		 "http://"+domain+"/buying-guides/living-room",	
-		 "http://"+domain+"/buying-guides/empty-nesters",
+		 "http://"+domain+"/buying-guides/dining-room", 
+		 "http://"+domain+"/buying-guides/bedroom",			 		 
+		 "http://"+domain+"/buying-guides/bedding", 
 		 "http://"+domain+"/buying-guides/new-homeowners",
-		 "http://"+domain+"/buying-guides/growing-families",		 	 	 
-		 "http://"+domain+"/buying-guides/moving", 
+		 "http://"+domain+"/buying-guides/growing-families",
+		 "http://"+domain+"/buying-guides/moving",
+		 "http://"+domain+"/buying-guides/empty-nesters",
+		 "http://"+domain+"/buying-guides/kroehler-furniture-est-1893", 
 		 "http://"+domain+"/buying-guides/furnishing-your-first-dining-room", 
 		 "http://"+domain+"/buying-guides/choosing-the-best-guest-room-mattress", 
 		 "http://"+domain+"/buying-guides/top-10-ways-to-get-better-sleep", 
@@ -151,7 +152,6 @@ var buyingGuides = ["http://"+domain+"/buying-guides",
 		 "http://"+domain+"/buying-guides/5-space-saving-furniture-tips", 
 		 "http://"+domain+"/buying-guides/fully-furnished-living-room-for-under-1500-dollars", 
 		 "http://"+domain+"/buying-guides/total-room-makeover-on-a-budget", 
-		 "http://"+domain+"/buying-guides/kroehler-furniture-est-1893", 
 		 "http://"+domain+"/buying-guides/best-value-furniture-brand", 
 		 "http://"+domain+"/buying-guides/how-to-measure-furniture-to-make-sure-it-fits", 
 		 "http://"+domain+"/buying-guides/how-to-protect-your-furniture-from-wear-and-tear", 
@@ -165,19 +165,18 @@ var nextPageIndex = currentPageIndex + 1;
 var prevPageIndex = currentPageIndex - 1;
 // Set the max index 
 var maxIndex = buyingGuides.length - 1;
+// set next and prev urls dynamically
+var nextPageUrl = buyingGuides[nextPageIndex];
+var prevPageUrl = buyingGuides[prevPageIndex];
 
 if (currentPageIndex == 0) {
-	var nextPageUrl = buyingGuides[nextPageIndex];
-	$( "#breadcrumb" ).append( "<p style='float: right;'><a href='"+nextPageUrl+"' target='_self'><button>Next</button></a></p>" );
+	$( "#breadcrumb" ).append( "<p style='float: right;'><a href='"+nextPageUrl+"' target='_self'><button style='padding:5px;'>Next</button></a></p>" );
 }
 else if (currentPageIndex > 0 && currentPageIndex < maxIndex) {
-	var nextPageUrl = buyingGuides[nextPageIndex];
-	var prevPageUrl = buyingGuides[prevPageIndex];
-	$( "#breadcrumb" ).append( "<p style='float: right;'><a href='"+prevPageUrl+"' target='_self'><button style='margin-left:5px;>Prev</button></a><a href='"+nextPageUrl+"' target='_self'><button style='margin-left:5px;>Next</button></a></p>" );		
+	$( "#breadcrumb" ).append( "<p style='float: right;'><a href='"+prevPageUrl+"' target='_self'><button style='margin-left:5px;padding:5px;'>Prev</button></a><a href='"+nextPageUrl+"' target='_self'><button style='margin-left:5px;padding:5px;'>Next</button></a></p>" );		
 }
 else if (currentPageIndex == maxIndex) {
-	var prevPageUrl = buyingGuides[prevPageIndex];
-	$( "#breadcrumb" ).append( "<p style='float: right;'><a href='"+prevPageUrl+"' target='_self'><button>Prev</button></a></p>" );		
+	$( "#breadcrumb" ).append( "<p style='float: right;'><a href='"+prevPageUrl+"' target='_self'><button style='padding:5px;'>Prev</button></a></p>" );		
 }
 else {
 	// evaluated to false, do nothing
