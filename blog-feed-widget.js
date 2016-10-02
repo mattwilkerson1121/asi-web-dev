@@ -1,28 +1,45 @@
 var siteDomain = document.domain; 
+var currentPath = document.location.pathname;
 var blogFeed; 
-var dataCategory = "bedroom";
+//var dataCategory = "bedroom";
 // check domain and set the feed
-if(siteDomain.indexOf("valuecityfurniture.com") != -1) { 
-	var blogFeed = "http://www.valuecityfurniture.com/blog/space-planning-tips/bedroom/feed/";
+if(siteDomain.indexOf("valuecityfurniture.com") != -1) {
+  if (currentPath.match("/bedroom")) {
+    var blogFeed = "http://www.valuecityfurniture.com/blog/space-planning-tips/bedroom/feed/";    
+  }
+  else if (currentPath.match("/living-room")) {
+    var blogFeed = "http://www.valuecityfurniture.com/blog/space-planning-tips/living-room/feed/";
+  }
+  else if (currentPath.match("/dining-room")) {
+    var blogFeed = "http://www.valuecityfurniture.com/blog/space-planning-tips/dining-room/feed/";
+  }  
 }
 else { 
-    var blogFeed = "http://www.americansignaturefurniture.com/blog/space-planning-tips/bedroom/feed/"; 
+  if (currentPath.match("/bedroom")) {
+    var blogFeed = "http://www.americansignaturefurniture.com/blog/space-planning-tips/bedroom/feed/";  
+  } 
+  else if (currentPath.match("/living-room")) {
+    var blogFeed = "http://www.americansignaturefurniture.com/blog/space-planning-tips/living-room/feed/";
+  }   
+  else if (currentPath.match("/dining-room")) {   
+    var blogFeed = "http://www.americansignaturefurniture.com/blog/space-planning-tips/dining-room/feed/";
+  }   
 }
 
 // create click handler, send GA the events
 $( document ).ready(function() {
-	console.log("document is ready!");
-	$(document).on('click','#hawkcustomhtml a', function(event){  
-		var eventCategory = "click"; 
-		var ePosition = $(this).attr('data-position');  
-		var eAction = this.text;  
-		var eLabel = this.href+':pos='+ePosition;  
-		if(!eAction){  
-			var eAction = $(this).find('img').attr('alt');  
-		} 
-		//console.log("eventCategory: click, eventAction: "+eAction+", eventLabel: "+eLabel);
-		ga('send', {  hitType: 'event', eventCategory: 'click', eventAction: eAction, eventLabel: eLabel  })
-	});
+  console.log("document is ready!");
+  $(document).on('click','#hawkcustomhtml a', function(event){  
+    var eventCategory = "click"; 
+    var ePosition = $(this).attr('data-position');  
+    var eAction = this.text;  
+    var eLabel = this.href+':pos='+ePosition;  
+    if(!eAction){  
+      var eAction = $(this).find('img').attr('alt');  
+    } 
+    //console.log("eventCategory: click, eventAction: "+eAction+", eventLabel: "+eLabel);
+    ga('send', {  hitType: 'event', eventCategory: 'click', eventAction: eAction, eventLabel: eLabel  })
+  });
 });
 
 // parse the feed, prepend to DOM
@@ -51,6 +68,6 @@ $.ajax({
     }
   },
   error : function (data){
-  	// var uhoh!;
+    // var uhoh!;
   }
 });
