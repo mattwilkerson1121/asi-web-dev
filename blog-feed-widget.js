@@ -12,7 +12,13 @@ if(siteDomain.indexOf("valuecityfurniture.com") != -1) {
   }
   else if (currentPath.match("/dining-room")) {
     var blogFeed = "http://www.valuecityfurniture.com/blog/space-planning-tips/dining-room/feed/";
-  }  
+  } 
+  else if (currentPath.match("/accents")) {
+    var blogFeed = "http://www.valuecityfurniture.com/blog/tags/accents/feed/";
+  } 
+  else if (currentPath.match("/mattress")) {
+    var blogFeed = "http://www.valuecityfurniture.com/blog/tags/mattress/feed/";
+  }
 }
 else { 
   if (currentPath.match("/bedroom")) {
@@ -24,10 +30,16 @@ else {
   else if (currentPath.match("/dining-room")) {   
     var blogFeed = "http://www.americansignaturefurniture.com/blog/space-planning-tips/dining-room/feed/";
   }   
+  else if (currentPath.match("/accents")) {
+    var blogFeed = "http://www.americansignaturefurniture.com/blog/tags/accents/feed/";
+  }   
+  else if (currentPath.match("/mattress")) {
+    var blogFeed = "http://www.americansignaturefurniture.com/blog/tags/mattress/feed/";
+  }  
 }
 
 // create click handler, send GA the events
-$( document ).ready(function() {
+$(document).ready(function() {
   console.log("document is ready!");
   $(document).on('click','#hawkcustomhtml a', function(event){  
     var eventCategory = "click"; 
@@ -51,11 +63,11 @@ $.ajax({
     var entry = data.responseData.feed.entries;
     
     for (var i = 0; i < entry.length; i++) {
-     var postTitle = entry[i].title;
-     var postSnippet = entry[i].contentSnippet;
-     var postLead = jQuery.trim(postSnippet).substring(0, 100).split(" ").slice(0, -1).join(" ");
-     var postLink = entry[i].link;
-     var postContent = entry[i].content;
+      var postTitle = entry[i].title;
+      var postSnippet = entry[i].contentSnippet;
+      var postLead = jQuery.trim(postSnippet).substring(0, 100).split(" ").slice(0, -1).join(" ");
+      var postLink = entry[i].link;
+      var postContent = entry[i].content;
       
       var imgContent = entry[i].content;
       var imgDiv = document.createElement('div');
@@ -63,7 +75,7 @@ $.ajax({
       var postImage = imgDiv.getElementsByTagName('img')[0];
       var postImgSrc = postImage ? postImage.getAttribute("src") : "";
 
-      $("#blog-feed").prepend('<div class="panel panel-default blog-panel" style="box-shadow:none;margin-top:0;margin-bottom:0;margin-left:0.375em;margin-right:0.75em;"><div class="panel-body blog-panel-body"><a data-position="bottom-feed" href="'+postLink+'" target="_self" class="thumbnail" style="padding-bottom:15px;"><img src="'+postImgSrc+'" class="img-responsive center-block"><h4>'+postTitle+'</h4><p style="padding:0px 10px;font-size:14px;">'+postLead+'...<span style="color:#cc0000;">read more</span></p></a></div></div>');
+    $("#blog-feed").prepend('<div class="panel panel-default blog-panel" style="box-shadow:none;margin-top:0;margin-bottom:0;margin-left:0.375em;margin-right:0.75em;"><div class="panel-body blog-panel-body"><a data-position="bottom-feed" href="'+postLink+'" target="_self" class="thumbnail" style="padding-bottom:15px;"><img src="'+postImgSrc+'" class="img-responsive center-block"><h4>'+postTitle+'</h4><p style="padding:0px 10px;font-size:14px;">'+postLead+'...<span style="color:#cc0000;">read more</span></p></a></div></div>');
 
     }
   },
