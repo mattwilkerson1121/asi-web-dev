@@ -40,7 +40,7 @@ else {
 
 // create click handler, send GA the events
 $(document).ready(function() {
-  console.log("document is ready!");
+  //console.log("document is ready!");
   $(document).on('click','#hawkcustomhtml a', function(event){  
     var eventCategory = "click"; 
     var ePosition = $(this).attr('data-position');  
@@ -59,16 +59,17 @@ $.ajax({
   url      : 'http://ajax.googleapis.com/ajax/services/feed/load?v=1.0&num=10&callback=?&q=' + encodeURIComponent(blogFeed),
   dataType : 'json',
   success  : function (data) {
-
     var entry = data.responseData.feed.entries;
-    console.log(entry);
-    
-    for (var i = 0; i < entry.length; i++) {
+    // for loop must start at entry.length index 9 and work down to 0
+    // in order to parse the blog entries in the right order
+    // and ensure that the latest blog posts are loaded first
+    for (var i = 9; i < entry.length; i--) {
       var postTitle = entry[i].title;
       var postSnippet = entry[i].contentSnippet;
       var postLead = jQuery.trim(postSnippet).substring(0, 100).split(" ").slice(0, -1).join(" ");
       var postLink = entry[i].link;
       var postContent = entry[i].content;
+      var publishedDate = entry[i].publishedDate;
       
       var imgContent = entry[i].content;
       var imgDiv = document.createElement('div');
