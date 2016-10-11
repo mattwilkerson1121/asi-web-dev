@@ -61,6 +61,7 @@ $.ajax({
   success  : function (data) {
 
     var entry = data.responseData.feed.entries;
+    console.log(entry);
     
     for (var i = 0; i < entry.length; i++) {
       var postTitle = entry[i].title;
