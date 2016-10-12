@@ -580,7 +580,7 @@ $.ajax({
   success  : function (data) {
     var entry = data.responseData.feed.entries;
     
-    for (var i = 0; i < entry.length; i++) {
+    for (var i = 8; i < entry.length; i--) {
      var postTitle = entry[i].title;
      var postSnippet = entry[i].contentSnippet;
      var postLead = jQuery.trim(postSnippet).substring(0, 50).split(" ").slice(0, -1).join(" ");
