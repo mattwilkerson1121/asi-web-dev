@@ -38,7 +38,7 @@
 	</div>
 	<div class="hidden-lg hidden-md" id="asi-cp-hero-bar-sm" style="margin-bottom:2em;padding-top:0;padding-bottom:0;background:none;">
 		<p style="padding-top:0;padding-bottom:0.75em;background-color:none;" class="text-center">
-			<a data-button="hero-ghost" style="font-size:16px;border:1px solid #4d4d4d;font-weight:600;color:#4d4d4d;background:none!important;margin-top:12px !important;" class="btn btn-outline center-block;" href="/search/v/mattresses/quick-links/shop-all-mattresses" target="_self" data-position="1">SHOP ALL MATTRESSES</a>
+			<a data-button="hero-ghost" style="font-size:16px;border:1px solid #4d4d4d;font-weight:600;color:#4d4d4d;background:none!important;margin-top:12px !important;" class="btn btn-outline center-block;" href="/search/v/mattresses" target="_self" data-position="1">SHOP ALL MATTRESSES</a>
 		</p>
 	</div>
 </div>
@@ -788,5 +788,5 @@ $.ajax({
 });
 </script>
 <script type="text/javascript">
-$('#custom-page-body a').on('click', function(event){  var eventCategory = "click"; var ePosition = $(this).attr('data-position');  var eAction = this.text;  var eLabel = this.href+':pos='+ePosition;  if(!eAction){  var eAction = $(this).find('img').attr('alt');  } console.log('event: '+eventCategory+' | action: '+eAction+' | label: '+eLabel); ga('send', {  hitType: 'event', eventCategory: 'click', eventAction: eAction, eventLabel: eLabel  })});
+$('#custom-page-body a').on('click', function(event){  var eventCategory = "click"; var ePosition = $(this).attr('data-position');  var eAction = this.text;  var eLabel = this.href+':pos='+ePosition;  if(!eAction){  var eAction = $(this).find('img').attr('alt');  } ga('send', {  hitType: 'event', eventCategory: 'click', eventAction: eAction, eventLabel: eLabel  })});
 </script>
