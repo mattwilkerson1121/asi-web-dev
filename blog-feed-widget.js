@@ -19,6 +19,9 @@ if(siteDomain.indexOf("valuecityfurniture.com") != -1) {
   else if (currentPath.match("/mattress")) {
     var blogFeed = "http://www.valuecityfurniture.com/blog/tags/mattress/feed/";
   }
+  else if (currentPath.match("/black-friday")) {
+    var blogFeed = "http://www.valuecityfurniture.com/blog/tags/the-holidays/feed/";
+  }
 }
 else { 
   if (currentPath.match("/bedroom")) {
@@ -35,7 +38,10 @@ else {
   }   
   else if (currentPath.match("/mattress")) {
     var blogFeed = "http://www.americansignaturefurniture.com/blog/tags/mattress/feed/";
-  }  
+  } 
+  else if (currentPath.match("/black-friday")) {
+    var blogFeed = "http://www.americansignaturefurniture.com/blog/tags/the-holidays/feed/";
+  }   
 }
 
 // create click handler, send GA the events
