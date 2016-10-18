@@ -16,7 +16,7 @@ if(siteDomain.indexOf("valuecityfurniture.com") != -1) {
   else if (currentPath.match("/accents")) {
     var blogFeed = "http://www.valuecityfurniture.com/blog/tags/accents/feed/";
   } 
-  else if (currentPath.match("/mattress")) {
+  else if (currentPath.match("/mattress") || currentPath.match("mattresses")) {
     var blogFeed = "http://www.valuecityfurniture.com/blog/tags/mattress/feed/";
   }
   else if (currentPath.match("/black-friday")) {
@@ -36,7 +36,7 @@ else {
   else if (currentPath.match("/accents")) {
     var blogFeed = "http://www.americansignaturefurniture.com/blog/tags/accents/feed/";
   }   
-  else if (currentPath.match("/mattress")) {
+  else if (currentPath.match("/mattress") || currentPath.match("mattresses")) {
     var blogFeed = "http://www.americansignaturefurniture.com/blog/tags/mattress/feed/";
   } 
   else if (currentPath.match("/black-friday")) {
