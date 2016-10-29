@@ -87,8 +87,7 @@
 		</div>
 		<div class="clear clearfix"></div>
 	</div>
-	<!--
-	<div class="section asi-section" data-module="category-content" data-category="inspiration">
+	<div class="section asi-section" data-module="category-content" data-category="inspiration" style="padding-bottom:25px;">
         <h3 class="section-heading text-center text-capitalize">
             Get Inspired With Tips, Ideas &amp; Advice 
         </h3>
@@ -96,7 +95,6 @@
 			<div class="clear clearfix"></div>
 		</div>
 	</div>
-	!-->
 </div>                                  
 <style>
 	.blackFridayPage *, *:before, *:after {
@@ -369,9 +367,12 @@ h3.section-heading {
 </script>
 <script type="text/javascript">
 	$(document).ready(function(){
-		if(document.domain.indexOf("americansignaturefurniture") >= 0){  
-			$('#custom-page-body a').each(function(){
-				this.href = this.href.replace('search/v', 'search/a');    
+		if(siteDomain.indexOf("valuecityfurniture.com") >= 1){
+			var blogFeed = "http://www.valuecityfurniture.com/blog/?s=tips";
+		}else{
+			var blogFeed = "http://www.americansignaturefurniture.com/blog/?s=tips";
+    		$('#custom-page-body a').each(function(){
+  				$(this).attr('href', $(this).attr('href').replace('v/','a/'));
 			});
 		}
 		$('#blackFridayEmail-submit').submit(function(){
