@@ -3,13 +3,19 @@
 <div class="container blackFridayPage" style="position:relative;width:100%;padding:0;margin:0;">
 	<div class="row">
 		<div class="col-md-12">
-			<h1 class="blackFridayH1">Black Friday Furniture Deals</h1>
+			<h1 class="blackFridayH1">Black Friday 2016 Furniture Deals</h1>
 			<p class="blackFridayCopy hidden-xs">Looking to save big on furniture and mattresses this Black Friday? You've come to the right place! Find everything you need to make this the best Black Friday yet by signing up to receive our Black Friday ad, check out our gift guides and more!</p>
 		</div>
 	</div>
 	<br>
 	<div class="blackFridaySignup">
 		<div class="row" style="margin:0;padding:0;">
+		<!--replaces signup once available
+			<div class="col-md-12">
+				<a href="/weekly-ad">
+					<img class="img-responsive center-block" src="http://s7d4.scene7.com/is/image/ASF/BF_AdNowAvailable?qlt=89,1" alt="our black friday ad is here" />
+				</a>
+			</div>-->
 			<div class="col-xs-12 col-md-5">
 				<img class="img-responsive center-block" src="http://s7d4.scene7.com/is/image/ASF/blackFriday_Email_Signup_Mobile?qlt=89,1" alt="get our black friday ad early">
 			</div>
@@ -18,9 +24,15 @@
 					<h2 class="blackFridayH2 knockout hidden-sm hidden-xs">BE THE FIRST TO KNOW</h2>
 					<p class="blackFridayEmail hidden-sm hidden-xs">Sign Up for Exclusive Early Access to our Black Friday 2016 Circular!</p>
 					<div id="blackFridayFormBox">
-						<form method="post" class="blackFridayEmail-form" action="">
-							<input name="email" class="blackFridayEmail-input" placeholder="Enter Your Email Address" autofocus="" type="email">
+						<form role="form" name="BlackFriday2016" id="BlackFriday2016" method="post" class="blackFridayEmail-form" action="https://my.valuecityfurniture.com/pub/rf">
+							<input name="EMAIL_ADDRESS_" id="EMAIL_ADDRESS_" class="form-control blackFridayEmail-input" placeholder="Enter Your Email Address" autofocus="" type="email">
 								<button type="submit" class="btn btn-lg blackFridayEmail-submit">SUBMIT <i class="fa fa-angle-right" style="font-size:18.5px;font-weight:600;"></i></button>
+								<!-- hidden form fields -->
+								<input type="hidden" name="_EMailFields_" value="EMAIL_ADDRESS_">
+      							<input type="hidden" name="_ri_" value="X0Gzc2X%3DYQpglLjHJlYQGuHTEIgzg4FPfBzbLMgza1Ujtgbaj9zfIWuJFRVwjpnpgHlpgneHmgJoXX0Gzc2X%3DYQpglLjHJlYQGkzeCzbGnMzcH0cynBjyTzdzdsuYTnuaLpajFBn">
+      							<input type="hidden" name="CAMPAIGN_" value="BlackFriday2016">
+ 								<input type="hidden" name="EMAIL_SOURCE" value="WEB : BlackFriday2016">
+   								<input type="hidden" name="EMAIL_PERMISSION_STATUS_" value="I">
 						</form>
 					</div>
 				</div>
@@ -52,13 +64,13 @@
 				<a href="/search/gifts/gifts-for-kids"><img class="img-responsive" src="http://s7d4.scene7.com/is/image/ASF/Gifts_for_Kids_307x230?qlt=89,1" alt="gifts for kids"></a>
 			</div>
 			<div class="col-md-4 col-xs-6 gifts-box">
-				<a href=""><img class="img-responsive" src="http://s7d4.scene7.com/is/image/ASF/Gifts_Und_100_307x230?qlt=89,1" alt="gifts under $100"></a>
+				<a href="/search/gifts/gift-guide#sort=salepriceasc&price_range=1,2"><img class="img-responsive" src="http://s7d4.scene7.com/is/image/ASF/Gifts_Und_100_307x230?qlt=89,1" alt="gifts under $100"></a>
 			</div>
 			<div class="col-md-4 col-xs-6 gifts-box">
-				<a href=""><img class="img-responsive" src="http://s7d4.scene7.com/is/image/ASF/Gifts_Und_200_307x230?qlt=89,1" alt="gifts under $200"></a>
+				<a href="/search/gifts/gift-guide#sort=salepriceasc&price_range=1,2,3"><img class="img-responsive" src="http://s7d4.scene7.com/is/image/ASF/Gifts_Und_200_307x230?qlt=89,1" alt="gifts under $200"></a>
 			</div>
 			<div class="col-md-4 col-xs-6 gifts-box">
-				<a href=""><img class="img-responsive" src="http://s7d4.scene7.com/is/image/ASF/Gifts_Und_300_307x230?qlt=89,1" alt="gifts under $300"></a>
+				<a href="/search/gifts/gift-guide#sort=salepriceasc&price_range=1,2,3,4"><img class="img-responsive" src="http://s7d4.scene7.com/is/image/ASF/Gifts_Und_300_307x230?qlt=89,1" alt="gifts under $500"></a>
 			</div>
 		</div>
 		<div class="clear clearfix"></div>
@@ -85,14 +97,6 @@
 			</div>
 		</div>
 		<div class="clear clearfix"></div>
-	</div>
-	<div class="section asi-section" data-module="category-content" data-category="inspiration" style="padding-bottom:25px;">
-        <h3 class="section-heading text-center text-capitalize">
-            Get Inspired With Tips, Ideas &amp; Advice 
-        </h3>
-        <div class="row blog-content-row" id="blog-feed">
-			<div class="clear clearfix"></div>
-		</div>
 	</div>
 </div>                                  
 <style>
@@ -167,14 +171,6 @@
   		letter-spacing:0.0475em;
   		color:#ffffff;
   		font-size:3rem;
-		/*
-		font-family: 'Knockout 28', sans-serif;
-		color: #fff;
-		font-size: 24px;
-		text-align: left;
-		margin-bottom: 0px;
-		padding-bottom: 0px;
-		*/
 	}
 	
 	.blackFridayCopy {
@@ -198,10 +194,6 @@
 		padding-top: 4px;
 	}
 	.blackFridaySignupText {
-		/*
-		width: 85%;
-		float: right;
-		*/
 		margin-top: 2.75rem;
 		padding: 15px 5px;
 	}
@@ -214,9 +206,6 @@
 		margin-bottom:0.5rem;
 	}
 	.blackFridayEmail-submit {
-		/*background-color: transparent;
-		border: 1px solid white;
-		*/
 		background:#EC2238;
 		margin-top:1rem;
 		margin-bottom:1rem;
@@ -224,7 +213,6 @@
 		overflow: hidden;
 		font-size: 20px;
 		color: #ffffff;
-		/*width: 160px;*/
 		min-height: 40px;
 		padding:10px 15px;
 		font-family:"Open Sans",sans-serif;
@@ -289,18 +277,6 @@ h3.section-heading {
 	font-weight: 400 !important;
 }
 @media screen and (max-width: 768px) {
-	/*
-	.blackFridayCountDownWrap {
-		max-height: 200px;
-	}
-	#blackFridayCountDown {
-		text-align: center;
-		font-weight: 400;
-		font-size: 12px !important;
-    	margin-top: 150px !important;
-    	max-width: 100%;
-	}
-	*/
 	#blackFridayCountDown {
     	font-size:2rem;
     	bottom:15px;
@@ -316,18 +292,11 @@ h3.section-heading {
 		padding: 0 12px !important;
 		margin-top: 0 !important;
 		text-align:center !important
-
 	}
-	.blackFridayEmail-submit {
-		/*margin: 0 auto !important;*/
+	#custom-page-body h3,h3.section-heading {
+		font-size:22px !important;
 	}
-	.blackFridayEmail-input {
-		/*height: 40px !important;
-		margin-bottom: 20px !important;*/
-	}
-	#custom-page-body h3,h3.section-heading {font-size:22px !important;}
 }
-
 .asi-section {
   margin-bottom: 15px;
   margin-left: 0;
@@ -342,79 +311,46 @@ h3.section-heading {
 }
 #header-banner-page-element-1 { display:none !important;}
 </style>
-<script>
-	// set the date we're counting down to
-	var target_date = new Date("Nov 28, 2016").getTime(); 
-	// variables for time units
-	var days, hours, minutes, seconds; 
-	// get tag element
-	var countdown = document.getElementById("blackFridayCountDown"); 
-	// update the tag with id "countdown" every 1 second
-	setInterval(function () {     
-	// find the amount of "seconds" between now and target    
+<script type="text/javascript">
+	var siteTheme = window.location.host;
+	if(siteTheme = "www.americansignaturefurniture.com"){
+		$("input[name='_ri_']").val("X0Gzc2X%3DYQpglLjHJlYQGkdK9hYzgH87bJo2GflNlUGDhzbTcy7ddwKOVwjpnpgHlpgneHmgJoXX0Gzc2X%3DYQpglLjHJlYQGn1C00bO4KBBJEMrMmuHwv0RiSPzgGOKpzeO");
+		$("#BlackFriday2016").attr("action","https://my.americansignaturefurniture.com/pub/rf")
+	}
+	if(siteTheme = "www.valuecityfurniture.com"){
+		$("input[name='_ri_']").val("X0Gzc2X%3DYQpglLjHJlYQGuHTEIgzg4FPfBzbLMgza1Ujtgbaj9zfIWuJFRVwjpnpgHlpgneHmgJoXX0Gzc2X%3DYQpglLjHJlYQGkzeCzbGnMzcH0cynBjyTzdzdsuYTnuaLpajFBn");
+		$("#BlackFriday2016").attr("action","https://my.valuecityfurniture.com/pub/rf")
+	}
+	
+	$('#blackFridayEmail-submit').submit(function(){
+		var userEmailInput = $('#EMAIL_ADDRESS_').val();
+		ga('send', {  hitType: 'event', eventCategory: 'submit', eventAction:'black-friday-ad-submit', eventLabel:'/black-friday' })
+		if( userEmailInput.indexOf('@') === -1 ){  
+			alert('Please Enter a Valid Email Address');  
+			return false;
+		}
+		return true;
+	});
+</script>
+<script type="text/javascript">
+/* COUNTDOWN TIMER SCRIPT */
+var target_date = new Date("Nov 25, 2016").getTime(); 
+var days, hours, minutes, seconds; 
+var countdown = document.getElementById("blackFridayCountDown"); 
+setInterval(function () {       
 	var current_date = new Date().getTime();    
-	var seconds_left = (target_date - current_date) / 1000;     
-	// do some time calculations    
+	var seconds_left = (target_date - current_date) / 1000;        
 	days = parseInt(seconds_left / 86400);    
 	seconds_left = seconds_left % 86400;         
 	hours = parseInt(seconds_left / 3600);    
 	seconds_left = seconds_left % 3600;         
 	minutes = parseInt(seconds_left / 60);    
-	seconds = parseInt(seconds_left % 60);         
-	// format countdown string + set tag value    
-	countdown.innerHTML = days + " days " + hours + " hours " + minutes + " minutes " + seconds + " seconds ";   }, 1000);
+	seconds = parseInt(seconds_left % 60);            
+	countdown.innerHTML = days + " days " + hours + " hours " + minutes + " minutes " + seconds + " seconds ";
+}, 1000);
 </script>
 <script type="text/javascript">
-	var blogFeed;
-	var siteDomain = location.hostname;
-	$(document).ready(function(){
-		if(siteDomain.indexOf("valuecityfurniture.com") >= 1){
-			var blogFeed = "http://www.valuecityfurniture.com/blog/?s=tips";
-		}else{
-			var blogFeed = "http://www.americansignaturefurniture.com/blog/?s=tips";
-    		$('#custom-page-body a').each(function(){
-  				$(this).attr('href', $(this).attr('href').replace('v/','a/'));
-			});
-		}
-		$('#blackFridayEmail-submit').submit(function(){
-			var userEmailInput = $('#EMAIL_ADDRESS_').val();
-			ga('send', {  hitType: 'event', eventCategory: 'submit', eventAction:'black-friday-ad-submit', eventLabel:'/black-friday' })
-			if( userEmailInput.indexOf('@') === -1 ){  
-				alert('Please Enter a Valid Email Address');  
-				return false;
-			}
-			return true;
-		});
-		$.ajax({
-		  url: 'https://ajax.googleapis.com/ajax/services/feed/load?v=1.0&num=9&callback=?&q=' + encodeURIComponent(blogFeed),
-		  dataType : 'json',
-		  success  : function (data) {
-			var entry = data.responseData.feed.entries;
-	
-			for (var i = 8; i < entry.length; i--) {
-			 var postTitle = entry[i].title;
-			 var postSnippet = entry[i].contentSnippet;
-			 var postLead = jQuery.trim(postSnippet).substring(0, 50).split(" ").slice(0, -1).join(" ");
-			 var postLink = entry[i].link;
-			 var postContent = entry[i].content;
-	  
-			  var imgContent = entry[i].content;
-			  var imgDiv = document.createElement('div');
-			  imgDiv.innerHTML = postContent;
-			  var postImage = imgDiv.getElementsByTagName('img')[0];
-			  var postImgSrc = postImage ? postImage.getAttribute("src") : "";
-
-			  $("#blog-feed").prepend('<div class="panel panel-default blog-panel" style="box-shadow:none;margin-top:0;margin-bottom:0;margin-left:0.375em;margin-right:0.75em;"><div class="panel-body blog-panel-body"><a href="'+postLink+'" target="_blank" class="thumbnail" style="padding-bottom:15px;"><img src="'+postImgSrc+'" class="img-responsive center-block"><h4>'+postTitle+'</h4><p style="padding:0px 10px;font-size:14px;">'+postLead+'...<span style="color:#cc0000;">read more</span></p></a></div></div>');
-
-			}
-		  },
-		  error : function (data){
-			alert("error: "+data);
-		  }
-	   });
-	});
-</script>
-<script>
+/* GA EVENT TRACKING FOR PAGE */
 $('#custom-page-body a').on('click', function(event){  
 	var eventCategory = 'click';  
 	var eLabel = this.href;
@@ -423,4 +359,14 @@ $('#custom-page-body a').on('click', function(event){
 	ga('send', {  hitType: 'event', eventCategory: 'click', eventAction: eAction, eventLabel: eLabel })
 });
 $("#pe-container-a5be8c40-4b0a-41f5-b56c-3b5b307961e0,.pe-container").remove().css("display","none");
+</script>
+<script type="text/javascript">
+/* SMARTERHQ TRACKING TAG */
+(function(w,d,s,sr,c){
+  w[sr]=w[sr]||[];
+  var f=d.getElementsByTagName(s)[0],j=d.createElement(s);
+  j.async=true;
+  j.src= d.location.protocol+'//d1n00d49gkbray.cloudfront.net/js/'+c+'.js';
+  f.parentNode.insertBefore(j,f);
+})(window,document,'script','_smtr','valuecity')
 </script>
