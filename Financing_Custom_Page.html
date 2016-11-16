@@ -3,11 +3,14 @@
 
 	<h1 class="financeH1">Exclusive Financing Offers</h1>
 	<div class="col-md-12">
-		<a class="finance_link_apply" href="https://etail.mysynchrony.com/eapply/eapply.action?uniqueId=8CB36A8C70326D2A221171A5977AED15D0725C701F75AB68&client=Value%20City%20Furniture" target="_self"><img id="finance-hero-img" class="img-responsive fr-dii fr-draggable" src="http://s7d4.scene7.com/is/image/ASF/FinancingHeader_ValuePlus?fmt=png" alt="Apply for your Plus Card Now!"></a>
+		<a class="finance_link_apply" href="https://etail.mysynchrony.com/eapply/eapply.action?uniqueId=8CB36A8C70326D2A221171A5977AED15D0725C701F75AB68&client=Value%20City%20Furniture" target="_self">
+			<img id="finance-hero-img" class="img-responsive fr-dii fr-draggable" src="http://s7d4.scene7.com/is/image/ASF/FinancingHeader_ValuePlus?fmt=png" alt="Apply for your Plus Card Now!" style="padding-bottom:6px;border-bottom:1px solid #ddd;">
+		</a>
 	</div>
 	<hr>
 	<div class="col-md-12">
 		<div id="getFinancePromotions" style="min-height:480px">
+			<span id="ajaxSpinner"><div id="mvcSpinner" class="loading-content-spinner"></div></span>
 			<br>
 		</div>
 		<!-- END : getFinancePromotions -->
@@ -16,13 +19,12 @@
 	<hr>
 	<div id="asi_rac_offer_box" style="max-width: 100%; background-color: #ffffff;padding-bottom:1em;margin-bottom:1em;">
 		<a name="ACNOffer"></a>&nbsp;<img class="img-responsive fr-dii fr-draggable" src="https://asf.scene7.com/is/image/ASF/90DayNoCredit_600x272-1?fmt=png" alt="exclusive AccepptanceNow offer - take 90 days to pay + No Credit Needed!" style="max-width: 100%; width: 0px;" height="272" border="0">
-		<br><img class="img-responsive fr-dii fr-draggable" src="http://www.valuecityfurniture.com/shared/services/images/GetImage.ashx?FileId=362463&amp;Ext=png&amp;SizeId=0" alt="AcceptanceNow - Shop With Confidence" style="max-width: 100%;" border="0">
+		<br class="hidden-xs"><img class="img-responsive fr-dii fr-draggable" src="http://www.valuecityfurniture.com/shared/services/images/GetImage.ashx?FileId=362463&amp;Ext=png&amp;SizeId=0" alt="AcceptanceNow - Shop With Confidence" style="max-width: 100%;" border="0">
 
 		<h3 class="financeH3">No Credit Needed!</h3>
 
-		<p class="medGrayText normalText">Select the merchandise you want, and set up delivery. We&rsquo;ll buy that item and lease it to you. You simply make affordable monthly payments &mdash; no long term obligation.</p>
+		<p class="financeCopy">Select the merchandise you want, and set up delivery. We&rsquo;ll buy that item and lease it to you. You simply make affordable monthly payments &mdash; no long term obligation.</p>
 		<br>
-
 		<ul>
 			<li class="financeLi">You Pay As You Go. Just make low monthly payments that fit your budget.</li>
 			<li class="financeLi">Build Your Credit. Every on-time payment helps create a positive credit history.</li>
@@ -33,7 +35,7 @@
 
 		<p class="financeCopy">You can shop with confidence knowing that no credit is needed and flexible payment plans are available, just pay as you go. Plus enjoy the flexibility of knowing you can own your furniture at any time with our early purchase options.</p>
 
-		<p class="financeCopy"><sup>*</sup>First Monthly Payment Due at Time of Purchase.</p>
+		<p class="financeCopy acn-asterick"><sup>*</sup>First Monthly Payment <br class="visible-xs">Due at Time of Purchase.</p>
 		<div id="asi-acn-links">
 			<div class="col-md-2 col-xs-12"><a class="finance_link_apply_rac btn btn-acn" href='https://application.racacceptance.com/VANProxy/VendorLanding.aspx?partner="07beec"' target="_self">Apply Now</a></div>
 			<div class="col-md-10 col-xs-12"><a class="finance_link_faq_rac btn btn-acn" href="http://www.acceptancenow.com/RAC-Acceptance-FAQs.html" target="_self">Learn About AcceptanceNOW</a></div>
@@ -149,6 +151,13 @@
 		margin-bottom: 8px;
 		margin-top: 15px;
 	}
+	a.promoLearnMore:hover
+	a.promoLearnMore:focus,
+	.signup-btn:hover,
+	.signup-btn:focus {
+		color: white !important;
+		background: #AD0606 !important;
+	}
 	
 	.promoLearnMore,
 	.btn-acn,
@@ -178,14 +187,6 @@
 		border-top: 1px solid #f2f2f2;
 	}
 	
-	a.promoLearnMore:hover, {
-	a.promoLearnMore:focus,
-	.signup-btn:hover,
-	.signup-btn:focus {
-		color: white !important;
-		background: #AD0606 !important;
-	}
-	
 	#custom-page-body a.btn:hover,
 	#custom-page-body a.btn-acn:hover {
 		color: #f8f8f8;
@@ -208,7 +209,7 @@
 		border-radius: 0px !important;
 		border: none !important;
 		text-decoration: underline;
-		paddind-left: 0;
+		padding-left: 0;
 	}
 	
 	a.finance_link_faq_rac:hover,
@@ -221,24 +222,69 @@
 		font-size:14px;
 		margin-top:0 !important;
 	}
+	.ajaxSpinner {
+		position:relative;
+		top: 50%;
+		left: 50%;
+		margin-left: -30px;
+		margin-top: -30px;
+	}
 	
-	@media and screen (max-width:768px;
-	) {
+	@media and screen (max-width:768px;) {
+		.financeCopy, p.financeCopy {
+			text-align:center;
+			display:block;
+		}
+		p.acn-asterick {
+			color:#999 !important;
+			padding-top:10px;
+			font-size:14px !important;
+			letter-spacing:0.025em;
+		}
 		a.finance_link_login {
 			max-width: 220px;
 		}
+		.financeH1,
+		h1.financeH1 {font-size:1.88em !important;}
+		h2.bold,
+		desc h2,
+		desc h2.bold {font-size:20px;margin-top: 0px;}
+		.bold {
+			margin-left: 0;
+			margin-right: 0;
+			padding-bottom: 2px;
+			padding-top: 0;
+		}
+		.promoLearnMore,
+		.btn-acn, 
+		#custom-page-body .btn,
+		a.finance_link_login{
+		  max-width:100% !important;
+		}
+		.desc { border-top: 1px solid #dddddd; margin-bottom: 15px;}
+		.btn-acn {
+			margin-bottom: 0.02em;
+			width: 310px;
+		}
+		#asi_rac_offer_box{ text-align:center;}
+		#getFinancePromotions{text-align:center !important;}
 	}
 
 </style>
 <script>
-	$(function()
-	{
-		$.ajax(
-		{
+	$(function(){
+		$('#mvcSpinner').show();
+		$("#mvcSpinner").bind("ajaxSend", function() {
+			$(this).show();
+		}).bind("ajaxStop", function() {
+			$(this).hide();
+		}).bind("ajaxError", function() {
+			$(this).hide();
+		});
+		$.ajax({
 			url: '/shoppingcart/getfinancepromos',
 			type: 'GET',
-			success: function(data)
-			{
+			success: function(data){
 				$('#getFinancePromotions').html($(data).find('.accordion-inner').html());
 				$('.loading-content-spinner').css('display', 'none');
 				$('#getFinancePromotions ul').css(
