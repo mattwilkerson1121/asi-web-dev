@@ -1,4 +1,4 @@
-<!-- Updated: 11/15/2016 6:18pm !-->
+<!-- Updated: 11/10/2016 6:40pm !-->
 <div class="asi-container">
 
 	<h1 class="financeH1">Exclusive Financing Offers</h1>
@@ -352,14 +352,9 @@
 				$('#getFinancePromotions .desc br:eq(0)').remove();
 				$(".desc h2:eq(1)").before('<br><hr>');
 				$('#getFinancePromotions').append('<br><hr><br>');
-				if (!$(".desc h2:eq(2)"))
-				{
-					$(this).before('<br><hr>');
-				}
-				if (!$(".desc h2:eq(3)"))
-				{
-					$(this).before('<br><hr>');
-				}
+				$(".desc h2:eq(2)").before('<br><hr>');
+				$(".desc h2:eq(3)").before('<br><hr>');
+
 				if (document.domain.indexOf("valuecityfurniture") >= 0)
 				{
 					$('#getFinancePromotions .promoLearnMore').attr("href", "https://etail.mysynchrony.com/eapply/eapply.action?uniqueId=8CB36A8C70326D2A221171A5977AED15D0725C701F75AB68&amp;client=Value%20City%20Furniture");
