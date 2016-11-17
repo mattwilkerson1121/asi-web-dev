@@ -1,10 +1,10 @@
 <!-- Updated: 11/10/2016 6:40pm !-->
 <div class="asi-container">
 
-	<h1 class="financeH1">Exclusive Financing Offers</h1>
+	<h1 class="financeH1">Exclusive Financing<span class="hidden-sm hidden-xs"> Offers</span></h1>
 	<div class="col-md-12">
 		<a class="finance_link_apply" href="https://etail.mysynchrony.com/eapply/eapply.action?uniqueId=8CB36A8C70326D2A221171A5977AED15D0725C701F75AB68&client=Value%20City%20Furniture" target="_self">
-			<img id="finance-hero-img" class="img-responsive fr-dii fr-draggable" src="http://s7d4.scene7.com/is/image/ASF/FinancingHeader_ValuePlus?fmt=png" alt="Apply for your Plus Card Now!" style="padding-bottom:6px;border-bottom:1px solid #ddd;">
+			<img id="finance-hero-img" class="img-responsive" src="http://s7d4.scene7.com/is/image/ASF/FinancingHeader_ValuePlus?fmt=png" alt="Apply for your Plus Card Now!">
 		</a>
 	</div>
 	<hr>
@@ -18,7 +18,7 @@
 	<br class="hidden-xs">
 	<hr class="hidden-xs">
 	<div id="asi_rac_offer_box" style="max-width: 100%; background-color: #ffffff;padding-bottom:1em;margin-bottom:1em;">
-		<a name="ACNOffer"></a>&nbsp;<img class="img-responsive fr-dii fr-draggable" src="https://asf.scene7.com/is/image/ASF/90DayNoCredit_600x272-1?fmt=png" alt="exclusive AccepptanceNow offer - take 90 days to pay + No Credit Needed!" style="max-width: 100%; width: 0px;" height="272" border="0">
+		<a name="ACNOffer"></a>&nbsp;<img class="img-responsive" src="https://asf.scene7.com/is/image/ASF/90DayNoCredit_600x272-1?fmt=png" alt="exclusive AccepptanceNow offer - take 90 days to pay + No Credit Needed!" style="max-width: 100%; width: 0px;" height="272" border="0">
 		<br class="hidden-xs"><img class="img-responsive fr-dii fr-draggable" src="http://www.valuecityfurniture.com/shared/services/images/GetImage.ashx?FileId=362463&amp;Ext=png&amp;SizeId=0" alt="AcceptanceNow - Shop With Confidence" style="max-width: 100%;" border="0">
 
 		<h3 class="financeH3">No Credit Needed!</h3>
@@ -105,7 +105,7 @@
 	.financeH1,
 	h1.financeH1 {
 		font-family: 'Open Sans', sans-serif !important;
-		font-size: 34px !important;
+		font-size: 34px;
 		color: #4d4d4d !important;
 		font-weight: 600 !important;
 	}
@@ -249,10 +249,14 @@
 			max-width: 220px;
 		}
 		.financeH1,
-		h1.financeH1 {font-size:1.88em !important;}
+		h1.financeH1,
+		#custom-page-body h1 {font-size:24px !important;}
 		h2.bold,
 		desc h2,
-		desc h2.bold {font-size:20px;margin-top: 0px;}
+		desc h2.bold {
+			font-size:20px !important;
+			margin-top: 0px !important;
+		}
 		.bold {
 			margin-left: 0;
 			margin-right: 0;
@@ -320,8 +324,7 @@
 				{
 					attrs[attr.nodeName] = attr.nodeValue;
 				});
-				$("h4").replaceWith(function()
-				{
+				$("h4").replaceWith(function(){
 					return $("<h2 ></h2>", attrs).append($(this).contents());
 				});
 				$('#getFinancePromotions h2').css(
@@ -345,16 +348,34 @@
 				{
 					'color': '#6d6d6d',
 					'font-size': '1.125em',
-					'font-weight': 'normal',
-					'padding-top': '0px',
-					'margin-top': '0px'
+					'font-weight': 'normal'
 				});
 				$('#getFinancePromotions .desc br:eq(0)').remove();
 				$(".desc h2:eq(1)").before('<br><hr>');
 				$('#getFinancePromotions').append('<br><hr><br>');
 				$(".desc h2:eq(2)").before('<br><hr>');
 				$(".desc h2:eq(3)").before('<br><hr>');
-
+				if (matchMedia) {
+				  var mq = window.matchMedia("(min-width:769px)");
+					mq.addListener(WidthChange);
+					WidthChange(mq);
+				}
+				/* media query change */
+				function WidthChange(mq) {
+				  if (mq.matches) {
+					/* window width is at least 769px */
+					}else {
+						/* window width is less than 769px */
+						$("#custom-page-body p, #custom-page-body div, #custom-page-body span, custompage-body ul, #getFinancePromotions div, #getFinancePromotions ul, #getFinancePromotions p, #getFinancePromotions span, #getFinancePromotions h1, #getFinancePromotions h2, #getFinancePromotions h3").css({"display":"block","text-align":"center","margin-left":"auto","margin-right":"auto"})
+						$("#getFinancePromotions .btn, #custom-page-body .btn, #asi-acn-links .btn, #manage-my-card .btn").addClass("center-block").css({"width":"100%","max-width":"310px"});
+						$("getFinancePromotions .desc br:eq(1)").remove();
+						$(".asi-acn-links .btn");
+					$("#custom-page-body ul li").css({"padding-bottom":"12px","font-size":"14px","line-height":"18px"});
+						$(".acn-asterick").css({"font-size":"14px","padding-top":"10px","color":"#999999","font-weight":"600"});
+						/*$("#slide-nav").addClass("navbar-static-top");
+						$("#page-content").css("padding-top","0px !important");*/
+					}
+				}
 				if (document.domain.indexOf("valuecityfurniture") >= 0)
 				{
 					$('#getFinancePromotions .promoLearnMore').attr("href", "https://etail.mysynchrony.com/eapply/eapply.action?uniqueId=8CB36A8C70326D2A221171A5977AED15D0725C701F75AB68&amp;client=Value%20City%20Furniture");
