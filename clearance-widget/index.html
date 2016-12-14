@@ -22,15 +22,15 @@
   <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <script type="text/javascript" src="http://exclusives.vcf.com/scripts/slick/slick.min.js"></script>
   <script>
-	function getNavSliderSettings(){
-	  return {
-		asNavFor: '.category-items',
-		dots: false,
-		slidesToShow: 1,
-		slidesToScroll: 1,
-		arrows: true		
-		}
-	}
+  	function getNavSliderSettings(){
+  	  return {
+  		asNavFor: '.category-items',
+  		dots: false,
+  		slidesToShow: 1,
+  		slidesToScroll: 1,
+  		arrows: true		
+  		}
+  	}
 
     function getSliderSettings(){
       return {
@@ -69,7 +69,6 @@
             }
           }
         ]       
-
       }
     }    
 
@@ -95,13 +94,13 @@
             var imageType;
             var imageName; 
             var productNameLower = value.product_name.toLowerCase();
-            var productName = productNameLower.trim();//value.product_name.trim();
+            var productName = productNameLower.trim();
             var productDescription = value.description.trim(); 
             // if image does not exist, show no image found graphic
             if ((imagePath == "undefined")||(imagePath == undefined)) {
               var imagePath = "https://asf.scene7.com/is/image/ASF/noimage.jpg?hei=220&wid=220";
               var imagePathThumb = "https://asf.scene7.com/is/image/ASF/noimage.jpg?hei=100&wid=100";
-              var imagePathLarge = "https://asf.scene7.com/is/image/ASF/noimage.jpg?hei=250&wid=250";             
+              var imagePathLarge = "https://asf.scene7.com/is/image/ASF/noimage.jpg?hei=250&wid=250"             
             }
 
             else {
@@ -115,9 +114,9 @@
               }else{
                 // if index 0 image_type IS BPC use BPC
                 var imageName = imagePath.image_name;
-                var imagePath = "http://content.valuecityfurniture.com/ProductImages/0/"+imageName+'?fit=inside%7C220:220&composite-to=center,center%7C220:220&background-color=white';
-                var imagePathThumb = "http://content.valuecityfurniture.com/ProductImages/0/"+imageName+'?fit=inside%7C100:100&composite-to=center,center%7C100:100&background-color=white';
-                var imagePathLarge = "http://content.valuecityfurniture.com/ProductImages/0/"+imageName+'?fit=inside%7C250:250&composite-to=center,center%7C250:250&background-color=white';
+                var imagePath = "http://content.valuecityfurniture.com/ProductImages/2/"+imageName+'?fit=inside%7C220:220&composite-to=center,center%7C220:220&background-color=white';
+                var imagePathThumb = "http://content.valuecityfurniture.com/ProductImages/2/"+imageName+'?fit=inside%7C100:100&composite-to=center,center%7C100:100&background-color=white';
+                var imagePathLarge = "http://content.valuecityfurniture.com/ProductImages/1/"+imageName+'?fit=inside%7C250:250&composite-to=center,center%7C250:250&background-color=white';
               }
             }
             // test the output from API
@@ -170,8 +169,6 @@
         });
         // in AJAX calls remove current state of 'slick'
         // call the function to configure 'slick' again
-
-        // Example 2
         $('.category-items').slick('unslick');/*remove classes/handlers added on initialize*/
         $('.category-items').slick(getSliderSettings());/* Initialize the slick again */
 
