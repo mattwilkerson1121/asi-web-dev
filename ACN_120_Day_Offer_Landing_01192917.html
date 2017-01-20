@@ -18,7 +18,7 @@
 	</div>
 </div>	
 <div class="col-md-8">
- <a href="https://application.racacceptance.com/VANProxy/VendorLanding.aspx?partner=&quot;07beec&quot;" target="_self" class="finance_link_apply_rac" style="border-bottom:none !important;">
+ <a id="acn-link-apply" href="https://application.racacceptance.com/VANProxy/VendorLanding.aspx?partner=&quot;07beec&quot;" target="_self" class="finance_link_apply_rac" style="border-bottom:none !important;">
   <img src="http://s7d4.scene7.com/is/image/ASF/ACN_120DayFin_493x300?fmt=gif&amp;wid=600&amp;hei=320" alt="NO Credit Check 120 Day Payment Option Now Available" class="img-responsive" title="NO Credit Check 120 Day Payment Option Now Available" style="border-bottom:none !important;"> 
   </a>
 <div id="acn-offer-message" style="padding:15px 20px;"> 
@@ -45,10 +45,10 @@ valid until December 31, 2017.
 </p>
   <div class="row-fluid" style="margin-top:5%;margin-bottom:10%;">
  	<div class="col-md-4">             
- 		<a href="https://application.racacceptance.com/VANProxy/VendorLanding.aspx?partner=&quot;07beec&quot;" target="_self" class="acen-links"><b>Apply Now ›</b></a>
+ 		<a id="acn-link-apply" href="https://application.racacceptance.com/VANProxy/VendorLanding.aspx?partner=&quot;07beec&quot;" target="_self" class="acen-links"><b>Apply Now ›</b></a>
         </div>                
  	<div class="col-md-8" style="border-right:none !important;">
- 		<span class="asi_row_link_second"><a href="http://www.acceptancenow.com/RAC-Acceptance-FAQs.html" target="_self" class="acen-links"><b>Learn More About AcceptanceNOW ›</b></a></span>                
+ 		<span class="asi_row_link_second"><a id="acn-link-faq" href="http://www.acceptancenow.com/RAC-Acceptance-FAQs.html" target="_self" class="acen-links"><b>Learn More About AcceptanceNOW ›</b></a></span>                
  	</div>
  </div>
  <div class="clear clear-fix"></div>
@@ -226,3 +226,11 @@ text-decoration: none;
 #header-banner-page-element-1{ display:none !important;}
   </style>
 </div>
+<script type="text/javascript">
+	$("a#acn-link-apply").on("click", function(){
+		ga('send', 'event', 'outbound link', 'click', 'acn apply');
+	});
+	$("a#acn-link-faq").on("click", function(){
+		ga('send', 'event', 'outbound link', 'click', 'acn faq')
+	});
+</script>
