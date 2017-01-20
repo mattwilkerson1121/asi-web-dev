@@ -1,0 +1,228 @@
+<div id="custom-page-body" style="padding:0px 0px !important;">
+<link rel="stylesheet" type="text/css" href="https://cloud.typography.com/610400/6403752/css/fonts.css">
+<link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+<div class="asi-container">	
+<div class="asi-category-breadcrumbs" style="padding:5px 10px;">
+	<div id="asihawkbreadcrumb" class="hiddex-xs text-left">
+		<span itemtype="http://data-vocabulary.org/Breadcrumb" itemscope="">
+			<a itemprop="url" href="/">
+			<span itemprop="title" style="font-size:14px;color:#CC0000;">Home</span>
+			</a>
+		</span>
+		<span style="font-size:14px;color:#888;">&nbsp;|&nbsp;</span>
+		<span itemtype="http://data-vocabulary.org/Breadcrumb" itemscope="">
+			<a itemprop="url" href="/search/shop-all-furniture">
+			<span itemprop="title" style="font-size:14px;color:#6d6d6d;">Shop All Furniture</span>
+			</a>
+		</span>
+	</div>
+</div>	
+<div class="col-md-8">
+ <a href="https://application.racacceptance.com/VANProxy/VendorLanding.aspx?partner=&quot;07beec&quot;" target="_self" class="finance_link_apply_rac" style="border-bottom:none !important;">
+  <img src="http://s7d4.scene7.com/is/image/ASF/ACN_120DayFin_493x300?fmt=gif&amp;wid=600&amp;hei=320" alt="NO Credit Check 120 Day Payment Option Now Available" class="img-responsive" title="NO Credit Check 120 Day Payment Option Now Available" style="border-bottom:none !important;"> 
+  </a>
+<div id="acn-offer-message" style="padding:15px 20px;"> 
+<h1>New Year. New Offer.</h1>          
+<h2 style="margin-top:0 !important;">Exclusive, in-store finance option</h2>            
+<p>We've partnered with AcceptanceNOW to provide you with an exciting, exclusive offer&mdash;120-day Same as Cash payment option.   </p> 
+<br>              
+<p> 120-Day Same As Cash</p>
+<p>When you shop in-store between now and April 17, 2017, you simply select the merchandise and set up delivery, then we buy that item and lease it to you.
+<br><br>
+After that, the ease continues. Once you make the low, $79 down payment (Due at purchase), the next 120 days you...</p>
+<ul>                    
+<li>Pay as you go&mdash;make low monthly payments that fit your budget.</li>                    
+<li>Build your credit. Every on-time payment helps create a positive credit history.</li>                    
+<li>Get great service, at no extra charge. Enjoy your product, worry-free.</li>                    
+<li>Pay in person, by phone, or online. It's that easy.</li> 
+</ul>                           
+<br>
+<p>
+If, after 120 days, you have not yet paid off the lease, you have the exclusive use of ANOW Bucks, 
+allowing you to take 50% off a scheduled payment. You receive one ANOW Buck per agreement, 
+valid until December 31, 2017. 
+<br>
+</p>
+  <div class="row-fluid" style="margin-top:5%;margin-bottom:10%;">
+ 	<div class="col-md-4">             
+ 		<a href="https://application.racacceptance.com/VANProxy/VendorLanding.aspx?partner=&quot;07beec&quot;" target="_self" class="acen-links"><b>Apply Now ›</b></a>
+        </div>                
+ 	<div class="col-md-8" style="border-right:none !important;">
+ 		<span class="asi_row_link_second"><a href="http://www.acceptancenow.com/RAC-Acceptance-FAQs.html" target="_self" class="acen-links"><b>Learn More About AcceptanceNOW ›</b></a></span>                
+ 	</div>
+ </div>
+ <div class="clear clear-fix"></div>
+<br>
+<div class="row-fluid">         
+	<h4>Shop with Confidence</h4>
+    <p>No credit is needed and flexible payment plans are available, just pay as you go. Plus, enjoy the flexibility of knowing you can own your furniture at any time with our early purchase options.
+    <br><br>
+    *First month's payment due at time of purchase.</p>  <p></p>   
+    </div>  
+  </div>
+</div>
+<div class="col-md-4">          
+<h3>Contact Info</h3>            
+<h4>By Mail</h4>            
+<p>
+Acceptance Now<br>
+ATTN: Acceptance Now Customer Service<br>
+5501 Headquarters Dr <br>
+Plano, TX 75024 <br>
+</p>            
+<hr width="100%">            
+<h4>By Phone</h4>            
+<ul style="list-style:none;padding-left:0;">            
+<li><a href="tel:1-888-672-2411"><b>1-888-672-2411</b></a></li>
+</ul>            
+<p>
+<b>Monday - Friday:</b>
+<br>
+7:00am - 8:45pm cst
+<br>
+</p>
+<p style="padding-top:0.25rem;">
+<b>Saturday:</b><br>
+8:00am - 7:45pm cst<br>
+</p>
+<p style="padding-top:0.25rem;">
+<b>Sunday:</b> Closed</p>            
+ </div>
+</div>   
+<div class="clear clear-fix"></div>
+<script>
+$(function(){
+$(".page-body .col-xs-12:eq(0)").remove();
+if(document.domain.indexOf("americansignaturefurniture") >= 0){
+$('a.finance_link_apply_rac').attr('href','https://application.racacceptance.com/VANProxy/VendorLanding.aspx?partner="104c5e"');
+}
+});
+</script>
+       
+<style type="text/css">
+#pe-container-a5be8c40-4b0a-41f5-b56c-3b5b307961e0,
+#pe-container,
+.pe-container,
+#header-banner-page-element-1{ display:none !important; }
+section.page-body, #custom-page-body{padding-left:0;padding-right:0;}
+	section.page-body{border-top:1px solid #ddd;}
+		#custom-page-body{padding-top:0;}
+.asi-cp-hero{padding:0;margin:0;width:100%;}
+.asi-container, #custom-page-body .col-md-12{
+	padding-left:10px;
+	padding-right:10px;
+	padding-bottom:20px;
+	margin:0 auto;
+	text-align:center;
+	width:100%;
+	max-width:960px;
+}
+.asi-cp-hero{padding:0;margin:0;width:100%;}
+.asi-container, #custom-page-body .col-md-12{
+	padding-left:10px;
+	padding-right:10px;
+	margin:0 auto;
+	text-align:left;
+	width:100%;
+	max-width:960px;
+}
+
+
+#custom-page-body h1,
+.asi-cp-header {
+	font-family:"Open Sans",sans-serif !important;
+	color:#3a3a3b !important;
+	font-weight:400 !important;
+	font-size:30px;
+	margin-bottom:0 !important;
+}
+#custom-page-body h2,
+#custom-page-body h3,
+h3.section-heading,
+#custom-page-body h4,
+#custom-page-body h5,
+#custom-page-body h6{
+	font-family:"Open Sans",sans-serif !important;
+	color:#4d4d4d !important;
+	font-weight:400 !important;
+}
+#custom-page-body h1 { font-size:30px;letter-spacing:0.02em;}
+#custom-page-body h2 { font-size:28px;letter-spacing:0.02em;}
+#custom-page-body h3 { font-size:24px;letter-spacing:0.02em;}
+#custom-page-body h4 { font-size:20px;letter-spacing:0.02em;}
+#custom-page-body h5 { font-size:18px;letter-spacing:0.02em;}
+#custom-page-body h6 { font-size:16px;letter-spacing:0.02em;}
+#custom-page-body p,
+a.pname,
+#custom-page-body a.pname,ul,li,
+#custom-page-body a.sub-category-link,
+#custom-page-body a.sub-category-link span {
+  color: #6d6d6d !important;
+  font-family: "Open Sans",sans-serif !important;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 0 !important;
+  letter-spacing: 0.02em;
+  line-height:22px;
+}
+#custom-page-body a.sub-category-link span {
+	padding:0.5rem 5px;
+	max-width:100%;
+}
+#custom-page-body .sub-categories .col-md-4,
+#custom-page-body .sub-categories .col-sm-6{
+	padding-top:15px;
+}
+#custom-page-body a.sub-category-link,
+.sub-categories .sub-category-link { display: block !important;}
+#custom-page-body a.sub-category-link .img-wrapper,
+.sub-categories .sub-category-link .img-wrapper { min-height:150px !important;max-width:100% !important;}
+	.sub-categories .sub-category-link .img-wrapper img{vertical-align:middle !important;}
+.hflip, img.hflip {
+	-moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+    left:0 !important;
+    top:8% !important;
+}
+.asi-section{
+	padding:0;
+	margin:0 0 15px 0;
+	width:100%;
+	max-width:100%;
+}
+#custom-page-body h3.section-heading { margin-top:0;margin-bottom:1.1rem;}
+.knockout { 
+  	font-family: "Knockout 28 A", "Knockout 28 B", sans-serif !important;
+	font-style: normal !important;
+	font-weight: 400 !important;
+  	letter-spacing:0.0475em;
+  	color:#4d4d4d;
+}
+#custom-page-body h1.knockout {font-size:320%;}
+ #custom-page-body h2.knockout {font-size:300%;}
+  #custom-page-body h3.knockout,
+  #custom-page-body .sub-categories h3.knockout,
+  #custom-page-body .sub-categories h3 {
+  	font-size:290% !important;
+  	font-family: "Knockout 28 A", "Knockout 28 B", sans-serif !important;
+	font-style: normal;
+  	letter-spacing:0.0475em !important;
+  	font-weight:400;;
+  	color:#4d4d4d;
+  }
+  
+  .acen-links {
+	  font-family: "Open Sans", sans-serif;
+color: #6d6d6d;
+font-size: 1.5rem;
+margin: 0 auto;
+text-decoration: none;
+  }
+#custom-page-body { padding:0px 0px !important; }
+#header-banner-page-element-1{ display:none !important;}
+  </style>
+</div>
