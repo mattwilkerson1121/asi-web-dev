@@ -1,4 +1,4 @@
-<!-- Updated: 7/18/2016 11:40am !-->
+<!-- Updated: 1/26/2017 11:20am !-->
 <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/610400/6403752/css/fonts.css" />
 <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 <div class="asi-category-breadcrumbs" style="padding:5px 10px;">
@@ -16,7 +16,7 @@
 		</span>
 	</div>
 </div>
-<div class="col-md-12 asi-container">
+<div class="asi-container">
 	<h1 class="asi-cp-header text-capitalize text-left">Living Room Furniture</h1>
 	<p class="hidden-xs asi-cp-hero-lead text-left">Whether it's a loveseat for two or a sectional for the whole family, our amazing selection of living room furniture is sure to have the perfect size and style to fit your family's needs.</p>
 </div>
@@ -567,7 +567,7 @@ $.ajax({
 			var purl = $(this).find('url').text(); 
 			var pimage = $(this).find('image').text(); 
 			var pprice = $(this).find('price').text();
-			var pimageSrc = pimage.substring(2,12); 
+			var pimageSrc = $(this).find('image_url').text();
 		$('.category-items').append('<div class="col-lg-3 col-sm-6 col-xs-6 category-item"><a href="'+purl+'"><img src="http://content.valuecityfurniture.com/ProductImages/0/'+pimageSrc+'?fit=inside%7C250:250&composite-to=center,center%7C250:250&background-color=white" alt="'+pname+'" class="img-responsive center-block"></a><div itemtype="http://schema.org/Offer" itemscope="" itemprop="offers" class"product-price text-center"><span content="'+pprice+'" itemprop="price" style="font-size:20px;font-weight:600;color:#3a3a3b;letter-spacing:0.02em;text-align:center;padding:3px 0px 6px 0px;margin:0 auto;font-family:&lsquo;Open Sans&rsquo;,sans-serif;">$'+pprice+'</span></div><div class="itemPName text-capitalize text-center center-block"><a href="'+purl+'" class="pname"><span itemprop="name">'+pname+'</span></a></div></div>');
 		});
 	}
