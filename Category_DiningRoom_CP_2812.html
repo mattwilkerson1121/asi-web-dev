@@ -1,4 +1,4 @@
-<!-- Updated: 1/26/2017 11:25am !-->
+<!-- Updated: 1/26/2017 11:50am !-->
 <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/610400/6403752/css/fonts.css" />
 <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 <div class="asi-category-breadcrumbs" style="padding:5px 10px;">
@@ -78,7 +78,6 @@
 					var selectedOpt1 = $("#dr-select-1 option:selected").val();
 					var selectedOpt2 = $("#dr-select-2 option:selected").val();
 					var selectedOpt3 = $("#dr-select-3 option:selected").val();
-
 					var drSelections = '/search?portal_menu_level_1=1|Dining Room~257256&style_1='+selectedOpt1+'&finish_family_1='+selectedOpt2+'&table_shape_1='+selectedOpt3;
 					window.location = drSelections;
 				});
@@ -215,7 +214,6 @@
 section.page-body, #custom-page-body{padding-left:0;padding-right:0;}
 	section.page-body{border-top:1px solid #ddd;}
 		#custom-page-body{padding-top:0;}
-
 .asi-cp-hero{padding:0;margin:0;width:100%;}
 .asi-container, #custom-page-body .col-md-12{
 	padding-left:10px;
@@ -227,7 +225,6 @@ section.page-body, #custom-page-body{padding-left:0;padding-right:0;}
 }
 .asi-cp-hero,
 p.asi-cp-hero-lead{ margin-bottom:15px;}
-
 #asi-cp-hero-img {
 	max-width:100%;
 	margin:0 auto;
@@ -244,7 +241,6 @@ p.asi-cp-hero-lead{ margin-bottom:15px;}
 	bottom:0;
 	left:0
 }
-
 #custom-page-body h1,
 .asi-cp-header {
 	font-family:"Open Sans",sans-serif !important;
@@ -263,14 +259,12 @@ h3.section-heading,
 	color:#4d4d4d !important;
 	font-weight:400 !important;
 }
-
 #custom-page-body h1 { font-size:30px;letter-spacing:0.02em;}
 #custom-page-body h2 { font-size:28px;letter-spacing:0.02em;}
 #custom-page-body h3 { font-size:24px;letter-spacing:0.02em;}
 #custom-page-body h4 { font-size:20px;letter-spacing:0.02em;}
 #custom-page-body h5 { font-size:18px;letter-spacing:0.02em;}
 #custom-page-body h6 { font-size:16px;letter-spacing:0.02em;}
-
 #custom-page-body p,
 a.pname,
 #custom-page-body a.pname,
@@ -294,7 +288,6 @@ a.pname,
 }
 #custom-page-body a.sub-category-link,
 .sub-categories .sub-category-link { display: block !important;}
-
 #custom-page-body a.sub-category-link .img-wrapper,
 .sub-categories .sub-category-link .img-wrapper { min-height:200px !important;max-width:100% !important;}
 	.sub-categories .sub-category-link .img-wrapper img{vertical-align:middle !important;}
@@ -332,7 +325,6 @@ h2.archer {
 	background-size:cover;
 	min-height:360px;
 }
-
 .shop-by span {
   color: #6d6d6d;
   font-size: 18px;
@@ -355,7 +347,6 @@ h2.archer {
   	margin-right:auto; 
   }
     .shop-by .inline-btns ul.nav-center li { display: inline }
-
 	.shop-by .inline-btns .nav-pills li,
 	.shop-beds-by-size .inline-btns .nav-pills li + li { 
 		margin:4px 0px 4px 4px;
@@ -364,7 +355,6 @@ h2.archer {
 .shop-by .centered-pills ul.nav-pills { display:inline-block; }
 .shop-by .centered-pills li { display:inline; }
 .shop-by .centered-pills a { float:left; }
-
 #custom-page-body h3.section-heading { margin-top:0;margin-bottom:1.1rem;}
 .knockout { 
   	font-family: "Knockout 28 A", "Knockout 28 B", sans-serif !important;
@@ -424,7 +414,6 @@ a.btn-secondary:hover,
 a.btn-secondary:focus{
 	background-color:#da291c !important;
 }
-
 #hawkbreadcrumb {
   color: #6d6d6d;
   font-family: "Open Sans",sans-serif !important;
@@ -432,7 +421,6 @@ a.btn-secondary:focus{
   letter-spacing: 0.02em !important;
   padding:10px 0px 15px 0px;
 }
-
 #hawkbreadcrumb a,
 #hawkbreadcrumb span a{
     font-family: "Open Sans",sans-serif !important;
@@ -467,12 +455,9 @@ a.btn-secondary:focus{
 .category-items span,
 .category-items a,
 .category-items div{font-family:"Open Sans", sans-serif!important;}
-
 .featured .col-md-7 {padding:15px 25px !important;}
 .featured p {padding:5px 15px;}
-
 .fa { line-height:1.2 !important;}
-
 @media screen and (max-width: 767px){
 #asi-cp-hero-bar-sm{
 	position:relative;
@@ -618,7 +603,7 @@ $.ajax({
 			var purl = $(this).find('url').text(); 
 			var pimage = $(this).find('image').text(); 
 			var pprice = $(this).find('price').text();
-			var pimageSrc = $(this).find('image_url').text(); 
+			var pimageSrc = $(this).find('image_url').text();
 		$('.category-items').append('<div class="col-lg-3 col-sm-6 col-xs-6 category-item"><a href="'+purl+'"><img src="http://content.valuecityfurniture.com/ProductImages/0/'+pimageSrc+'?fit=inside%7C250:250&composite-to=center,center%7C250:250&background-color=white" alt="'+pname+'" class="img-responsive center-block"></a><div itemtype="http://schema.org/Offer" itemscope="" itemprop="offers" class"product-price text-center"><span content="'+pprice+'" itemprop="price" style="font-size:20px;font-weight:600;color:#3a3a3b;letter-spacing:0.02em;text-align:center;padding:3px 0px 6px 0px;margin:0 auto;font-family:&lsquo;Open Sans&rsquo;,sans-serif;">$'+pprice+'</span></div><div class="itemPName text-capitalize text-center center-block"><a href="'+purl+'" class="pname"><span itemprop="name">'+pname+'</span></a></div></div>');
 		});
 	}
@@ -641,9 +626,7 @@ $.ajax({
       imgDiv.innerHTML = postContent;
       var postImage = imgDiv.getElementsByTagName('img')[0];
       var postImgSrc = postImage ? postImage.getAttribute("src") : "";
-
       $("#blog-feed").prepend('<div class="panel panel-default blog-panel" style="box-shadow:none;margin-top:0;margin-bottom:0;margin-left:0.375em;margin-right:0.75em;"><div class="panel-body blog-panel-body"><a href="'+postLink+'" target="_blank" class="thumbnail" style="padding-bottom:15px;"><img src="'+postImgSrc+'" class="img-responsive center-block"><h4>'+postTitle+'</h4><p style="padding:0px 10px;font-size:14px;">'+postLead+'...<span style="color:#cc0000;">read more</span></p></a></div></div>');
-
     }
   },
   error : function (data){
@@ -653,27 +636,4 @@ $.ajax({
 </script>
 <script type="text/javascript">
 $('#custom-page-body a').on('click', function(event){  var eventCategory = "click"; var ePosition = $(this).attr('data-position');  var eAction = this.text;  var eLabel = this.href+':pos='+ePosition;  if(!eAction){  var eAction = $(this).find('img').attr('alt');  } console.log('event: '+eventCategory+' | action: '+eAction+' | label: '+eLabel); ga('send', {  hitType: 'event', eventCategory: 'click', eventAction: eAction, eventLabel: eLabel  })});
-</script>
-<script type="text/javascript">
-window.monetateQ = window.monetateQ || [];
-window.monetateQ.push([
- "setPageType",
- "category"
-]);
-window.monetateQ.push([
- "addCategories",
- ["dining-room, dining"]
-]);
-window.monetateQ.push([
- "trackData"
-]);
-</script>
-<script type="text/javascript">
-(function(w,d,s,sr,c){
-  w[sr]=w[sr]||[];
-  var f=d.getElementsByTagName(s)[0],j=d.createElement(s);
-  j.async=true;
-  j.src= d.location.protocol+'//d1n00d49gkbray.cloudfront.net/js/'+c+'.js';
-  f.parentNode.insertBefore(j,f);
-})(window,document,'script','_smtr','valuecity')
 </script>
