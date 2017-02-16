@@ -1,4 +1,4 @@
-<!-- Updated: 1/26/2017 11:52am !-->
+<!-- Updated: 2/16/2017 09:12am -->
 <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/610400/6403752/css/fonts.css" />
 <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
 <div class="asi-category-breadcrumbs" style="padding:5px 10px;">
@@ -552,6 +552,9 @@ if(siteDomain.indexOf("valuecityfurniture.com") >= 1){
 	var blogFeed = "http://www.valuecityfurniture.com/blog/space-planning-tips/bedroom/feed/";
 }else{
 	var blogFeed = "http://www.americansignaturefurniture.com/blog/space-planning-tips/bedroom/feed/";
+    $('#custom-page-body a').each(function(){
+  		$(this).attr('href', $(this).attr('href').replace('v/','a/'));
+	});	
 }
 $("section.page-body .clear:eq(0), section.page-body .clear:eq(1), section.page-body .col-xs-12:eq(0)").css("display","none").remove();
 $('.sub-category-link span').append('<i class="fa fa-angle-right hidden-xs" aria-hidden="true" style="margin-left:6px;"></i>');
