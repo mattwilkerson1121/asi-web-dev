@@ -1,4 +1,5 @@
-<!-- Updated: 9/12/2016 2:30pm !-->
+
+<!-- Updated: 3/2/2017 10:25am !-->
 <script src="https://www.youtube.com/iframe_api" type="text/javascript"></script>  
 <link href="https://cloud.typography.com/610400/6403752/css/fonts.css" type="text/css" rel="stylesheet">
 <link type="text/css" rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
@@ -259,6 +260,7 @@ Now pick your foundation</h3>
 		</div>
 	</div>
     <div class="clear clearfix"></div>  
+    <!--
     <div data-category="mattress" data-module="category-content" class="section asi-section" style="margin-top:2.5em;">
         <h3 class="section-heading text-center text-capitalize">
             Get Inspired With Tips, Ideas &amp; Advice 
@@ -266,6 +268,7 @@ Now pick your foundation</h3>
         <div id="blog-feed" class="row blog-content-row"></div>
     	<div class="clear clearfix"></div>
     </div>
+    !-->
 </div><!-- end: asi-container -->
 <style type="text/css">
 #pe-container-a5be8c40-4b0a-41f5-b56c-3b5b307961e0,
@@ -433,14 +436,12 @@ h2.archer {
 	background-color:#7a99ac !important;
 	color:#f5f5f5 !important;
 }
-
 .shop-by[data-module="shop-mattresses-by-size-module"]{
 	background:url('https://asf.scene7.com/is/image/ASF/Matt-by-Size_940x480.jpg') bottom center no-repeat;
 }
 .shop-by[data-module="shop-mattresses-by-size-module"] .btn-default{
 	background-color:#54585a;
 }
-
 .shop-by[data-module="shop-mattresses-by-size-module"] .btn-default:hover,
 .shop-by[data-module="shop-mattresses-by-size-module"] .btn-default:focus,
 .shop-by[data-module="shop-mattresses-by-size-module"] li a:hover,
@@ -450,7 +451,6 @@ h2.archer {
 	background-color:#7a99ac !important;
 	color:#f5f5f5 !important;
 }
-
 .shop-by .inline-btns {
 	text-align: center;
 	width:100%; 
@@ -535,7 +535,6 @@ a.btn-secondary:focus{
 .asi-video-container{
 	margin-top:25px;
 }
-
 #asihawkbreadcrumb {
   color: #6d6d6d;
   font-family: "Open Sans",sans-serif !important;
@@ -570,7 +569,6 @@ a.btn-secondary:focus{
 	padding:0.5rem auto;
 	color:#3a3a3b !important;
 }
-
 .accessories{
 	margin:3rem 0 !important;
 	color:#6d6d6d;
@@ -589,7 +587,6 @@ a.btn-secondary:focus{
   letter-spacing: 0.026em;
   font-family: "Open Sans",sans-serif;
 }
-
 .category-items span,
 .category-items a,
 .category-items div{font-family:"Open Sans", sans-serif!important;}
@@ -761,6 +758,7 @@ $.ajax({
 		});
 	}
 });
+/*
 $.ajax({
   url: 'https://ajax.googleapis.com/ajax/services/feed/load?v=1.0&num=9&callback=?&q=' + encodeURIComponent(blogFeed),
   dataType : 'json',
@@ -786,7 +784,16 @@ $.ajax({
   	alert("error: "+data);
   }
 });
+*/
 </script>
 <script type="text/javascript">
-$('#custom-page-body a').on('click', function(event){  var eventCategory = "click"; var ePosition = $(this).attr('data-position');  var eAction = this.text;  var eLabel = this.href+':pos='+ePosition;  if(!eAction){  var eAction = $(this).find('img').attr('alt');  } ga('send', {  hitType: 'event', eventCategory: 'click', eventAction: eAction, eventLabel: eLabel  })});
+$('#custom-page-body a').on('click', function(event){  
+	var eventCategory = "click"; 
+	var ePosition = $(this).attr('data-position');  
+	var eAction = this.text;  var eLabel = this.href+':pos='+ePosition;  
+	if(!eAction){  
+		var eAction = $(this).find('img').attr('alt');  
+	}
+	ga('send', {  hitType: 'event', eventCategory: 'click', eventAction: eAction, eventLabel: eLabel  })
+});
 </script>
