@@ -10,7 +10,7 @@ import simplejson as json
 import pysftp
 import argparse
 
-# Control what which channel 
+# Control which channel 
 parser = argparse.ArgumentParser(description='Salsify -> Shoptelligence - Feed Generator')
 parser.add_argument('-d', help='"single" or "full"', required=True)
 args = vars(parser.parse_args())
@@ -117,9 +117,11 @@ if args['d'] != None:
 		# Write to file
 		with open(fullpathJSON, 'w') as f:
 		    f.write(j)
-		    print "JSON File Created: " + str(fullpathJSON) + " Filesize: " + fileSize(fullpathJSON)
+		    print "JSON File Created: " + str(fullpathJSON) + " Filesize: " + fileSize(fullpathJSON) + "\n"
 		    w.write("\n")
 		    w.write("JSON File Created: " + str(fullpathJSON) + " Filesize: " + str(fileSize(fullpathJSON)))
+		    w.write("\n")
+		    w.write("\n")
 	else: 
 		# Something went wrong output debug
 		print "Status was %s, Something Wrong" % r.status_code
@@ -141,6 +143,15 @@ with pysftp.Connection(host='sandbox.shoptelligence.com', username='asi', passwo
 	# set upload directory
 	with sftp.cd('/upload'):
 
+		# upload xlsx File
+		print "SFTP Upload Started: " + str(filenameXLSX) + " Filesize: " + str(fileSizeXLSX)
+		w.write("SFTP Upload Started: " + str(filenameXLSX) + " Filesize: " + str(fileSizeXLSX))
+		w.write("\n")			
+		sftp.put(fullpathXLSX, preserve_mtime=True)
+		print "SFTP Upload finished: upload/%s\n" % filenameXLSX
+		w.write("SFTP Upload finished: upload/" + str(filenameXLSX))
+		w.write("\n")		
+
 		# upload JSON file
 		fileSizeJSON = fileSize(fullpathJSON)
 		print "SFTP Upload Started: " + str(filenameJSON) + " Filesize: " + str(fileSizeJSON)
@@ -149,17 +160,7 @@ with pysftp.Connection(host='sandbox.shoptelligence.com', username='asi', passwo
 		w.write("\n")	
 		sftp.put(fullpathJSON, preserve_mtime=True)
 		print "SFTP Upload finished: upload/%s" % filenameJSON
-		w.write("SFTP Upload finished: upload/" + str(filenameJSON))	
-		w.write("\n")	
-
-		# upload xlsx File
-		print "SFTP Upload Started: " + str(filenameXLSX) + " Filesize: " + str(fileSizeXLSX)
-		w.write("SFTP Upload Started: " + str(filenameXLSX) + " Filesize: " + str(fileSizeXLSX))
-		w.write("\n")			
-		sftp.put(fullpathXLSX, preserve_mtime=True)
-		print "SFTP Upload finished: upload/%s" % filenameXLSX
-		w.write("SFTP Upload finished: upload/" + str(filenameXLSX))
-		w.write("\n")
+		w.write("SFTP Upload finished: upload/" + str(filenameJSON))
 
 		# close the file
 		w.close()
