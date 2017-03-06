@@ -1,3 +1,16 @@
+'''
+# insert a new cronttab
+env EDITOR=nano crontab -e
+
+# configure virtualenv, cd into project, run script
+* * * * * source ../jwells/Sites/bin/activate ; cd ../../../Applications/MAMP/htdocs/shoptelligence ; python shoptelligence-xls-to-json.py -d single
+* * * * * source ../jwells/Sites/bin/activate ; cd ../../../Applications/MAMP/htdocs/shoptelligence ; python shoptelligence-xls-to-json.py -d full
+
+# check running crontabs
+contab -l
+
+'''
+
 import requests
 import os
 import sys
