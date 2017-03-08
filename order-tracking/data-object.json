@@ -1,0 +1,69 @@
+{
+	"orderTracking": {
+		"customer": {
+			"firstName": "Carol",
+			"lastName": "King",
+			"customerNumber": 28664593,
+			"customerEmail": "knicks587587544874587@gmail.com",
+			"customerPhoneNumber": 3000000000,
+			"order": {
+				"trackingNumber": 852046156947380,
+				"alerts": {
+					"sendAlertsPrior": "30 Minutes",
+					"sendAlertsVia": "Email"
+				},
+				"invoiceTotal": 1069.95,
+				"orderDate": "01/05/2017",
+				"orderType": "delivery",
+				"deliveryDate": "01/13/2016",
+				"deliveryTime": "Not Scheduled",
+				"deliveryInstructions": "Leave it on the doorstep and get out of here.",
+				"driver": "Not Assigned",
+				"deliveryName": "Carol King",
+				"deliveryAddress": "2249 W Something Street",
+				"deliveryCity": "Jacksonville",
+				"deliveryState": "FL",
+				"deliveryZip": 32209,
+				"sellingStore": "{Store Name}|{Online Domain}",
+				"deliveryStore": "Jacksonville",
+				"deliveryStoreNumber": 416,
+				"orderItems" : [
+					{
+					"sku": 1674005,
+					"itemName": "Pure Promise",
+					"quantity": 1,
+					"status": "Your furniture is at the warehouse"
+					},
+					{
+					"sku": 1719688,
+					"itemName": "Queen Mattress - Rejuvenate",
+					"quantity": 1,
+					"status": "Your furniture is at the warehouse",
+					"package": 
+						{
+							"packageSku": 1730312,
+							"packageQty": 1
+						}
+					},
+					{
+					"sku": 1729764,
+					"itemName": "Queen Boxspring - Charcoal",
+					"quantity": 1,
+					"status": "Your furniture is at the warehouse",
+					"package": 
+						{
+							"packageSku": 1730312,
+							"packageQty": 1
+						}
+					},	
+					{
+					"sku": 1770128,
+					"itemName": "Queen Upholtered Bed - Loft Brown",
+					"quantity": 1,
+					"status": "Your furniture is at the warehouse"
+					}													
+				]
+			}		
+		}
+	}
+}
