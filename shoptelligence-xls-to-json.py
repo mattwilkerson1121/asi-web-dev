@@ -3,8 +3,13 @@
 env EDITOR=nano crontab -e
 
 # configure virtualenv, cd into project, run script
+<<<<<<< HEAD
 30 9 * * * source ../jwells/Sites/bin/activate ; cd ../../../Applications/MAMP/htdocs/shoptelligence ; python shoptelligence-xls-to-json.py -d single
 30 9 * * * source ../jwells/Sites/bin/activate ; cd ../../../Applications/MAMP/htdocs/shoptelligence ; python shoptelligence-xls-to-json.py -d full
+=======
+* * * * * source ../jwells/Sites/bin/activate ; cd ../../../Applications/MAMP/htdocs/shoptelligence ; python shoptelligence-xls-to-json.py -d single
+* * * * * source ../jwells/Sites/bin/activate ; cd ../../../Applications/MAMP/htdocs/shoptelligence ; python shoptelligence-xls-to-json.py -d full
+>>>>>>> origin/master
 
 # check running crontabs
 contab -l
