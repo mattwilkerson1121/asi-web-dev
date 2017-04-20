@@ -63,12 +63,12 @@
 					<span class="text-center center-block" style="font-size:18px;line-height:2.25em;color:#ffffff !important;">with a 
 					<select class="form-control" style="cursor:pointer;width:auto;display:inline;padding:0px 4px;background:white;color:#6d6d6d;font-size:16px;height:30px;" id="dr-select-2">
 						<option value="Dark Brown~226472">Dark Brown</option>
-						<option value="Light Brown~226473">Light Brown</span></option>
+						<option value="Light Brown~226473">Light Brown</option>
 						<option value="Black~226470">Black</option>
 						<option value="White~226478">White</option>
 						<option value="Gray~226477">Gray</option>
 					</select>
-					color and a&nbsp;&nbsp;
+					&nbsp;&nbsp;color and a&nbsp;&nbsp;
 					<select class="form-control" style="cursor:pointer;width:auto;display:inline;padding:0px 4px;background:white;color:#6d6d6d;font-size:16px;height:30px;" id="dr-select-3">
 						<option value="Rectangle~247648">Rectangle</option>
 						<option value="Round~247649">Round</option>
@@ -83,7 +83,7 @@
 					var selectedOpt1 = $("#dr-select-1 option:selected").val();
 					var selectedOpt2 = $("#dr-select-2 option:selected").val();
 					var selectedOpt3 = $("#dr-select-3 option:selected").val();
-					var drSelections = '/search?portal_menu_level_1=1|Dining Room~257256&style_1='+selectedOpt1+'&finish_family_1='+selectedOpt2+'&table_shape_1='+selectedOpt3;
+					var drSelections = '/search/v/dining-room?portal_menu_level_1_1=Dining~257256&style_1='+selectedOpt1+'&finish_family_1='+selectedOpt2+'&table_shape_1='+selectedOpt3;
 					window.location = drSelections;
 				});
 			</script>
@@ -155,7 +155,7 @@
     </div>
     <div class="container">
     <div class="section asi-section free-shipping" data-module="free-shipping-module" data-category="dining-room" style="margin-top:30px;">
-		<a target="_self" href="/search/free-shipping?portal_menu_level_1=1|Dining Room~257256" data-position="4">
+		<a target="_self" href="/search/free-shipping?portal_menu_level_1_1=Dining~257256" data-position="4">
 		<img src="https://asf.scene7.com/is/image/ASF/FreeShipping_Banner_V4_960?qlt=87,1" alt="free shipping on select items" class="img-responsive hidden-xs">
 		<img src="https://asf.scene7.com/is/image/ASF/FreeShipping_Banner_V4_768?qlt=84,1" alt="free shipping on select items" class="img-responsive visible-xs">
 		</a>
@@ -195,7 +195,6 @@
     		</div>
     	</div>-->
     	<div class="clear clearfix"><!-- clear div fix --></div>
-	</div>
 	<!--<hr style="color:#dddd;margin-top:30px;margin-bottom:30px;" class="hidden-xs">-->
     <div class="section asi-section" data-module="category-content" data-category="dining-room">
         <!-- Google RSS service broken, comment out till fix;
