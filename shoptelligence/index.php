@@ -33,6 +33,20 @@
 	#pe-container-a5be8c40-4b0a-41f5-b56c-3b5b307961e0 { 
 	    display:none !important; 
 	}	
+
+    h3.featuredHeadline {
+        font-size:1.4em;
+        font-family: "Knockout-HTF29-JuniorLiteweight", "ProximaNova-Semibold", sans-serif;
+        position: ;
+        margin:0 auto;
+        padding:0 0;
+        letter-spacing:1.5px;
+        text-transform:uppercase;
+        text-align:center;
+        color:#181818;
+        line-height:1;
+        margin-top:10%;
+    }	
 </style>
 <div class="asi-section-content asi-section section" id="asi-mix-browse-style" style="padding: 10px 0px 0px 0px;">
 <div class="container asi-container">
@@ -63,7 +77,7 @@
 
 <div class="row" id="ens1">
 <div class="col-md-3 col-sm-3" style="text-align: center;"><!-- Anchor Item Space-->
-<h4 id="featuredHeadline">Design a room around this item:</h4>
+<h3 class="featuredHeadline">Design a room around this item</h3>
 <img alt="" class="img-responsive center-block featureImg" data-iid="" src="https://placeholdit.imgix.net/~text?txtsize=30&amp;bg=ffffff&amp;txtclr=000000&amp;w=320&amp;h=320" />
 <h4>HOW TO MIX</h4>
 
@@ -97,7 +111,7 @@
 
 <div class="row" id="ens2">
 <div class="col-md-3 col-sm-4" style="text-align: center;"><!-- Anchor Item Space-->
-<h4 id="featuredHeadline">Design a room around this item:</h4>
+<h3 class="featuredHeadline">Design a room around this item</h3>
 <img alt="" class="img-responsive center-block featureImg" data-iid="" src="https://placeholdit.imgix.net/~text?txtsize=30&amp;bg=ffffff&amp;txtclr=000000&amp;w=320&amp;h=320" />
 <h4>HOW TO MIX</h4>
 
@@ -131,7 +145,7 @@
 
 <div class="row" id="ens3">
 <div class="col-md-3 col-sm-4" style="text-align: center;"><!-- Anchor Item Space-->
-<h4 id="featuredHeadline">Design a room around this item:</h4>
+<h3 class="featuredHeadline">Design a room around this item</h3>
 <img alt="" class="img-responsive center-block featureImg" data-iid="" src="https://placeholdit.imgix.net/~text?txtsize=30&amp;bg=ffffff&amp;txtclr=000000&amp;w=320&amp;h=320" />
 <h4>HOW TO MIX</h4>
 
@@ -165,7 +179,7 @@
 
 <div class="row" id="ens4">
 <div class="col-md-3 col-sm-4" style="text-align: center;"><!-- Anchor Item Space-->
-<h4 id="featuredHeadline">Design a room around this item:</h4>
+<h3 class="featuredHeadline">Design a room around this item</h3>
 <img alt="" class="img-responsive center-block featureImg" data-iid="" src="https://placeholdit.imgix.net/~text?txtsize=30&amp;bg=ffffff&amp;txtclr=000000&amp;w=320&amp;h=320" />
 <h4>HOW TO MIX</h4>
 
