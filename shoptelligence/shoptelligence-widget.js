@@ -117,14 +117,16 @@
 					//console.log("articleKeysArray below: ");
 					//console.log(articleKeysArray);
 					// get the button
-					var itemRepalceButton = $(this);
+					var itemReplaceButton = $(this);
+
+					console.log("itemReplaceButton: "+itemReplaceButton);
 
 					var removeItem = $(this).attr("data-iid");
 					var removeItemArtKey = $(this).attr('data-artKeyIndex');
 					console.log("removeItem: "+removeItem+ " removeItemArtKey: "+removeItemArtKey);
 	
 					// find the element to replace selector
-					var itemReplace = "#"+$('div[id^=ens]:visible').attr('id')+" div#"+$(this).parent().parent().attr("id")+" img";
+					var itemReplace = "#"+$('div[id^=ens]:visible').attr('id')+" div#"+$(this).parent().parent().parent().attr("id")+" img";
 					console.log("itemReplace: "+itemReplace);
 					// swap with a temporary image
 					$(itemReplace).attr('src', 'https://placeholdit.imgix.net/~text?txtsize=30&bg=ffffff&txtclr=000000&txt=Next+Item+Coming+Up&w=320&h=320');
@@ -137,153 +139,60 @@
 						console.log(articleKeysArray0);		
 						// make the item replacement call
 						var url = "http://shopvcf.com/asiapi/shoptelligence_api_prod.php?items="+articleKeysArray0;
-						console.log(url);	
-
-						$.ajax({
-							method:"GET",
-							dataType: "json",
-							url: url,
-							success: function(data) {
-								console.log(data);
-
-								var replaceImgURL = data[1].ensemble[ensindex].image_url+"?impolicy=product-320x320";
-								//console.log(replaceImgURL);
-								var cKeyOrder = data[1].ensemble[ensindex].canvas_key_order;
-								var swatchImgURL = data[1].ensemble[ensindex].swatch_image_url;
-								var new_item_id = data[1].ensemble[ensindex].item_id;
-								//console.log(item_id);
-								var product_id = data[1].ensemble[ensindex].product_id;
-								//console.log(product_id);
-								var pdpURLreplace = 'http://www.valuecityfurniture.com/product/item/'+product_id;
-								console.log(pdpURLreplace);	
-								// replace the placeholder image, with replacement item
-								$(itemReplace).attr('src', replaceImgURL);	
-								// replace link
-								console.log(itemReplaceLink);
-								$(itemRepalceButton).attr('data-iid', new_item_id);
-								$(itemReplaceLink).attr('href', pdpURLreplace);	
-
-								// replace the new item back into the array to keep it up to date
-								articleKeysArray0.splice(removeItemArtKey, 0, new_item_id);
-								console.log(articleKeysArray0);
-
-							},
-						});																		
+						console.log(url);																	
 					}	
 					else if ($(this).attr('data-ens') == 1) {
 						articleKeysArray1.splice(removeItemArtKey, 1);
 						console.log("articleKeysArray after removing specific index: ");
 						console.log(articleKeysArray1);	
 						var url = "http://shopvcf.com/asiapi/shoptelligence_api_prod.php?items="+articleKeysArray1;
-						console.log(url);	
-
-						$.ajax({
-							method:"GET",
-							dataType: "json",
-							url: url,
-							success: function(data) {
-								console.log(data);
-
-								var replaceImgURL = data[1].ensemble[ensindex].image_url+"?impolicy=product-320x320";
-								//console.log(replaceImgURL);
-								var cKeyOrder = data[1].ensemble[ensindex].canvas_key_order;
-								var swatchImgURL = data[1].ensemble[ensindex].swatch_image_url;
-								var new_item_id = data[1].ensemble[ensindex].item_id;
-								//console.log(item_id);
-								var product_id = data[1].ensemble[ensindex].product_id;
-								//console.log(product_id);
-								var pdpURLreplace = 'http://www.valuecityfurniture.com/product/item/'+product_id;
-								console.log(pdpURLreplace);	
-								// replace the placeholder image, with replacement item
-								$(itemReplace).attr('src', replaceImgURL);	
-								// replace link
-								console.log(itemReplaceLink);
-								$(itemRepalceButton).attr('data-iid', new_item_id);
-								$(itemReplaceLink).attr('href', pdpURLreplace);	
-
-								// replace the new item back into the array to keep it up to date
-								articleKeysArray1.splice(removeItemArtKey, 0, new_item_id);
-								console.log(articleKeysArray1);
-
-							},
-						});																			
+						console.log(url);																			
 					}
 					else if ($(this).attr('data-ens') == 2) {
 						articleKeysArray2.splice(removeItemArtKey, 1);
 						console.log("articleKeysArray after removing specific index: ");
 						console.log(articleKeysArray2);	
 						var url = "http://shopvcf.com/asiapi/shoptelligence_api_prod.php?items="+articleKeysArray2;
-						console.log(url);		
-
-						$.ajax({
-							method:"GET",
-							dataType: "json",
-							url: url,
-							success: function(data) {
-								console.log(data);
-
-								var replaceImgURL = data[1].ensemble[ensindex].image_url+"?impolicy=product-320x320";
-								//console.log(replaceImgURL);
-								var cKeyOrder = data[1].ensemble[ensindex].canvas_key_order;
-								var swatchImgURL = data[1].ensemble[ensindex].swatch_image_url;
-								var new_item_id = data[1].ensemble[ensindex].item_id;
-								//console.log(item_id);
-								var product_id = data[1].ensemble[ensindex].product_id;
-								//console.log(product_id);
-								var pdpURLreplace = 'http://www.valuecityfurniture.com/product/item/'+product_id;
-								console.log(pdpURLreplace);	
-								// replace the placeholder image, with replacement item
-								$(itemReplace).attr('src', replaceImgURL);	
-								// replace link
-								console.log(itemReplaceLink);
-								$(itemRepalceButton).attr('data-iid', new_item_id);
-								$(itemReplaceLink).attr('href', pdpURLreplace);	
-
-								// replace the new item back into the array to keep it up to date
-								articleKeysArray2.splice(removeItemArtKey, 0, new_item_id);
-								console.log(articleKeysArray2);
-
-							},
-						});																		
+						console.log(url);									
 					}		
 					else if ($(this).attr('data-ens') == 3) {
 						articleKeysArray3.splice(removeItemArtKey, 1);
 						console.log("articleKeysArray after removing specific index: ");
 						console.log(articleKeysArray3);				
 						var url = "http://shopvcf.com/asiapi/shoptelligence_api_prod.php?items="+articleKeysArray3;
-						console.log(url);	
+						console.log(url);										
+					}
 
-						$.ajax({
-							method:"GET",
-							dataType: "json",
-							url: url,
-							success: function(data) {
-								console.log(data);
+					$.ajax({
+						method:"GET",
+						dataType: "json",
+						url: url,
+						success: function(data) {
+							console.log(data);
 
-								var replaceImgURL = data[1].ensemble[ensindex].image_url+"?impolicy=product-320x320";
-								//console.log(replaceImgURL);
-								var cKeyOrder = data[1].ensemble[ensindex].canvas_key_order;
-								var swatchImgURL = data[1].ensemble[ensindex].swatch_image_url;
-								var new_item_id = data[1].ensemble[ensindex].item_id;
-								//console.log(item_id);
-								var product_id = data[1].ensemble[ensindex].product_id;
-								//console.log(product_id);
-								var pdpURLreplace = 'http://www.valuecityfurniture.com/product/item/'+product_id;
-								console.log(pdpURLreplace);	
-								// replace the placeholder image, with replacement item
-								$(itemReplace).attr('src', replaceImgURL);	
-								// replace link
-								console.log(itemReplaceLink);
-								$(itemRepalceButton).attr('data-iid', new_item_id);
-								$(itemReplaceLink).attr('href', pdpURLreplace);	
+							var replaceImgURL = data[1].ensemble[ensindex].image_url+"?impolicy=product-320x320";
+							//console.log(replaceImgURL);
+							var cKeyOrder = data[1].ensemble[ensindex].canvas_key_order;
+							var swatchImgURL = data[1].ensemble[ensindex].swatch_image_url;
+							var new_item_id = data[1].ensemble[ensindex].item_id;
+							//console.log(item_id);
+							var product_id = data[1].ensemble[ensindex].product_id;
+							//console.log(product_id);
+							var pdpURLreplace = 'http://www.valuecityfurniture.com/product/item/'+product_id;
+							console.log(pdpURLreplace);	
+							// replace the placeholder image, with replacement item
+							$(itemReplace).attr('src', replaceImgURL);	
+							// replace link
+							console.log(itemReplaceLink);
+							$(itemReplaceButton).attr('data-iid', new_item_id);
+							$(itemReplaceLink).attr('href', pdpURLreplace);	
 
-								// replace the new item back into the array to keep it up to date
-								articleKeysArray3.splice(removeItemArtKey, 0, new_item_id);
-								console.log(articleKeysArray3);
+							// replace the new item back into the array to keep it up to date
+							//articleKeysArray0.splice(removeItemArtKey, 0, new_item_id);
+							//console.log(articleKeysArray0);
 
-							},
-						});																
-					}					
+						},
+					});							
 				});	
 
 				// Click handler for add to cart call
@@ -303,9 +212,6 @@
 					     url: document.location.protocol+"//www.valuecityfurniture.com/api/shoppingcart/add",
 					     type: "GET",
 					     data: data,
-					    /* beforeSend: function(xhr){
-					     	xhr.setRequestHeader("Access-Control-Allow-Origin", "*");
-					     },*/
 					     success: function(data) { 
 					     },
 					     error: function(data) {
@@ -323,11 +229,6 @@
 
 			}			
 		}
-
-		
-
-		var currentBoard = $('div[id^=ens]:visible').attr('id').substr(-1);
-		$("span.asi-cart-number").html(currentBoard);
 
 		// logic to step through ensembles
 		$("#next").click(function(){			

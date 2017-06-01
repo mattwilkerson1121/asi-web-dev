@@ -37,7 +37,7 @@
     h3.featuredHeadline {
         font-size:1.4em;
         font-family: "Knockout-HTF29-JuniorLiteweight", "ProximaNova-Semibold", sans-serif;
-        position: ;
+        position: relative;
         margin:0 auto;
         padding:0 0;
         letter-spacing:1.5px;
@@ -46,7 +46,33 @@
         color:#181818;
         line-height:1;
         margin-top:10%;
-    }	
+    }
+  	h4.featuredHeadline {
+	    font-size:1em;
+	    font-family: "ProximaNova-Regular", "ProximaNova-Semibold", sans-serif;
+	    position:relative;
+	    margin:0 auto;
+	    padding:0 0;
+	    letter-spacing:1.5px;
+	    text-transform:uppercase;
+	    text-align:center;
+	    color:#181818;
+	    line-height:1;
+	    margin-top:3%;
+  	}
+ 
+   	h5.featuredHeadline {
+        font-size:1em;
+        font-family: "ProximaNova-Regular", "ProximaNova-Semibold", sans-serif;
+        position:relative;
+        margin:0 auto;
+        padding:0 0;
+        letter-spacing:1.5px;
+        text-align:center;
+        color:#181818;
+        line-height:1.5;
+        margin-top:3%;
+    }    	
 </style>
 <div class="asi-section-content asi-section section" id="asi-mix-browse-style" style="padding: 10px 0px 0px 0px;">
 <div class="container asi-container">
@@ -73,15 +99,15 @@
 			</a>
 		</div>
 	</div>
-<!-- Start the Featured Product Section-->
 
+<!-- Start the Featured Product Section-->
 <div class="row" id="ens1">
 <div class="col-md-3 col-sm-3" style="text-align: center;"><!-- Anchor Item Space-->
 <h3 class="featuredHeadline">Design a room around this item</h3>
 <img alt="" class="img-responsive center-block featureImg" data-iid="" src="https://placeholdit.imgix.net/~text?txtsize=30&amp;bg=ffffff&amp;txtclr=000000&amp;w=320&amp;h=320" />
-<h4>HOW TO MIX</h4>
+<h4 class="featuredHeadline">HOW TO MIX</h4>
 
-<p>MAKE IT YOU by combining, blending, or MIXing your favorite pieces of furniture to create a style that’s unique to you.</p>
+<h5 class="featuredHeadline">MAKE IT YOU by combining, blending, or MIXing your favorite pieces of furniture to create a style that’s unique to you.</h5>
 </div>
 
 <div class="col-md-9 col-sm-9">
@@ -113,9 +139,9 @@
 <div class="col-md-3 col-sm-4" style="text-align: center;"><!-- Anchor Item Space-->
 <h3 class="featuredHeadline">Design a room around this item</h3>
 <img alt="" class="img-responsive center-block featureImg" data-iid="" src="https://placeholdit.imgix.net/~text?txtsize=30&amp;bg=ffffff&amp;txtclr=000000&amp;w=320&amp;h=320" />
-<h4>HOW TO MIX</h4>
+<h4 class="featuredHeadline">HOW TO MIX</h4>
 
-<p>MAKE IT YOU by combining, blending, or MIXing your favorite pieces of furniture to create a style that’s unique to you.</p>
+<h5 class="featuredHeadline">MAKE IT YOU by combining, blending, or MIXing your favorite pieces of furniture to create a style that’s unique to you.</h5>
 </div>
 
 <div class="col-md-9 col-sm-8">
@@ -147,9 +173,9 @@
 <div class="col-md-3 col-sm-4" style="text-align: center;"><!-- Anchor Item Space-->
 <h3 class="featuredHeadline">Design a room around this item</h3>
 <img alt="" class="img-responsive center-block featureImg" data-iid="" src="https://placeholdit.imgix.net/~text?txtsize=30&amp;bg=ffffff&amp;txtclr=000000&amp;w=320&amp;h=320" />
-<h4>HOW TO MIX</h4>
+<h4 class="featuredHeadline">HOW TO MIX</h4>
 
-<p>MAKE IT YOU by combining, blending, or MIXing your favorite pieces of furniture to create a style that’s unique to you.</p>
+<h5 class="featuredHeadline">MAKE IT YOU by combining, blending, or MIXing your favorite pieces of furniture to create a style that’s unique to you.</h5>
 </div>
 
 <div class="col-md-9 col-sm-8">
@@ -181,9 +207,9 @@
 <div class="col-md-3 col-sm-4" style="text-align: center;"><!-- Anchor Item Space-->
 <h3 class="featuredHeadline">Design a room around this item</h3>
 <img alt="" class="img-responsive center-block featureImg" data-iid="" src="https://placeholdit.imgix.net/~text?txtsize=30&amp;bg=ffffff&amp;txtclr=000000&amp;w=320&amp;h=320" />
-<h4>HOW TO MIX</h4>
+<h4 class="featuredHeadline">HOW TO MIX</h4>
 
-<p>MAKE IT YOU by combining, blending, or MIXing your favorite pieces of furniture to create a style that’s unique to you.</p>
+<h5 class="featuredHeadline">MAKE IT YOU by combining, blending, or MIXing your favorite pieces of furniture to create a style that’s unique to you.</h5>
 </div>
 
 <div class="col-md-9 col-sm-8">
