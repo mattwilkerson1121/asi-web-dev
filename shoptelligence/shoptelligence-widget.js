@@ -53,25 +53,13 @@
 						console.log(articleKeysArray0);		
 						var ensembleNum = 0;				
 					}	
-					else if (ens == 1) {
-						//console.log("ensemble below: "+ens);
-						//console.log(ensemble);					
-						//console.log("articleKeysArray below: "+ens);
-						//console.log(articleKeysArray1);	
+					else if (ens == 1) {	
 						var ensembleNum = 1;					
 					}
 					else if (ens == 2) {
-						//console.log("ensemble below: "+ens);
-						//console.log(ensemble);					
-						//console.log("articleKeysArray below: "+ens);
-						//console.log(articleKeysArray2);	
 						var ensembleNum = 2;					
 					}		
 					else if (ens == 3) {
-						//console.log("ensemble below: "+ens);
-						//console.log(ensemble);					
-						//console.log("articleKeysArray below: "+ens);
-						//console.log(articleKeysArray3);	
 						var ensembleNum = 3;					
 					}																		
 
@@ -108,18 +96,24 @@
 					  	var boardNum = ens+1;
 					  	var selectorStr = "#ens"+boardNum+" div#key"+i;
 
-  				  	  	$(selectorStr).append("<div id='productResults' style='text-align:center;'><div class='btn-toolbar'><button data-iid='"+item_id+"' data-ens='"+ensembleNum+"' data-ensIndex='"+i+"' data-cKey='"+cKey+"'  data-artKeyIndex='"+artKeyIndex+"' type='button' class='btn pull-right itemReplace' style='border: 1px solid rgb(128, 128, 128); background-color: rgb(255, 255, 255);'><span class='glyphicon glyphicon-refresh default' aria-hidden='true' ></button>&nbsp;<button id='addCartSingleProduct' data-cart='"+product_id+"'' type='button' class='btn btn-outline pull-right' style='border: 1px solid rgb(128, 128, 128); background-color: rgb(255, 255, 255);'></span><span class='glyphicon glyphicon-shopping-cart default' aria-hidden='true'></span></button></div><a href='"+pdpURL+"' target='_blank'><img class='img-responsive center-block productGrid' src='"+imgURL+"?impolicy=product-320x320' alt='image"+i+"' /></a></div>");						
+  				  	  	$(selectorStr).append("<div id='productResults' style='text-align:center;'><div class='btn-toolbar'><button data-iid='"+item_id+"' data-ens='"+ensembleNum+"' data-ensIndex='"+i+"' data-cKey='"+cKey+"'  data-artKeyIndex='"+artKeyIndex+"' type='button' class='btn pull-right itemReplace' style='border: 1px solid rgb(128, 128, 128); background-color: rgb(255, 255, 255);'><span class='glyphicon glyphicon-refresh default' aria-hidden='true' ></button>&nbsp;<button id='addCartSingleProduct' data-cart='"+product_id+"'' type='button' class='btn btn-outline pull-right' style='border: 1px solid rgb(128, 128, 128); background-color: rgb(255, 255, 255);'></span><span class='glyphicon glyphicon-shopping-cart default' aria-hidden='true'></span></button></div><a href='"+pdpURL+"' target='_blank'><img class='img-responsive center-block productGrid' src='"+imgURL+"?impolicy=product-320x320' alt='image"+i+"' /></a></div>");
 					}
 				}
 				// Click handler for the Item Replace API Call
 				$("div[id^=key]").on('click','button.itemReplace',function(){
-					var ensindex = parseInt($(this).data('ensindex'))
-					//console.log("articleKeysArray below: ");
-					//console.log(articleKeysArray);
-					// get the button
-					var itemReplaceButton = $(this);
+					var cKeyReplace = $(this).data("ckey");
+					console.log(cKeyReplace);
 
-					console.log("itemReplaceButton: "+itemReplaceButton);
+					var ensindex = parseInt($(this).data('ensindex'));
+					// get the item replacement button selector
+					var itemReplaceButton = $(this);
+					console.log(itemReplaceButton);
+
+					// selector for the addSingleItem button; need to keep item_id up to date
+					// on this button in order for add to cart to function after
+					// item replacement
+					var itemReplaceShoppingButton = $(this).parent().eq(0).children().eq(1);
+					console.log(itemReplaceShoppingButton);
 
 					var removeItem = $(this).attr("data-iid");
 					var removeItemArtKey = $(this).attr('data-artKeyIndex');
@@ -170,26 +164,42 @@
 						success: function(data) {
 							console.log(data);
 
-							var replaceImgURL = data[1].ensemble[ensindex].image_url+"?impolicy=product-320x320";
-							//console.log(replaceImgURL);
-							var cKeyOrder = data[1].ensemble[ensindex].canvas_key_order;
-							var swatchImgURL = data[1].ensemble[ensindex].swatch_image_url;
-							var new_item_id = data[1].ensemble[ensindex].item_id;
-							//console.log(item_id);
-							var product_id = data[1].ensemble[ensindex].product_id;
-							//console.log(product_id);
-							var pdpURLreplace = 'http://www.valuecityfurniture.com/product/item/'+product_id;
-							console.log(pdpURLreplace);	
-							// replace the placeholder image, with replacement item
-							$(itemReplace).attr('src', replaceImgURL);	
-							// replace link
-							console.log(itemReplaceLink);
-							$(itemReplaceButton).attr('data-iid', new_item_id);
-							$(itemReplaceLink).attr('href', pdpURLreplace);	
+							var replacementEnsemble = data[1].ensemble;
 
-							// replace the new item back into the array to keep it up to date
-							//articleKeysArray0.splice(removeItemArtKey, 0, new_item_id);
-							//console.log(articleKeysArray0);
+							for (i=0; i < replacementEnsemble.length; i++) {
+								var cKey = data[1].ensemble[i].canvas_key;
+								// check to make sure the replacement product is the same
+								// canvas_key as the original item 
+								if (cKeyReplace == cKey) {
+
+									console.log("cKeyReplace matches - data[1].ensemble["+i+"].canvas_key");
+									var replaceImgURL = data[1].ensemble[i].image_url+"?impolicy=product-320x320";
+									//console.log(replaceImgURL);
+									var cKeyOrder = data[1].ensemble[i].canvas_key_order;
+									var swatchImgURL = data[1].ensemble[i].swatch_image_url;
+									var new_item_id = data[1].ensemble[i].item_id;
+									//console.log(item_id);
+									var product_id = data[1].ensemble[i].product_id;
+									//console.log(product_id);
+									var pdpURLreplace = 'http://www.valuecityfurniture.com/product/item/'+product_id;
+									console.log(pdpURLreplace);	
+									// replace the placeholder image, with replacement item
+									$(itemReplace).attr('src', replaceImgURL);	
+									// replace link
+									console.log(itemReplaceLink);
+									$(itemReplaceButton).attr('data-iid', new_item_id);
+									$(itemReplaceShoppingButton).attr('data-cart', product_id);
+									$(itemReplaceLink).attr('href', pdpURLreplace);	
+
+									// replace the new item back into the array to keep it up to date
+									//articleKeysArray0.splice(removeItemArtKey, 0, new_item_id);
+									//console.log(articleKeysArray0);
+
+								}
+								else {
+									//console.log("cKeyReplace DOESNT match - data[1].ensemble["+i+"].canvas_key");
+								}
+							}
 
 						},
 					});							
