@@ -102,7 +102,7 @@ if (duringEvent() == true) {
 		$headers[] = 'MIME-Version: 1.0';
 		$headers[] = 'Content-type: text/html; charset=iso-8859-1';
 		// Additional headers
-		$headers[] = 'To: Joshua Wells <joshua.wells@americansignature.com>';
+		//$headers[] = 'To: Joshua Wells <joshua.wells@americansignature.com>';
 		$headers[] = 'From: Giftcard Winners <giftcard-event@americansignature.com>';
 
 
