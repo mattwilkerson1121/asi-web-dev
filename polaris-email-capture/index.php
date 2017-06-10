@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Polaris Event - Sign Up for A Chance To Win $50 Gift Card</title>
 	<script
   		src="https://code.jquery.com/jquery-3.2.1.min.js"
@@ -91,7 +92,7 @@
 		    <input type="text" class="form-control" id="zip" name="POSTAL_CODE_" placeholder="Zip" pattern="[0-9]{5}">
 		  </div>			  			  		  	  
 		  <div class="legalLanguage">
-		  	<p>* Enter for a chance to win a $50 gift card. Must be in the store at the time of the drawing to win. Customer can only win once. Winners will be pulled every hour.</p>
+		  	<p>* Enter for a chance to win a $50 gift card. You must be present at the time of the drawing to win. Customer may only win once. Winners will be pulled every hour. Data collected will be used in accordance with the Privacy Policy found on VCF.com and by entering you will be opted-in to email communications. You may opt-out at any time.</p>
 		  </div>
 		  <!--<input type="hidden" name="_RequiredFields_" value="EMAIL_ADDRESS_" />
 		  <input type="hidden" name="_EMailFields_" value="EMAIL_ADDRESS_" />
@@ -102,7 +103,7 @@
 		  <input type="hidden" name="EMAIL_SOURCE" value="Polaris-Store-Event" />
 		  <button type="submit" class="btn btn-primary">Submit</button>
 		</form>
-
+		<br/>
 	</div>
 </body>
 </html>

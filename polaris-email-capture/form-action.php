@@ -2,6 +2,7 @@
 <html>
 <head>
 	<meta http-equiv='refresh' content='2;url=http://shopvcf.com/email-capture/index.php'/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Polaris Event - Sign Up for A Chance To Win $50 Gift Card</title>
 	<script
   		src="https://code.jquery.com/jquery-3.2.1.min.js"

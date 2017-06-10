@@ -22,7 +22,7 @@ function previousHourEnd() {
 function duringEvent() {
 	// set timebounds for the event
 	$eventStart = "2017-06-07 11:00:00";
-	$eventEnd = "2017-06-11 18:00:00";	
+	$eventEnd = "2017-06-11 23:00:00";	
 
 	// test whether we are within the event period
 	if ((currentTime() > $eventStart) && (currentTime() < $eventEnd)) {
@@ -75,16 +75,16 @@ if (duringEvent() == true) {
 
 		// Send Mail 
 		// Multiple recipients
-		$to = 'joshua.wells@americansignature.com, megan.emerick@americansignature.com, alexandra.windsor@americansignature.com'; // note the comma
+		$to = 'joshua.wells@americansignature.com, Derek.Wysong@americansignature.com, ERIC.OSBORNE@vcf.com, Ryan.Smith@vcf.com, MITCHELL.GREGORY@vcf.com'; // note the comma
 
 		// Subject
-		$subject = '$50 Dollar Winners - '.previousHourStart().' hour';
+		$subject = '$50 Dollar Giftcard Winners - '.previousHourStart().' hour';
 
 		// Message
 		$message = '
 		<html>
 		<head>
-		  <title>TEST - $50 Dollar Winners - '.previousHourStart().' hour</title>
+		  <title>$50 Dollar Giftcard Winners - '.previousHourStart().' hour</title>
 		</head>
 		<body>
 		  <p>Here are the Giftcard Winners for: '.previousHourStart().'</p>
