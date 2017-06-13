@@ -41,29 +41,30 @@ function formatDate(date) {
 }
 
 function daysTillOrderDate(orderDate) {
-  // hours*minutes*seconds*milliseconds		
-  var oneDay = 24*60*60*1000; 
-  // normalize the orderDate string from the query parameter
-  var orderDateSubString = orderDate.slice(0, 4) + "/" + orderDate.slice(4);
-  var orderDateSubString2 = orderDateSubString.slice(0,7) + "/" + orderDateSubString.slice(7);
-  var orderDateObject = new Date(orderDateSubString2);
-  // instantiate a new date object to get todays date
-  var now = new Date();
-  // store the pieces of date into a new Date() object
-  var firstDate = new Date(now.getFullYear(),(now.getMonth() + 1), now.getDate());
-  var secondDate = new Date(orderDateObject.getFullYear(),(orderDateObject.getMonth() + 1),orderDateObject.getDate());
-  // fine the different between the dates with Math module, get absolute days back
-  var diffDays = Math.round(Math.abs((secondDate.getTime() - firstDate.getTime())/(oneDay)));
+	// hours*minutes*seconds*milliseconds		
+	var oneDay = 24 * 60 * 60 * 1000; 
+	// normalize the orderDate string from the query parameter
+	var orderDateSubString = orderDate.slice(0, 4) + "/" + orderDate.slice(4);
+	var orderDateSubString2 = orderDateSubString.slice(0,7) + "/" + orderDateSubString.slice(7);
+	var orderDateObject = new Date(orderDateSubString2);
+	// instantiate a new date object to get todays date
+	var now = new Date();
+	// store the pieces of date into a new Date() object
+	var firstDate = new Date(now.getFullYear(),(now.getMonth() + 1), now.getDate());
+	var secondDate = new Date(orderDateObject.getFullYear(),(orderDateObject.getMonth() + 1),orderDateObject.getDate());
+	// fine the different between the dates with Math module, get absolute days back
+	var diffDays = Math.round(Math.abs((secondDate.getTime() - firstDate.getTime())/(oneDay)));
 
-  if (diffDays == 1) {
-  	return "tomorrow";
-  }
-  else {
-  	return "";
-  }
+	if (diffDays == 1) {
+		return "tomorrow";
+	}
+	else if (diffDays == 0) {
+		return "today";
+	}
+	else {
+		return "";
+	}
 }
-
-
 
 function formatStorePhone(phone) {
 	// formats phone in 1111111111 format to 111-111-1111 format
@@ -95,6 +96,27 @@ function testQueryParams() {
 	}
 }
 
+function responseAPI() {
+	// build the request URL
+	var url = "https://asirest.vcfcorp.com/emailhandler?system="+system+"&requesttype="+requesttype+"&requestdate="+requestdate+"&type="+type+"&requestId="+requestid+"&response="+response;
+
+	console.log(url);
+	// make the response request back through the API
+	$.ajax({
+  		url: url,
+  		contentType: "application/x-www-form-urlencoded",
+  		type: 'GET',
+  		crossDomain: true,
+  		success: function(data){
+  			console.log(data);
+  		},
+  		error: function(data) {
+  			console.log(data);
+  		}
+    	
+	});		
+}
+
 // set extracted query params to a variable
 var email = getUrlParameter('email');
 var type = getUrlParameter('type');
@@ -108,113 +130,33 @@ var requesttype = getUrlParameter('requesttype');
 var otid = getUrlParameter('otid');
 var requestdate = getUrlParameter('requestdate');
 var addr = getUrlParameter('addr');
-
+// store the message type results to control UI and also responseAPI() call
 var result = testQueryParams();
-
-console.log(daysTillOrderDate(orderDate));
-
-function addr(addr, ordertype) {
-	if (ordertype == "delivery") {
-
-	}
-	else if (ordertype == "pickup") {
-
-	}
-
-}
 
 if (result == "confirm-pcc") {
 	console.log("confirm-pcc");
 	$("#custom-page-body .asi-container").append("<div class='asi-ucm' style='margin-top: 0%'><p>Thanks for confirming your "+ordertype+".<br /><br/>We'll see you on <span style='color:#e10e32;font-weight:bold'>"+formatDate(orderDate)+"</span>.<br/><br/>For information about your order try our <a href='/track-my-order?tracking="+otid+"' style='color:#e10e32;font-weight:bold;'>order tracker</a>.<br /></p><div class='asi-red-separator' style='margin-top: 10px;margin-bottom:20px;'></div></div>");	
 
-	// build the request URL
-	var url = "https://asirest.vcfcorp.com/emailhandler?system="+system+"&requesttype="+requesttype+"&requestdate="+requestdate+"&type="+type+"&requestId="+requestid+"&response="+response;
-
-	console.log(url);
-
-	$.ajax({
-  		url: url,
-  		contentType: "application/x-www-form-urlencoded",
-  		type: 'GET',
-  		crossDomain: true,
-  		success: function(data){
-  			console.log(data);
-  		},
-  		error: function(data) {
-  			console.log(data);
-  		}
-    
-	});			
+	responseAPI();		
 }
 else if (result == "reschedule-pcc") {
 	console.log("reschedule-pcc");	
 	$("#custom-page-body .asi-container").append("<div class='asi-ucm' style='margin-top:0%;'><p>Your request has been received. You may reach the store at:<br/><br/><span style='color:#e10e32;font-weight:bold;'><a href='tel:1"+phone+"' target='_blank' style='color:#e10e32;font-weight:bold'>"+phone+"</a></span><br /><br />Otherwise, you will be contacted as soon as possible.<br /><br/><br/>For information about your order try our <a href='/track-my-order?tracking="+otid+"' style='color:#e10e32;font-weight:bold;'>order tracker</a>.<br/><br />Thank you!</p><div class='asi-red-separator' style='margin-top:10px;margin-bottom:20px;'></div></div>");	
 
-	// build the request URL
-	var url = "https://asirest.vcfcorp.com/emailhandler?system="+system+"&requesttype="+requesttype+"&requestdate="+requestdate+"&type="+type+"&requestId="+requestid+"&response="+response;
-
-	console.log(url);
-
-	$.ajax({
-  		url: url,
-  		contentType: "application/x-www-form-urlencoded",
-  		type: 'GET',
-  		crossDomain: true,
-  		success: function(data){
-  			console.log(data);
-  		},
-  		error: function(data) {
-  			console.log(data);
-  		}
-    
-	});			
+	responseAPI();		
 }
 else if (result == "confirm-window") {
 	console.log("confirm-window");
 
-	$("#custom-page-body .asi-container").append("<div class='asi-ucm' style='margin-top: 0%'><p>Yay! Thanks for confirming your "+ordertype+".<br /><br/>We'll see you "+daysTillOrderDate(orderDate)+" <span style='color:#e10e32;font-weight:bold'>"+formatDate(orderDate)+"</span> at <span style='color:#e10e32;font-weight:bold'>"+addr+"</span>.<br/><br/>If you have any questions between now and then, feel free to give us a call at <a href='tel:1"+phone+"' target='_blank' style='color:#e10e32;font-weight:bold'>"+phone+"</a><br/><br/>For information about your order try our <a href='/track-my-order?tracking="+otid+"' style='color:#e10e32;font-weight:bold;'>order tracker</a>.<br /></p><div class='asi-red-separator' style='margin-top: 10px;margin-bottom:20px;'></div></div>");	
+	$("#custom-page-body .asi-container").append("<div class='asi-ucm' style='margin-top: 0%'><p>Yay! Thanks for confirming your "+ordertype+".<br /><br/>We'll see you "+daysTillOrderDate(orderDate)+" <span style='color:#e10e32;font-weight:bold'>"+formatDate(orderDate)+"</span> at <span style='color:#e10e32;font-weight:bold'>"+addr+"</span>.<br/><br/>If you have any questions between now and then, feel free to give us a call at:<br/><br/><a href='tel:1"+phone+"' target='_blank' style='color:#e10e32;font-weight:bold'>"+phone+"</a><br/><br/>For information about your order try our <a href='/track-my-order?tracking="+otid+"' style='color:#e10e32;font-weight:bold;'>order tracker</a>.<br /></p><div class='asi-red-separator' style='margin-top: 10px;margin-bottom:20px;'></div></div>");	
 
-	// build the request URL
-	var url = "https://asirest.vcfcorp.com/emailhandler?system="+system+"&requesttype="+requesttype+"&requestdate="+requestdate+"&type="+type+"&requestId="+requestid+"&response="+response;
-
-	console.log(url);
-
-	$.ajax({
-  		url: url,
-  		contentType: "application/x-www-form-urlencoded",
-  		type: 'GET',
-  		crossDomain: true,
-  		success: function(data){
-  			console.log(data);
-  		},
-  		error: function(data) {
-  			console.log(data);
-  		}
-    
-	});			
+	responseAPI();			
 }
 else if (result == "reschedule-window") {
 	console.log("reschedule-window");	
 	$("#custom-page-body .asi-container").append("<div class='asi-ucm' style='margin-top:0%;'><p>Your request has been received. You may reach the store at:<br/><br/><span style='color:#e10e32;font-weight:bold;'><a href='tel:1"+phone+"' target='_blank' style='color:#e10e32;font-weight:bold'>"+phone+"</a></span><br /><br />Otherwise, you will be contacted as soon as possible.<br /><br/><br/>For information about your order try our <a href='/track-my-order?tracking="+otid+"' style='color:#e10e32;font-weight:bold;'>order tracker</a>.<br/><br />Thank you!</p><div class='asi-red-separator' style='margin-top:10px;margin-bottom:20px;'></div></div>");	
 
-	// build the request URL
-	var url = "https://asirest.vcfcorp.com/emailhandler?system="+system+"&requesttype="+requesttype+"&requestdate="+requestdate+"&type="+type+"&requestId="+requestid+"&response="+response;
-
-	console.log(url);
-
-	$.ajax({
-  		url: url,
-  		contentType: "application/x-www-form-urlencoded",
-  		type: 'GET',
-  		crossDomain: true,
-  		success: function(data){
-  			console.log(data);
-  		},
-  		error: function(data) {
-  			console.log(data);
-  		}
-    	
-	});			
+	responseAPI();			
 }
 else {
 	console.log("default");	
