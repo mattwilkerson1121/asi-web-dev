@@ -1,0 +1,382 @@
+<!-- handlebars -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.js"></script>
+<!-- bootstrap css-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<!--google icon font-->
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<!-- font awesome -->
+<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+<!-- material Design -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+<!-- propeller css -->
+<link href="https://shopvcf.com/ordertracking/css/orderTracking_main.css" rel="stylesheet">
+<!-- external css -->
+<link href="https://shopvcf.com/ordertracking/css/propeller.css" rel="stylesheet">
+
+<!-- look up your order -->
+<div class="container">
+	<div id="appLoginOverlay" style="position:absolute;top:50px;left:0;width:100%;padding:0;margin:0;background-color:#fff;z-index:2;"></div>
+	<div id="appLogin" style="position:relative;z-index:3;margin:40px auto;">
+	   	<div class="container">
+			<div class="col-md-8 col-md-offset-2 col-xs-12">
+				<div class="pmd-card pmd-card-custom-view pmd-z-depth-1">
+					<div class="pmd-card-title">
+						<h2 class="pmd-card-title-text">Look up your order</h2>
+					</div>
+					<!-- <div role="alert" class="alert alert-danger alert-dismissible">
+						<button aria-label="Close" data-dismiss="alert" class="close" type="button">
+						   	<span aria-hidden="true">×</span>
+						</button>
+						<span id="errorResponseText"></span>
+					</div> -->
+					<div class="pmd-card-body">
+						<div class="form-group pmd-textfield">
+							<label for="orderTrackingNumber" class="control-label">Order Tracking Number:<br /><br /></label>
+							<input style="border-bottom: 1px solid #c2c2c2 !important;" type="text" name="orderTrackingNumber" id="orderTrackingInput" class="form-control text-left" placeholder="Enter your order tracking number">
+							</div>
+						<button type="submit" id="orderTrackingNumberSubmit" class="btn btn-lg pmd-ripple-effect btn-default">Submit</button>
+						<br><br class="clearfix">
+	            		<a type="button" data-toggle="tooltip" data-placement="right" class="pmd-btn-flat pmd-ripple-effect btn-link pmd-tooltip noLine" title="Find your order tracking number towards the top of your receipt." style="margin:10px;">how do I get my tracking number?</a>
+	            		<br><br class="clearfix">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script id="orderTracker" type="text/x-handlebars-template">
+		<div id="appBody">
+		  <!--navbar -->
+			<div class="asi-app-navbar" style="margin-bottom:40px;">
+				<nav class="navbar navbar-inverse pmd-navbar pmd-z-depth">
+					<div class="container-fluid">
+						<div class="navbar-header" style="width:100%; background-color: #000;">
+							<span class="headerText">Order Tracker</span>
+							{{#is orderTracking.customer.order.orderType "===" "Delivery"}}
+								<ul class="nav navbar-nav navbar-right" style="background-color: #000;">
+									<li class="noLine">
+										<a id="js-showManageNotifications" class="pmd-ripple-effect zmdi zmdi-notifications pmd-md material-icons" href="javascript:void(0);"></a>
+									</li>
+								</ul>
+							{{/is}}
+						</div>
+					</div>
+				</nav>
+			</div>
+			{{#is orderTracking.customer.order.orderType "===" "Delivery"}}
+				<!-- update notifications -->
+				<div class="container js-manageNotifications">
+					<div class="col-md-8 col-md-offset-2 col-xs-12">
+						<div class="pmd-card pmd-card-default pmd-z-depth-1">
+							<div class="pmd-card-title noMarginBottom">
+								<blockquote class="noMarginBottom">
+									<h3 class="pmd-card-title-text">Manage Notifications</h3>
+								</blockquote>
+							</div>
+							<div class="pmd-card-body noMarginTop">
+								<form id="manageNotifications">
+									<div class="pmd-card-title">
+										<h3 class="noMarginBottom negMargin">Set My Alert</h3>
+									</div>
+			  						<div class="form-group">
+			  							<label class="formLabel">Alert via</label>
+										<select class="custom-select" id="sendAlertsVia">		
+											<option value="E" selected="">E-Mail</option>
+											<option value="P" selected="">Phone Call</option>
+											<option value="T" selected="">Text/SMS</option>
+										</select>
+									</div>
+									<div class="form-group pmd-textfield pmd-textfield-floating-label">
+										<h3 class="formLabel" style="font-weight: 700; font-size: 0.875rem;">Conact</h3>
+										<input style="border-bottom: 1px solid #c2c2c2 !important; margin-bottom: 10px;" type="email" name="alertsContact" id="alertsContactEmail" class="form-control verifyInput" value="{{orderTracking.customer.order.alerts.contact}}" placeholder="Enter Your Email">
+										<input style="border-bottom: 1px solid #c2c2c2 !important; margin-bottom: 10px;" type="tel" name="alertsContact" id="alertsContactPhone" class="form-control verifyInput" value="{{orderTracking.customer.order.alerts.contact}}" placeholder="Enter Your Phone Number">
+									</div>
+									<div class="form-group">
+										<label class="formLabel">Alert Before Arrival</label>
+										<select class="custom-select" id="sendAlertsPrior">
+											<option value="15" selected="">15 mins before</option>
+											<option value="30" selected="">30 mins before</option>
+											<option value="45" selected="">45 mins before</option>
+											<option value="60" selected="">1 hr before</option>
+											<option value="75" selected="">1 - 1/4 hours before</option>
+											<option value="90" selected="">1 - 1/2 hours before</option>
+											<option value="105" selected="">1 - 3/4 hours before</option>
+											<option value="120" selected="">2 hours before</option>
+										</select>
+									</div>
+									<button type="submit" id="alertsSubmit" class="btn btn-default btn-margin">Update Preferences</button>
+									<button type="button" id="alertsCancel" class="btn btn-default btn-size btn-margin">Cancel</button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			{{/is}}
+			<!-- progress bar -->
+		    <div class="container" id="updateProgressBar">
+		    	<section class="component-section">
+					<div class="component-box">
+						<div class="col-md-8 col-md-offset-2 col-xs-12"> 
+		              		<div class="pmd-card pmd-z-depth-1 pmd-card-custom-view ">
+		                		<div class="pmd-card-body">
+		                			{{#is orderTracking.customer.order.orderStatus "===" "Order Placed"}}
+			                			<div class="progress-rounded progress">
+			                                <div style="width: 0%" class="progress-bar progress-bar-info" id="orderStatusBar"></div>
+			                            </div>
+			                        {{/is}}
+		                            {{#is orderTracking.customer.order.orderStatus "===" "Order Processed"}}
+			                			<div class="progress-rounded progress">
+			                                <div style="width: 25%" class="progress-bar progress-bar-info" id="orderStatusBar"></div>              
+			                            </div>
+		                            {{/is}}
+		                            {{#is orderTracking.customer.order.orderStatus "===" "Order Filled"}}
+			                			<div class="progress-rounded progress">
+			                                <div style="width: 50%" class="progress-bar progress-bar-info" id="orderStatusBar"></div>    
+			                            </div>
+		                            {{/is}}
+		                            {{#is orderTracking.customer.order.orderStatus "===" "Out For Delivery"}}
+		                				<div class="progress-rounded progress">
+		                                	<div style="width: 75%" class="progress-bar progress-bar-info" id="orderStatusBar"></div>    
+		                            	</div>
+		                            {{/is}}
+		                            {{#is orderTracking.customer.order.orderStatus "===" "Ready For Pickup"}}
+			                			<div class="progress-rounded progress">
+			                                <div style="width: 75%" class="progress-bar progress-bar-info" id="orderStatusBar"></div>     
+			                            </div>
+		                            {{/is}}
+		                			{{#is orderTracking.customer.order.orderStatus "===" "In Your Home"}}
+			                			<div class="progress-rounded progress">
+			                                <div style="width: 100%" class="progress-bar progress-bar-info" id="orderStatusBar"></div>         
+			                            </div>
+			                        {{/is}}
+		                            <div class="orderStatusText">{{orderTracking.customer.order.orderStatus}}</div>
+		              			</div>
+			            	</div>
+						</div>
+					</div>                 
+			    </section>
+			</div>
+			<!-- order info -->
+		    <div class="container" id="js-hideOnUpdateDelivery">
+				<div class="col-md-8 col-md-offset-2 col-xs-12">
+					<div class="pmd-card pmd-card-default pmd-z-depth-1">
+						<div class="pmd-card-title">
+							<blockquote>
+								<div class="media-left" id="js-hideNoDate">
+									<h2>
+										<span id="orderType">{{orderTracking.customer.order.orderType}} Order</span>
+									</h2>
+									<div class="orderCalendar pmd-card-media-inline">
+									<!-- dynamic calendar -->
+										<time id="orderServiceDateCalendar" datetime="" class="icon">
+			  								<span id="orderDayOfWeek">{{orderTracking.customer.order.orderServiceDate.orderDayOfWeek}}</span>
+			  								<span id="orderMonth"></span>
+			 								<span id="orderDayDate">{{orderTracking.customer.order.orderServiceDate.orderDayDate}}</span>
+										</time>
+									</div>
+								</div>
+								{{#is orderTracking.customer.order.orderType "===" "Delivery"}}
+									<div class="media-middle media-right">
+										<div class="pmd-card-media-inline">
+											<h4 class="deliverySummary">
+											<span>Date: <span id="serviceDate">{{orderTracking.customer.order.orderServiceDate}}</span></span><br />
+												<span>Time: <span id="serviceTime">{{orderTracking.customer.order.orderServiceTime}}</span></span><br />
+												<span>Driver: <span id="deliveryDriver">{{orderTracking.customer.order.orderDriver}}</span></span><br />
+											</h4>
+										</div>
+									</div>
+								{{else}}
+									<div class="media-middle media-right">
+										<div class="pmd-card-media-inline">
+											<h3 class="pickUpSummary pmd-card-title-text">
+												<span id="orderTypeStore">{{orderTracking.customer.order.orderType}} Location:</span>
+											</h3>
+											<h4 class="orderStore">
+												<span id="storeName"><span id="domain"></span> &mdash;{{orderTracking.customer.order.orderStoreCity}}</span>
+												<br />
+												<span id="storeAddress1">{{orderTracking.customer.order.orderStoreAddress1}}</span>
+												<br />
+												<span id="storeCity">{{orderTracking.customer.order.orderStoreCity}}</span>
+												<span id="storeZip">{{orderTracking.customer.order.orderStoreZip}}</span>
+											</h4>
+										</div>
+									</div>								
+								{{/is}}
+							</blockquote>
+						</div>
+						{{#is orderTracking.customer.order.orderType "===" "Delivery"}}
+							<!-- store details -->
+							<div class="twoCol">
+								<h3 class="pmd-card-title-text storeInfo">
+									<span id="orderTypeStore"> {{orderTracking.customer.order.orderType}} Location:</span>
+								</h3>
+								<h4 class="orderStore">
+									<span id="storeName"><span id="domain"></span> &mdash; {{orderTracking.customer.order.orderStoreCity}}</span>
+									<br />
+									<span id="storeAddress1">{{orderTracking.customer.order.orderStoreAddress1}}</span>
+									<br />
+									<span id="storeCity">{{orderTracking.customer.order.orderStoreCity}}</span>
+									<span id="storeZip">{{orderTracking.customer.order.orderStoreZip}}</span>
+								</h4>
+							</div>
+							<div class="twoCol">
+								<h3 class="pmd-card-title-text deliveryCardInfo storeInfo">Delivery Address:</h3>
+								<h4 class="deliveryAddress deliveryCardInfo">
+									<span id="customerName">{{orderTracking.customer.order.orderCustomerName}}</span><br />
+									<span id="customerAddress1">{{orderTracking.customer.order.orderCustomerAddress1}}</span>
+									<span id="customerAddress2">{{orderTracking.customer.order.orderCustomerAddress2}}</span><br />
+									<span id="customerCity">{{orderTracking.customer.order.orderCustomerCity}}</span>, 
+									<span id="customerState">{{orderTracking.customer.order.orderCustomerState}}</span>
+									<span id="customerZip">{{orderTracking.customer.order.orderCustomerZip}}</span><br />
+									<span id="customerPhoneNumber">{{orderTracking.customer.order.customerPhoneNumber}}</span>
+								</h4>
+							</div>
+						{{/is}}	
+						<!-- get directions or update delivery instructions-->
+						{{#is orderTracking.customer.order.orderType "===" "Delivery"}}
+							<div class="pmd-card-actions updateDeliveryButton">
+								<button class="btn btn-lg pmd-btn-raised pmd-ripple-effect btn-default" type="button" id="js-showUpdateDelivery">Update Delivery Instructions</button>
+							</div>
+						{{else}}
+							<div class="pmd-card-actions getDirections">
+								<button class="btn btn-lg pmd-btn-raised pmd-ripple-effect btn-default" type="button"><a class="linkDirections" href="http://maps.google.com/?daddr={{orderTracking.customer.order.orderStoreAddress1}},{{orderTracking.customer.order.orderStoreCity}},{{orderTracking.customer.order.orderStoreZip}},z=17" target="_blank">Get Directions</a></button>
+							</div>
+						{{/is}}
+					</div>
+				</div>
+			</div>
+			<!-- update delivery instructions card -->
+			{{#is orderTracking.customer.order.orderType "===" "Delivery"}}
+				<div class="container" id="js-updateDelivery">
+					<div class="col-md-8 col-md-offset-2 col-xs-12">
+						<div class="pmd-card pmd-card-default pmd-z-depth-1">
+							<div class="pmd-card-title noMarginBottom">
+								<blockquote class="noMarginBottom">
+									<h3 class="pmd-card-title-text">Delivery Instructions</h3>
+								</blockquote>
+							</div>
+							<div class="pmd-card-body noMarginTop">
+								<form id="deliveryInstructions">
+									<div class="form-group pmd-textfield pmd-textfield-floating-label">
+			    						<h4>Special Instructions</h4>
+			    						<textarea style="border-bottom: 1px solid #c2c2c2 !important;" class="form-control" id="special_instructions" rows="2" ></textarea>
+			    						<br>
+			  						</div>
+			  						<div class="form-group">
+			  							<label class="formLabel" for="gate">Gated</label>
+										<select class="custom-select" id="gated">
+											<option value="N">None</option>
+											<option value="B">Buzz To Enter Gate</option>
+											<option value="D">Sign in with Doorman</option>
+											<option value="G">Sign in with Guard</option>
+											<option value="O">Sign in at Office</option>
+											<option value="S">Security Scan</option>
+										</select>
+									</div>
+									<div class="form-group">
+										<label class="formLabel" for="floor">Floor</label>
+										<select class="custom-select" id="floor">
+											<option value="1">1st Floor</option>
+											<option value="2">2nd Floor</option>
+											<option value="3">3rd Floor</option>
+											<option value="4">4th Floor or Above</option>
+										</select>
+									</div>
+									<div class="form-group">
+										<label class="formLabel" for="elevator">Elevator</label>
+										<select class="custom-select" id="elevator">
+											<option value="N">None</option>
+											<option value="H">Heavy Passenger Elevator</option>
+											<option value="L">Light Passenger Elevator</option>
+											<option value="S">Service Elevator</option>
+											<option value="W">Walk Up Stairs</option>
+										</select>
+									</div>
+									<button type="submit" id="updateDeliverySubmit" class="btn btn-default btn-size btn-margin">OK</button>
+									<button type="button" id="updateDeliveryCancel" class="btn btn-default btn-size btn-margin">Cancel</button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			{{/is}}
+			<div class="container" id="js-orderSummary">
+				<div class="col-md-8 col-md-offset-2 col-xs-12">
+					<div class="pmd-card pmd-card-media-inline pmd-card-default pmd-z-depth-1 orderSummary">
+						<div class="pmd-card-title">
+							<div class="media-left">
+								<blockquote>
+									<h2 class="pmd-card-title-text">Order Summary</h2>
+									<h4 class="pmd-card-subtitle-text">
+										<span>Invoice #: {{orderTracking.customer.order.orderInvoiceNumber}}</span>
+										<br />
+										<span>Invoice Total: &#36;{{orderTracking.customer.order.orderInvoiceTotal}}</span>
+									</h4>
+								</blockquote>
+							</div>
+						</div>
+						<!-- item info -->
+						{{#each orderTracking.customer.order.orderItems}}
+						{{#unless this.package}}
+							<hr />
+							<div class="pmd-card-media orderItemsDisplay">
+								<div class="media-body media-middle">
+									<h3 class="pmd-card-title-text orderItem">
+										<span class="itemName">{{#toLowerCase this.itemName}}{{/toLowerCase}}</span><br />
+										<span class="itemPrice">{{this.itemPrice}}</span><br />
+										<span>Quantity: {{this.quantity}}</span>
+									</h3>
+								</div>
+								<!-- item image -->
+								<div class="media-right orderImageRight">
+			                		<img class="itemImage" src="{{this.imageData.URL}}{{this.imageData.imageName}}"> 
+			        			</div>
+			    			</div>
+			    		{{else}}
+			    			<div class="pmd-card-media orderItemsDisplayPackage">
+								<div class="media-body js-displayPackage">
+									<h4 class="pmd-card-title-text orderItemPackage">
+										<span class="itemName">{{#toLowerCase this.itemName}}{{/toLowerCase}}</span><br />
+										<span>Quantity: {{this.quantity}}</span>
+									</h4>
+								</div>
+							</div>
+						{{/unless}}
+			    		{{/each}}
+			    		<br />
+					</div>
+				</div>
+			</div>
+			<!-- Floating Action Button like Google Material -->
+			<div class="menu pmd-floating-action"  role="navigation"> 
+				<a href="/help#" class="pmd-floating-action-btn btn btn-sm pmd-btn-fab pmd-btn-raised pmd-ripple-effect btn-default" data-title="Live Chat With Us"> 
+					<span class="pmd-floating-hidden">Live Chat With Us</span>
+					<span class="material-icons pmd-sm zmdi zmdi-comments"></span>
+				</a> 
+				<a href="sms:+1-855-622-8484" class="pmd-floating-action-btn btn btn-sm pmd-btn-fab pmd-btn-raised pmd-ripple-effect btn-default" data-title="Text Message Us"> 
+					<span class="pmd-floating-hidden">1-855-622-8484</span> 
+					<span class="material-icons pmd-sm zmdi zmdi-smartphone-android"></span> 
+				</a> 
+				<a href="tel:+1-888-751-8552" class="pmd-floating-action-btn btn btn-sm pmd-btn-fab pmd-btn-raised pmd-ripple-effect btn-default" data-title="Call Us"> 
+					<span class="pmd-floating-hidden">1-888-751-8552</span> 
+					<span class="material-icons pmd-sm zmdi zmdi-phone"></span>
+				</a> 
+				<a class="pmd-floating-action-btn btn btn-sm pmd-btn-fab pmd-btn-raised pmd-ripple-effect btn-default" data-title="Questions? Contact Us" href="javascript:void(0);"> 
+					<span class="pmd-floating-hidden">Questions? Contact Us</span>
+					<span class="material-icons md-dark pmd-sm zmdi zmdi-help-outline" style="color: #fff;"></span> 
+				</a> 
+			</div>
+		</div>
+	</script>	
+</div>
+<style type="text/css">
+#pe-container-a5be8c40-4b0a-41f5-b56c-3b5b307961e0, #XsellHiPer_Button, #pe-base, .pe-container {
+	display: none !important;
+}
+</style>
+<!-- jQuery before Propeller.js -->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="http://www.datejs.com/build/date.js" type="text/javascript"></script>
+<script type="text/javascript" src="https://shopvcf.com/ordertracking/js/helpers.js"></script>
+<script type="text/javascript" src="https://shopvcf.com/ordertracking/js/orderTracking_main.js"></script>
+<script type="text/javascript" src="https://shopvcf.com/ordertracking/js/propeller.js"></script>
