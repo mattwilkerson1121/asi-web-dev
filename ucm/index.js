@@ -11,6 +11,14 @@ var requesttype = getUrlParameter('requesttype');
 var otid = getUrlParameter('otid');
 var requestdate = getUrlParameter('requestdate');
 var addr = getUrlParameter('addr');
+var city = getUrlParameter('city');
+var state = getUrlParameter('state');
+var zip = getUrlParameter('zip');
+var timeFrom = getUrlParameter('timeFrom');
+var timeTo = getUrlParameter('timeTo');
+var tz = getUrlParameter('tz');
+
+var responseAPI;
 
 function getUrlParameter(name) {
 	// return value of query parameter
@@ -75,22 +83,22 @@ function formatStorePhone(phone) {
 function testQueryParams() {
 	// confirm query param test for the PCC calls 
 	if ((requesttype == "PCC") && (type == "r") && (response == "c") && (system != "") && (requestid != "") && (otid != "") && (orderDate != "") && (ordertype != "")) {
-		return "confirm-pcc"
+		return "confirm-pcc";
 	}
 	// reschedule query param test for the PCC calls
 	else if ((requesttype == "PCC") && (type == "r") && (response == "r") && (system != "") && (requestid != "") && (otid != "") && (ordertype != "")) {
-		return "reschedule-pcc"			
+		return "reschedule-pcc";			
 	}
 	// confirm query param test for the WINDOW calls 
 	else if ((requesttype == "WINDOW") && (type == "r") && (response == "c") && (system != "") && (requestid != "") && (otid != "") && (orderDate != "") && (ordertype != "")) {
-		return "confirm-window"
+		return "confirm-window";
 	}
 	// reschedule query param test for the WINDOW calls
 	else if ((requesttype == "WINDOW") && (type == "r") && (response == "r") && (system != "") && (requestid != "") && (otid != "") && (ordertype != "")) {
-		return "reschedule-window"			
+		return "reschedule-window";			
 	}
 	else {
-		return "default"		
+		return "default";		
 	}
 }
 
@@ -106,7 +114,24 @@ function responseAPI() {
   		type: 'GET',
   		crossDomain: true,
   		success: function(data){
-  			console.log(data);
+  			console.log(data.status);
+  			if ((data.status == "WAITING" && response == "c") || (data.status == "CONFIRM" && response == "c")) {
+  				var responseAPI = "confirmed";
+  				console.log(responseAPI);
+  			}
+  			else if ((data.status == "NEEDS CALL" && response == "c") || (data.status == "EXPIRED" && response == "c") || (data.status == "EXPIRED" && response == "r")) {
+  				var responseAPI =  "special";
+  				console.log(responseAPI);
+  			}
+  			else if ((data.status == "WAITING" && response == "r") || (data.status == "CONFIRM" && response == "r") || (data.status == "NEEDS CALL" && response == "r")) {
+  				var responseAPI = "reschedule";
+  				console.log(responseAPI);
+  			}
+  			else {
+  				var responseAPI = "default";
+  				console.log(responseAPI);
+  			} 
+  			displayUI(responseAPI);  
   		},
   		error: function(data) {
   			console.log(data);
@@ -114,36 +139,39 @@ function responseAPI() {
 	});		
 }
 
+function displayUI(responseAPI) {
+	// call the API and read the response to see what to show to the user
+	if (responseAPI == "confirmed") {
+		if (result == "confirm-pcc") {
+			console.log("confirm-pcc");
+			$("#custom-page-body .asi-container").append("<div class='asi-ucm' style='margin-top: 0%'><p>Thanks for confirming your "+ordertype+".<br /><br/>We'll see you on <span style='color:#e10e32;font-weight:bold'>"+formatDate(orderDate)+"</span>.<br/><br/>For information about your order try our <a href='/track-my-order?tracking="+otid+"' style='color:#e10e32;font-weight:bold;'>order tracker</a>.<br /></p><div class='asi-red-separator' style='margin-top: 10px;margin-bottom:20px;'></div></div>");		
+		}	
+		else if (result == "confirm-window") {
+			console.log("confirm-window");
+
+			$("#custom-page-body .asi-container").append("<div class='asi-ucm' style='margin-top: 0%'><p>Yay! Thanks for confirming your "+ordertype+".<br /><br/>We'll see you "+daysTillOrderDate(orderDate)+" <span style='color:#e10e32;font-weight:bold'>"+formatDate(orderDate)+"</span> at:<br/><br/><span style='color:#e10e32;font-weight:bold'>"+addr.toUpperCase()+"<br/>"+city.toUpperCase()+", "+state.toUpperCase()+" "+zip+"</span><br/><br/>If you have any questions between now and then, feel free to give us a call at:<br/><br/><a href='tel:1"+phone+"' target='_blank' style='color:#e10e32;font-weight:bold'>"+phone+"</a><br/><br/>For information about your order try our <a href='/track-my-order?tracking="+otid+"' style='color:#e10e32;font-weight:bold;'>order tracker</a>.<br /></p><div class='asi-red-separator' style='margin-top: 10px;margin-bottom:20px;'></div></div>");			
+		}	
+	}
+	else if (responseAPI == "reschedule") {
+		if (result == "reschedule-pcc") {
+			console.log("reschedule-pcc");	
+			$("#custom-page-body .asi-container").append("<div class='asi-ucm' style='margin-top:0%;'><p>Your request has been received. You may reach the store at:<br/><br/><span style='color:#e10e32;font-weight:bold;'><a href='tel:1"+phone+"' target='_blank' style='color:#e10e32;font-weight:bold'>"+phone+"</a></span><br /><br />Otherwise, you will be contacted as soon as possible.<br /><br/><br/>For information about your order try our <a href='/track-my-order?tracking="+otid+"' style='color:#e10e32;font-weight:bold;'>order tracker</a>.<br/><br />Thank you!</p><div class='asi-red-separator' style='margin-top:10px;margin-bottom:20px;'></div></div>");			
+		}
+		else if (result == "reschedule-window") {
+			console.log("reschedule-window");	
+			$("#custom-page-body .asi-container").append("<div class='asi-ucm' style='margin-top:0%;'><p>Your request has been received. You may reach the store at:<br/><br/><span style='color:#e10e32;font-weight:bold;'><a href='tel:1"+phone+"' target='_blank' style='color:#e10e32;font-weight:bold'>"+phone+"</a></span><br /><br />Otherwise, you will be contacted as soon as possible.<br /><br/><br/>For information about your order try our <a href='/track-my-order?tracking="+otid+"' style='color:#e10e32;font-weight:bold;'>order tracker</a>.<br/><br />Thank you!</p><div class='asi-red-separator' style='margin-top:10px;margin-bottom:20px;'></div></div>");				
+		}	
+	}
+	else if (responseAPI == "special") {
+		console.log("special-ui");	
+		$("#custom-page-body .asi-container").append("<div class='asi-ucm' style='margin-top:0%;'><p>Please contact the store at:<br/><br/><span style='color:#e10e32;font-weight:bold;'><a style='color:#e10e32;font-weight:bold;' href='tel:"+phone+"' >"+phone+"</a></span><br /><br/>For information about your order try our <a href='/track-my-order?tracking="+otid+"' style='color:#e10e32;font-weight:bold;'>order tracker</a><br />Thank you!</p><div class='asi-red-separator' style='margin-top:10px;margin-bottom:20px;'></div></div>");			
+	}
+	else {
+		console.log("default-ui");	
+		$("#custom-page-body .asi-container").append("<div class='asi-ucm' style='margin-top:0%;'><p>Oops Something Went Wrong.<br/><br/>Try clicking on the link in the email again or<br/>contact Customer Service at: <span style='color:#e10e32;font-weight:bold;'><a style='color:#e10e32;font-weight:bold;' href='tel:"+defaultCustSrvcNum()+"' >"+defaultCustSrvcNum()+"</a></span><br /><br/>For information about your order try our <a href='/track-my-order' style='color:#e10e32;font-weight:bold;'>Order Tracker</a><br />Thank you!</p><div class='asi-red-separator' style='margin-top:10px;margin-bottom:20px;'></div></div>");		
+	}	
+}
 
 // store the message type results to control UI and also responseAPI() call
 var result = testQueryParams();
-
-if (result == "confirm-pcc") {
-	console.log("confirm-pcc");
-	$("#custom-page-body .asi-container").append("<div class='asi-ucm' style='margin-top: 0%'><p>Thanks for confirming your "+ordertype+".<br /><br/>We'll see you on <span style='color:#e10e32;font-weight:bold'>"+formatDate(orderDate)+"</span>.<br/><br/>For information about your order try our <a href='/track-my-order?tracking="+otid+"' style='color:#e10e32;font-weight:bold;'>order tracker</a>.<br /></p><div class='asi-red-separator' style='margin-top: 10px;margin-bottom:20px;'></div></div>");	
-	// Send back email response through API 
-	responseAPI();		
-}
-else if (result == "reschedule-pcc") {
-	console.log("reschedule-pcc");	
-	$("#custom-page-body .asi-container").append("<div class='asi-ucm' style='margin-top:0%;'><p>Your request has been received. You may reach the store at:<br/><br/><span style='color:#e10e32;font-weight:bold;'><a href='tel:1"+phone+"' target='_blank' style='color:#e10e32;font-weight:bold'>"+phone+"</a></span><br /><br />Otherwise, you will be contacted as soon as possible.<br /><br/><br/>For information about your order try our <a href='/track-my-order?tracking="+otid+"' style='color:#e10e32;font-weight:bold;'>order tracker</a>.<br/><br />Thank you!</p><div class='asi-red-separator' style='margin-top:10px;margin-bottom:20px;'></div></div>");	
-	// Send back email response through API 
-	responseAPI();		
-}
-else if (result == "confirm-window") {
-	console.log("confirm-window");
-
-	$("#custom-page-body .asi-container").append("<div class='asi-ucm' style='margin-top: 0%'><p>Yay! Thanks for confirming your "+ordertype+".<br /><br/>We'll see you "+daysTillOrderDate(orderDate)+" <span style='color:#e10e32;font-weight:bold'>"+formatDate(orderDate)+"</span> at <span style='color:#e10e32;font-weight:bold'>"+addr+"</span>.<br/><br/>If you have any questions between now and then, feel free to give us a call at:<br/><br/><a href='tel:1"+phone+"' target='_blank' style='color:#e10e32;font-weight:bold'>"+phone+"</a><br/><br/>For information about your order try our <a href='/track-my-order?tracking="+otid+"' style='color:#e10e32;font-weight:bold;'>order tracker</a>.<br /></p><div class='asi-red-separator' style='margin-top: 10px;margin-bottom:20px;'></div></div>");	
-	// Send back email response through API 
-	responseAPI();			
-}
-else if (result == "reschedule-window") {
-	console.log("reschedule-window");	
-	$("#custom-page-body .asi-container").append("<div class='asi-ucm' style='margin-top:0%;'><p>Your request has been received. You may reach the store at:<br/><br/><span style='color:#e10e32;font-weight:bold;'><a href='tel:1"+phone+"' target='_blank' style='color:#e10e32;font-weight:bold'>"+phone+"</a></span><br /><br />Otherwise, you will be contacted as soon as possible.<br /><br/><br/>For information about your order try our <a href='/track-my-order?tracking="+otid+"' style='color:#e10e32;font-weight:bold;'>order tracker</a>.<br/><br />Thank you!</p><div class='asi-red-separator' style='margin-top:10px;margin-bottom:20px;'></div></div>");	
-	// Send back email response through API 
-	responseAPI();			
-}
-else {
-	console.log("default");	
-	$("#custom-page-body .asi-container").append("<div class='asi-ucm' style='margin-top:0%;'><p>Oops Something Went Wrong.<br/><br/>Try clicking on the link in the email again or<br/>contact Customer Service at: <span style='color:#e10e32;font-weight:bold;'><a style='color:#e10e32;font-weight:bold;' href='tel:"+defaultCustSrvcNum()+"' >"+defaultCustSrvcNum()+"</a></span><br /><br/>For information about an order try our <a href='/track-my-order' style='color:#e10e32;font-weight:bold;'>Order Tracker</a><br />Thank you!</p><div class='asi-red-separator' style='margin-top:10px;margin-bottom:20px;'></div></div>");		
-}
+responseAPI();
