@@ -1,0 +1,164 @@
+/*
+* {
+	outline: 1px red solid;
+}
+*/
+#appBody {
+	background:#efefef !important;
+}	
+hr {
+	border-top:1px solid #a5a5a5 !important;
+}
+.headerText {
+	font-size: 1.5rem; 
+	color: #fff; 
+	display: inline; 
+	float: left;
+	margin: 15px 0;
+}
+.twoCol {
+	float: left;
+	padding-left: 30px;
+	margin-bottom: 20px;
+}
+.storeInfo {
+	margin-top: 0px;
+}
+#deliveryInfo {
+	float: left;
+	padding-left: 20px;	
+	display: inline;
+}
+.js-manageNotifications {
+	display: none;
+}
+#js-showManageNotifications {
+	margin-right: 50px;
+}
+#js-updateDelivery {
+	display: none;
+}
+.noMarginBottom {
+	margin-bottom: 0;
+}
+.noMarginTop {
+	margin-top: 0;
+}
+.negMargin {
+	margin-top: -15px;
+	margin-left: -20px; 
+	font-weight: 700;
+}
+.formLabel{
+	width: 150px;
+}
+.custom-select {
+	width: 150px;
+}
+.orderSummary {
+	max-width: 730px;
+}
+.orderSummary.pmd-card-title {
+	margin-bottom: 0px;
+}
+.orderItem {
+	padding-left: 10px;
+}
+.deliverySummary{
+	display: inline;
+}
+.summaryRight {
+	float: left;
+	display: inline;
+}
+.itemName {
+	text-transform: capitalize;
+}
+.orderPackageHeading{
+	text-align: center;
+	margin-top: 0px;
+	margin-bottom: 2px;
+}
+.itemImage {
+	max-height: 250px;
+	width: 250px;
+	margin-right: 50px;
+	border: 1px solid #c2c2c2;
+}
+.pmd-card-media.orderItemsDisplay {
+	margin-top: 0px;
+}
+.btn-size {
+	width: 100px;
+}
+.material-icons.pmd-md.zmdi-chevron-right {
+	font-size: 22px;
+}
+.orderImageright {
+    display: table-cell;
+    vertical-align: top;
+    width: 50%;
+    display: inline;
+}
+.orderItemsDisplayPackage:nth-child(1){
+	margin-top: 0px !important;
+}
+.orderItemsDisplayPackage:last-child(1){
+	margin-bottom: 15px !important;
+}
+.linkDirections {
+	color: #fff;
+}
+.orderCalendar {
+	display: inline;
+}
+.updateDeliveryButton {
+	margin-top: 20px;
+}
+.orderStatusText {
+	text-align: center;
+}
+.orderItemPackage {
+	margin-left: 10px;
+}
+time.icon {
+	font-size: 1em; /* change icon size */
+	display: block;
+	position: relative;
+	width: 7em;
+	height: 7em;
+	background-color: #fff;
+	border-radius: 0.6em;
+	box-shadow: 0 1px 0 #bdbdbd, 0 2px 0 #fff, 0 3px 0 #bdbdbd, 0 4px 0 #fff, 0 5px 0 #bdbdbd, 0 0 0 1px #bdbdbd;
+	overflow: hidden;
+}
+time.icon * {
+	display: block;
+	width: 100%;
+	font-size: 1em;
+	font-weight: bold;
+	font-style: normal;
+	text-align: center;
+}
+time.icon #orderMonth {
+	position: absolute;
+	top: 0;
+	padding: 0.4em 0;
+	color: #fff;
+	background-color: #ee3d42;
+	border-bottom: 1px dashed #000;
+	box-shadow: 0 2px 0 #ee3d42;
+}
+time.icon #orderDayOfWeek {
+	position: absolute;
+	bottom: 0.3em;
+	color: #000;
+}
+time.icon #orderDayDate {
+	font-size: 1.5em;
+	padding-top: 2em;
+	color: #2f2f2f;
+}
+#orderTrackingNumberSubmit {
+	margin-top: 15px;
+}
