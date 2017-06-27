@@ -1,0 +1,72 @@
+<html>
+<head>
+	<title></title>
+	<script
+	  src="https://code.jquery.com/jquery-3.2.1.min.js"
+	  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+	  crossorigin="anonymous"></script>	
+
+	<script type="text/javascript" src="js-cookie.js"></script>
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>	
+</head>
+<body>
+	<!-- modal html -->
+	<div id="myModal" class="modal fade" tabindex="-1" role="dialog">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h4 class="modal-title">Modal title</h4>
+	      </div>
+	      <div class="modal-body">
+	        <p>One fine body&hellip;</p>
+	      </div>
+	    </div><!-- /.modal-content -->
+	  </div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->	
+
+
+	<script type="text/javascript">
+	// set a counter to 0
+	var count = 0;
+	// make sure there are items in the cart
+	var cartCount = parseInt($("span.asi-cart-number#header-right-features-sc-count").text());
+
+	// spoof the isSignedIn 'false' state
+	var isSignedIn = false;
+	// spoof the cartCount data
+	var cartCount = 2;
+
+	$(window).mouseout(function(){
+		// increment count
+		count ++;
+
+		// prevent the modal from showing once the cookie is set
+		if(Cookies.get('4modlshw') != 'false') {
+			// if this is only the first time, show modal
+			if ((count == 1) && (isSignedIn == false) && (cartCount > 0)) {	
+				// log some stuff out
+				console.log("isSignedIn: "+isSignedIn);	
+				console.log("cartCount: "+cartCount);				
+				console.log("Mouseout: "+ count);
+
+				// show the modal and set the cookie
+	            $('#myModal').modal();
+	            Cookies.set('4modlshw', 'false', { expires: 1 });
+	            console.log("First Modal, Cookies.get('4modlshw') => "+Cookies.get('4modlshw'));
+				
+			}
+		}
+	});
+	</script>
+
+</body>
+</html>
