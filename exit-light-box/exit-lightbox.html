@@ -50,7 +50,9 @@
 			if ((count == 1) && (isSignedIn == false) && (cartCount > 0)) {	
 				// show the modal and set the cookie
 	            $('#myModal').modal();
-	            Cookies.set('4modlshw', 'false', { expires: 1 });				
+	            // set cookie expiry, then set cookie
+	            var in30min = 1/48; 
+	            Cookies.set('4modlshw', 'false', { expires: in30min });				
 			}
 		}
 	});
