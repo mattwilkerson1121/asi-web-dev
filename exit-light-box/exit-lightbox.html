@@ -7,6 +7,7 @@
 	  crossorigin="anonymous"></script>	
 
 	<script type="text/javascript" src="js-cookie.js"></script>
+	<script type="text/javascript" src="jquery.cookie.js"></script>
 
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -18,46 +19,40 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>	
 </head>
 <body>
-	<!-- modal html -->
-	<div id="myModal" class="modal fade" tabindex="-1" role="dialog">
+	<!-- modal html Wait, Save Cart , Easy Pass -->
+	<div id="easyPassModal" class="modal fade" tabindex="-1" role="dialog">
 	  <div class="modal-dialog" role="document">
 	    <div class="modal-content">
 	      <div class="modal-header">
 	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-	        <h4 class="modal-title">Modal title</h4>
 	      </div>
 	      <div class="modal-body">
-	        <p>One fine body&hellip;</p>
+	        <a href="/account/sign-in"><img class="img-responsive" style="width:100%;" src="http://s7d4.scene7.com/is/image/ASF/asi-lightbox-modal-easypass?fmt=png" alt="Left Some Great Items In Your Cart, Try EasyPass"/></a>
 	      </div>
 	    </div><!-- /.modal-content -->
 	  </div><!-- /.modal-dialog -->
 	</div><!-- /.modal -->	
+
 	<script type="text/javascript">
 	// set a counter to 0
 	var count = 0;
 	// make sure there are items in the cart
 	var cartCount = parseInt($("span.asi-cart-number#header-right-features-sc-count").text());
-	// spoof the isSignedIn 'false' state
-	var isSignedIn = false;
-	// spoof the cartCount data
-	var cartCount = 2;
 	$(window).mouseout(function(){
 		// increment count
 		count ++;
 		// prevent the modal from showing once the cookie is set
-		if(Cookies.get('4modlshw') != 'false') {
+		//if(Cookies.get('4modlshw') != 'false') {
+		if($.cookie("4modlshw") != 'false') {
 			// if this is only the first time, show modal
 			if ((count == 1) && (isSignedIn == false) && (cartCount > 0)) {	
 				// show the modal and set the cookie
-	            $('#myModal').modal();
+	            $('#easyPassModal').modal();
 	            // set cookie expiry, then set cookie
 	            var in30min = 1/48; 
-	            Cookies.set('4modlshw', 'false', { expires: in30min });	
-	            console.log("Cookies.get('4modlshw') => 'false'");				
+	            //Cookies.set('4modlshw', 'false', { expires: in30min });	
+	            $.cookie("4modlshw", "false", { expires: in30min });
 			}
-		}
-		else if (Cookies.get('4modlshw') == 'false') {
-			console.log("Supressed Modal");
 		}
 	});
 	</script>
