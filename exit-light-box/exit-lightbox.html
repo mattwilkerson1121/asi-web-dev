@@ -32,41 +32,28 @@
 	    </div><!-- /.modal-content -->
 	  </div><!-- /.modal-dialog -->
 	</div><!-- /.modal -->	
-
-
 	<script type="text/javascript">
 	// set a counter to 0
 	var count = 0;
 	// make sure there are items in the cart
 	var cartCount = parseInt($("span.asi-cart-number#header-right-features-sc-count").text());
-
 	// spoof the isSignedIn 'false' state
 	var isSignedIn = false;
 	// spoof the cartCount data
 	var cartCount = 2;
-
 	$(window).mouseout(function(){
 		// increment count
 		count ++;
-
 		// prevent the modal from showing once the cookie is set
 		if(Cookies.get('4modlshw') != 'false') {
 			// if this is only the first time, show modal
 			if ((count == 1) && (isSignedIn == false) && (cartCount > 0)) {	
-				// log some stuff out
-				console.log("isSignedIn: "+isSignedIn);	
-				console.log("cartCount: "+cartCount);				
-				console.log("Mouseout: "+ count);
-
 				// show the modal and set the cookie
 	            $('#myModal').modal();
-	            Cookies.set('4modlshw', 'false', { expires: 1 });
-	            console.log("First Modal, Cookies.get('4modlshw') => "+Cookies.get('4modlshw'));
-				
+	            Cookies.set('4modlshw', 'false', { expires: 1 });				
 			}
 		}
 	});
 	</script>
-
 </body>
 </html>
