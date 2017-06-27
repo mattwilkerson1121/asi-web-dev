@@ -52,8 +52,12 @@
 	            $('#myModal').modal();
 	            // set cookie expiry, then set cookie
 	            var in30min = 1/48; 
-	            Cookies.set('4modlshw', 'false', { expires: in30min });				
+	            Cookies.set('4modlshw', 'false', { expires: in30min });	
+	            console.log("Cookies.get('4modlshw') => 'false'");				
 			}
+		}
+		else if (Cookies.get('4modlshw') == 'false') {
+			console.log("Supressed Modal");
 		}
 	});
 	</script>
