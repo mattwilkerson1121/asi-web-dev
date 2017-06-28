@@ -1,6 +1,6 @@
 		var articleKeysArray;
 		var artKeyIndex;
-		var featureImg = $(".au-product-main-images").attr("src").replace("product-650x650","product-320x320");
+		var featureImg = $(".au-product-main-image").attr("src").replace("product-650x650","product-320x320");
 		var sku = $("span.product-id-label").text();
 		console.log(sku);
 
@@ -21,7 +21,7 @@
 			method:"GET",
 			dataType: "json",
 			url: url,
-			success: success_handler,
+			success: success_handler
 		});
 
 		function success_handler(data){
@@ -219,7 +219,7 @@
 								}
 							}
 
-						},
+						}
 					});							
 				});	
 
@@ -246,7 +246,7 @@
 					     	console.log('Error');
 					     },
 						 complete: function(data) {
-                         },					     
+                         }		     
 					});				
 
 					// close the alert after some time
@@ -278,7 +278,7 @@
 			}
 			// more boards to go, step to next
 			else {		
-				console.log("Else Clause, nextCount < 4")
+				console.log("Else Clause, nextCount < 4");
 				$(currentBoardSelector).hide();	
 				$(nextBoardSelector).show();										
 			}
