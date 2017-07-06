@@ -2,7 +2,7 @@
 		var artKeyIndex;
 		var featureImg = $(".au-product-main-image").attr("src").replace("product-650x650","product-320x320");
 		var sku = $("span.product-id-label").text();
-		console.log(sku);
+		//console.log(sku);
 
 		var obj;
 
@@ -26,7 +26,7 @@
 
 		function success_handler(data){
 		    var obj = data;
-			console.log(obj);
+			//console.log(obj);
 
 			if (obj == "Unable to suggest any outfits based on the currently selected anchor item(s)") {
 			// do nothing; no results found
@@ -34,6 +34,7 @@
 				$("#asi-mix-browse-style").hide();
 			}
 			else {
+				// set ensemsble variable to use below
 				var ens; 
 				// replace the img src of the featured product defaults in the html
 				// featured product is always returned in the 0 position
@@ -49,10 +50,10 @@
 					var articleKeysArray2 = data[2].articleKeys;
 					var articleKeysArray3 = data[3].articleKeys;
 					if (ens == 0) {
-						console.log("ensemble below: "+ens);
-						console.log(ensemble);					
-						console.log("articleKeysArray below: "+ens);
-						console.log(articleKeysArray0);		
+						//console.log("ensemble below: "+ens);
+						//console.log(ensemble);					
+						//console.log("articleKeysArray below: "+ens);
+						//console.log(articleKeysArray0);		
 						var ensembleNum = 0;				
 					}	
 					else if (ens == 1) {	
@@ -80,84 +81,158 @@
 
 						if (ens == 0) {
 							var artKeyIndex = jQuery.inArray(item_id, articleKeysArray0);
-							console.log("item_id: " + item_id + " artKeyIndex: " + artKeyIndex + " data-ensIndex: "+ i + " canvas_key: " + cKey);			
+							//console.log("item_id: " + item_id + " artKeyIndex: " + artKeyIndex + " data-ensIndex: "+ i + " canvas_key: " + cKey);			
 						}	
 						else if (ens == 1) {
 							var artKeyIndex = jQuery.inArray(item_id, articleKeysArray1);
-							console.log("item_id: " + item_id + " artKeyIndex: " + artKeyIndex + " data-ensIndex: "+ i + " canvas_key: " + cKey);
+							//console.log("item_id: " + item_id + " artKeyIndex: " + artKeyIndex + " data-ensIndex: "+ i + " canvas_key: " + cKey);
 						}
 						else if (ens == 2) {
 							var artKeyIndex = jQuery.inArray(item_id, articleKeysArray2);
-							console.log("item_id: " + item_id + " artKeyIndex: " + artKeyIndex + " data-ensIndex: "+ i + " canvas_key: " + cKey);
+							//console.log("item_id: " + item_id + " artKeyIndex: " + artKeyIndex + " data-ensIndex: "+ i + " canvas_key: " + cKey);
 						}		
 						else if (ens == 3) {
 							var artKeyIndex = jQuery.inArray(item_id, articleKeysArray3);
-							console.log("item_id: " + item_id + " artKeyIndex: " + artKeyIndex + " data-ensIndex: "+ i + " canvas_key: " + cKey);
+							//console.log("item_id: " + item_id + " artKeyIndex: " + artKeyIndex + " data-ensIndex: "+ i + " canvas_key: " + cKey);
 						}
 
 					  	var boardNum = ens+1;
 					  	var selectorStr = "#ens"+boardNum+" div#key"+i;
 
-  				  	  	$(selectorStr).append("<div id='productResults' style='text-align:center;'><div class='btn-toolbar'><button data-iid='"+item_id+"' data-ens='"+ensembleNum+"' data-ensIndex='"+i+"' data-cKey='"+cKey+"'  data-artKeyIndex='"+artKeyIndex+"' type='button' class='btn pull-right itemReplace' style='border: 1px solid rgb(128, 128, 128); background-color: rgb(255, 255, 255);'><span class='glyphicon glyphicon-refresh default' aria-hidden='true' ></button>&nbsp;<button id='addCartSingleProduct' data-ens='"+ensembleNum+"' data-cart='"+product_id+"'' type='button' class='btn btn-outline pull-right' style='border: 1px solid rgb(128, 128, 128); background-color: rgb(255, 255, 255);'></span><span class='glyphicon glyphicon-shopping-cart default' aria-hidden='true'></span></button></div><a href='"+pdpURL+"' target='_blank' data-ensIndex='"+i+"'><img class='img-responsive center-block productGrid' src='"+imgURL+"?impolicy=product-320x320' alt='image"+i+"'/></a></div>");
+  				  	  	$(selectorStr).append("<div id='productResults' style='text-align:center;'><div class='btn-toolbar'><button id='itemReplace' data-iid='"+item_id+"' data-ens='"+ensembleNum+"' data-ensIndex='"+i+"' data-cKey='"+cKey+"'  data-artKeyIndex='"+artKeyIndex+"' type='button' class='btn pull-right itemReplace' style='border: 1px solid rgb(128, 128, 128); background-color: rgb(255, 255, 255);'><span class='glyphicon glyphicon-refresh default' aria-hidden='true' ></button>&nbsp;<button id='addCartSingleProduct' data-ens='"+ensembleNum+"' data-cart='"+product_id+"'' type='button' class='btn btn-outline pull-right' style='border: 1px solid rgb(128, 128, 128); background-color: rgb(255, 255, 255);'></span><span class='glyphicon glyphicon-shopping-cart default' aria-hidden='true'></span></button></div><a id='pdpImage' href='"+pdpURL+"' target='_blank' data-ensIndex='"+i+"'><img class='img-responsive center-block productGrid' src='"+imgURL+"?impolicy=product-320x320' alt='image"+i+"'/></a></div>");
+
 					}
+
 				}
+
+				// the UI is loading, set the custom dimension for Google Analytics tracking
+				$(document).ready(function(){
+					//  check for GA tag every 100ms until found
+					var checkGAexists = setInterval(function() {
+	                    if (typeof ga === 'undefined') {
+	   						//setTimeout(function(){
+	   							//clearInterval(checkGAexists);
+	   							console.log("GA not available yet!");
+	   						//}, 5000);
+	   					}
+	   					// stop checking for GA tag to fire after 5 seconds
+	   					else {
+	      					console.log("Exists!");
+							var dimensionValue = '0';
+							ga('set', 'dimension17', dimensionValue);	      					
+	      					clearInterval(checkGAexists);
+	   					}
+					}, 100); // check every 100ms					
+				});	
+
+				// click function that sets the GA dimension to 1 if the user clicks
+				// on the UI during their session
+				// this will allow us to separate those who see the UI vs engagers
+				$(document).ready(function(){	
+					//  check for GA tag every 100ms until found			
+					$("button#addCartSingleProduct").click(function(){
+						if (ga != undefined) {				
+							var dimensionValue = '1';						
+							ga('send', 'event', 'shoptelligence', 'add to cart', $(this).data("cart"), {
+  							   'dimension17': '1'
+							});									
+						}
+					});
+					$("button#itemReplace").click(function(){
+						if (ga != undefined) {				
+							var dimensionValue = '1';						
+							ga('send', 'event', 'shoptelligence', 'item replace', $(this).data("iid"), {
+  							   'dimension17': '1'
+							});									
+						}
+					});	
+					$("a#pdpImage").click(function(){
+						if (ga != undefined) {				
+							var dimensionValue = '1';						
+							ga('send', 'event', 'shoptelligence', 'pdp image click', $(this).attr("href"), {
+  							   'dimension17': '1'
+							});									
+						}
+					});	
+					$("button#nextBoard").click(function(){
+						if (ga != undefined) {				
+							var dimensionValue = '1';	
+							var next = $('div[id^=ens]:visible').attr('id').substr(-1);			
+							ga('send', 'event', 'shoptelligence', 'next board', next, {
+  							   'dimension17': '1'
+							});									
+						}
+					});	
+					$("a#shopCart").click(function(){
+						if (ga != undefined) {				
+							var dimensionValue = '1';						
+							ga('send', 'event', 'shoptelligence', 'shopping cart click', $(this).attr("href"), {
+  							   'dimension17': '1'
+							});									
+						}
+					});																			
+				});
+
 				// Click handler for the Item Replace API Call
 				$("div[id^=key]").on('click','button.itemReplace',function(){
 					var cKeyReplace = $(this).data("ckey");
 					var dataens = $(this).attr('data-ens');
 
-					console.log(cKeyReplace);
+					//console.log(cKeyReplace);
 
 					var ensindex = parseInt($(this).data('ensindex'));
 					// get the item replacement button selector
 					var itemReplaceButton = $(this);
-					console.log(itemReplaceButton);
+					//console.log(itemReplaceButton);
 
 					// selector for the addSingleItem button; need to keep item_id up to date
 					// on this button in order for add to cart to function after
 					// item replacement
 					var itemReplaceShoppingButton = $(this).parent().eq(0).children().eq(1);
-					console.log(itemReplaceShoppingButton);
+					//console.log(itemReplaceShoppingButton);
 
 					var removeItem = $(this).attr("data-iid");
 					var removeItemArtKey = $(this).attr('data-artKeyIndex');
-					console.log("removeItem: "+removeItem+ " removeItemArtKey: "+removeItemArtKey);
+					//console.log("removeItem: "+removeItem+ " removeItemArtKey: "+removeItemArtKey);
 	
 					// find the element to replace selector
 					var itemReplace = "#"+$('div[id^=ens]:visible').attr('id')+" div#"+$(this).parent().parent().parent().attr("id")+" img";
-					console.log("itemReplace: "+itemReplace);
+					//console.log("itemReplace: "+itemReplace);
+					
 					// swap with a temporary image
 					$(itemReplace).attr('src', 'https://placeholdit.imgix.net/~text?txtsize=30&bg=ffffff&txtclr=000000&txt=Next+Item+Coming+Up&w=320&h=320');
+					
 					// selector for the link to wrap around new image
 					var itemReplaceLink = "#"+$('div[id^=ens]:visible').attr('id')+" div#"+$(this).parent().parent().attr("id")+" a[data-ensindex='"+$(this).parent().parent().children().eq(1).attr("data-ensindex")+"']";
-					console.log(itemReplaceLink);
+					//console.log(itemReplaceLink);
 
 					if (dataens == 0) {
 						articleKeysArray0.splice(removeItemArtKey, 1);	
-						console.log("articleKeysArray after removing specific index: ");
-						console.log(articleKeysArray0);		
+						//console.log("articleKeysArray after removing specific index: ");
+						//console.log(articleKeysArray0);		
+						
 						// make the item replacement call
 						var url = "http://shopvcf.com/asiapi/shoptelligence_api_prod.php?items="+articleKeysArray0;
 						//console.log(url);																	
 					}	
 					else if (dataens == 1) {
 						articleKeysArray1.splice(removeItemArtKey, 1);
-						console.log("articleKeysArray after removing specific index: ");
-						console.log(articleKeysArray1);	
+						//console.log("articleKeysArray after removing specific index: ");
+						//console.log(articleKeysArray1);	
 						var url = "http://shopvcf.com/asiapi/shoptelligence_api_prod.php?items="+articleKeysArray1;
 						//console.log(url);																			
 					}
 					else if (dataens == 2) {
 						articleKeysArray2.splice(removeItemArtKey, 1);
-						console.log("articleKeysArray after removing specific index: ");
-						console.log(articleKeysArray2);	
+						//console.log("articleKeysArray after removing specific index: ");
+						//console.log(articleKeysArray2);	
 						var url = "http://shopvcf.com/asiapi/shoptelligence_api_prod.php?items="+articleKeysArray2;
 						//console.log(url);									
 					}		
 					else if (dataens == 3) {
 						articleKeysArray3.splice(removeItemArtKey, 1);
-						console.log("articleKeysArray after removing specific index: ");
-						console.log(articleKeysArray3);				
+						//console.log("articleKeysArray after removing specific index: ");
+						//console.log(articleKeysArray3);				
 						var url = "http://shopvcf.com/asiapi/shoptelligence_api_prod.php?items="+articleKeysArray3;
 						//console.log(url);										
 					}
@@ -167,7 +242,7 @@
 						dataType: "json",
 						url: url,
 						success: function(data) {
-							console.log(data);
+							//console.log(data);
 
 							var replacementEnsemble = data[1].ensemble;
 
@@ -177,7 +252,7 @@
 								// canvas_key as the original item 
 								if (cKeyReplace == cKey) {
 
-									console.log("cKeyReplace matches - data[1].ensemble["+i+"].canvas_key");
+									//console.log("cKeyReplace matches - data[1].ensemble["+i+"].canvas_key");
 									var replaceImgURL = data[1].ensemble[i].image_url+"?impolicy=product-320x320";
 									//console.log(replaceImgURL);
 									var cKeyOrder = data[1].ensemble[i].canvas_key_order;
@@ -199,19 +274,19 @@
 									// replace the new item back into the array to keep it up to date
 									if (dataens == 0) {
 										articleKeysArray0.splice(removeItemArtKey, 0, new_item_id);
-										console.log(articleKeysArray0);
+										//console.log(articleKeysArray0);
 									}
 									else if (dataens == 1) {
 										articleKeysArray1.splice(removeItemArtKey, 0, new_item_id);
-										console.log(articleKeysArray1);
+										//console.log(articleKeysArray1);
 									}
 									else if (dataens == 2) {
 										articleKeysArray2.splice(removeItemArtKey, 0, new_item_id);
-										console.log(articleKeysArray2);
+										//console.log(articleKeysArray2);
 									}		
 									else if (dataens == 3) {
 										articleKeysArray3.splice(removeItemArtKey, 0, new_item_id);
-										console.log(articleKeysArray3);
+										//console.log(articleKeysArray3);
 									}																	
 								}
 								else {
@@ -259,18 +334,18 @@
 		}
 
 		// logic to step through ensembles
-		$("#next").click(function(){			
+		$("#nextBoard").click(function(){			
 			var currentBoard = $('div[id^=ens]:visible').attr('id').substr(-1);
-			console.log(currentBoard);
+			//console.log(currentBoard);
 			var currentBoardSelector = "div#ens"+currentBoard;
-			console.log("currentBoardSelector: "+currentBoardSelector);
+			//console.log("currentBoardSelector: "+currentBoardSelector);
 
 			var nextCount = parseInt(currentBoard) + 1;
-			console.log(nextCount);
+			//console.log(nextCount);
 			$(".mixnum").append(currentBoard);
 
 			var nextBoardSelector = "div#ens"+nextCount;
-			console.log("nextBoardSelector: "+nextBoardSelector);
+			//console.log("nextBoardSelector: "+nextBoardSelector);
 
 			if (nextCount > 4) {			
 				$(currentBoardSelector).hide();		
@@ -278,7 +353,7 @@
 			}
 			// more boards to go, step to next
 			else {		
-				console.log("Else Clause, nextCount < 4");
+				//console.log("Else Clause, nextCount < 4");
 				$(currentBoardSelector).hide();	
 				$(nextBoardSelector).show();										
 			}
