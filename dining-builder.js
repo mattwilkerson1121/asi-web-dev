@@ -19,7 +19,7 @@ function menuBuild(environment) {
 			        var facetField = item.Field;
 			        var facetName = item.Name;
 			        var facetValues = item.Values;
-			        styleMenu = ""
+			        styleMenu = "";
 			        styleMenu += '<option>Height</option>';
 			        // Loop through and build the menu
 			        $.each(facetValues, function(i, item) { 
@@ -40,10 +40,11 @@ function menuBuild(environment) {
 		    	// If the Facet is Color		    	
 		    	if (item.Name == "Color or Finish") {
 			        var facetField = item.Field;
+			        console.log(facetField);
 			        var facetName = item.Name;
 			        var facetNameClean = facetName.replace("Color or Finish", "Color");
 			        var facetValues = item.Values;
-			        colorsMenu = ""
+			        colorsMenu = "";
 			        colorsMenu += '<option>Color</option>';
 			        // Loop through and build the menu			        
 			        $.each(facetValues, function(i, item) {
@@ -56,16 +57,17 @@ function menuBuild(environment) {
 			        		colorsMenu += '<option value="'+facetValueClean+'">'+facetValueLabel+'</option>';
 			        	}
 			        });
+			 
 					$('#dr-select-2').html(colorsMenu);	
 		    	}
 		    	// If the Facet is Table Shape
 		    	if (item.Name == "Table Shape") {
-		    		console.log(item.Name);
+		    		//console.log(item.Name);
 			        var facetField = item.Field;
 			        var facetName = item.Name;
 			        var facetNameClean = facetName.replace("Table Shape", "Shape");
 			        var facetValues = item.Values;
-			        shapeMenu = ""
+			        shapeMenu = "";
 			        shapeMenu += '<option>Shape</option>';
 			        // Loop through and build the menu			        
 			        $.each(facetValues, function(i, item) { 
@@ -76,7 +78,7 @@ function menuBuild(environment) {
 			        	var facetValueCount = item.Count;
 			        	if (facetValueCount > 0) {
 			        		shapeMenu += '<option value="'+facetValueClean+'">'+facetValueLabel+'</option>';
-			        		console.log(shapeMenu);
+			        		//console.log(shapeMenu);
 			        	}
 			        });
 					$('#dr-select-3').html(shapeMenu);	
@@ -95,14 +97,14 @@ function buildRequest() {
 		$('form select :selected').each(function(){
 			// seet query params for search
     		var heightSelectionValue = "&dining_height_1="+$("#dr-select-1").val();
-    		var colorSelectionValue = "&finish_family_1="+$("#dr-select-2").val();
+    		var colorSelectionValue = "&color_facet_1="+$("#dr-select-2").val();
     		var shapeSelectionValue = "&table_shape_1="+$("#dr-select-3").val();
     		// if all 3 menus are not default
     		if ($("#dr-select-1 :selected").val() != "Height" && 
     			$("#dr-select-2 :selected").val() != "Color" && 
     			$("#dr-select-3 :selected").val() != "Shape") {
     				// build the search count request + link for button
-    				newRequest = '';
+    				newRequest = "";
     				newRequest = environment+heightSelectionValue+colorSelectionValue+shapeSelectionValue;
     				$("#drFinderSubmitBtn").attr('href', domain+diningURL+heightSelectionValue+colorSelectionValue+shapeSelectionValue);
     				return newRequest;	 	
@@ -111,7 +113,7 @@ function buildRequest() {
     		else if ($("#dr-select-1 :selected").val() != "Height" && 
     				$("#dr-select-2 :selected").val() != "Color") {
     				// build the search count request + link for button    			
-    				newRequest = '';
+    				newRequest = "";
     				newRequest = environment+heightSelectionValue+colorSelectionValue;	
     				$("#drFinderSubmitBtn").attr('href', domain+diningURL+heightSelectionValue+colorSelectionValue);
     				return newRequest;	 	    					
@@ -120,7 +122,7 @@ function buildRequest() {
     		else if ($("#dr-select-2 :selected").val() != "Color" &&
     				$("#dr-select-3 :selected").val() != "Shape") {
     				// build the search count request + link for button    			
-    				newRequest = '';
+    				newRequest = "";
     				newRequest = environment+colorSelectionValue+shapeSelectionValue;
     				$("#drFinderSubmitBtn").attr('href', domain+diningURL+colorSelectionValue+shapeSelectionValue);	
     				return newRequest;	 	    		    									
@@ -129,7 +131,7 @@ function buildRequest() {
     		else if ($("#dr-select-1 :selected").val() != "Height" &&
     				$("#dr-select-3 :selected").val() != "Shape") {
     				// build the search count request + link for button    			
-    				newRequest = '';
+    				newRequest = "";
     				newRequest = environment+heightSelectionValue+shapeSelectionValue;
     				$("#drFinderSubmitBtn").attr('href', domain+diningURL+heightSelectionValue+shapeSelectionValue);
     				return newRequest;	 	    				
@@ -137,7 +139,7 @@ function buildRequest() {
     		// if style menu is not default     		
     		else if ($("#dr-select-1 :selected").val() != "Height") {
     				// build the search count request + link for button    			
-    				newRequest = '';
+    				newRequest = "";
     				newRequest = environment+heightSelectionValue;
     				$("#drFinderSubmitBtn").attr('href', domain+diningURL+heightSelectionValue);
     				return newRequest;	    					    						
@@ -145,7 +147,7 @@ function buildRequest() {
     		// if color menu is not default      		
     		else if ($("#dr-select-2 :selected").val() != "Color") {
     				// build the search count request + link for button    			
-    				newRequest = '';
+    				newRequest = "";
     				newRequest = environment+colorSelectionValue;	
     				$("#drFinderSubmitBtn").attr('href', domain+diningURL+colorSelectionValue);
     				return newRequest;	 	    				   					
@@ -153,7 +155,7 @@ function buildRequest() {
     		// if shape menu is not default      		
     		else if ($("#dr-select-3 :selected").val() != "Shape") {
     				// build the search count request + link for button    			
-    				newRequest = '';
+    				newRequest = "";
     				newRequest = environment+shapeSelectionValue;	
     				$("#drFinderSubmitBtn").attr('href', domain+diningURL+shapeSelectionValue);
     				return newRequest;	 
@@ -163,7 +165,7 @@ function buildRequest() {
     				 $("#dr-select-2 :selected").val() === "Color" && 
     				 $("#dr-select-3 :selected").val() === "Shape") {
     				// build the search count request + link for button    			
-    				newRequest = '';
+    				newRequest = "";
     				newRequest = environment;	
     				$("#drFinderSubmitBtn").attr('href', domain+diningURL);
     				return newRequest;	 
