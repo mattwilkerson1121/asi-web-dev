@@ -1,0 +1,26 @@
+Version 2.0 (Update - 12/07/2016)
+- NEW Builder version 2
+- Fixed: #content3 responsive
+- Fixed: #content8 responsive
+- Fixed: #content10 slider
+- Fixed: #content12 responsive
+- Fixed: #content16 responsive
+- Fixed: #content18 responsive
+- Fixed: #content22 responsive & slider
+- Fixed: #content25 font color
+- Fixed: #services2 responsive
+- Fixed: #intro6 responsive
+
+Version 1.1.2 (Update - 11/05/2016)
+- HTML Builder design improved
+- Added 34 new blocks (new sections "Dividers and Downloads" added)
+
+Version 1.1 (Update - 25/04/2016)
+- Live preview bug fixed
+- Added 24 new blocks (new section "Intros" added)
+
+Version 1.0 (Update - 10/04/2016)
+- Fixed: Small issues with some elements
+
+Version 1.0
+- Initial release

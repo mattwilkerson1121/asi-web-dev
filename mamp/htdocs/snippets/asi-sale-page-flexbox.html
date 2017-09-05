@@ -1,0 +1,99 @@
+<div id="hawkbannertop" class="search-hawk-banner-top">
+    <div class="top-banner">
+        <div class="asi-search-masthead" style="position:relative;padding:0;margin:0;width:100%;max-width:100%;"><div class="asi-container" style="position:relative;width:100%;max-width:1200px;padding:10px 10px 0 10px;margin:0 auto;text-align:center;"><h1 class="text-uppercase text-center" style="color:#121212;font-family:'Knockout-HTF49-Liteweight','ProximaNova-Semibold',sans-serif;font-size:60px !important;letter-spacing:1px !important;">SHOP THE LABOR DAY SALE</h1></div></div>
+    </div>
+    <div class="second-top-banner">
+    	<div id="asi-sale-section" class="section asi-section">
+			<div class="asi-container container">
+				<ul class="asi-grid-wrapper">   
+		            <li class="asi-grid-featured">
+		                <img class="img-responsive asi-sale-feature asi-sale--wide" src="http://via.placeholder.com/960x480/2E8B57/ffffff.png?text=SALE+PROMO+OFFER+1" alt="sale-promo-1-alt">
+		            </li>
+		            <li>
+		                <img class="img-responsive asi-sale-feature asi-sale" src="http://via.placeholder.com/640x480/ee3d42/ffffff.png?text=SALE+PROMO+OFFER+2" alt="sale-promo-2-alt">
+		            </li>
+		            <li>
+		                <img class="img-responsive asi-sale-feature asi-sale" src="http://via.placeholder.com/640x480/D8BFD8/181818.png?text=SALE+PROMO+OFFER+3" alt="sale-promo-3-alt">
+		            </li>
+		        </ul>
+			</div>
+		</div>
+    </div>
+        <style>
+        .asi-heading-rule:before,
+        .asi-heading-rule::before {
+        	position:absolute;
+        	content:'';
+        	left:0;
+        	right:0;
+        	top:50%;
+        	border-bottom:1px solid #A5A5A5;
+        	height:1px;
+        	-webkit-transform:translateY(-50%);
+        	-ms-transform:translateY(-50%);
+        	transform: translateY(-50%);
+        }
+        </style>     
+</div>
+<style type="text/css">
+	.asi-section,
+	#asi-sale-section{
+		padding:0;
+		margin:0;
+		width:100%;
+		position:relative;
+	}
+	.asi-container{
+		position:relative;
+		width:100%;
+		max-width:1200px;
+		padding: 0 10px;
+		margin:0;
+	}
+/**** FLEXBOX SALE PROMO GRID ****/
+    .asi-grid-wrapper {
+        list-style: none;
+        margin: 0 auto 0 auto;
+        padding: 0;
+        display: grid;
+        max-width: 1180px;
+        grid-template-columns: 1fr;   
+        grid-template-rows: auto;
+        grid-auto-flow: dense;
+    }
+    .asi-grid-wrapper{grid-template-columns: 1fr 1fr 1fr 1fr;} 
+    .asi-grid-featured {
+        grid-column: 1 / 4;
+        grid-row: 1 / 3;
+    }
+    .asi-grid-wide{grid-column: auto / span 2;}   
+    .asi-grid-wrapper li {
+        margin: 5px;
+        background:#efefea;
+        padding:0px;
+    }
+    @media (max-width: 768px) {
+        .asi-grid-wrapper {grid-template-columns: 1fr 1fr;} 
+		.asi-grid-featured {grid-column: 1 / 3;}
+    }  
+</style>
+
+<!-- ASI CSS & JS MIXINS !-->
+<link rel="stylesheet" type="text/css" href="https://shopvcf.com/css/asi-mix-styles.css" />
+<link rel="stylesheet" type="text/css" href="https://shopvcf.com/css/asi-mix-styles-main.css" />
+
+<script type="text/javascript" src="https://shopvcf.com/js/asi-mix-scripts.js"></script>
+<script type="text/javascript" language="javascript" src="http://propeller.in/components/tab/js/tab-scrollable.js"></script>
+<script type="text/javascript">
+    $(document).ready( function() {
+        $('.pmd-tabs').pmdTab();
+
+        var taburl = document.location.toString();
+
+        if( taburl.match('#') ) {
+            $('.asi-sale-nav-pills a[href=#'+taburl.split('#')[1]+']').tab('show');
+        }
+    });
+</script>
+
+

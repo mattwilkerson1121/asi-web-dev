@@ -1,0 +1,100 @@
+﻿.hawk-recommendation-info {
+    display: block;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    background-color: #FEF087;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+    cursor: pointer;
+    z-index: 100;
+    font-size: 12px;
+}
+
+    .hawk-recommendation-info:hover {
+        opacity: 1;
+    }
+
+.hawk-recommendation-model-icon {
+    background-image: url(images/recommendation-model.png);
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+}
+
+    .hawk-recommendation-model-icon.hawk-alsoaddedtocart {
+        background-position: 0 0;
+    }
+
+    .hawk-recommendation-model-icon.hawk-alsobought {
+        background-position: 0 -30px;
+    }
+
+    .hawk-recommendation-model-icon.hawk-alsoviewed {
+        background-position: 0 -60px;
+    }
+
+    .hawk-recommendation-model-icon.hawk-featureditems {
+        background-position: 0 -90px;
+    }
+
+    .hawk-recommendation-model-icon.hawk-hotnow {
+        background-position: 0 -120px;
+    }
+
+    .hawk-recommendation-model-icon.hawk-morelikethis {
+        background-position: 0 -150px;
+    }
+
+    .hawk-recommendation-model-icon.hawk-mostpopular {
+        background-position: 0 -180px;
+    }
+
+    .hawk-recommendation-model-icon.hawk-personalized {
+        background-position: 0 -210px;
+    }
+
+    .hawk-recommendation-model-icon.hawk-recentlyviewed {
+        background-position: 0 -240px;
+    }
+
+    .hawk-recommendation-model-icon.hawk-bestsellers {
+        background-position: 0 -270px;
+    }
+
+    .hawk-recommendation-model-icon.hawk-trendingitems {
+        background-position: 0 -300px;
+    }
+    .hawk-recommendation-model-icon.hawk-recentlysearched {
+        background-position: 0 -330px;
+    }
+    .hawk-recommendation-model-icon.hawk-viewthenbought {
+        background-position: 0 -360px;
+    }
+
+.hawk-rule-info {
+    margin-top: 8px;
+    padding-top: 8px;
+    border-top: 1px solid #e7bea2;
+}
+
+.hawk-rule-info .hawk-rule-condition {
+    text-transform: uppercase;
+    color: #abc;
+}
+
+.hawk-rule-info .hawk-rule-connector {
+    text-transform: uppercase;
+    color: red;
+}
+
+.hawk-rule-info .hawk-rule-value, .hawk-rule-info .hawk-rule-field {
+    text-decoration: underline;
+    -webkit-text-decoration-style: dotted;
+    -moz-text-decoration-style: dotted;
+    -ms-text-decoration-style: dotted;
+    -o-text-decoration-style: dotted;
+    text-decoration-style: dotted;
+}

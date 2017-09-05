@@ -1,0 +1,12 @@
+##################################################################
+1. I can't export .zip file, or exported .zip is empty?
+- For some servers set your tmp/ directory to chmod 777, this will import of assets. If tmp/ doesn't exists, create it in the root directory.
+
+##################################################################
+2. The live preview didn't work?
+- For some servers set your elements/ and elements/images/upload directory to chmod 777, this will fix preview.
+
+##################################################################
+3. Global blocks?
+-  HTML Builder allows users to configure so-called "global blocks". These are blocks that maintain the same appearance and settings across different pages. This feature comes in handy when configuring navigations and footers for example.
+- Each block on the canvas has a check box labeled "Global". When checked, changes made to this block will be applied to the same block on all pages in your site, assuming those other blocks are marked as "global" as well. 

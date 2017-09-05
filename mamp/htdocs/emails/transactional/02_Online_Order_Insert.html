@@ -1,0 +1,109 @@
+<html>
+ <head>
+  <title>Your Order Has Been Processed from $capitalizewords(lookup(_AccountDisplayName_))$</title>
+ </head>
+ <body bgcolor="#ffffff" topmargin="0" leftmargin="0" marginheight="0" marginwidth="0">
+  <p>$setvars(varlist(7,DELIVERYPICKUPMETHODMETHOD,STOREADDRESS,STORECITY,STORESTATE,STOREZIP,STOREPHONE,STOREPICKUPPHONE,lookuprecords(!MasterData,ORDER_UPDATE,RETAILERDELDOCID,lookup(RETAILERDELDOCID),DELIVERYPICKUPMETHODMETHOD,STOREADDRESS,STORECITY,STORESTATE,STOREZIP,STOREPHONE,STOREPICKUPPHONE)))$</p>
+  <div style="margin-top:0;margin-bottom:0;margin-right:auto;margin-left:auto;padding:0;background-color:#ffffff;width:600px;" align="center">
+  <div style="margin-top:0;margin-bottom:0;margin-right:auto;margin-left:auto;padding:0;background-color:#ffffff;width:600px;" align="center">
+  <table id="Pre-Header" width="600" border="0" cellpadding="0" cellspacing="0" bgcolor="#ffffff">
+   <tbody>
+    <tr>
+     <td align="left">
+     <p style="font-family:Arial, Helvetica, sans-serif; font-size:12px; line-height:12px; margin-top:5px; margin-bottom:8px;color:rgb(180,180,180);">&nbsp;&nbsp;<span style="font-size: larger;"><span style="color: rgb(85, 85, 85);">Your recent furniture purchase from $capitalizewords(lookup(_AccountDisplayName_))$.</span></span></p>
+     <p style="padding:0;margin-top:0;margin-bottom:8px;line-height:0;"><img src="http://s7d4.scene7.com/is/image/ASF/spacer?fmt=gif&wid=600&hei=4&bgc=238,46,36" border="0" style="padding:0;margin-top:0;margin-botom:0;" alt="spacer" /></p>
+     </td>
+    </tr>
+   </tbody>
+  </table>
+  </div>
+  <div style="margin-top:0;margin-bottom:0;padding:0;background-color:#ffffff;width:600px;" align="center">
+  <table id="Header" width="590" border="0" cellpadding="0" cellspacing="0" bgcolor="#ffffff" align="center">
+   <tbody>
+    <tr>
+     <td align="left"><a alias="Header Logo Link" href="$clickthrough(homepage)$"><img border="0" alt="$lookup(_AccountDisplayName_)$ - VCF.COM" height="60" width="209" src="http://s7d4.scene7.com/is/image/ASF/VCF_Block_Logo?fmt=png&hei=60" /></a></td>
+     <td align="right" valign="middle" class="hide">
+     <p style="font-family:Arial, Helvetica, sans-serif; font-size:12px; line-height:12px; margin-top:8px; margin-bottom:0px;color:rgb(180,180,180);"><span style="color: rgb(85, 85, 85);">having trouble seeing this email?</span> <a alias="View With Images" style="color:#DC291c;" title="click here to view this email with images" href="$concat(formlink(campaignname(),EMAIL_ADDRESS_,FIRST_NAME,RETAILERDELDOCID,DELIVERYPICKUPMETHODMETHOD,STOREADDRESS,STORECITY,STORESTATE,STOREZIP,STOREPHONE,STOREPICKUPPHONE)))$" target="_blank">view with images</a></p>
+     </td>
+    </tr>
+   </tbody>
+  </table>
+  </div>
+  <div style="margin-top:8px;margin-bottom:0;padding:0;background-color:#ffffff;width:600px;" align="center" class="header-navigation"><img src="http://s7d4.scene7.com/is/image/ASF/spacer?fmt=gif&wid=600&hei=2&bgc=238,46,36" border="0" style="padding:0;margin-top:0;margin-botom:0;" height="2" width="600" alt="red line spacer" />
+  <table id="Navigation" width="600" border="0" cellpadding="0" cellspacing="0" bgcolor="#ffffff" align="center">
+   <tbody>
+    <tr>
+     <td><a alias="Navigation Living Rooms Link" href="$clickthrough(livingrooms)$"><img border="0" alt="LIVING ROOMS" src="https://static.cdn.responsys.net/i5/responsysimages/content/valuecity/nav-livingrooms.png" width="82" /></a></td>
+     <td><a alias="Navigation Bedrooms Link" href="$clickthrough(bedrooms)$"><img border="0" alt="BEDROOMS" src="https://static.cdn.responsys.net/i5/responsysimages/content/valuecity/nav-bedrooms.png" width="95" /></a></td>
+     <td><a alias="Navigation Dining Rooms Link" href="$clickthrough(diningrooms)$"><img border="0" alt="DINING ROOMS" src="https://static.cdn.responsys.net/i5/responsysimages/content/valuecity/nav-diningrooms.png" width="99" /></a></td>
+     <td><a alias="Navigation Mattresses Link" href="$clickthrough(mattresses)$"><img border="0" alt="MATTRESSES" src="https://static.cdn.responsys.net/i5/responsysimages/content/valuecity/nav-mattresses.png" width="113" /></a></td>
+     <td><a alias="Navigation Kids Link" href="$clickthrough(kids)$"><img border="0" alt="KIDS" src="https://static.cdn.responsys.net/i5/responsysimages/content/valuecity/nav-kids.png" width="74" /></a></td>
+     <td><a alias="Navigation Accents Link" href="$clickthrough(accents)$"><img border="0" alt="ACCENTS" src="https://static.cdn.responsys.net/i5/responsysimages/content/valuecity/nav-accents.png" width="77" /></a></td>
+     <td><a alias="Navigation onSale Link" href="$clickthrough(onsale)$"><img border="0" alt="WHATS ON-SALE THIS WEEK" src="https://static.cdn.responsys.net/i5/responsysimages/content/valuecity/nav-sale.png" width="45" /></a></td>
+    </tr>
+   </tbody>
+  </table>
+  <img src="http://s7d4.scene7.com/is/image/ASF/spacer?fmt=gif&wid=600&hei=2&bgc=238,46,36" border="0" style="padding:0;margin-top:0;margin-botom:0;" height="2" width="600" alt="red line spacer" /></div>
+  <div style="margin-top:12px;margin-bottom:0;padding:0;background-color:#ffffff;width:600px;" align="center">
+  <div id="CONTENT-AREA-1" style="margin-top:12px;margin-bottom:0;padding:0;background-color:#ffffff; font-size:0px;" align="center">
+  <table width="600" border="0" cellpadding="0" cellspacing="0" bgcolor="#ffffff" align="center">
+   <tbody>
+    <tr>
+     <td valign="top" align="left">
+     <p style="font-family:Arial, Helvetica, sans-serif; font-size:14px; line-height:16px; margin-top:15px; margin-bottom:10px;color:#555555;padding-left:5px;">Dear $leadingcapital(lookup(FIRST_NAME))$,</p>
+     <p style="margin-top: 0px; margin-bottom: 10px; padding-left: 5px;"><span style="font-size: medium;"><strong><span style="color: rgb(238, 46, 36);"><span style="font-family: Arial, Helvetica, sans-serif; line-height: 16px;">Congratulations!</span></span></strong></span><span style="color: rgb(85, 85, 85); font-family: Arial, Helvetica, sans-serif; font-size: 14px; line-height: 16px;"><br />      Your order has been processed. </span><font color="#555555" face="Arial, Helvetica, sans-serif"><span style="font-size: 14px; line-height: 16px;"><br />      We told you we&rsquo;d let you when your furniture is ready.</span></font></p>
+     <p style="font-family:Arial, Helvetica, sans-serif; font-size:14px; line-height:16px; margin-top:0px; margin-bottom:10px;color:#555555;padding-left:5px;"><b>Customer Identification Number</b>: $lookup(RETAILERDELDOCID)$.</p>
+     <p style="font-family:Arial, Helvetica, sans-serif; font-size:14px; line-height:16px; margin-top:0px; margin-bottom:10px;color:#555555;padding-left:5px;">Please use this number for tracking your furniture and any time you need to refer to the items<br />      in this order. Now that your order has been processed you can:</p>
+     <p style="font-family:Arial, Helvetica, sans-serif; font-size:14px; line-height:16px; margin-top:0px; margin-bottom:3px;color:#555555;padding-left:5px;"><span>1.&nbsp;&nbsp;</span><span><b>Track your order online:</b></span></p>
+     <p style="font-family:Arial, Helvetica, sans-serif; font-size:14px; line-height:16px; margin-top:0px; margin-bottom:15px;color:#555555;padding-left:25px;">To see the up-to-date status of your order, <a href="http://www.valuecityfurniture.com/trackmyorder.aspx?tracking=$lookup(RETAILERDELDOCID)$&mobile=off" target="_blank">click here to <b>Track Your Order &rsaquo;</b></a> and enter your <b>Customer Identification Number</b> : $lookup(RETAILERDELDOCID)$</p>
+     <p style="font-family:Arial, Helvetica, sans-serif; font-size:14px; line-height:16px; margin-top:0px; margin-bottom:3px;color:#555555;padding-left:5px;"><span>2.&nbsp;&nbsp;</span><span><b>Have a question about your $lowercase(lookup(DELIVERYPICKUPMETHODMETHOD))$:</b></span></p>
+     <p style="font-family:Arial, Helvetica, sans-serif; font-size:14px; line-height:16px; margin-top:0px; margin-bottom:0px;color:#555555;padding-left:25px;"><span style="font-size: 14px;">Contact Your Local $leadingcapital(lookup(DELIVERYPICKUPMETHODMETHOD))$ Store for answers to any question you may have.</span></p>
+     <p style="margin-top:8px; margin-bottom: 8px; font-size: 14px; color: #555555; font-family: Arial,Helvetica,sans-serif;padding-left:25px;">$capitalizewords(lookup(_AccountDisplayName_))$<br />            $lookup(STOREADDRESS)$<br />      $lookup(STORECITY)$, $lookup(STORESTATE)$ $lookup(STOREZIP)$<br />      Phone: 1-$substring(lookup(STOREPHONE),0,3)$-$substring(lookup(STOREPHONE),3,6)$-$substring(lookup(STOREPHONE),6)$</p>
+     <p style="margin-top:20px; margin-bottom: 0px; font-size: 12px; color: #555555; font-family: Arial,Helvetica,sans-serif;padding-left:25px;">Thanks Again - Your Friends at,</p>
+     <p style="margin-top:4px; margin-bottom: 25px; font-size: 14px; color: #555555; font-family: Arial,Helvetica,sans-serif;padding-left:25px;">$capitalizewords(lookup(_AccountDisplayName_))$</p>
+     </td>
+    </tr>
+   </tbody>
+  </table>
+  </div>
+  </div>
+  <div style="margin-top:0px;margin-bottom:0;padding:0;background-color:#ffffff;width:600px;border-top:2px solid #555555;" align="center">
+  <div>
+  <div style="margin-top:8px;margin-bottom:0;padding:0;background-color:#ffffff;width:600px;" align="center">
+  <table cellpadding="0" cellspacing="0" border="0" align="center" width="600">
+   &#9;
+   <tbody>
+    <tr>
+     &#9;
+     <td>
+     <p style="font-family:Arial, Helvetica, sans-serif; font-size:14px; line-height:16px; margin-top:15px; margin-bottom:10px;color:#555555;padding-left:5px;padding-right:5px;">For your convenience, we suggest you print this email for your records.</p>
+     </td>
+    </tr>
+   </tbody>
+  </table>
+  </div>
+  </div>
+  </div>
+  <div style="margin-top:15px;margin-bottom:0;padding:0;background-color:#ffffff;width:600px;" align="center">
+  <table id="Promo-Footer" width="600" bgcolor="#DC291C" align="center">
+   <tbody>
+    <tr>
+     <td align="left">
+     <p style="font-family:Arial, Helvetica, sans-serif; padding-top:8px; padding-bottom:8px;font-size:12px;margin-top:0; margin-bottom:0;color:#ffffff;margin:0;margin-left:8px;"><a href="$clickthrough(weekly_ad)$" style="text-decoration:none;color:white;margin-right:10px;margin-left:10px;" target="_blank"><font color="#ffffff"><b>WEEKLY AD</b></font></a>|<a href="$clickthrough(contact_us)$" style="text-decoration:none;color:white;margin-right:10px;margin-left:10px;" target="_blank"><font color="#ffffff"><b>CONTACT US</b></font></a>|<a href="$clickthrough(sign_in)$" target="_blank" style="text-decoration:none;color:white;margin-right:10px;margin-left:10px;"><font color="#ffffff"><b> ACCOUNT</b></font></a>|<a href="$clickthrough(ordertracking)$" style="text-decoration:none;color:white;margin-left:10px;" target="_blank"><font color="#ffffff"><b>TRACK YOUR ORDER</b></font></a></p>
+     </td>
+    </tr>
+   </tbody>
+  </table>
+  <table cellpadding="0" cellspacing="0" width="600" align="center">
+   <tbody>
+    <tr>
+     <td>
+     <p style="color:#999999; font-family:sans-serif,Arial,Helvetica; font-size:12px; text-align:center; margin-top:15px; margin-bottom:20px;padding-left:0;padding-right:0;">This email was sent to: $lowercase(lookup(EMAIL_ADDRESS_))$<br />      <br />      This email was sent by:<br />      American Signature, Inc ( Value City Furniture )<br />      4300 East Fifth Ave<br />      Columbus, OH&nbsp;&nbsp;43219</p>
+     </td>
+    </tr>
+   </tbody>
+  </table>
+  </div>
+  </div>
+ </body>
+</html>

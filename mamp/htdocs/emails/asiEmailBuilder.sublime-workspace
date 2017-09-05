@@ -1,0 +1,689 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"vue",
+				"vueBlock1"
+			],
+			[
+				"background",
+				"background-color"
+			],
+			[
+				"img",
+				"img-data"
+			],
+			[
+				"items",
+				"itemsInCart"
+			],
+			[
+				"re",
+				"responsiveMode"
+			],
+			[
+				"asi-content",
+				"asi-content-col"
+			],
+			[
+				"padding",
+				"paddingSection"
+			],
+			[
+				"bgC",
+				"bgColorContent"
+			],
+			[
+				"asi-table",
+				"asi-table-list-1"
+			],
+			[
+				"getaway",
+				"getawayCategory"
+			],
+			[
+				"get",
+				"getawayCategory"
+			],
+			[
+				"user",
+				"userRegionAv"
+			],
+			[
+				"che",
+				"checkOnInit"
+			],
+			[
+				"num",
+				"numPages"
+			],
+			[
+				"asi-swatch-block",
+				"asi-swatch-block-color"
+			],
+			[
+				"pull",
+				"pull-right"
+			],
+			[
+				"active",
+				"activeCollection"
+			],
+			[
+				"ac",
+				"activeCollection"
+			],
+			[
+				"is",
+				"isInitialized"
+			],
+			[
+				"ge",
+				"getawayInit"
+			],
+			[
+				"asi-pa",
+				"asi-page-results"
+			],
+			[
+				"getawa",
+				"getawayURL"
+			],
+			[
+				"geta",
+				"getawayInit"
+			],
+			[
+				"getaw",
+				"getawayHawkString"
+			],
+			[
+				"made",
+				"made-to-mix"
+			],
+			[
+				"u",
+				"uppercase"
+			],
+			[
+				"asi-l",
+				"asi-lead-text"
+			],
+			[
+				"asi-s",
+				"asi-subheading"
+			],
+			[
+				"font-s",
+				"font-style"
+			],
+			[
+				"Pr",
+				"ProximaNova-Semibold"
+			],
+			[
+				"ProximaNova",
+				"ProximaNova-Semibold"
+			],
+			[
+				"P",
+				"ProximaNova-Semibold"
+			],
+			[
+				"n",
+				"none"
+			],
+			[
+				"d",
+				"devices"
+			],
+			[
+				"margin",
+				"margin-bottom"
+			],
+			[
+				"wor",
+				"word-break"
+			],
+			[
+				"animation",
+				"animationName"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "asiEmailBuilder/index.php",
+			"settings":
+			{
+				"buffer_size": 13817,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Applications/MAMP/htdocs/css/css-modules-master/README.md",
+			"settings":
+			{
+				"buffer_size": 5069,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 127.0,
+		"last_filter": "Package Control: Ins",
+		"selected_items":
+		[
+			[
+				"Package Control: Ins",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 392.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Applications/MAMP/htdocs/emails/asiEmailBuilder",
+		"/Applications/MAMP/htdocs/emails/asiEmailBuilder/includes"
+	],
+	"file_history":
+	[
+		"/Users/mwilker/Downloads/ClientSIde-code-sample-master/index.html",
+		"/Applications/MAMP/htdocs/emails/asiEmailBuilder/asiEmailBuilderIndex.php",
+		"/Applications/MAMP/htdocs/emails/asiEmailBuilder/index.php",
+		"/Applications/MAMP/htdocs/emails/asiEmailBuilder/includes/asiPromoEmailMIPixel.php",
+		"/Applications/MAMP/htdocs/emails/asiEmailBuilder/includes/asiPromoEmailStyles.php",
+		"/Applications/MAMP/htdocs/asi-home.php",
+		"/Applications/MAMP/htdocs/includes/asiSiteFooter.php",
+		"/Applications/MAMP/htdocs/asiSiteFooter.php",
+		"/Applications/MAMP/htdocs/Content/ValueCityMix/less/bottom.css",
+		"/Applications/MAMP/htdocs/Content/ValueCityMix/less/ValueCityMix.min.css",
+		"/Applications/MAMP/htdocs/asiSiteHeader.php",
+		"/Applications/MAMP/htdocs/Content/ValueCityMix/styles/styles.css",
+		"/Users/mwilker/Downloads/Portland UI Kit/Sketch/HTML_Exports/eCommerce/index.html",
+		"/Users/mwilker/Downloads/Portland UI Kit/Sketch/HTML_Exports/eCommerce/styles.css",
+		"/Applications/MAMP/htdocs/modules/asi-shop-category-cards.html",
+		"/Users/mwilker/Documents/asiHero-Plugin-Snippet-1.rtf",
+		"/Applications/MAMP/htdocs/js/herotest.vue",
+		"/Users/mwilker/Desktop/asi-mix-banner-module-3.html",
+		"/Users/mwilker/Desktop/asi-mix-custom-landing-page.html",
+		"/Users/mwilker/asi-web-buildkits/asi-mix-website/js/asi-yt-video-player.js",
+		"/Users/mwilker/Desktop/asi-yt-video-player.js",
+		"/Users/mwilker/Desktop/ASI_MIX_Modules_05_04_2017/asi-mix-banner-module-1.html",
+		"/Users/mwilker/Desktop/asi-mix-bootstrap-1/asi-mix-hp-retailtool.html",
+		"/Users/mwilker/Desktop/asi-mix-html-module-code.html",
+		"/Users/mwilker/Desktop/ASI_MIX_Modules_05_04_2017/js/asi-mix-scripts.js",
+		"/Users/mwilker/Desktop/asi-mix-hero-module-3.html",
+		"/Users/mwilker/Desktop/asi-mix-hero-module-1.html",
+		"/Users/mwilker/Desktop/asi-mix-hero-module-2.html",
+		"/Users/mwilker/Desktop/MIX/asi-mix-buttons.html",
+		"/Users/mwilker/asi-web-buildkits/asi-mix-website/js/asi-mix-scripts.js",
+		"/Users/mwilker/Desktop/MIX/Getaway/asi-mix-getaway-living-room.html",
+		"/Users/mwilker/Desktop/MIX/mix_modules/asi-hawk-hero.html",
+		"/Users/mwilker/Desktop/MIX/~Mix_Updates/asi-offer-details-dd.js",
+		"/Users/mwilker/Desktop/MIX/mix_board_shoptelligence/asi-mix-board.js",
+		"/Users/mwilker/Desktop/MIX/mix_board_shoptelligence/asi-mix-board.html",
+		"/Users/mwilker/asi-web-buildkits/asi-mix-website/js/asihawksearch.js",
+		"/Users/mwilker/Desktop/Web_Asset_Library/CustomPages/Kroehler Custom/Module/asi-custom-kroehler-addtocart-modal-1.html",
+		"/Users/mwilker/Desktop/HP_Banners/Search/asi-top-of-search-banner.html",
+		"/Users/mwilker/Desktop/asi-mix-4-box-module.html",
+		"/Users/mwilker/Desktop/MIX/Getaway/asi-mix-getaway-styles.css",
+		"/Users/mwilker/Desktop/MIX/Getaway/asi-getaway-living-room.html",
+		"/Users/mwilker/Desktop/MIX/Getaway/asi-mix-getaway-1.js",
+		"/Users/mwilker/Desktop/MIX/Getaway/asi-mix-getaway-3.js",
+		"/Applications/MAMP/htdocs/css/asi-plugins/asiHero.css",
+		"/Applications/MAMP/htdocs/js/asi-plugins/jquery.asiHero.js",
+		"/Applications/MAMP/htdocs/css/asi-styles-pdp.css",
+		"/Applications/MAMP/htdocs/asiSiteTopNavigation.php",
+		"/Applications/MAMP/htdocs/asiSitePreFooter.php",
+		"/Applications/MAMP/htdocs/index.php",
+		"/Users/mwilker/Desktop/MIX/Getaway/make-it-you/asi-getaway-bedroom.html",
+		"/Users/mwilker/Desktop/MIX/Getaway/asi-getaway-dining-room.html",
+		"/Users/mwilker/Desktop/MIX/Getaway/make-it-you/custom-dining-room-furniture.html",
+		"/Users/mwilker/Desktop/MIX/Getaway/asi-mix-getaway-script.js",
+		"/Users/mwilker/Desktop/MIX/Getaway/asi-mix-getaway-2.js",
+		"/Users/mwilker/Desktop/Web_Asset_Library/API/Hawk_XML_API_Snippet.js",
+		"/Users/mwilker/Desktop/MIX/~Mix_Updates/asi-mix-product-carousel.php",
+		"/Users/mwilker/Desktop/asi-mix-html-framework.html",
+		"/Users/mwilker/Desktop/asi-mix-new-arrivals-module.html",
+		"/Users/mwilker/Desktop/asi-mix-styles.css",
+		"/Users/mwilker/asi-web-buildkits/asi-mix-website/css/asi-mix-styles-main.css",
+		"/Applications/MAMP/htdocs/asiSiteBottomScripts.php",
+		"/Applications/MAMP/htdocs/home.html",
+		"/Applications/MAMP/htdocs/js/asi-plugins/jquery.asiHero-min.js",
+		"/Applications/MAMP/htdocs/modules/asi-hero-slider-module.html",
+		"/Users/mwilker/Desktop/Web_Asset_Library/~Code_Snippets/asi-exit-modal-4th-of-july-show.js",
+		"/Applications/MAMP/htdocs/components/asi-exit-light-box.html",
+		"/Applications/MAMP/htdocs/js/jquery.asiHero.js",
+		"/Applications/MAMP/htdocs/emails/transactional/01_Online_Order_Receipt_Static.html",
+		"/Applications/MAMP/htdocs/emails/transactional/02_Online_Order_Insert_Static.html",
+		"/Applications/MAMP/htdocs/emails/transactional/02_Online_Order_Insert.html",
+		"/Applications/MAMP/htdocs/emails/transactional/01_Online_Order_Receipt.html",
+		"/Applications/MAMP/htdocs/js/jquery.asi-hero.js",
+		"/Users/mwilker/Desktop/MIX/Getaway/asi-mix-getaway.js",
+		"/Users/mwilker/Documents/asi-hawk-facet-table.html",
+		"/Users/mwilker/Desktop/Web_Asset_Library/~Code_Snippets/asi-update-shopping-cart-total.js",
+		"/Users/mwilker/Desktop/Web_Asset_Library/Email_HTML/RI_PCC_LookupCode.txt",
+		"/Users/mwilker/asi-web-buildkits/asi-pro-site/asi-pro.sublime-workspace",
+		"/Users/mwilker/Desktop/asi-mix-hero-offer-module-3.html",
+		"/Users/mwilker/Desktop/asi-mix-hero-offer-module-1.html",
+		"/Users/mwilker/Desktop/asi-mix-storewide-offer-left-1.html",
+		"/Users/mwilker/Desktop/asi-mix-finance-offer-promo.html",
+		"/Users/mwilker/Desktop/asi-made-to-mix-intro.html",
+		"/Users/mwilker/Desktop/ftWayne_Monetate_locator.js",
+		"/Users/mwilker/Desktop/MIX/asi-bootstrap-4-css.css",
+		"/Users/mwilker/Desktop/MIX/asi-styles-pdp.css",
+		"/Users/mwilker/Desktop/asi-mix-feature-image-2.html",
+		"/Users/mwilker/Desktop/asi-mix-homepage-feature-image-1.html",
+		"/Users/mwilker/Desktop/asi-mix-banner-module-2.html",
+		"/Users/mwilker/Desktop/asi-mix-hero-module-4.html",
+		"/Users/mwilker/Desktop/asi-mt-mix-navbar-module-1.html",
+		"/Users/mwilker/Desktop/asi-mt-mix-hero-module.html",
+		"/Users/mwilker/Desktop/asi-mix-lp-styles.css",
+		"/Users/mwilker/Desktop/asi-mix-custom-landing-page-v-2.html",
+		"/Users/mwilker/Desktop/asi-mix-store-locator-module-1.html",
+		"/Users/mwilker/Desktop/asi-mix-shop-by-module-2.html",
+		"/Users/mwilker/Desktop/asi-mt-mix-shop-by-module.html",
+		"/Users/mwilker/Desktop/Shoptelligence_Mix_Board_V2.html",
+		"/Users/mwilker/Downloads/asi-hfc-tablet-product-updates-feed-1.json",
+		"/Users/mwilker/Downloads/asi-hfc-tablet-product-updates-feed.json",
+		"/Users/mwilker/Desktop/propeller-md-bootstrap/asi-mix-styles-min.css",
+		"/Users/mwilker/Desktop/propeller-md-bootstrap/login.html",
+		"/Users/mwilker/Desktop/propeller-md-bootstrap/index-2.html",
+		"/private/var/folders/6v/z72h2r950f1b_tdj5xm6p73c0000gp/T/fz3temp-2/asi-hfc-tablet-product-feed.json",
+		"/Users/mwilker/Desktop/hfc-tablet-feed-update.php",
+		"/Users/mwilker/asi-web-buildkits/mix-site/index.html",
+		"/Users/mwilker/buildkit-mix-modules/Gemfile",
+		"/Users/mwilker/Downloads/asi-hfc-tablet-product-feed_2017_03_24_20_15_11_UTC.json",
+		"/Users/mwilker/Downloads/product-feed.json",
+		"/Users/mwilker/Downloads/import_58cf99d75ea23.json",
+		"/Users/mwilker/buildkit-mix-modules/README.md",
+		"/Users/mwilker/Downloads/import_58c7afa134f3c (1).json",
+		"/Users/mwilker/Desktop/shoptelligence-salsify-03-03-2017-16-48-18.json",
+		"/private/var/folders/6v/z72h2r950f1b_tdj5xm6p73c0000gp/T/fz3temp-2/shoptelligence-salsify-03-03-2017-16-48-18.json",
+		"/Users/mwilker/Desktop/asi-shoptelligence-product-feed.json",
+		"/Users/mwilker/Downloads/asi-product-feed.json",
+		"/Users/mwilker/Desktop/ASI_Personalized_Item_Recommendations.html",
+		"/Users/mwilker/Desktop/Gifts_Email_Featured_Items.txt"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 104.0,
+		"where_history":
+		[
+			"/Applications/MAMP/htdocs",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"client",
+			"font",
+			"fonts",
+			"/fonts/ProximaNova",
+			"http://www.valuecityfurniture.com/Content/ValueCityMix/fonts/ProximaNova",
+			"/Content/ValueCityMix/fonts/ProximaNova-Semibold.otf",
+			"http://www.valuecityfurniture.com/Content/ValueCityMix/fonts/ProximaNova-Semibold.otf",
+			"/Icons",
+			"../fonts/",
+			"https://www.valuecityfurniture.com/api/customer/getsession?_=1499704666671",
+			"getsession",
+			"/api",
+			"https://www.valuecityfurniture.com",
+			"getsession",
+			"http://www.valuecityfurniture.com/Content/ValueCityMix/fonts/",
+			"http://www.valuecityfurniture.com/",
+			"www.valuecityfurniture.com/",
+			"include_once('asi",
+			"include_once('localhost:8888/",
+			"include_once('",
+			"require_once",
+			"search-swatches",
+			"swatches-selected",
+			"fa-check",
+			"local",
+			"v1",
+			"data-unique-id",
+			"www.valuecityfurniture.com",
+			"/Content",
+			"styles.css",
+			"http://search.blueport.com/sites/shared/icons/style.css",
+			"hawk-recommender-common.css",
+			"styles.css",
+			"src=\"/Content/",
+			"slick",
+			"normalize.css",
+			"<link",
+			"<img src=\"/Content/ValueCity/Images/",
+			"asi-getaway-mandarin-cream",
+			"asi-getaway-mandarin-crea",
+			"asi-getaway-ella-cream",
+			"'+'",
+			"'+=",
+			"%20",
+			".attr('data-collection-name')",
+			"cream",
+			"data-swatch-name=\"gray",
+			"michelle",
+			"data-swatch-name=\"mandarin-",
+			"data-swatch-name=\"maya-",
+			"data-item-key=\"maya-",
+			"','+swatchName;",
+			"-swatch\" data-item-type=\"swatch\"",
+			"&keyword='+swatchName;",
+			"&collection_1='+",
+			"'data-facet'",
+			"+getawayCategory();",
+			"&lpurl=/search/v/make-it-you/",
+			"data-swatch-name=\"\"",
+			"?wid=50&hei=50&qlt=90,1\" width=\"50\" height=\"50\"></div></li>",
+			"<div class=\"asi-swatch-blocks\"><img class=\"asi-swatch-image\" src=\"https://asf.scene7.com/is/image/ASF/asi-getaway-",
+			"<li class=\"asi-swatch-item\" data-item-key=\"\" data-swatch-name=\"\" data-item-type=\"swatch\" data-facet=\"keyword\"><div",
+			"<div class=\"asi-swatch-blocks\"><img class=\"asi-swatch-image\" src=\"https://asf.scene7.com/is/image/ASF/asi-getaway-",
+			"?wid=50&hei=50&qlt=90,1\" width=\"50\" height=\"50\"></div>",
+			"<div class=\"asi-swatch-blocks\"><img class=\"asi-swatch-image\" src=\"https://asf.scene7.com/is/image/ASF/asi-getaway-",
+			"?wid=50&hei=50&qlt=90,1\" width=\"50\" height=\"50\">",
+			"<img class=\"asi-swatch-image\" src=\"https://asf.scene7.com/is/image/ASF/asi-get",
+			".png\">",
+			".png",
+			"your ref",
+			"ul.asi-collection-list li.asi-collection-col",
+			".jpg",
+			"?wid=140&hei=270&qlt=83,1",
+			"?wid=160&qlt=83,1",
+			"&hei=270",
+			"presley.jpg",
+			"https://asf.scene7.com/is/image/ASF/asi-getaway-bed-lynette.jpg",
+			".asi-panel .asi-",
+			".slick-dots",
+			"slick-prev",
+			"class=\"asi-collection-col asi-brg",
+			"</li>",
+			"<li class=\"asi-collection-col asi-brg",
+			"class=\"asi-collection-image\"",
+			"<div class=\"asi-collection\">\n\t\t\t\t\t\t\t\t\t\t\t<img",
+			"<li class=\"asi-collection-col",
+			"h w",
+			"-round-collection",
+			".slick-",
+			"disable",
+			"data-toggle",
+			"fabric:",
+			"color-swatch\">",
+			"https://content.valuecityfurniture.com/ProductImages/0/514760.jpg?impolicy=product-30",
+			"asi-collection-col enabled text-center",
+			"getawayCategory()",
+			"userRegionAv()",
+			"+userRegionId()+",
+			"getawayCategory()",
+			"getawaCategory()",
+			"+getawayCategory()",
+			"+userRegionAv()+",
+			"+userRegionId()+",
+			"+getawayCategory",
+			"+userRegionAv+",
+			"+userRegionId+",
+			"+userRegionAv",
+			"+userRegionId",
+			"+getawayCategory",
+			"curch",
+			"<br>Material: ",
+			"data-content=\"Color:",
+			"Matertial",
+			"data-toggle=\"popover\"",
+			"class=\"asi-swatch-blocks popover\"",
+			"class=\"asi-swatch-blocks\"",
+			"data-placement=\"top\">",
+			"Tabacco",
+			"http://content",
+			"data-facet=\"&collection_1=",
+			"http://content.value",
+			"http://content",
+			"https://search.blueport.com",
+			"http://content.valuecityfurniture.com",
+			"http://search.blueport.com",
+			"data-facet=\"&collection_1=",
+			".attr('data-collection-name')",
+			"pcolor"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"#ddd",
+			"<div class=\"container asi-container\" style=\"padding:0 10px;width:100%;max-width:1200px;\">",
+			"<div class=\"container asi-container\" style=\"width:100% !important;max-width:1200px !important;padding:0 10px !important;margin:0 auto;\">",
+			"/ASF/ABBINGTON-",
+			"Abington",
+			"abington",
+			"class=\"asi-swatch-item list-group-item mobile\"",
+			"color: #",
+			"color:&nbsp;",
+			"fabric:",
+			"color",
+			"<span class=\"asi-swatch-block-fabric text-left\">",
+			"<span class=\"asi-swatch-block-color text-left\">",
+			"<img class=\"asi-swatch-image pull-left\" src=\"https:",
+			"<div class=\"asi-swatch-blocks\"><div class=\"asi-swatch-block-check\"><i class=\"fa fa-check\"><!-- active checkmark !--></i></div>",
+			"class=\"asi-swatch-item list-group-item\"",
+			"width=\"35\" height=\"35\"",
+			"width=\"25\" height=\"25\"",
+			"<ul class=\"asi-swatch-list list-unstyled list-inline clearfix\">",
+			"activeCollection",
+			"<div class=\"asi-swatch-blocks\" style=\"float:left;margin:0px 4px 4px 0px;\">",
+			"<div class=\"asi-collection-col col-xs-4 col-sm-2 col-md-2\">",
+			"<img style=\"padding:2px;background:white;border:1px solid #c2c2c2;\" class=\"asi-swatch-image\"",
+			"<div class=\"asi-swatch-blocks\" style=\"float:left;margin-right:4px;\">",
+			"'name':'collection_1','value':'",
+			"padding: 3px; margin:2px;\">",
+			"data-swatch-finish=\"finish_family_2=",
+			"width=\"140\"",
+			"padding: 3px; margin:2px;",
+			"width=\"75\" height=\"75\"",
+			"padding: 3px; margin:2px;border: 1px solid #c2c2c2",
+			"title=\"INK\"",
+			"title=\"CHARCOAL\"",
+			"title=\"TAUPE\"",
+			"padding: 3px; margin:2px;border: 1px solid #c2c2c2",
+			".asi-mix-slider",
+			"'Knockout-HTF29-JuniorLiteweight','ProximaNova-Semibold'",
+			"&",
+			"asi-xs-p",
+			"&",
+			"'",
+			"px !important; }",
+			"  !important; }",
+			".asi-lp"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "asiEmailBuilder/index.php",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 13817,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								600,
+								596
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/Applications/MAMP/htdocs/css/css-modules-master/README.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5069,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3107,
+								3150
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 1257.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "asiEmailBuilder.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/Desktop/ASI_Personalized_Item_Recommendations.html"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 259.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
