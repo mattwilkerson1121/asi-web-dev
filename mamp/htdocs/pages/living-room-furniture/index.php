@@ -3,17 +3,18 @@
 
     
     <!-- START :: CUSTOM PAGE BODY !-->
-    <div id="custom-page-body">
+    <div id="custom-page-body" style="background:white;">
+
         <!-- START :: ASI HERO SECTION !-->
         <div class="asi-container-fluid container-fluid" style="position:relative;width:100%;padding:0;margin:0;">
             <div class="asi-gradient-overlay-dark asi-gradient"></div>
-            <div class="asi-hero-module" id="asi-hp-hero-c-v3">
+            <div class="asi-hero-module" id="asi-hp-hero-c-v3" data-asi-category-hero="living-room">
                 <div class="row asi-row">
                     <div id="asi-content-col" class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12 col-xs-offset-0">
                         <div class="asi-content-body">
                             <h1 class="display-1 asi-display-1 text-center asi-white text-uppercase">living room furniture</h1>
-                            <div class="asi-divider" style="padding:2em 0">
-                                <div class="asi-divider-line" style="background:#EE3d42;height:2px;max-width:45px;margin:0 auto;"></div>
+                            <div class="asi-divider" style="padding:2em 0;">
+                                <div class="asi-divider-line asi-red"></div>
                             </div>
                             <p class="asi-lead lead text-center asi-white">
                                 Whether it's a loveseat for two or a sectional for the whole family, our amazing selection of living room furniture is sure to have the perfect size and style to fit your family's needs.
@@ -29,11 +30,21 @@
             </div><!-- END :: ASI HERO MODULE !-->
         </div><!-- END :: ASI FLUID CONTAINER !-->
 
+        <!-- START :: ASI STOREWIDE OFFER BANNER !-->
+        <div class="asi-container-fluid container-fluid" style="position:relative;width:100%;padding:0 0;margin:0;">
+            <div class="asi-global-banner" id="asi-exclusive-financing-banner" style="margin:0 0;padding:0;">
+                <div class="asi-global-banner-message text-center text-uppercase" style="width:100%;padding:0;margin:0 auto;background:#ee3d42;">
+                    <a href="/financing"><img class="mg-responsive data-img" data-lrg="https://asf.scene7.com/is/image/ASF/D_R_Global_09Wk1Y17?fmt=png&op_sharpen=1" data-med="https://asf.scene7.com/is/image/ASF/D_R_Global_09Wk1Y17?fmt=png&op_sharpen=1" data-sml="https://asf.scene7.com/is/image/ASF/M_R_Global_09Wk1Y17?fmt=png" src="https://asf.scene7.com/is/image/ASF/D_R_Global_09Wk1Y17?fmt=png&op_sharpen=1" alt="FREE DELIVERY + SPECIAL FINANCING ON PURCHASES OF $999 OR MORE" style="width:100%;max-width:1500px;"></a>
+                </div>
+            </div>
+        </div>
+        <!-- END :: ASI STOREWIDE OFFER BANNER !-->
+
         <!-- START :: ASI CONTENT HEADING 1 !-->
-        <div class="asi-container" style="position:relative;width:100%;padding:2em 0 1em;margin:0 auto;max-width:1180px;">
+        <div class="asi-container" style="position:relative;width:100%;padding:2em 0 1em;margin:0 auto;max-width:1180px;background:white;">
             <div class="asi-section-content text-center">                                
                 <div class="asi-section-content-wrapper">                        
-                    <h2 class="asi-section-title asi-display-3 display-3 asi-black text-center text-uppercase">RAKE IN THE SAVINGS</h2>
+                    <h2 class="asi-cat-section-title asi-black text-center text-uppercase">RAKE IN THE SAVINGS</h2>
                     <span class="asi-section-subtitle">
                       <div class="asi-heading-rule">
                         <span class="asi-heading-rule-text">DON'T "LEAF" THESE DEALS BEHIND</span>
@@ -44,7 +55,7 @@
         </div><!-- END :: ASI CONTENT HEADING 1 !-->
 
         <!-- START :: ASI PROMOTIONAL BANNER 1 !-->
-        <div class="asi-container" style="position:relative;width:100%;padding:0 0 1em;margin:0 auto;max-width:1180px;background:none !important">
+        <div class="asi-container" style="position:relative;width:100%;padding:0 0 1em;margin:0 auto;max-width:1180px;background:white !important">
             <div class="asi-content asi-content-body" style="padding-top:0;">
                 <a href="/search/v/on-sale#hawkhost=1&portal_menu_level_1_1=Living%7e257226&searchWithin=recline&tab=living&tab=living">
                     <img class="img-responsive data-img" data-lrg="https://asf.scene7.com/is/image/ASF/D_09WK1Y17_CAT_Motion_10OFF?qlt=84,1" data-med="https://asf.scene7.com/is/image/ASF/D_09WK1Y17_CAT_Motion_10OFF?qlt=84,1" data-sml="https://asf.scene7.com/is/image/ASF/M_09WK1Y17_CAT_Motion_10OFF?qlt=84,1" src="https://asf.scene7.com/is/image/ASF/M_09WK1Y17_CAT_Motion_10OFF?qlt=84,1" alt="10% OFF Select Reclining Furniture">
@@ -92,16 +103,6 @@
                 </a>
             </div>
         </div><!-- END :: ASI CATEGORY OFFER BANNER 1 -->
-        
-        <!-- START :: ASI STOREWIDE OFFER BANNER !-->
-        <div class="asi-container-fluid container-fluid" style="position:relative;width:100%;padding:0 0;margin:0;">
-            <div class="asi-global-banner" id="asi-exclusive-financing-banner" style="margin:0 0;padding:0;">
-                <div class="asi-global-banner-message text-center text-uppercase" style="width:100%;padding:0;margin:0 auto;background:#ee3d42;">
-                    <img class="mg-responsive data-img" data-lrg="https://asf.scene7.com/is/image/ASF/D_GB_Free_Deliv?fmt=png&op_sharpen=1" data-med="https://asf.scene7.com/is/image/ASF/D_GB_Free_Deliv?fmt=png&op_sharpen=1" data-sml="https://asf.scene7.com/is/image/ASF/M_GB_Free_Deliv?fmt=png&op_sharpen=1" src="https://asf.scene7.com/is/image/ASF/M_GB_Free_Deliv?fmt=png&op_sharpen=1" alt="FREE DELIVERY ON PURCHASES OF $999 OR MORE" style="width:100%;max-width:1500px;">
-                </div>
-            </div>
-        </div>
-        <!-- END :: ASI STOREWIDE OFFER BANNER !-->
 
         <!-- START :: BROWSE BY CATEGORY SECTION !-->
         <div class="asi-container-fluid container-fluid" style="position:relative;width:100%;padding:0 0 2em;margin:0;background:#F2F2F2;">
@@ -190,15 +191,117 @@
                 </div>
             </div>
         </div><!-- END :: BROWSE BY CATEGORY SECTION !-->
-        <div class="asi-container" style="position:relative;width:100%;padding:0 0 1em;margin:0 auto;max-width:1180px;background:none !important">
-            <div class="asi-content asi-content-body" style="padding-top:0;">
-                <a href="/search/free-shipping">
-                    <img class="img-responsive data-img" data-lrg="https://asf.scene7.com/is/image/ASF/Category_Promo_FreeShipping_D?qlt=87,1" data-med="https://asf.scene7.com/is/image/ASF/Category_Promo_FreeShipping_D?qlt=87,1" data-sml="https://asf.scene7.com/is/image/ASF/Category_Promo_FreeShipping_M?qlt=87,1" src="https://asf.scene7.com/is/image/ASF/Category_Promo_FreeShipping_D?qlt=87,1" alt="shop free shipping furniture">
-                </a>
+        <div class="asi-container asi-container-1180">
+                <div class="asi-flex-banner-container asi-flex-col asi-flex-center asi-ptb-7" data-asi-banner-content="free-shipping">
+                    <div class="asi-flex-item asi-flex-content">
+                        <div class="asi-content asi-content-body">
+                            <p class="asi-lead asi-lead-gray lead text-center text-uppercase">
+                                <span class="asi-lead-expanded asi-lead-semibold">shopping is more fun with</span>
+                            </p>
+                            <div class="asi-divider asi-divider-sm">
+                                <div class="asi-divider-line asi-green"></div>
+                            </div>
+                            <h3 class="asi-display-1 text-center text-uppercase">free shipping</h3>
+                            <p class="asi-lead asi-lead-gray lead text-center text-lowercase">
+                                <span style="letter-spacing:2px;">pillows, rugs, lighting, and more</span>
+                            </p>
+                            <div class="asi-content-button">
+                                <a href="/search/free-shipping" data-pos="5">
+                                    <button role="button" class="asi-mix-button asi-green">SHOP NOW</button>
+                                </a>
+                            </div>
+                            <!--
+                            <p class="text-center" style="padding-top:0.5em;font-size:12px;letter-spacing:1px;font-family:'ProximaNova-Regular',sans-serif;">*available on select items only</p>
+                            !-->
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div><!-- END :: CUSTOM PAGE BODY !-->
     <style type="text/css">
+    /* START ASI CATEGORY PAGE STYLES */
+    h3.asi-display-1{ font-size:54px !important; }
+    .asi-section-content h2.asi-cat-section-title {font-size:34px !important;}
+    .asi-container-1180{
+        position:relative !important;
+        width:100% !important;
+        padding:0 0 1em !important;
+        margin:0 auto !important;
+        max-width:1180px !important;
+        height:100% !important;
+        font-size:16px;
+    }
+    /* START: ASI FLEXBOX BANNER CONTAINER */
+    .asi-flex-banner-container{
+      display: flex;
+      flex-wrap: wrap; 
+      -webkit-display: flex;
+      -webkit-flex-wrap: wrap;
+      padding:2em 1em;
+      margin:0 0;
+    }
+        .asi-flex-col{
+            -webkit-flex-direction: column;
+            flex-direction:column;
+        }
+        .asi-flex-center{
+            align-items: center;
+            align-content: center;
+            justify-content: center;
+            -webkit-align-items: center;
+            -webkit-align-content: center;
+            -webkit-justify-content: center;
+        }
+            .asi-flex-col .asi-flex-item{
+                align-self:auto;
+                flex-basis:auto;
+                flex-grow:0;
+                flex-shrink:1;
+                -webkit-align-self:auto;
+                -webkit-flex-basis:auto;
+                -webkit-flex-grow:0;
+                -webkit-flex-shrink:1;
+            }
+            .asi-flex-banner-container .asi-flex-content{
+                padding:10px;
+                text-align:center;
+                width:100%;
+                min-height:200px;
+                background:none;
+            }
+    /* END: ASI FLEXBOX BANNER CONTAINER */
+    /* START: ASI PADDING TOP & BOTTOM OVERRIDE */
+    .asi-ptb-1{ 
+        padding-top:1em !important; 
+        padding-bottom:1em !important;
+    }
+    .asi-ptb-2{ 
+        padding-top:2em !important; 
+        padding-bottom:2em !important;
+    }
+    .asi-ptb-3{ 
+        padding-top:3em !important; 
+        padding-bottom:3em !important;
+    }
+    .asi-ptb-4{ 
+        padding-top:4em !important; 
+        padding-bottom:4em !important;
+    }
+    .asi-ptb-5{ 
+        padding-top:5em !important; 
+        padding-bottom:5em !important;
+    }
+    .asi-ptb-6{ 
+        padding-top:6em !important; 
+        padding-bottom:6em !important;
+    }
+    .asi-ptb-7{ 
+        padding-top:7em !important; 
+        padding-bottom:7.5em !important;
+    }
+    /* END: ASI PADDING TOP & BOTTOM OVERRIDE */
+
     @import url('https://shopvcf.com/css/asi-on-sale-tabs-09wk1.css');
     .asi-hero-module {
         padding:0;
@@ -209,10 +312,22 @@
         background-color:#ffffff;
         font-size:16px;
     }
-    #asi-hp-hero-c-v3{
-        background-image:url("https://asf.scene7.com/is/image/ASF/CM_1840169?qlt=60,1&wid=1180&hei=850&scl=3");
-        padding:0.5em 0.25em 0.35em !important;
+    [data-asi-category-hero="living-room"]{
+        background-image:url("https://asf.scene7.com/is/image/ASF/CM_1840169?qlt=60,1&wid=1180&hei=850&scl=3&op_sharpen=1");
     }
+    [data-asi-category-hero="dining-room"]{
+        background-image:url("https://asf.scene7.com/is/image/ASF/Category_Hero_DR_V2.jpg");
+    }
+    [data-asi-category-hero="bedroom"]{
+        background-image:url("https://asf.scene7.com/is/image/ASF/Category_Hero_Bedroom_V1.jpg");
+    }
+    [data-asi-category-hero="mattress"]{
+        background-image:url("https://asf.scene7.com/is/image/ASF/Mattress_Category_Landing_Hero.jpg");
+    }
+    [data-asi-category-hero="accents"]{
+        background-image:url("https://asf.scene7.com/is/image/ASF/Category_Hero_AC_V1.jpg");
+    }
+    #asi-hp-hero-c-v3{padding:3em 1em !important;}
         .asi-gradient{
             position: absolute;
             width: 100%;
@@ -235,40 +350,112 @@
             font-weight:400;
             font-size:1.125em !important;
         }
-        #asi-hp-hero-c-v3 .asi-content-button{ 
+        #asi-hp-hero-c-v3 .asi-content-button,
+        .asi-content-button{ 
             padding:1em 0 1em;
             margin:0 auto;
             text-align:center;
         }
-        #asi-hp-hero-c-v3 .asi-content-button button.asi-mix-button{
+        #asi-hp-hero-c-v3 .asi-content-button button.asi-mix-button,
+        .asi-content-button button.asi-mix-button{
             border:none !important;
             font-size:14px;
             padding:12px 40px !important;
 
         }
+        /* START: GLOBAL CONTENT STYLES */
+
+        [data-asi-banner-content="free-shipping"]{
+            background-image:url('https://asf.scene7.com/is/image/ASF/asi-banner-free-shipping-bg-m.jpg');
+            background-size:cover;
+            background-position: top right;
+        }
+            .asi-divider{ padding:2em 0; }
+                .asi-divider-sm{padding:0.3em 0 !important;}
+            .asi-divider-line{
+                background:white;
+                height:2px;
+                max-width:45px;
+                margin:0 auto;
+            }
+
+            .asi-lead-gray{ color:#525050 !important; }
+            .asi-lead-expanded { letter-spacing:2.5px !important; }
+            .asi-lead-semibold{font-family:'ProximaNova-Semibold', sans-serif !important;}
+
+            .asi-red{background:#EE3d42 !important;}
+            .asi-green{background:#78be20 !important;}
+            
+            .asi-content-button button.asi-green{
+                background-color:#78be20 !important;
+                color:#ffffff !important;
+            }
+            .asi-content-button button.asi-green:hover,
+            .asi-content-button button.asi-green::hover{
+                background-color:#62a50b !important;
+                color:#ffffff !important;
+            }
+        /* END :: GLOBAL CONTENT STYLES */
         @media (min-width: 320px) and (max-width:480px) {
-            #asi-hp-hero-c-v3 .asi-content-button{ padding:1em 0 0.05em 0; }
-            #asi-hp-hero-c-v3 .asi-content-button a button.asi-mix-button{
+            #asi-hp-hero-c-v3 .asi-content-button,
+            .asi-content-button{ padding:1em 0 0.05em 0; }
+            #asi-hp-hero-c-v3 .asi-content-button a button.asi-mix-button,
+            .asi-content-button a button.asi-mix-button{
                 border:none !important;
                 font-size:12px;
                 padding:8px 30px;
             }
+            [data-asi-banner-content="free-shipping"]{
+                background-image:url('https://asf.scene7.com/is/image/ASF/asi-banner-free-shipping-bg-m.jpg');
+                background-size:cover;
+                background-position: center center;
+            }
             .asi-card {margin-bottom:3px;}
         }
-        @media (min-width: 992px){
-            #asi-hp-hero-c-v3 .asi-content-button button.asi-mix-button{font-size:16px !important;}
-            #asi-hp-hero-c-v3{
-                /*padding:2.5em 0 2em !important;*/
+        @media (min-width: 768px){
+            [data-asi-banner-content="free-shipping"]{
+                background-image:url('https://asf.scene7.com/is/image/ASF/asi-banner-free-shipping-bg-d.jpg');
+                background-size:cover;
+                background-position: center center;
+                }
+                .asi-section-content h2.asi-cat-section-title {font-size:45px !important;}
+                h3.asi-display-1{ font-size:80px !important; }
             }
+        }
+        @media (min-width: 992px){
+            #asi-hp-hero-c-v3 .asi-content-button button.asi-mix-button,
+            .asi-content-button button.asi-mix-button{font-size:16px !important;}
             .asi-card {margin-bottom:25px;}
+            .asi-flex-banner-container .asi-flex-content{width:50%;}
+             [data-asi-banner-content="free-shipping"]{
+                background-image:url('https://asf.scene7.com/is/image/ASF/asi-banner-free-shipping-bg-d.jpg');
+                background-size:cover;
+                background-position: top center;
+            }
+            .asi-section-content h2.asi-cat-section-title {font-size:54px !important;}
+            h3.asi-display-1{ font-size:104px !important; }
         }
         @media (min-width: 1200px){
-            #asi-hp-hero-c-v3 .asi-content-button button.asi-mix-button{font-size:16px !important;}
+            #asi-hp-hero-c-v3 .asi-content-button button.asi-mix-button,
+            .asi-content-button button.asi-mix-button{font-size:16px !important;}
             #asi-hp-hero-c-v3{
                 /*padding:3em 0 2em !important;*/
             }
             .asi-card {margin-bottom:30px;}
+            .asi-flex-banner-container .asi-flex-content{width:50%;}
+            [data-asi-banner-content="free-shipping"]{
+                background-image:url('https://asf.scene7.com/is/image/ASF/asi-banner-free-shipping-bg-d.jpg');
+                background-size:cover;
+                background-position: top center;
+            }
+            .asi-section-content h2.asi-cat-section-title {font-size:60px !important;}
+            h3.asi-display-1{ font-size:104px !important; }
         }
+    @media and (max-width:768px){
+        h2.asi-display-3,
+        h2.display-3,
+        h2.asi-cat-section-title{font-size:34px !important;}
+    }
     /*** ASI STYLED CARD TILES ***/
     .asi-card-link .asi-card:hover{
         box-shadow: 0 10px 20px rgba(0,0,0,0.10), 0 6px 6px rgba(0,0,0,0.15);
@@ -313,6 +500,7 @@
     /* Card inverse*/
     .asi-card-inverse{ background-color: #373a3c; color: #eceeef;}
     .asi-card-inverse .asi-card-body{color: rgba(255, 255, 255, 0.84);}
+
     </style>
 <!-- START :: CUSTOM PAGE CSS+JS - DO NOT ALTER !-->
     <link rel="stylesheet" type="text/css" href="../../css/owl/owl.carousel.css"/>
