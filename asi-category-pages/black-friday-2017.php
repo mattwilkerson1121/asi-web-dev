@@ -1,8 +1,4 @@
 
-<?php include_once('asiSiteHeader.php'); ?>
-<?php include_once('asiSiteTopNavigation.php'); ?>
-
-<div id="custom-page-body">
 <div class="asi-container-fluid">
 	<div style="position:relative;padding:0;margin:0;">
 		<img class="data-img img-data img-responsive" data-lrg="https://content.valuecityfurniture.com/ProductImages/0/628554.jpg" data-med="https://content.valuecityfurniture.com/ProductImages/0/628554.jpg" data-sml="https://content.valuecityfurniture.com/ProductImages/0/628555.jpg" src="https://content.valuecityfurniture.com/ProductImages/0/628554.jpg" alt="our biggest black friday furniture and mattress sale ever...">
@@ -180,58 +176,6 @@
 		</div>
 	</div>
 </div>
-<br><br><br>
-<div>
-	<div class="asi-container">
-		<div id="clockdiv">
-			<div>
-		    	<span class="days"></span>
-		    	<div class="smalltext">Days</div>
-		  	</div>
-		  	<div>
-		    	<span class="hours"></span>
-		    	<div class="smalltext">Hours</div>
-		  	</div>
-		  	<div>
-		    	<span class="minutes"></span>
-		    	<div class="smalltext">Minutes</div>
-		  	</div>
-		  	<div>
-		    	<span class="seconds"></span>
-		    	<div class="smalltext">Seconds</div>
-		  	</div>
-		</div>
-	</div>
-</div>
-<!--
-<div class="asi-container hidden-sm hidden-xs" style="border-top:1px solid #cccccc;">
-	<div class="asi-content-body asi-bf-easypass">
-		<div class="asi-module-4">
-			<div class="col-md-6">
-				<div class="asi-module-4-message">
-					<h3 class="asi-display-3 display-3 asi-black text-left text-uppercase" style="margin-bottom:1.75rem;text-align:left !important;margin-left:0;margin-right:0;">
-						black friday <br class="hidden-sm hidden-xs">shopping <br class="hidden-sm hidden-xs">made easy
-					</h3>
-					<div class="asi-red-separator"></div>
-					<p class="asi-bf-easypass-text asi-black text-left">
-						Easy Pass lets you switch from shopping at home to visiting the store (or vise versa) without missing a beat.
-						Whether you build your cart online or start shoppong in the store, your favorite products list stays with you.
-						<a href="/easy-pass" id="asi-play-video-1" style="position:relative;display:block;">
-							<div class="asi-featured-video-text" style="position:relative;display:inline-block;text-align:left;text-shadow:none;color:#181818;">learn more</div>
-						</a>
-					</p>
-				</div>
-			</div>
-			<div class="col-md-6">
-				<div class="asi-module-4-image">
-					<a href="/easy-pass"><img class="img-responsive img-data data-img" data-lrg="https://asf.scene7.com/is/image/ASF/D_BF_Land_EasyPass_Images?qlt=85,1" data-med="https://asf.scene7.com/is/image/ASF/D_BF_Land_EasyPass_Images?qlt=85,1" data-sml="https://asf.scene7.com/is/image/ASF/M_BF_Land_EasyPass_Images?qlt=85,1" src="https://asf.scene7.com/is/image/ASF/D_BF_Land_EasyPass_Images?qlt=85,1" alt="Black Friday Shopping Made Easy with Easy Pass"/></a>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-!-->
-
 <div class="modal fade" id="blackFridayModalSuccess" tabindex="-1" role="dialog">
 	<div class="modal-dialog" role="document">
 		<div class="modal-content">
@@ -417,35 +361,8 @@ p.asi-intro-text{
 	}
 }
 #custom-page-body{font-size:16px !important;}
-#clockdiv{
-	font-family: sans-serif;
-	color: #fff;
-	display: inline-block;
-	font-weight: 100;
-	text-align: center;
-	font-size: 30px;
-}
-
-#clockdiv > div{
-	padding: 10px;
-	border-radius: 3px;
-	background: #00BF96;
-	display: inline-block;
-}
-
-#clockdiv div > span{
-	padding: 15px;
-	border-radius: 3px;
-	background: #00816A;
-	display: inline-block;
-}
-
-.smalltext{
-	padding-top: 5px;
-	font-size: 16px;
-}
 </style>
-<!-- ASI CSS OVERRIDES - DO NOT ALTER !-->
+
 <link rel="stylesheet" type="text/css" href="https://shopvcf.com/css/asi-main-styles.min.css">
 <link rel="stylesheet" type="text/css" href="https://shopvcf.com/css/asi-module-styles.css">
 
@@ -550,9 +467,4 @@ var x = setInterval(function() {
   }
 }, 1000);   
 </script>
-
 <script type="text/javascript" src="https://shopvcf.com/js/asi-mix-scripts.js"></script>
-</div>
-<?php include_once('../../includes/asiSitePreFooter.php'); ?>
-<?php include_once('../../includes/asiSiteFooter.php'); ?>
-
