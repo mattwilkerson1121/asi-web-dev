@@ -1,0 +1,26 @@
+// .material-icons {
+// 	line-height: 0 !important;
+// }
+.icon-round {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px !important;
+    border-radius: 50%;
+    margin-right: 20px;
+    color: #fff;
+   	@include icon-shadow();
+}
+.icon-box {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px !important;
+    border-radius: 5px;
+    margin-right: 20px;
+    color: #fff;
+}
+.icon-common {
+    font-size: 48px !important;
+    margin-right: 22px;
+}

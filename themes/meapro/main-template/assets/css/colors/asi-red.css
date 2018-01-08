@@ -1,0 +1,169 @@
+/*You can add your won color also */
+a {
+  color: #ee3242;
+}
+
+a:hover {
+  color: #f33e3b;
+}
+
+.section-titile-bg {
+  color: #ee3242;
+}
+
+.mea-section-quote blockquote {
+  border-left-color: #ee3242;
+}
+
+.btn-common {
+  background: #ee3242;
+}
+
+.btn-common:hover, .btn-common:focus {
+  background: #f33e3b !important;
+}
+
+.btn-round {
+  background: #ee3242 !important;
+}
+
+.btn-round:hover {
+  background: #f33e3b !important;
+}
+
+/* ScrollToTop */
+a.back-to-top i {
+  background-color: #ee3242;
+}
+
+#main-slide .carousel-control i {
+  background: #ee3242;
+}
+
+.slicknav_btn{
+  background: #ee3242;
+  border-color: #ee3242;
+}
+.slicknav_menu .slicknav_btn:hover .slicknav_icon-bar{
+  background: #ee3242;
+}
+.slicknav_nav li > ul > li > a:hover, .slicknav_nav li > ul > li > a .active{
+  border-left-color: #ee3242;
+}
+.slicknav_nav .slicknav_item .active{
+  color: #ee3242;
+}
+li.sub-menu .sub-menu-panel a:hover, li.sub-menu .sub-menu-panel a:focus, li.sub-menu .sub-menu-panel a.active {
+  border-left: 3px solid #ee3242;
+}
+
+.okayNav__menu-toggle.icon--active span {
+  background: #ee3242;
+}
+
+#nav-main li.active a.nav-link {
+  border-bottom: 3px solid #ee3242 !important;
+  color: #ee3242;
+}
+
+#nav-main li.active a.nav-link:hover {
+  color: rgba(229, 57, 53, 0.7);
+}
+
+.work-counter-widget i {
+  color: #ee3242;
+}
+
+.about-widget i {
+  color: #ee3242;
+}
+
+.about-widget:hover i {
+  background: #ee3242;
+}
+
+.single-blog-post .post-meta a:hover {
+  color: #ee3242;
+}
+
+.contact-widget-section .single-contact-widget i {
+  color: #ee3242;
+}
+
+#contactForm .form-control {
+  color: #ee3242;
+}
+
+.footer-contact-widget ul li a .fa {
+  background: #ee3242;
+}
+
+.portfolio-nav ul.nav li a:hover {
+  color: #ee3242;
+}
+
+.portfolio-nav ul.nav li a.active {
+  border-bottom: 2px solid #ee3242;
+  color: #ee3242;
+}
+
+.single-service-widget i {
+  color: #ee3242;
+}
+
+#testimonial-carousel .owl-pagination .owl-page.active span {
+  background: #ee3242;
+}
+
+.form-submit button.btn-common.disabled {
+  background: rgba(229, 57, 53, 0.7) !important;
+  cursor: not-allowed;
+}
+
+.owl-carousel .owl-controls .owl-page.active span {
+  border: none;
+  background: #ee3242 !important;
+  opacity: 1;
+}
+
+.mea-tab-default ul.nav.nav-tabs li.active a {
+  color: #ee3242;
+  border-bottom: 3px solid #ee3242;
+}
+
+.mea-default-accordion .panel-default .panel-heading a {
+  background-color: #ee3242;
+}
+
+.icon-round, .icon-box {
+  background: #ee3242;
+}
+
+.icon-common {
+  color: #ee3242;
+}
+
+.price span {
+  color: #ee3242;
+}
+
+.pricing-button a.btn-pricing {
+  background-color: #ee3242;
+}
+
+.mea-error-section h1 {
+  color: #ee3242;
+}
+
+.comment-box .form-control, .comment-box textarea {
+  font-weight: 500;
+  color: #ee3242;
+}
+
+.find-widget {
+  padding: 10px 0;
+}
+
+.find-widget i {
+  background: #ee3242;
+}

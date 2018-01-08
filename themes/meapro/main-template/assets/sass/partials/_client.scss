@@ -1,0 +1,25 @@
+
+.client-container {
+  .col-md-4 {
+	padding: 8px;
+  }
+}
+.single-client-image {
+  
+  @include team-box-shadow;
+  transition: all 0.2s ease-in-out 0s;
+  img {
+  	opacity: 0.6;
+  	transition: all 0.2s ease-in-out 0s;
+    width: 100%;
+  }
+  &:hover , &.active {
+  	@include team-box-shadow-hover;
+  	transition: all 0.2s ease-in-out 0s;
+  	img {
+  		opacity: 1;
+  		cursor: pointer;
+  		transition: all 0.2s ease-in-out 0s;
+  	}
+  }
+}

@@ -1,0 +1,29 @@
+// About Section Stules
+
+.about-widget {
+
+	i {
+	  border-radius: 50%;
+	  font-size: 50px;
+	  height: 70px;
+	  line-height: 70px;
+	  text-align: center;
+	  width: 70px;
+	  background: trasparent;
+	  transition: all 0.2s ease-in-out 0s;
+	}
+	&:hover {
+		cursor: pointer;
+		i {
+			font-size: 25px;
+			color: #fff;
+			transition: all 0.2s ease-in-out 0s;
+			@include icon-shadow;
+			cursor: pointer;
+		}
+		h2 {
+			opacity: 0.8;
+			transition: $transition;
+		}
+	}
+}

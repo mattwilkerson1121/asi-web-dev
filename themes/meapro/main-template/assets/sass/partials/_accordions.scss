@@ -1,0 +1,64 @@
+.mea-default-accordion {
+	.panel-default {
+		border: 0;
+		.panel-heading {
+			padding: 0;
+			.collapsed::after {
+				content: "";
+			}
+			a {
+			    font-weight: 500;
+			    padding: 15px 20px;
+			    display: inline-block;
+			    width: 100%;
+			    color: #ffffff;
+			    position: relative;
+			    text-decoration: none;
+			    &:after {
+			    	font-family: FontAwesome;
+				    content: "";
+				    position: absolute;
+				    right: 15px;
+				    font-size: 14px;
+				    font-weight: 300;
+				    top: 50%;
+				    line-height: 1;
+				    margin-top: -7px;
+			    }
+			}
+	    }
+	}
+}
+
+.mea-accordion-2 {
+	.panel-default {
+		border: 0;
+		.panel-heading {
+			padding: 0;
+			.collapsed::after {
+				content: "";
+			}
+			a {
+			    font-weight: 500;
+			    padding: 15px 20px;
+			    display: inline-block;
+			    width: 100%;
+			    color: #333;
+			    background: #EEEEEE !important;
+			    position: relative;
+			    text-decoration: none;
+			    &:after {
+			    	font-family: FontAwesome;
+				    content: "";
+				    position: absolute;
+				    right: 15px;
+				    font-size: 14px;
+				    font-weight: 300;
+				    top: 50%;
+				    line-height: 1;
+				    margin-top: -7px;
+			    }
+			}
+	    }
+	}
+}

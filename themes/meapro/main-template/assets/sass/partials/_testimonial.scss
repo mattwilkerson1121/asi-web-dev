@@ -1,0 +1,37 @@
+
+
+.testimonial-author {
+	padding-left: 30px;
+	margin-top: 60px;
+	h2 {
+		margin-top: 0;
+	}
+	.media-left {
+		padding-right: 20px;
+		img {
+			border: 2px solid #ddd;
+			border-radius: 50%;
+		}
+	}
+}
+
+#testimonial-carousel {
+	.owl-pagination {
+		margin-top: 70px;
+		.owl-page {
+			span {
+				background: #fff;
+				border: 3px solid #bcbcbc;
+				width: 15px;
+				height: 15px;
+			}
+			&.active span {
+				border: none;
+				@include icon-shadow;
+				width: 20px;
+				height: 20px;
+				opacity: 1;
+			}
+		}
+	}
+}

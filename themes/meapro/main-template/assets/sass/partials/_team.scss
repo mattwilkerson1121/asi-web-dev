@@ -1,0 +1,71 @@
+
+.mea-our-team-section {
+	padding-bottom: 200px;
+}
+.single-team-widget {
+	margin: 35px 0;
+	background: #f5f5f5;
+	position: relative;
+	@include team-box-shadow;
+	img {
+		text-align: center;
+	}
+	&:hover {
+		@include pricing-box-shadow();
+	}
+	.team-member-info {
+		height: 130px;
+		.know-more {
+			position: absolute;
+			right: 10%;
+			bottom: 25%;
+			display: none;
+		}
+		background: #fff;
+		padding: 5px 20px;
+		.social-profiles {
+			display: none;
+			.fa {
+			    color: #8c8c8c;
+			    font-size: 18px;
+			    padding-right: 5px;
+			    transition: $transition;
+			}
+			.fa.fa-twitter {
+				&:hover {
+					transition: $transition;
+					color: #1DA1F2;
+				}
+			}
+			.fa.fa-facebook {
+				&:hover {
+					transition: $transition;
+					color: #3B5998;
+				}
+			}
+			.fa.fa-dribbble {
+				&:hover {
+					transition: $transition;
+					color: #EA4C89;
+				}
+			}
+			.fa.fa-behance {
+				&:hover {
+					transition: $transition;
+					color: #1769FF;
+				}
+			}
+		}
+
+	}
+	&:hover {
+			cursor: pointer;
+			.know-more , .social-profiles {
+				display: block;
+				animation: 0.4s ease 0s normal none 1 running fadeInUpMenu;
+				
+			}
+		}
+
+	
+}

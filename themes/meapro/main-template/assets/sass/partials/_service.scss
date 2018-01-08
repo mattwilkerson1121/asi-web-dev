@@ -1,0 +1,51 @@
+
+
+.single-service-widget {
+	margin: 25px 0;
+	i {
+	    font-size: 55px;
+	    padding-right: 15px;
+	}
+	h2 {
+		margin-top: 0;
+		text-transform: capitalize;
+	}
+	&:hover {
+		cursor: pointer;
+		.pulse-shrink{
+		  -webkit-animation-name: pulse-shrink;
+		  animation-name: pulse-shrink;
+		  -webkit-animation-duration: 0.3s;
+		  animation-duration: 0.3s;
+		  -webkit-animation-timing-function: linear;
+		  animation-timing-function: linear;
+		  -webkit-animation-iteration-count: infinite;
+		  animation-iteration-count: infinite;
+		  -webkit-animation-direction: alternate;
+		  animation-direction: alternate;
+		}
+		h2 {
+			opacity: 0.8;
+			transition: $transition;
+		}
+	}
+}
+/* Pulse Shrink */
+@-webkit-keyframes pulse-shrink {
+  to {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+@keyframes pulse-shrink {
+  to {
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+.pulse-shrink {
+  display: inline-block;
+}
+
+

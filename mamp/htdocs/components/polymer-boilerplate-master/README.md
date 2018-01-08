@@ -74,7 +74,7 @@ In order to run it locally you'll need to fetch some dependencies and a basic se
     $ bower install
     ```
 
-3. Start development server and open `http://localhost:8080/components/my-repo/`.
+3. Start development server and open `http://localhost:6060/components/my-repo/`.
 
     ```sh
     $ polyserve

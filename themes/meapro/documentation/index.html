@@ -1,0 +1,1184 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>MEA | Multi-purpose Bootstrap Material Template</title>
+        <meta name="description" content="">
+		<!-- Mobile Specific Meta -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        
+        <link href='http://fonts.googleapis.com/css?family=Lato:400,300' rel='stylesheet' type='text/css'>
+        
+        <!-- Syntax Highlighter -->
+        <link rel="stylesheet" type="text/css" href="syntax-highlighter/styles/shCore.css" media="all">
+        <link rel="stylesheet" type="text/css" href="syntax-highlighter/styles/shThemeDefault.css" media="all">
+		
+		<!-- Font Awesome CSS-->
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <!-- Normalize/Reset CSS-->
+		<link rel="stylesheet" href="css/normalize.min.css">
+		<!-- Main CSS-->
+        <link rel="stylesheet" href="css/main.css">
+
+		<!-- Modernizr Script for Old Browser Support-->
+        <script src="js/modernizr-2.6.2.min.js"></script>
+		
+    </head>
+	
+    <body id="welcome">
+    
+        <aside class="left-sidebar">
+            <div class="logo">
+                <h1 style="font-size: 30px;">
+                    <a href="#welcome" style="color: #fff;">
+                        MEA
+                    </a>
+                </h1>
+            </div>
+            <nav class="left-nav">
+                <ul id="nav">
+                    <li class="current"><a href="#welcome">Welcome</a></li>
+                    <li><a href="#installation">Installation</a></li>
+                    <li><a href="#navigation">Navigation, Logo and Slider</a></li>
+                    <li><a href="#other-sections">Other Sections</a></li>
+                    <li><a href="#css-structure">CSS Files</a></li>
+                    <li><a href="#javascript">JavaScript Libraries</a></li>
+                    <li><a href="#color-presets">Changing Color Presets</a></li>
+                    <li><a href="#contact-form">Contact Form Configuration</a></li>
+                    <li><a href="#google-map">Google Map</a></li>
+                    <li><a href="#credit">Source and Credit</a></li>
+                </ul>
+            </nav>
+        </aside>
+		
+		<div id="main-wrapper">
+		    <div class="main-content">
+		        <section id="welcome">
+		            <div class="content-header">
+		                <h1>MEA | Multi-purpose Bootstrap Material Template</h1>
+		            </div>
+		            <div class="welcome">
+                        
+                        <h2 class="twenty">Welcome To MEA Template Documentation.</h2>
+
+                        <p>Firstly, a huge thanks for purchasing this theme, your support is truly appreciated!</p>
+
+                        <p>This document covers the installation and use of this theme and often reveals answers to common problems and issues - read this document thoroughly if you are experiencing any difficulties. If you have any questions that are beyond the scope of this document, feel free to post your issue in our <a href="http://graygrids.com/support/">Support Forum</a></p>
+                                            <img style="max-width:100%" src="img/banner.png">
+
+		            </div>
+
+		        </section>
+		        
+		        <section id="installation">
+                    <div class="content-header">
+		                <h1>MEA | Multi-purpose Bootstrap Material Template</h1>
+                    </div>
+                    <h2 class="title">Installing Template.</h2>
+                    
+                    <div class="section-content">
+                        <ol>
+                            <li>After unzip the download pack, you'll found a Template Folder with all the files.</li>
+                            <li>You can view this Template in any browser, you can display or edit the Template without an internet connection.</li>
+                            <li>Now go to your cpanel or open your FTP Client (like <a target="_blank" href="http://sourceforge.net/projects/filezilla/files/FileZilla_Client/3.9.0.2/FileZilla_3.9.0.2_win32-setup.exe/download?accel_key=57%3A1407264553%3Ahttps%253A//filezilla-project.org/download.php%253Ftype%253Dclient%3A59f6c662%2460e732e1e76bd06acbe3bb9c56ae06e7b09c3e6a&click_id=31d5cc44-1cd1-11e4-a846-0200ac1d1d9f&source=accel">Filezilla</a>) and upload the content of the Template on your server root.</li>
+                            <li>Once the files are done uploading go to www.yourdomainname.com/index.html</li>
+                        </ol>
+                    </div>
+
+                <div class="section-content">
+                    <h2 class="title">Homepage View</h2>
+                    <img style="max-width:100%" src="img/home.png">
+                    </div>
+		            
+		        </section>
+
+
+		        
+		        <section id="navigation">
+		            <h2 class="title">Navigation, Logo and Slider</h2>
+		            <pre class="brush:html">
+      <!-- header -->
+      <header id="header" class="navbar navbar-default affix-top" data-spy="affix" data-offset-top="400">
+        <div class="container">
+          <a alt="Mea" class="site-logo" href="index.html">
+            <h2>MEA</h2>
+          </a>
+          <nav role="navigation" id="nav-main" class="okayNav">
+            <ul class="nav navbar-nav">
+              <li class="active dropdown sub-menu">
+                <a alt="Mea" class="dropdown-toggle nav-link" href="#" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Home</a>
+                <div class="dropdown-menu sub-menu-panel" aria-labelledby="dropdownMenu1">
+                  <a alt="Mea" class="sub-menu-item active" href="index.html">Home Page 1</a>
+                  <a alt="Mea" class="sub-menu-item" href="index-2.html">Home Page 2</a>
+                </div>
+              </li>
+              <li  class="dropdown sub-menu">
+                <a alt="Mea" class="dropdown-toggle nav-link" href="#" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Pages</a>
+                <div class="dropdown-menu sub-menu-panel" aria-labelledby="dropdownMenu1">
+                  <a alt="Mea" class="sub-menu-item" href="about-us.html">About Us 1</a>
+                  <a alt="Mea" class="sub-menu-item" href="about-us2.html">About Us 2</a>
+                  <a alt="Mea" class="sub-menu-item" href="team.html">Team Members</a>
+                  <a alt="Mea" class="sub-menu-item" href="services.html">Services</a>
+                  <a alt="Mea" class="sub-menu-item" href="contact-us.html">Contact Us 1</a>
+                  <a alt="Mea" class="sub-menu-item" href="contact-us2.html">Contact Us 2</a>
+                  <a alt="Mea" class="sub-menu-item" href="404.html">404</a>
+                </div>
+              </li>
+              <li  class="dropdown sub-menu">
+                <a alt="Mea" class="dropdown-toggle nav-link" href="#" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Elements</a>
+                <div class="dropdown-menu sub-menu-panel" aria-labelledby="dropdownMenu1">
+                  <a alt="Mea" class="sub-menu-item" href="tab.html">Tabs</a>
+                  <a alt="Mea" class="sub-menu-item" href="alert.html">Alert</a>
+                  <a alt="Mea" class="sub-menu-item" href="accordion.html">Accordions</a>
+                  <a alt="Mea" class="sub-menu-item" href="pricing.html">Pricing Tables</a>
+                  <a alt="Mea" class="sub-menu-item" href="buttons.html">Buttons</a>
+                  <a alt="Mea" class="sub-menu-item" href="icons.html">Icons</a>
+                  <a alt="Mea" class="sub-menu-item" href="carousel.html">Carousel</a>
+                  <a alt="Mea" class="sub-menu-item" href="counter.html">Counter</a>
+                  <a alt="Mea" class="sub-menu-item" href="map.html">Google Map</a>
+                </div>
+              </li>
+              <li class="dropdown sub-menu">
+                <a alt="Mea" class=" dropdown-toggle nav-link" href="#" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Portfolio</a>
+                <div class="dropdown-menu sub-menu-panel" aria-labelledby="dropdownMenu1">
+                  <a alt="Mea" class="sub-menu-item" href="portfolio-col-3.html">Portfolio 3 columns</a>
+                  <a alt="Mea" class="sub-menu-item" href="portfolio.html">Portfolio 4 columns</a>
+                  <a alt="Mea" class="sub-menu-item" href="portfolio-single.html">Portfolio Single</a>
+                </div>
+              </li>
+              <li class="dropdown sub-menu">
+                <a alt="Mea" class="dropdown-toggle nav-link" href="#" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Blog</a>
+                <div class="dropdown-menu sub-menu-panel" aria-labelledby="dropdownMenu1">
+                  <a alt="Mea" class="sub-menu-item" href="blog.html">Blog Page</a>
+                  <a alt="Mea" class="sub-menu-item" href="blog-single.html">Blog Single Page</a>
+                </div>
+              </li>
+              <li class="dropdown sub-menu">
+                <a alt="Mea" class="dropdown-toggle nav-link" href="#" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Contact Us</a>
+                <div class="dropdown-menu sub-menu-panel" aria-labelledby="dropdownMenu1">
+                  <a alt="Mea" class="sub-menu-item" href="contact-us.html">Contact Us 1</a>
+                  <a alt="Mea" class="sub-menu-item" href="contact-us2.html">Contact Us 2</a>
+                </div>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <!-- /header -->
+
+        
+        <!-- Main Carousel Section -->
+        <div id="main-slide" class="carousel slide carousel-fade" data-ride="carousel">
+         
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img class="img-responsive" src="assets/images/slider/slider-bg4.jpg" alt="slider">
+                    <div class="slider-content">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12 text-left">
+                                    <h1 class="slideInLeft animated wow hero-heading" data-wow-delay=".6s">We Create Digital<br>Experiences</h1>
+                                    <h5 class="fadeInDown wow animated hero-sub-heading" data-wow-delay=".8s">We are passionate about web development</h5>
+                                    <a href="javascript:void(0)" class="animated fadeInUp wow btn btn-common" data-wow-delay=".9s"><i class="material-icons">&#xE90F;</i> Explore<div class="ripple-container"></div></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                <div class="item">
+                    <img class="img-responsive" src="assets/images/slider/slider-bg2.jpg" alt="slider">
+                    <div class="slider-content">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12 text-center">
+                                    <h1 class="animated wow fadeIn hero-heading" data-wow-delay=".7s">We Design UX and UI</h1>
+                                    <h5 class="animated5 hero-sub-heading">We provide great UI and UX Solutions</h5>
+                                    <a href="javascript:void(0)" class="animated6 btn btn-common"><i class="material-icons">&#xE8DC;</i> Hire us</a>
+                                    <a href="javascript:void(0)" class="animated6 btn btn-common"><i class="material-icons">&#xE0BE;</i> Contact</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img class="img-responsive" src="assets/images/slider/slider-bg3.jpg" alt="slider">
+                    <div class="slider-content">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12 text-center">
+                                    <h1 class="animated wow bounceInUp hero-heading" data-wow-delay=".6s">We provide quality coding</h1>
+                                    <h5 class="animated4 hero-sub-heading">We love to take chalenges in development!</h5>
+                                    <a href="javascript:void(0)" class="animated4 btn btn-common"><i class="material-icons">&#xE8F4;</i> Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div> 
+         
+            <a class="left carousel-control" href="#main-slide" data-slide="prev">
+            <span><i class="fa fa-angle-left" data-ripple-color="#F0F0F0"><div class="ripple-container"></div></i></span>
+            </a>
+            <a class="right carousel-control" href="#main-slide" data-slide="next">
+            <span><i class="fa fa-angle-right" data-ripple-color="#F0F0F0"><div class="ripple-container"></div></i></span>
+            </a>
+        </div>
+        <!-- Main Carousel Section End-->
+		            </pre>
+		        </section>
+
+                <section id="other-sections">
+                    <h2 class="title">All other homepage section and Elements. Such as: About us, Services, Portfolio, Clients, Countdown, Testimonial, Team , Blog, Contact etc.</h2>
+                    <pre class="brush:html">
+        <!-- About Section -->
+        <section class="mea-about-section section-padding">
+            <div class="container">
+                <div class="row">
+                    <!-- Section Titile -->
+                    <div class="col-md-6 mea-title-section wow animated slideInLeft" data-wow-delay=".2s">
+                        <h1 class="section-titile-bg">ut MEA</h1>
+                        <h1 class="section-title">About MEA</h1>
+                    </div>
+                    <!-- Section Quote -->
+                    <div class="col-md-6 mea-section-quote wow animated slideInRight" data-wow-delay=".2s">
+                        <blockquote>
+                            <p>We are a strategic, creative studio based out of Savannah, Georgia. Our close team of innovative professionals is passionate about partnering with good people and organizations.</p>
+                        </blockquote>
+                        <div class="mt-20 clearfix sub-quote">
+                            <p>We are a close team of creative professionals based out of Savannah, Georgia. We are passionate about partnering with good people and organizations to provide exceptional custom solutions. Our skills are specific and fine-tuned. We are specialists, not generalists.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-80">
+                    <!-- Single About Widget -->
+                    <div class="col-md-4 about-widget wow animated fadeInUp" data-wow-delay=".4s">
+                        <i class="material-icons">&#xE90F;</i>
+                        <h2 class="subtitle">Insights</h2>
+                        <p>Excepteur sint occaecat cupidatat non proidt, sunt in culpa qui officia deserunt mollit <br>animidest laborum.</p>
+                    </div>
+                    <!-- Single About Widget -->
+                    <div class="col-md-4 about-widget wow animated fadeInUp" data-wow-delay=".5s">
+                        <i class="material-icons">&#xE8F1;</i>
+                        <h2 class="subtitle">Design</h2>
+                        <p>Excepteur sint occaecat cupidatat non proidt, sunt in culpa qui officia deserunt mollit <br>animidest laborum.</p>
+                    </div>
+                    <!-- Single About Widget -->
+                    <div class="col-md-4 about-widget wow animated fadeInUp" data-wow-delay=".6s">
+                        <i class="material-icons">&#xE8E5;</i>
+                        <h2 class="subtitle">Growth</h2>
+                        <p>Excepteur sint occaecat cupidatat non proidt, sunt in culpa qui officia deserunt mollit <br>animidest laborum.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- About Section End -->
+
+        <!-- Portfolio Section -->
+        <section class="mea-portfolio-section section-padding section-dark">
+            <div class="container">
+                <div class="row">
+                    <!-- Section Titile -->
+                    <div class="col-md-6 mea-title-section wow animated slideInLeft" data-wow-delay=".2s">
+                        <h1 class="section-titile-bg">ortfolio</h1>
+                        <h1 class="section-title">Portfolio</h1>
+                    </div>
+                    <!-- Section Quote -->
+                    <div class="col-md-6 portfolio-nav mt-40 wow animated slideInRight" data-wow-delay=".2s">
+                        <ul class="nav navbar-nav">
+                            <li><a class="filter active" data-filter="all">All</a></li>
+                            <li><a class="filter" data-filter=".business">Business</a></li>
+                            <li><a class="filter" data-filter=".creative">Creative</a></li>
+                            <li><a class="filter" data-filter=".education">Education</a></li>
+                            <li><a class="filter" data-filter=".blog">Blog</a></li>
+                            <li><a class="filter" data-filter=".free">Free</a></li>
+                            <li><a class="filter" data-filter=".more">More</a></li>
+                        </ul>
+                    </div>
+                    <div class="portfolio-item-wrapper col-md-12 clearfix wow animated fadeInUp" data-wow-delay=".5s" id="mea-portfolio">
+                        <!-- Single Portfolio Image -->
+                        <div class="col-md-3 no-padding mix business blog">
+                            <figure class="single-portfolio">
+                                <img class="img-responsive" src="assets/images/portfolio/work1.jpg" alt="">
+                                <figcaption class="hover-content">
+                                    <a class="btn btn-round btn-fab btn-xs" href="portfolio-single.html"><i class="material-icons">&#xE5C8;</i><div class="ripple-container"></div></a>
+                                    <a href="portfolio-single.html"><h2 class="subtitle">A boat of hope</h2></a>
+                                    <p>Istambul, Turkey</p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <!-- Single Portfolio Image -->
+                        <div class="col-md-3 no-padding mix education more">
+                            <figure class="single-portfolio">
+                                <img class="img-responsive" src="assets/images/portfolio/work2.jpg" alt="">
+                                <figcaption class="hover-content">
+                                    <a class="btn btn-round btn-fab btn-xs" href="portfolio-single.html"><i class="material-icons">&#xE5C8;</i><div class="ripple-container"></div></a>
+                                    <a href="portfolio-single.html"><h2 class="subtitle">Visit to moon</h2></a>
+                                    <p>Nasa, USA</p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <!-- Single Portfolio Image -->
+                        <div class="col-md-3 no-padding mix free education">
+                            <figure class="single-portfolio">
+                                <img class="img-responsive" src="assets/images/portfolio/work3.jpg" alt="">
+                                <figcaption class="hover-content">
+                                    <a class="btn btn-round btn-fab btn-xs" href="portfolio-single.html"><i class="material-icons">&#xE5C8;</i><div class="ripple-container"></div></a>
+                                    <a href="portfolio-single.html"><h2 class="subtitle">Lighthouse of Cox</h2></a>
+                                    <p>Chittagong, Bangladesh</p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <!-- Single Portfolio Image -->
+                        <div class="col-md-3 no-padding mix creative more business">
+                            <figure class="single-portfolio">
+                                <img class="img-responsive" src="assets/images/portfolio/work4.jpg" alt="">
+                                <figcaption class="hover-content">
+                                    <a class="btn btn-round btn-fab btn-xs" href="portfolio-single.html"><i class="material-icons">&#xE5C8;</i><div class="ripple-container"></div></a>
+                                    <a href="portfolio-single.html"><h2 class="subtitle">Bug of the day</h2></a>
+                                    <p>Delhi, India</p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <!-- Single Portfolio Image -->
+                        <div class="col-md-3 no-padding mix more free creative" >
+                            <figure class="single-portfolio">
+                                <img class="img-responsive" src="assets/images/portfolio/work5.jpg" alt="">
+                                <figcaption class="hover-content">
+                                    <a class="btn btn-round btn-fab btn-xs" href="portfolio-single.html"><i class="material-icons">&#xE5C8;</i><div class="ripple-container"></div></a>
+                                    <a href="portfolio-single.html"><h2 class="subtitle">Loard of the ring</h2></a>
+                                    <p>Novel, USA</p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <!-- Single Portfolio Image -->
+                        <div class="col-md-3 no-padding mix blog">
+                            <figure class="single-portfolio">
+                                <img class="img-responsive" src="assets/images/portfolio/work6.jpg" alt="">
+                                <figcaption class="hover-content">
+                                    <a class="btn btn-round btn-fab btn-xs" href="portfolio-single.html"><i class="material-icons">&#xE5C8;</i><div class="ripple-container"></div></a>
+                                    <a href="portfolio-single.html"><h2 class="subtitle">Wings of paper</h2></a>
+                                    <p>Venis, Italy</p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <!-- Single Portfolio Image -->
+                        <div class="col-md-3 no-padding mix business blog education more">
+                            <figure class="single-portfolio">
+                                <img class="img-responsive" src="assets/images/portfolio/work7.jpg" alt="">
+                                <figcaption class="hover-content">
+                                    <a class="btn btn-round btn-fab btn-xs" href="portfolio-single.html"><i class="material-icons">&#xE5C8;</i><div class="ripple-container"></div></a>
+                                    <a href="portfolio-single.html"><h2 class="subtitle">Snail Of Sea</h2></a>
+                                    <p>Chittagong, Bangladesh</p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <!-- Single Portfolio Image -->
+                        <div class="col-md-3 no-padding mix more">
+                            <figure class="single-portfolio">
+                                <img class="img-responsive" src="assets/images/portfolio/work8.jpg" alt="">
+                                <figcaption class="hover-content">
+                                    <a class="btn btn-round btn-fab btn-xs" href="portfolio-single.html"><i class="material-icons">&#xE5C8;</i><div class="ripple-container"></div></a>
+                                    <a href="portfolio-single.html"><h2 class="subtitle">Cup Of Tea</h2></a>
+                                    <p>Sylhet, Bangladesh</p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-30 wow animated fadeInUp" data-wow-delay=".3s">
+                    <div class="col-md-12 text-center">
+                        <a href="javascript:void(0)" class="animated4 btn btn-common" data-ripple-color="#000"><i class="material-icons">&#xE90F;</i> Explore more work<div class="ripple-container"></div></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Portfolio Section End -->
+
+        <!-- Services Section -->
+        <section class="mea-service-section section-padding">
+            <div class="container">
+                <div class="row">
+                    <!-- Section Titile -->
+                    <div class="col-md-6 mea-title-section wow animated slideInLeft" data-wow-delay=".2s">
+                        <h1 class="section-titile-bg">ervices</h1>
+                        <h1 class="section-title">Services</h1>
+                    </div>
+                    <!-- Section Quote -->
+                    <div class="col-md-6 mea-section-quote wow animated slideInRight" data-wow-delay=".2s">
+                        <blockquote>
+                            <p>We work with you to build comprehensive, thoughtful, and purpose-driven identities and experiences. Let’s talk about job.</p>
+                        </blockquote>
+                    </div>
+                </div>
+                <!-- Services Widget Section -->
+                <div class="row mt-20">
+                    <!-- Service Widgets -->
+                    <div class="col-md-4 single-service-widget wow animated fadeInUp" data-wow-delay=".3s">
+                        <div class="media">
+                            <div class="media-left">
+                                <i class="material-icons pulse-shrink">&#xE922;</i>
+                            </div>
+                            <div class="media-body">
+                                <h2 class="subtitle">Discovery & Strategy</h2>
+                                <p>Excepteur sint occaecat cupi datat non proidt, sunt in culpa qui offi cia deserunt</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Service Widgets -->
+                    <div class="col-md-4 single-service-widget wow animated fadeInUp" data-wow-delay=".4s">
+                        <div class="media">
+                            <div class="media-left">
+                                <i class="material-icons pulse-shrink">&#xE919;</i>
+                            </div>
+                            <div class="media-body">
+                                <h2 class="subtitle">Interface Design</h2>
+                                <p>Excepteur sint occaecat cupi datat non proidt, sunt in culpa qui offi cia deserunt</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Service Widgets -->
+                    <div class="col-md-4 single-service-widget wow animated fadeInUp" data-wow-delay=".5s">
+                        <div class="media">
+                            <div class="media-left">
+                                <i class="material-icons pulse-shrink">&#xE8D1;</i>
+                            </div>
+                            <div class="media-body">
+                                <h2 class="subtitle">Branding</h2>
+                                <p>Excepteur sint occaecat cupi datat non proidt, sunt in culpa qui offi cia deserunt</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Service Widgets -->
+                    <div class="col-md-4 single-service-widget wow animated fadeInUp" data-wow-delay=".6s">
+                        <div class="media">
+                            <div class="media-left">
+                                <i class="material-icons pulse-shrink">&#xE8AF;</i>
+                            </div>
+                            <div class="media-body">
+                                <h2 class="subtitle">Communication</h2>
+                                <p>Excepteur sint occaecat cupi datat non proidt, sunt in culpa qui offi cia deserunt</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Service Widgets -->
+                    <div class="col-md-4 single-service-widget wow animated fadeInUp" data-wow-delay=".7s">
+                        <div class="media">
+                            <div class="media-left">
+                                <i class="material-icons pulse-shrink">&#xE8FC;</i>
+                            </div>
+                            <div class="media-body">
+                                <h2 class="subtitle">Multimedia Production</h2>
+                                <p>Excepteur sint occaecat cupi datat non proidt, sunt in culpa qui offi cia deserunt</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Service Widgets -->
+                    <div class="col-md-4 single-service-widget wow animated fadeInUp" data-wow-delay=".8s">
+                        <div class="media">
+                            <div class="media-left">
+                                <i class="material-icons pulse-shrink">&#xE86F;</i>
+                            </div>
+                            <div class="media-body">
+                                <h2 class="subtitle">Development solutions</h2>
+                                <p>Excepteur sint occaecat cupi datat non proidt, sunt in culpa qui offi cia deserunt</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Services Section End -->
+
+        <!-- Our Team Section -->
+        <section class="mea-our-team-section section-padding section-dark"> 
+            <div class="container">
+                <div class="row">
+                    <!-- Section Titile -->
+                    <div class="col-md-6 mea-title-section animated wow slideInLeft" data-wow-delay=".2s">
+                        <h1 class="section-titile-bg">Team</h1>
+                        <h1 class="section-title">Our Team</h1>
+                    </div>
+                    <!-- Section Quote -->
+                    <div class="col-md-6 mea-section-quote wow animated slideInRight" data-wow-delay=".2s">
+                        <blockquote>
+                            <p>Our team is proficient in an array of services that can help elevate and empower your company or organization.</p>
+                        </blockquote>
+                    </div>
+                </div>
+                <div class="row mt-50">
+                    <!-- Single Team Widget -->
+                    <div class="col-md-3 wow animated fadeInUp" data-wow-delay=".3s">
+                        <div class="single-team-widget">
+                            <img src="assets/images/team/team1.png" class="img-responsive" alt="">
+                            <div class="team-member-info">
+                                <div class="know-more">
+                                    <a class="btn btn-round btn-fab btn-xs" href="javascript:void(0)"><i class="material-icons">&#xE5C8;</i><div class="ripple-container"></div></a>
+                                </div>
+                                <h2 class="subtitle">Rob Percy</h2>
+                                <p>Co-Founder, Operations Director</p>
+                                <div class="social-profiles">
+                                    <a href="#"><i class="fa fa-twitter"></i></a>
+                                    <a href="#"><i class="fa fa-facebook"></i></a>
+                                    <a href="#"><i class="fa fa-dribbble"></i></a>
+                                    <a href="#"><i class="fa fa-behance"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                     <!-- Single Team Widget -->
+                    <div class="col-md-3 wow animated fadeInUp" data-wow-delay=".4s">
+                        <div class="single-team-widget">
+                            <img src="assets/images/team/team2.png" class="img-responsive" alt="">
+                            <div class="team-member-info">
+                                <div class="know-more">
+                                    <a class="btn btn-round btn-fab btn-xs" href="javascript:void(0)"><i class="material-icons">&#xE5C8;</i><div class="ripple-container"></div></a>
+                                </div>
+                                <h2 class="subtitle">Jennifer L.</h2>
+                                <p>Graphic Designer</p>
+                                <div class="social-profiles">
+                                    <a href="#"><i class="fa fa-twitter"></i></a>
+                                    <a href="#"><i class="fa fa-facebook"></i></a>
+                                    <a href="#"><i class="fa fa-dribbble"></i></a>
+                                    <a href="#"><i class="fa fa-behance"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                     <!-- Single Team Widget -->
+                    <div class="col-md-3 wow animated fadeInUp" data-wow-delay=".5s">
+                        <div class="single-team-widget">
+                            <img src="assets/images/team/team3.png" class="img-responsive" alt="">
+                            <div class="team-member-info">
+                                <div class="know-more">
+                                    <a class="btn btn-round btn-fab btn-xs" href="javascript:void(0)"><i class="material-icons">&#xE5C8;</i><div class="ripple-container"></div></a>
+                                </div>
+                                <h2 class="subtitle">Tom Hanks.</h2>
+                                <p>SEO Speacialist</p>
+                                <div class="social-profiles">
+                                    <a href="#"><i class="fa fa-twitter"></i></a>
+                                    <a href="#"><i class="fa fa-facebook"></i></a>
+                                    <a href="#"><i class="fa fa-dribbble"></i></a>
+                                    <a href="#"><i class="fa fa-behance"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Single Team Widget -->
+                    <div class="col-md-3 wow animated fadeInUp" data-wow-delay=".6s">
+                        <div class="single-team-widget">
+                            <img src="assets/images/team/team4.png" class="img-responsive" alt="">
+                            <div class="team-member-info">
+                                <div class="know-more">
+                                    <a class="btn btn-round btn-fab btn-xs" href="javascript:void(0)"><i class="material-icons">&#xE5C8;</i><div class="ripple-container"></div></a>
+                                </div>
+                                <h2 class="subtitle">Emma Watson</h2>
+                                <p>Head Of Ideas</p>
+                                <div class="social-profiles">
+                                    <a href="#"><i class="fa fa-twitter"></i></a>
+                                    <a href="#"><i class="fa fa-facebook"></i></a>
+                                    <a href="#"><i class="fa fa-dribbble"></i></a>
+                                    <a href="#"><i class="fa fa-behance"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Our Team Section End -->
+
+        <!-- Testimonial Section -->
+        <section class="mea-testimonial-section section-padding">
+            <div class="container">
+                <div class="row">
+                    <!-- Section Titile -->
+                    <div class="col-md-6 mea-title-section wow animated slideInLeft" data-wow-delay=".2s">
+                        <h1 class="section-titile-bg">imonial</h1>
+                        <h1 class="section-title">Testimonial</h1>
+                        <div class="section-image mt-50">
+                            <img src="assets/images/section-image1.png" class="img-responsive" alt="Thumbs Up Icon">
+                        </div>
+                    </div>
+                    <!-- Section Quote -->
+                    <div class="col-md-6 mea-section-quote wow animated slideInRight" data-wow-delay=".2s">
+                        <div id="testimonial-carousel" class="owl-carousel owl-theme">
+                            <!-- Single Testimonial -->
+                            <div class="item active">
+                                <!-- Quote -->
+                                <div class="testomonial-quote">
+                                    <blockquote>
+                                        <p>We think this new logo and mark is a great reflection of our focus on celebrating visual creativity, and something that will continue to evolve along with our community.</p>
+                                    </blockquote>
+                                </div> 
+                                <div class="testimonial-author">
+                                    <div class="media">
+                                        <div class="media-left">
+                                           <img src="assets/images/testimonial/author1.png" class="img-circle" alt="">
+                                        </div>
+                                        <div class="media-body">
+                                            <h2 class="subtitle">Adam Schwartz</h2>
+                                            <p>Software Articulate, Google</p>
+                                        </div>
+                                    </div>
+                                </div> 
+                            </div>
+                            <!-- Single Testimonial -->
+                            <div class="item">
+                                <!-- Quote -->
+                                <div class="testomonial-quote">
+                                    <blockquote>
+                                        <p>We think this new logo and mark is a great reflection of our focus on celebrating visual creativity, and something that will continue to evolve along with our community.</p>
+                                    </blockquote>
+                                </div> 
+                                <div class="testimonial-author">
+                                    <div class="media">
+                                        <div class="media-left">
+                                           <img src="assets/images/testimonial/author1.png" class="img-circle" alt="">
+                                        </div>
+                                        <div class="media-body">
+                                            <h2 class="subtitle">Adam Schwartz</h2>
+                                            <p>Software Articulate, Google</p>
+                                        </div>
+                                    </div>
+                                </div> 
+                            </div>
+                            <!-- Single Testimonial -->
+                            <div class="item">
+                                <!-- Quote -->
+                                <div class="testomonial-quote">
+                                    <blockquote>
+                                        <p>We think this new logo and mark is a great reflection of our focus on celebrating visual creativity, and something that will continue to evolve along with our community.</p>
+                                    </blockquote>
+                                </div> 
+                                <div class="testimonial-author">
+                                    <div class="media">
+                                        <div class="media-left">
+                                           <img src="assets/images/testimonial/author1.png" class="img-circle" alt="">
+                                        </div>
+                                        <div class="media-body">
+                                            <h2 class="subtitle">Adam Schwartz</h2>
+                                            <p>Software Articulate, Google</p>
+                                        </div>
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Testimonial Section End -->
+
+        <!-- Our Clients Section -->
+        <section class="mea-clients-section section-padding section-dark">
+            <div class="container">
+                <div class="row">
+                    <!-- Section Titile -->
+                    <div class="col-md-6 mea-title-section wow animated slideInLeft" data-wow-delay=".2s">
+                        <h1 class="section-titile-bg">Clients</h1>
+                        <h1 class="section-title">Our Clients</h1>
+                        <div class="section-image mt-50">
+                            <img src="assets/images/section-image2.png" class="img-responsive" alt="Thumbs Up Icon">
+                        </div>
+                    </div>
+                    <div class="client-container col-md-6 mt-40 clearfix wow animated slideInRight" data-wow-delay=".2s">
+                        <!-- Single Client Image -->
+                        <div class="col-md-4">
+                            <div class="single-client-image active">
+                                <img src="assets/images/clients/client1.png" class="img-responsive" alt="">
+                            </div>
+                        </div>
+                        <!-- Single Client Image -->
+                        <div class="col-md-4">
+                            <div class="single-client-image">
+                                <img src="assets/images/clients/client2.png" class="img-responsive" alt="">
+                            </div>
+                        </div>
+                        <!-- Single Client Image -->
+                        <div class="col-md-4">
+                            <div class="single-client-image">
+                                <img src="assets/images/clients/client3.png" class="img-responsive" alt="">
+                            </div>
+                        </div>
+                        <!-- Single Client Image -->
+                        <div class="col-md-4">
+                            <div class="single-client-image">
+                                <img src="assets/images/clients/client4.png" class="img-responsive" alt="">
+                            </div>
+                        </div>
+                        <!-- Single Client Image -->
+                        <div class="col-md-4">
+                            <div class="single-client-image">
+                                <img src="assets/images/clients/client5.png" class="img-responsive" alt="">
+                            </div>
+                        </div>
+                        <!-- Single Client Image -->
+                        <div class="col-md-4">
+                            <div class="single-client-image">
+                                <img src="assets/images/clients/client6.png" class="img-responsive" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Our Clients Section End -->
+
+        <!-- Our BLog Section -->
+        <section class="mea-blog-section section-padding">  
+            <div class="container">
+                <div class="row">
+                    <div class="row">
+                        <!-- Section Titile -->
+                        <div class="col-md-6 mea-title-section wow animated slideInLeft" data-wow-delay=".2s">
+                            <h1 class="section-titile-bg">Stories</h1>
+                            <h1 class="section-title">Our Stories</h1>
+                        </div>
+                        <!-- Section Quote -->
+                        <div class="col-md-6 mea-section-quote wow animated slideInRight" data-wow-delay=".2s">
+                            <blockquote>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+                            </blockquote>
+                        </div>
+                    </div>
+
+                    <div class="row mt-50">
+                        <!-- Single Article -->
+                        <div class="col-md-4 wow animated fadeInUp" data-wow-delay=".3s">
+                            <article class="single-blog-post">
+                                <!-- Featured Image -->
+                                <div class="featured-image">
+                                    <a href="#">
+                                        <img src="assets/images/blog/featured1.png" alt="">
+                                    </a>
+                                </div>
+                                <!-- Post Meta -->
+                                <div class="post-meta">
+                                    <!-- Read More -->
+                                    <div class="read-more-icon">
+                                        <a class="btn btn-round btn-fab" href="blog-single.html"><i class="material-icons">&#xE5C8;</i><div class="ripple-container"></div></a>
+                                    </div>
+                                    <!-- Title -->
+                                    <a href="blog-single.html"><h2 class="subtitle">Lorem ipsum do lor sit amet, cosectetur adipisicing</h2></a>
+                                    <p>by <b><a href="#">Kelly Grover</a></b></p>
+                                </div>
+                            </article>
+                        </div>
+                        <!-- Single Article -->
+                        <div class="col-md-4 wow animated fadeInUp" data-wow-delay=".4s">
+                            <article class="single-blog-post">
+                                <!-- Featured Image -->
+                                <div class="featured-image">
+                                    <a href="#">
+                                        <img src="assets/images/blog/featured2.png" alt="">
+                                    </a>
+                                </div>
+                                <!-- Post Meta -->
+                                <div class="post-meta">
+                                    <!-- Read More -->
+                                    <div class="read-more-icon">
+                                        <a class="btn btn-round btn-fab" href="blog-single.html"><i class="material-icons">&#xE5C8;</i><div class="ripple-container"></div></a>
+                                    </div>
+                                    <!-- Title -->
+                                    <a href="blog-single.html"><h2 class="subtitle">Lorem ipsum do lor sit amet, cosectetur adipisicing</h2></a>
+                                    <p>by <b><a href="#">Kelly Grover</a></b></p>
+                                </div>
+                            </article>
+                        </div>
+                        <!-- Single Article -->
+                        <div class="col-md-4 wow animated fadeInUp" data-wow-delay=".5s">
+                            <article class="single-blog-post">
+                                <!-- Featured Image -->
+                                <div class="featured-image">
+                                    <a href="#">
+                                        <img src="assets/images/blog/featured3.png" alt="">
+                                    </a>
+                                </div>
+                                <!-- Post Meta -->
+                                <div class="post-meta">
+                                    <!-- Read More -->
+                                    <div class="read-more-icon">
+                                        <a class="btn btn-round btn-fab" href="blog-single.html"><i class="material-icons">&#xE5C8;</i><div class="ripple-container"></div></a>
+                                    </div>
+                                    <!-- Title -->
+                                    <a href="blog-single.html"><h2 class="subtitle">Lorem ipsum do lor sit amet, cosectetur adipisicing</h2></a>
+                                    <p>by <b><a href="#">Kelly Grover</a></b></p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-30 wow animated fadeInUp" data-wow-delay=".6s">
+                    <!-- Button -->
+                    <div class="col-md-12 text-center">
+                        <a href="blog.html" class="animated4 btn btn-common" data-ripple-color="#000"><i class="material-icons">&#xE90F;</i> Explore More Stories<div class="ripple-container"></div></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Our BLog Section End -->
+
+        <!-- Contact Us Section -->
+        <section class="mea-contact-section section-padding section-dark">
+            <div class="container">
+                <div class="row">
+                    <!-- Section Titile -->
+                    <div class="col-md-6 mea-title-section wow animated slideInLeft" data-wow-delay=".2s">
+                        <h1 class="section-titile-bg">tact Us</h1>
+                        <h1 class="section-title">Contact Us</h1>
+                        <div class="section-image mt-50">
+                            <img src="assets/images/section-image3.png" class="img-responsive" alt="Thumbs Up Icon">
+                        </div>
+
+                    </div>
+                    <!-- contact form -->
+                    <div class="col-md-6 mt-50 wow animated slideInRight" data-wow-delay=".2s">
+                        <form class="shake" role="form" method="post" id="contactForm" name="contact-form" data-toggle="validator">
+                            <!-- Name -->
+                            <div class="form-group label-floating">
+                              <label class="control-label" for="name">Name</label>
+                              <input class="form-control" id="name" type="text" name="name" required data-error="Please enter your name">
+                              <div class="help-block with-errors"></div>
+                            </div>
+                            <!-- email -->
+                            <div class="form-group label-floating">
+                              <label class="control-label" for="email">Email</label>
+                              <input class="form-control" id="email" type="email" name="email" required data-error="Please enter your Email">
+                              <div class="help-block with-errors"></div>
+                            </div>
+                            <!-- Subject -->
+                            <div class="form-group label-floating">
+                              <label class="control-label" for="msgSubject">Subject</label>
+                              <input class="form-control" id="msg_subject" type="text" name="subject" required data-error="Please enter your message subject">
+                              <div class="help-block with-errors"></div>
+                            </div>
+                            <!-- Message -->
+                            <div class="form-group label-floating">
+                                <label for="message" class="control-label">Message</label>
+                                <textarea class="form-control" rows="3" id="message" name="message" required data-error="Write your message"></textarea>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                            <!-- Form Submit -->
+                            <div class="form-submit mt-20">
+                                <button class="btn btn-common" type="submit" id="form-submit"><i class="material-icons">&#xE0C9;</i> Send Message</button>
+                                <div id="msgSubmit" class="h3 text-center hidden"></div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Contact Us Section End -->
+
+        <!-- Footer Section -->
+        <footer class="mea-footer-section">
+            <!-- Footer Widget Container -->
+            <div class="footer-widget-container">
+                <div class="container">
+                    <div class="row">
+                        <!-- Single Footer Widget -->
+                        <div class="col-md-3 single-footer-widget wow animated fadeInUp" data-wow-delay=".2s">
+                            <h3 class="footer-title">About MEA</h3>
+                            <p>Fresh, innovative, creative, minimalist ... What's your style? You probably won't have a better chance to show off all your potential if it's not by designing a website for your own agency or web studio. It's time to push all those ideas and concepts forward.</p>
+                        </div>
+                        <!-- Single Footer Widget -->
+                        <div class="col-md-3 single-footer-widget recent-news-widget wow animated fadeInUp" data-wow-delay=".3s">
+                            <h3 class="footer-title">Recent News</h3>
+                            <ul>
+                                <li><a href="#">21 things that won’t help you become a better designer</a></li>
+                                <li><a href="#">User Experience & Luxury Fashion Brands: A UX Designer’s Perspective</a></li>
+                                <li><a href="#">Don’t Listen to Users and 4 Other Myths About Usability Testing</a></li>
+                                <li><a href="#">Photoshop Express gets a UI update</a></li>
+                            </ul>
+                        </div>
+                        <!-- Single Footer Widget -->
+                        <div class="col-md-3 single-footer-widget recent-work-widget wow animated fadeInUp" data-wow-delay=".4s">
+                            <h3 class="footer-title">Recent Works</h3>
+                            <ul>
+                                <li>
+                                    <div class="media">
+                                        <div class="media-left">
+                                            <a href="#">
+                                                <img src="assets/images/work/footer-work1.png" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="media-body">
+                                            <a href=""><h4>Bower JS plugin release</h4></a>
+                                            <span>September 20, 2016</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="media">
+                                        <div class="media-left">
+                                            <a href="#">
+                                                <img src="assets/images/work/footer-work2.png" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="media-body">
+                                            <a href=""><h4>Flat Icon collection</h4></a>
+                                            <span>October 30, 2016</span>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Single Footer Widget -->
+                        <div class="col-md-3 single-footer-widget footer-contact-widget wow animated fadeInUp" data-wow-delay=".5s">
+                            <h3 class="footer-title">Contact Us</h3>
+                            <p><span>Phone:</span> 879-890-9767</p>
+                            <p><span>Span:</span> support@mea.com</p>
+                            <p><span>Twitter:</span> @mea</p>
+
+                            <h3 class="footer-title mt-50">Follow Us</h3>
+                            <ul>
+                                <li>
+                                    <a href="#"><i class="fa fa-facebook"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-twitter"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-dribbble"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-github"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright-section">
+                <div class="container">
+                    <div class="row">
+                        <!-- Copuyright -->
+                        <div class="col-md-6">
+                            <p>&copy; 2016 MEA Studio. All Rights Reserved.</p>
+                        </div>
+                        <!-- Footer Links -->
+                        <div class="col-md-6 footer-links">
+                            <ul>
+                                <li>
+                                    <a href="index.html"><i class="fa fa-home"></i> Homepage</a>
+                                </li>
+                                <li>
+                                    <a href="portfolio.html"><i class="fa fa-image"></i> Portfolio</a>
+                                </li>
+                                <li>
+                                    <a href="blog.html"><i class="fa fa-pencil"></i> Blog</a>
+                                </li>
+                                <li>
+                                    <a href="contact.html"><i class="fa fa-envelope"></i> Contact Us</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+        <!-- Footer Section End -->
+                    </pre>
+                    
+                </section>
+		        
+		        <section id="css-structure">
+		            <h2 class="title">CSS Files and Structure</h2>
+		            <p class="fifteen">These are the css files that are loaded into templates in <strong>Head Section</strong>.</p>
+
+                <pre class="brush:html">
+        <!-- Essential CSS Files -->
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/material.min.css">
+        <link rel="stylesheet" href="assets/css/ripples.min.css">
+        <link rel="stylesheet" href="assets/css/okeynav.css">
+        <link rel="stylesheet" href="assets/css/owl.carousel.css">
+        <link rel="stylesheet" href="assets/css/animate.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        
+
+        
+        <!-- Color Presets -->
+        <link rel="stylesheet" href="assets/css/colors/pink.css">
+        <link rel="stylesheet" href="assets/css/colors/purple.css">
+        <link rel="stylesheet" href="assets/css/colors/deep-purple.css">
+        <link rel="stylesheet" href="assets/css/colors/indigo.css">
+        <link rel="stylesheet" href="assets/css/colors/blue.css">
+        <link rel="stylesheet" href="assets/css/colors/yellow.css">
+        <link rel="stylesheet" href="assets/css/colors/green.css">
+        <link rel="stylesheet" href="assets/css/colors/red.css">
+
+        <!-- Responsive CSS -->
+        <link rel="stylesheet" href="assets/css/responsive.css">
+
+        <!-- Icon Family -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+                </pre>
+		            
+		            <h2 class="title">Google Web Fonts</h2>
+		            
+		            <p>By default, the template loads this font from Google Web Font Services, you can change the font with the one that suits you best.</p>
+		            
+		            <pre class="brush:html">		                
+						<!--
+						Google Font
+						=========================== -->
+                        
+                        @import url(http://fonts.googleapis.com/css?family=Roboto:400,300);
+
+
+		            </pre>
+
+
+                    <h2 class="title">Fontface Fonts</h2>
+                    
+                    <p>By default, the template loads this font from from local for heading texts, you can change the font with the one that suits you best.</p>
+                    
+                    <pre class="brush:html">                        
+                            <link rel="stylesheet" type="text/css" href="assets/fonts/lovelo/lovelo.css">
+                    </pre>
+                    
+		            
+		            <p class="twenty">You can change fonts from <strong>main.css</strong></p>
+		            
+		            <pre class="brush:css">
+                        body {
+                          font-family: 'Roboto', sans-serif;
+                          background: #fff;
+                          font-size: 14px;
+                          font-weight: 300;
+                          -webkit-box-sizing: border-box;
+                          -moz-box-sizing: border-box;
+                          box-sizing: border-box;
+                          -webkit-font-smoothing: subpixel-antialiased;
+                          color: #666;
+                          line-height: 25px;
+                          -webkit-backface-visibility: hidden;
+                          backface-visibility: hidden;
+                        }
+                        
+                        h1,
+                        h2,
+                        h3,
+                        h4 {
+                          font-family: "loveloblack";
+                        }
+		            </pre>
+		            
+		            
+		        </section>
+		        
+		        <section id="javascript">
+		            <h2 class="title">Javascript Files and Structure</h2>
+		            
+		            <p class="fifteen">These are the list of Javascript files that are loaded into templates in end of the <strong>Body Section</strong>.
+		            
+		            <pre class="brush:html">
+        
+        <!-- JS Files -->
+        
+        <!-- jQuery Load -->
+        <script src="assets/js/jquery-min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/jquery.okayNav-min.js"></script>
+        <script src="assets/js/jquery.mixitup.min.js"></script>
+        <script src="assets/js/jquery.inview.js"></script>
+        <script src="assets/js/jquery.counterup.min.js"></script>
+        <script src="assets/js/scroll-top.js"></script>
+        <script src="assets/js/material.min.js"></script>
+        <script src="assets/js/ripples.min.js"></script>
+        <script src="assets/js/owl.carousel.min.js"></script>
+        
+        <!-- Form Validation -->
+        <script src="assets/js/form-validator.min.js"></script>
+        <script src="assets/js/contact-form-script.min.js"></script>
+        <script src="assets/js/wow.js"></script>
+        <script src="assets/js/main.js"></script>  
+                </pre>
+		            
+		        </section>
+
+                <section id="color-presets">
+                    <h2 class="title"> Changing The Default Color Preset of Template </h2>
+                    
+                <p>PLAIN comes with multiple color presets you can check color preset files from assets->css->colors folder</p>
+                <p>You can change default color preset by adding color css file in head area like:</p>
+
+                    <pre class="brush:html">
+                        <link rel="stylesheet" type="text/css" href="assets/css/colors/red.css" media="screen" />
+                    </pre>
+                    
+                </section>
+                
+		        <section id="contact-form">
+		            <h2 class="title"> Configuring Contact Form </h2>
+		            
+                <p>open <b>form-process.php</b> file from <b>ASSETS->php</b> folder of template and configure mailer function parameters to get it worked</p>
+
+                <pre class="brush:php">
+                 
+                 // Change to your email
+
+                  $EmailTo = "hello@mea.com";
+                </pre>
+		            
+		        </section>
+		        
+		        <section id="google-map">
+		            <h2 class="title">Google Map Settings</h2>
+		            <p>To set your location, open conact page goto JS library section and change the latitude/longitude values</p>
+		            <pre class="brush:javascript">
+                        var plain = new google.maps.LatLng(-33.885429, 151.210081);
+                        var mapCoordinates = new google.maps.LatLng(-33.885429, 151.210081);
+		            </pre>
+		        </section>
+		        
+		        <section id="credit">
+		            <h2 class="title">Source and Credit</h2>		            
+		            <div class="script-source">
+		                <ul>
+                        <li><a target="_blank" href="http://unsplash.com/">Unsplash</a></li>
+		                    <li><a target="_blank" href="http://jquery.com/">jQuery</a></li>
+		                    <li><a target="_blank" href="http://getbootstrap.com">Bootstrap Framework</a></li>
+		                    <li><a target="_blank" href="http://www.owlgraphic.com/owlcarousel">Owl Carousel</a></li>
+                        <li><a target="_blank" href="https://mixitup.kunkalabs.com/">MixItUp</a></li>
+                        <li><a target="_blank" href="https://github.com/bfintal/Counter-Up">CounterUp</a></li>
+		                    <li><a target="_blank" href="http://mynameismatthieu.com/WOW/">Wow</a></li>
+		                    <li><a target="_blank" href="http://fontawesome.io/">Font Awesome</a></li>
+		                    <li><a target="_blank" href="http://daneden.github.io/animate.css/">Animate CSS</a></li>
+		                </ul>
+		                
+		            </div>
+		            
+		        </section>
+		    </div>
+		</div>
+		
+		
+		<!-- Essential JavaScript Libraries
+		==============================================-->
+        <script src="js/jquery-1.11.0.min.js"></script>
+        <script src="js/jquery-ui.js"></script>
+        <script src="syntax-highlighter/scripts/shCore.js"></script> 
+        <script src="syntax-highlighter/scripts/shBrushXml.js"></script> 
+        <script src="syntax-highlighter/scripts/shBrushCss.js"></script> 
+        <script src="syntax-highlighter/scripts/shBrushJScript.js"></script> 
+        <script src="syntax-highlighter/scripts/shBrushPhp.js"></script> 
+        <script>
+            SyntaxHighlighter.all()
+        </script>
+        <script src="js/custom.js"></script>
+		
+    </body>
+</html>

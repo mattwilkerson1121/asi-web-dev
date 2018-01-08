@@ -1,0 +1,268 @@
+
+.navbar-default{
+  padding: 0 15px;
+  background: transparent;
+  position: absolute;
+  border: 0px;
+  margin-bottom: 0;
+  z-index: 9999999999;
+  width: 100%;
+}
+.navbar-2 {
+  position: relative;
+}
+.navbar-default.affix {
+  background: #fff;
+  z-index: 999999;
+  position: fixed;
+  box-shadow: 0px 3px 6px 3px rgba(0,0,0,0.06);
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+}
+
+.site-logo{
+  position: absolute;
+  top: 20px;
+}
+.site-logo h2 {
+    color: #fff;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 10px;
+}
+
+.affix .site-logo{
+  top: 5px;
+  h2 {
+    color: #333;
+    font-size: 28px;
+  }
+}
+
+
+
+
+.okayNav__nav--invisible {
+  background: #212121;
+  box-shadow: -2px 0px 2px #efefef;
+  position: absolute !important;
+}
+.okayNav__menu-toggle{
+  top: 28px;
+}
+
+
+.top-nav-collapse{
+  background: #ffffff;
+  border:1px solid #efefef;
+  box-shadow: -2px 0px 2px #efefef;
+  z-index: 5000000000;
+  transition: 0.3s all ease-in-out;
+    -webkit-transition: 0.3s all ease-in-out;
+    -moz-transition: 0.3s all ease-in-out;
+    -o-transition: 0.3s all ease-in-out;
+    -ms-transition: 0.3s all ease-in-out;
+}
+#nav-main{
+  float: right;
+}
+#nav-main li:active , #nav-main li:focus {
+  background: none;
+}
+#nav-main a.nav-link {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    background: none !important;
+    padding: 12px 2px;
+    margin-right: 42px;
+    margin-top: 15px;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s all ease-in-out;
+}
+.affix #nav-main a.nav-link {
+  margin-top: 10px;
+  color: #333;
+  background: none;
+  &:hover {
+    color: rgba(0, 0, 0 ,0.6)
+  }
+  &:focus , &:active {
+    background: none;
+  }
+}
+
+#nav-main li:last-child a.nav-link {
+    margin-right: 0px;
+} 
+
+#nav-main li a.nav-link:hover, #nav-main li a.nav-link:focus , #nav-main li a.nav-link:active {
+  border-bottom: 3px solid trasparent;
+  opacity: 0.7;
+  background-color: transparent;
+  z-index: 5000;
+  transition: 0.3s all ease-in-out;
+    -webkit-transition: 0.3s all ease-in-out;
+    -moz-transition: 0.3s all ease-in-out;
+    -o-transition: 0.3s all ease-in-out;
+    -ms-transition: 0.3s all ease-in-out;
+}
+#nav-main li:hover > a.nav-link {
+  opacity: 0.7;
+}
+#nav-main li.active a.nav-link {
+  background-color: transparent;
+  transition: 0.3s all ease-in-out;
+    -webkit-transition: 0.3s all ease-in-out;
+    -moz-transition: 0.3s all ease-in-out;
+    -o-transition: 0.3s all ease-in-out;
+    -ms-transition: 0.3s all ease-in-out;
+}
+
+.sub-menu-panel{
+  display: none;
+  background: #212121 !important;
+  margin-top: -3px;
+  transition: 0.3s all ease-in-out;
+    -webkit-transition: 0.3s all ease-in-out;
+    -moz-transition: 0.3s all ease-in-out;
+    -o-transition: 0.3s all ease-in-out;
+    -ms-transition: 0.3s all ease-in-out;
+    animation: 0.4s ease 0s normal none 1 running fadeInUpMenu;
+}
+li.sub-menu:hover .sub-menu-panel{
+  display: block;
+  position: absolute;
+  top: 100%;
+  transition: 0.3s all ease-in-out;
+    -webkit-transition: 0.3s all ease-in-out;
+    -moz-transition: 0.3s all ease-in-out;
+    -o-transition: 0.3s all ease-in-out;
+    -ms-transition: 0.3s all ease-in-out;
+    animation: 0.4s ease 0s normal none 1 running fadeInUpMenu;
+}
+
+li.sub-menu .sub-menu-panel a{
+  color: #999;;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: capitalize;
+  width: 220px;
+  letter-spacing: 0.1rem;
+  margin: 3px 0;
+  padding: 8px 25px;
+  border-left: 3px solid #212121;
+  transition: 0.3s all ease-in-out;
+    -webkit-transition: 0.3s all ease-in-out;
+    -moz-transition: 0.3s all ease-in-out;
+    -o-transition: 0.3s all ease-in-out;
+    -ms-transition: 0.3s all ease-in-out;
+}
+li.sub-menu .sub-menu-panel a:hover, li.sub-menu .sub-menu-panel a:focus, li.sub-menu .sub-menu-panel a.active{
+  background: #373737;
+  color: #ffffff;
+  transition: 0.3s all ease-in-out;
+    -webkit-transition: 0.3s all ease-in-out;
+    -moz-transition: 0.3s all ease-in-out;
+    -o-transition: 0.3s all ease-in-out;
+    -ms-transition: 0.3s all ease-in-out;
+}
+@-webkit-keyframes fadeInUpMenu {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+  }
+}
+@keyframes fadeInUpMenu {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.fadeInUpMenu {
+  -webkit-animation-name: fadeInUpMenu;
+  animation-name: fadeInUpMenu;
+}
+
+/* only small tablets */
+@media (min-width: 768px) and (max-width: 991px) {
+   #nav-main li a.nav-link{
+    padding-top: 18px;
+  }
+}
+
+// Index 2 Navbar
+.navbar-2 {
+  box-shadow: 0px 3px 6px 3px rgba(0,0,0,0.06);
+}
+.navbar-2 #nav-main li a.nav-link {
+  color: #333;
+  border-bottom: 3px solid transparent;
+  padding-bottom: 20px;
+  margin-top: 15px;
+  &:hover {
+    opacity: 0.6;
+  }
+}
+
+.navbar-2 .site-logo h2 {
+    color: #333;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 1px;
+}
+.affix .site-logo2{
+  top: 15px;
+}
+.affix .navbar-2 .site-logo {
+    top: 18px !important;
+}
+.affix .navbar-2 .site-logo h2 {
+    color: #333;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 10px;
+}
+.navbar-2 .sub-menu-panel{
+  display: none;
+  background: #fff !important;
+  margin-top: -3px;
+  transition: 0.3s all ease-in-out;
+    -webkit-transition: 0.3s all ease-in-out;
+    -moz-transition: 0.3s all ease-in-out;
+    -o-transition: 0.3s all ease-in-out;
+    -ms-transition: 0.3s all ease-in-out;
+    animation: 0.4s ease 0s normal none 1 running fadeInUpMenu;
+    border-top: #ddd;
+}
+.navbar-2 li.sub-menu .sub-menu-panel a{
+  color: #999;
+  border-left: 3px solid #fff;
+  &:hover {
+    background: #ECF0F1;
+    color: #212121;
+  }
+}
+.navbar-2 li.sub-menu .sub-menu-panel a:hover, .navbar-2 li.sub-menu .sub-menu-panel a:focus, .navbar-2 li.sub-menu .sub-menu-panel a.active{
+  background: #ECF0F1;
+  color: #212121;
+  transition: 0.3s all ease-in-out;
+    -webkit-transition: 0.3s all ease-in-out;
+    -moz-transition: 0.3s all ease-in-out;
+    -o-transition: 0.3s all ease-in-out;
+    -ms-transition: 0.3s all ease-in-out;
+}

@@ -1,0 +1,30 @@
+.mea-tab-default {
+	img {
+		width: 100%;
+	}
+	ul.nav.nav-tabs {
+		border-bottom: 0;
+		li {
+			a {
+				color: #333;
+			    font-weight: 700;
+			    font-size: 18px;
+			    border-top: none;
+			    border-left: none;
+			    border-right: none;
+			    border-bottom: 3px solid transparent;
+			    padding: 10px 8px;
+			    margin-right: 29px;
+				&:hover {
+					background: none;
+				}
+			}
+		}
+	}
+	.tab-content {
+		margin-top: 25px;
+		padding: 20px;
+		background: #FAFAFA;
+		@include blog-box-shadow();
+	}
+}
