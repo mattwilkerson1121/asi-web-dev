@@ -1,0 +1,416 @@
+
+
+.asi-container {
+    width: 100%;
+    padding: 0 0;
+    margin: 0 auto;
+    max-width: 1200px !important;
+}
+/*** HERO MODULE STYLES ***/
+.asi-content-body .asi-hero-item-link {
+    position:absolute;
+    z-index:2;
+    bottom:1em;
+    right:1em;
+    text-align:right;
+    font-size:14px;
+}
+.asi-content-body .asi-hero-item-link a,
+.asi-content-body .asi-hero-item-link a span{ 
+    color:white !important;
+    font-family:'ProximaNova-Regular', sans-serif;
+    letter-spacing:1.5px;
+    font-size:1em;
+    font-weight:400;
+    line-height:1;
+    display:block;
+}
+.asi-content-body .asi-hero-item-link a span.asi-hero-item-name{ font-weight:600; }
+/*** HERO MODULE URGENCY OFFER BUG ***/
+#asi-offer-bug-v1{
+    font-size:16px;
+    position:absolute;
+    z-index:20;
+    top:0;
+    right:0;
+    padding:0;
+    margin:-8px -16px 0 0;
+}
+#asi-offer-bug-v1 img{ width:48px !important; height:48px !important; }
+
+@media (min-width:768px){
+    #asi-offer-bug-v1{margin:-20px -42px 0 0;}
+    #asi-offer-bug-v1 img{ width:88px !important; height:88px !important; }
+}
+@media (min-width:992px){
+    #asi-offer-bug-v1{margin:-48px -80px 0 0;}
+    #asi-offer-bug-v1 img{ width:158px !important; height:158px !important; }
+}
+@media (min-width:1200px){
+    #asi-offer-bug-v1{margin:-48px -80px 0 0;}
+    #asi-offer-bug-v1 img{width:158px !important; height:158px !important; }
+}
+
+/*** HERO MODULE C-V4 ***/
+[asi-data-module-id="asi-hp-hero-c-v4"] #asi-offer-details{padding-top:0.5em;}
+[asi-data-module-id="asi-hp-hero-c-v4"] #asi-offer-details a{
+    color:white;
+    letter-spacing:0.175em;
+    font-size:12px;
+}
+    [asi-data-module-id="asi-hp-hero-c-v4"] #asi-offer-details a:hover{ color:#181818; }
+
+    [asi-data-module-id="asi-hp-hero-c-v4"]{
+        padding-top:0px;
+        background-color: #F4F4F4;
+        background-position:center center;
+        background-repeat:no-repeat;
+        background-size:cover;
+    }
+[asi-data-module-id="asi-hp-hero-c-v4"] .asi-content-body{
+    padding-top:5%;
+    padding-bottom:5%;
+}
+[asi-data-module-id="asi-hp-hero-c-v4"] .asi-panel,
+[asi-data-module-id="asi-hp-hero-c-v4"] .asi-panel-offer{ 
+    border:none;
+    border-radius:0;
+    margin:0 auto;
+    font-size:16px;
+}
+[asi-data-module-id="asi-hp-hero-c-v4"] .asi-panel-offer{ max-width:300px; }
+[asi-data-module-id="asi-hp-hero-c-v4"] .asi-panel-transparent{ background:transparent !important; }
+[asi-data-module-id="asi-hp-hero-c-v4"] .asi-panel-offer .asi-panel-body{ 
+    font-size:16px;
+    padding:1.5em 1.375em 1.375em 1.3em; 
+}
+    [asi-data-module-id="asi-hp-hero-c-v4"] .asi-panel-offer .asi-panel-body-90-red{ background: rgba(238,47,52, 0.9) !important; }
+
+        [asi-data-module-id="asi-hp-hero-c-v4"] .asi-panel-offer .asi-panel-body p.asi-urgency-msg{
+            letter-spacing:0.2em;
+            font-size:1em;
+            line-height:18px;
+            color:white;
+            margin:0 auto;
+            padding:0 0 0 0;
+        }
+        
+        [asi-data-module-id="asi-hp-hero-c-v4"] .asi-panel-offer .asi-panel-body .asi-panel-title{
+            font-size:1.325em;
+            font-family:'ProximaNova-Semibold',sans-serif;
+            color: #181818;
+            letter-spacing:0.135em;
+            margin:0 auto;
+            padding:0 0 0.375em 0;
+        }
+        [asi-data-module-id="asi-hp-hero-c-v4"] .asi-panel-offer .asi-panel-body h1.asi-panel-headline { 
+            font-size:72px;
+            color:white !important;
+            line-height:88% !important;
+            font-family:'Knockout-HTF49-Liteweight','ProximaNova-Semibold',sans-serif;
+            letter-spacing:1px !important;
+            margin-bottom:0 !important;
+            padding-top:0;
+            padding-bottom:0;
+        }
+        [asi-data-module-id="asi-hp-hero-c-v4"] .asi-panel-offer .asi-panel-body p.asi-panel-lead{
+            font-family:'ProximaNova-Light',sans-serif;
+            color:white;
+            max-width:90%; 
+            font-size:18px;
+            line-height:22px;
+            margin:0 auto !important;
+            padding-top:0;
+            letter-spacing:1px;
+        }
+        .asi-content-button{ padding:0.75em 0 0.0625em 0; }
+        .asi-content-button a button.asi-mix-button{
+            border:none !important;
+            font-size:12px;
+            padding:10px 34px;
+
+        }
+@media (min-width: 576px) {
+    [asi-data-module-id="asi-hp-hero-c-v4"] .asi-panel-offer{max-width:350px;}
+    [asi-data-module-id="asi-hp-hero-c-v4"] .asi-panel-offer .asi-panel-body{ padding:1.75em 1.375em 1.5em 1.3em; }
+    [asi-data-module-id="asi-hp-hero-c-v4"] .asi-panel-offer .asi-panel-body .asi-panel-title{font-size:1.15em;}
+    [asi-data-module-id="asi-hp-hero-c-v4"] .asi-panel-offer .asi-panel-body p.asi-urgency-msg{font-size:1em;}
+    [asi-data-module-id="asi-hp-hero-c-v4"] .asi-panel-offer .asi-panel-body h1.asi-panel-headline{ font-size:80px; }
+    [asi-data-module-id="asi-hp-hero-c-v4"] .asi-panel-offer .asi-panel-body p.asi-panel-lead{ font-size:20px; }
+    
+}
+@media (min-width: 768px) {
+    [asi-data-module-id="asi-hp-hero-c-v4"] .asi-panel-offer{max-width:430px;}
+    [asi-data-module-id="asi-hp-hero-c-v4"] .asi-panel-offer .asi-panel-body .asi-panel-title{font-size:1.275em;}
+    [asi-data-module-id="asi-hp-hero-c-v4"] .asi-panel-offer .asi-panel-body p.asi-urgency-msg{font-size:1.125em;}
+    [asi-data-module-id="asi-hp-hero-c-v4"] .asi-panel-offer .asi-panel-body h1.asi-panel-headline{ font-size:90px; }
+    [asi-data-module-id="asi-hp-hero-c-v4"] .asi-panel-offer .asi-panel-body p.asi-panel-lead{ font-size:22px; }
+    [asi-data-module-id="asi-hp-hero-c-v4"] #asi-offer-details a{font-size:13px;}
+    .asi-content-button{ padding:1.225em 0 0.075em 0; }
+    .asi-content-button a button.asi-mix-button{
+        border:none !important;
+        font-size:14px;
+        padding:10px 38px;
+
+    }
+}
+@media (min-width: 992px) {
+    [asi-data-module-id="asi-hp-hero-c-v4"] .asi-panel-offer{max-width:480;}
+    [asi-data-module-id="asi-hp-hero-c-v4"] .asi-panel-offer .asi-panel-body{ padding:1.625em 1.825em 1.8625em 1.5em; }
+    [asi-data-module-id="asi-hp-hero-c-v4"] .asi-panel-offer .asi-panel-body .asi-panel-title{font-size:1.5em;}
+    [asi-data-module-id="asi-hp-hero-c-v4"] .asi-panel-offer .asi-panel-body p.asi-urgency-msg{font-size:1.25em;}
+    [asi-data-module-id="asi-hp-hero-c-v4"] .asi-panel-offer .asi-panel-body h1.asi-panel-headline{ font-size:104px; }
+    [asi-data-module-id="asi-hp-hero-c-v4"] .asi-panel-offer .asi-panel-body p.asi-panel-lead{ font-size:26px; }
+    .asi-content-button button.asi-mix-button{font-size:16px !important;}
+    [asi-data-module-id="asi-hp-hero-c-v4"] #asi-offer-details{padding-top:1.175em;}
+    [asi-data-module-id="asi-hp-hero-c-v4"] #asi-offer-details a{font-size:14px;}
+    .asi-content-button{ padding:1.225em 0 0.075em 0; }
+    .asi-content-button a button.asi-mix-button{
+        border:none !important;
+        font-size:16px;
+        padding:12px 45px;
+
+    }
+}
+@media (min-width: 1200px) { 
+    [asi-data-module-id="asi-hp-hero-c-v4"] .asi-panel-offer{max-width:480px;}
+    [asi-data-module-id="asi-hp-hero-c-v4"] .asi-panel-offer .asi-panel-body .asi-panel-title{font-size:1.75em;}
+    [asi-data-module-id="asi-hp-hero-c-v4"] .asi-panel-offer .asi-panel-body p.asi-urgency-msg{font-size:1.5em;}
+    [asi-data-module-id="asi-hp-hero-c-v4"] .asi-panel-offer .asi-panel-body h1.asi-panel-headline{ font-size:104px;line-height:95% !important; }
+    [asi-data-module-id="asi-hp-hero-c-v4"] .asi-panel-offer .asi-panel-body p.asi-panel-lead{ font-size:28px;max-width:80%;}
+    .asi-content-button button.asi-mix-button{font-size:16px !important;}
+    [asi-data-module-id="asi-hp-hero-c-v4"] #asi-offer-details{padding-top:1.175em;}
+    [asi-data-module-id="asi-hp-hero-c-v4"] #asi-offer-details a{font-size:14px;}
+    .asi-content-button{ padding:1.225em 0 0.075em 0; }
+    .asi-content-button a button.asi-mix-button{
+        border:none !important;
+        font-size:16px;
+        padding:12px 45px;
+
+    }
+}
+#asi-finance-banner { font-size:16px;padding-top:1.5em; }
+/* FINANCE BANNER V2 - RED BG WHITE TEXT CSS */
+[data-module-id="asi-fx-finance-banner-v1"] .container{ width:100% !important;}
+[data-module-id="asi-fx-finance-banner-v1"] .asi-banner-content{
+    background-color:#ee3d42;
+    padding-top:5%;
+    padding-bottom:3%;
+    padding-left:2%
+    padding-right:2%;
+}
+    .asi-plus-v1{
+        margin: 0 auto;
+        padding: 0;
+        position: relative;
+        max-width: 360px;
+    }
+    .asi-plus-v2{
+        margin: 0 auto;
+        padding: 0 0 0.375em;
+        position: relative;
+        max-width: 50%;
+    }
+    [data-module-id="asi-fx-finance-banner-v1"] h2.asi-banner-headline,
+    [data-module-id="asi-fx-finance-banner-v1"] h2 { 
+        font-size:54px !important;
+        color:white !important;
+        font-family:'Knockout-HTF49-Liteweight','ProximaNova-Semibold',sans-serif;
+        letter-spacing:1px !important;
+        line-height:85%;
+        margin-bottom:0 !important;
+    }
+    [data-module-id="asi-fx-finance-banner-v1"] p.asi-banner-lead{ 
+        color:#ffffff;
+        line-height:initial;
+        font-size:13px;
+        letter-spacing:1px;
+        padding:0 1% 1%;
+        max-width:88%;
+        margin:0 auto;
+    }
+    .asi-hero-btn-wrap{
+        padding:4% 2%;
+        margin:0 auto;
+        text-align:center;
+    }
+    @media (min-width: 576px) {
+        [data-module-id="asi-fx-finance-banner-v1"] h2.asi-banner-headline,
+        [data-module-id="asi-fx-finance-banner-v1"] h2 { 
+            font-size:48px !important;
+        }
+        [data-module-id="asi-fx-finance-banner-v1"] p.asi-banner-lead{ 
+            max-width:80%;
+        }
+        [data-module-id="asi-fx-finance-banner-v1"] p.asi-banner-lead{ 
+            font-size:14px;
+            line-height:16px;
+        }
+        .asi-hero-btn-wrap{
+            padding:3% 2%;
+        }
+        [data-module-id="asi-fx-finance-banner-v1"] .asi-banner-content{
+            padding:3% 2% !important;
+        }
+    }
+    @media screen and (min-width:768px){
+        [data-module-id="asi-fx-finance-banner-v1"] .container{ width:100% !important;}
+        [data-module-id="asi-fx-finance-banner-v1"] h2.asi-banner-headline,
+        [data-module-id="asi-fx-finance-banner-v1"] h2 { 
+            font-size:72px !important;
+            padding:0 10px;
+        }
+        [data-module-id="asi-fx-finance-banner-v1"] p.asi-banner-lead{ 
+            max-width:75%;
+        }
+        [data-module-id="asi-fx-finance-banner-v1"] p.asi-banner-lead{ 
+            font-size:15px;
+            line-height:17px
+        }
+        .asi-hero-btn-wrap{
+            padding:3% 2%;
+        }
+        [data-module-id="asi-fx-finance-banner-v1"] .asi-banner-content{
+            padding:3% 2% !important;
+        }
+        .asi-plus-v2{
+            max-width: 40%;
+        }
+    }
+    @media screen and (min-width:992px){
+        [data-module-id="asi-fx-finance-banner-v1"] .container{ width:980px !important;max-width:100%;}
+        [data-module-id="asi-fx-finance-banner-v1"] h2.asi-banner-headline,
+        [data-module-id="asi-fx-finance-banner-v1"] h2 { 
+            font-size:80px !important;
+        }
+        [data-module-id="asi-fx-finance-banner-v1"] p.asi-banner-lead{ 
+            max-width:80%;
+        }
+        [data-module-id="asi-fx-finance-banner-v1"] p.asi-banner-lead{ 
+            font-size:16px;
+            line-height:18px;
+        }
+        .asi-hero-btn-wrap{
+            padding:1% 1%;
+        }
+        [data-module-id="asi-fx-finance-banner-v1"] .asi-banner-content{
+            padding:2% 2% !important;
+        }
+        .asi-plus-v2{
+            max-width: 352px;
+        }
+    }
+    @media screen and (min-width:1200px){
+        [data-module-id="asi-fx-finance-banner-v1"] .container{ width:100% !important;max-width:1180px !important;}
+        [data-module-id="asi-fx-finance-banner-v1"] h2.asi-banner-headline,
+        [data-module-id="asi-fx-finance-banner-v1"] h2 { 
+            font-size:80px !important;
+        }
+        [data-module-id="asi-fx-finance-banner-v1"] p.asi-banner-lead{ 
+            max-width:75% !important;
+        }
+        [data-module-id="asi-fx-finance-banner-v1"] p.asi-banner-lead{ 
+            font-size:18px;
+            line-height:20px;
+        }
+        .asi-hero-btn-wrap{
+            padding:1% 1%;
+        }
+        [data-module-id="asi-fx-finance-banner-v1"] .asi-banner-content{
+            padding:2% 2% !important;
+        }
+    }
+[data-module-id="asi-fx-finance-banner-v1"] #asiHero-button-link button.asi-mix-button{
+    padding-left:40px !important;
+    padding-right:40px !important;
+}
+
+/*** CATEGORY PROMO SECTION V2 ***/
+[data-module-id="asi-category-promo-section-v2"] .asi-offer-topbar{
+    position:absloute;
+    background:#ee3d42;
+    width:100%;
+    height:10px;
+    padding:0;
+    margin:0;
+    top:-10px;
+    left:0;
+}
+[data-module-id="asi-category-promo-section-v2"] .asi-offer-content{
+    position:relative;
+    z-index:2;
+    margin:-2em 0 1.125em !important;
+    padding:0 0;
+}
+[data-module-id="asi-category-promo-section-v2"] .asi-offer-content-box{
+    background-color:#ee3d42;
+    margin:0 2.25em;
+    padding:1.125em 1em 0.375em;
+}
+[data-module-id="asi-category-promo-section-v2"] .asi-offer-content h3,
+[data-module-id="asi-category-promo-section-v2"] h3.asi-display-3{
+    text-align:center;
+    font-family:'Knockout-HTF49-Liteweight','ProximaNova-Semibold',sans-serif;
+    font-size: 2.75em;
+    color: #FFFFFF;
+    letter-spacing:1.5px;
+    padding:0 0;
+    margin:0 auto;
+}
+[data-module-id="asi-category-promo-section-v2"] .asi-offer-content h4,
+[data-module-id="asi-category-promo-section-v2"] h4{
+    text-align:center;
+    font-family: 'ProximaNova-Semibold', sans-serif;
+    font-size: 1.125em;
+    letter-spacing: 2px;
+    line-height:initial;
+    padding:0 0;
+    margin:0 auto 1.125em;
+}
+[data-module-id="asi-category-promo-section-v2"] .asi-offer-content-box p.asi-lead,
+[data-module-id="asi-category-promo-section-v2"] .asi-offer-content-box p.lead,
+[data-module-id="asi-category-promo-section-v2"] .asi-offer-content-box p{
+    font-family:"ProximaNova-Semibold", sans-serif;
+    font-weight:600;
+    letter-spacing:2px !important;
+    text-decoration:none;
+    line-height:initial;
+    padding:0 0.5em 0.05em;
+    font-size:1em;
+}
+    [data-module-id="asi-category-promo-section-v2"] .asi-offer-content-box p.asi-lead a:after,
+    [data-module-id="asi-category-promo-section-v2"] .asi-offer-content-box p.asi-lead a::after{
+        content:"\f105";
+        margin:0 0 0 0.375em;
+        font-family: "FontAwesome";
+        font-style: normal;
+        font-weight: 400;
+    }
+@media (max-width: 768px) {
+    [data-module-id="asi-category-promo-section-v2"] .asi-offer-content h3,
+    [data-module-id="asi-category-promo-section-v2"] h3.asi-display-3{
+        font-size: 2.125em;
+    }
+    [data-module-id="asi-category-promo-section-v2"] .asi-offer-content h4,
+    [data-module-id="asi-category-promo-section-v2"] h4{
+        font-size: 1.125em;
+    }
+    [data-module-id="asi-category-promo-section-v2"] .asi-offer-content-box p.asi-lead,
+    [data-module-id="asi-category-promo-section-v2"] .asi-offer-content-box p.lead,
+    [data-module-id="asi-category-promo-section-v2"] .asi-offer-content-box p{
+        font-size:12px;
+}
+@media (min-width:320px) and (max-width: 480px) {
+    [data-module-id="asi-category-promo-section-v2"] .asi-offer-content h3,
+    [data-module-id="asi-category-promo-section-v2"] h3.asi-display-3{
+        font-size: 22px;
+    }
+    [data-module-id="asi-category-promo-section-v2"] .asi-offer-content h4,
+    [data-module-id="asi-category-promo-section-v2"] h4{
+        font-size: 14px !important;
+    }
+    [data-module-id="asi-category-promo-section-v2"] .asi-offer-content-box p.asi-lead,
+    [data-module-id="asi-category-promo-section-v2"] .asi-offer-content-box p.lead,
+    [data-module-id="asi-category-promo-section-v2"] .asi-offer-content-box p{
+        font-size:12px;
+}

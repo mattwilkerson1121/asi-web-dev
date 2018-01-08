@@ -1,5 +1,5 @@
-<?php include_once('includes/asiSiteHeader.php'); ?>
-<?php include_once('includes/asiSiteTopNavigation.php'); ?>
+<?php include_once('asiSiteHeader.php'); ?>
+<?php include_once('asiSiteTopNavigation.php'); ?>
 <!-- **** asiHero.css & asiHero.js :: YOU MUST INCLUDE THIS FILE FOR THE PLUGIN **** !-->
     <link rel="stylesheet" type="text/css" href="css/asi-plugins/asiContentBuilder.css"/>
     <link rel="stylesheet" type="text/css" href="css/animate.min.css"/>

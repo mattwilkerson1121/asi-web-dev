@@ -1,213 +1,175 @@
-<div id="mvcSpinner" class="loading-content-spinner hide"></div>
-	<div id="page-container" class="page-container">
-    
-        <div id="headerContainer2">
-            <header id="top">
-  <nav class="asi-utility-menu">
-    <ul>
-    	<li>
-            <a id="asi-order-tracking-button" href="http://www.valuecityfurniture.com/track-my-order">
-                <div class="asi-icon" id="order-tracking-icon">
-                	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12">
-                        <style type="text/css">
-                            .st0 { fill: #FFFFFF; }
-							.st1 { fill: #181818; }
-                        </style>
-                        <polygon class="st0" points="10.8 10.8 10.8 1 1 1 1 10.8 " />
-                        <path class="st1" d="M8.3 6.4c-0.2 0.9-1 1.7-1.9 1.9v-1H5.3v1c-0.9-0.2-1.6-1-1.8-1.9h1V5.3h-1c0.2-0.9 0.9-1.6 1.8-1.8v1h1.1v-1C7.3 3.7 8 4.4 8.2 5.3H7.3v1.1H8.3zM9.4 5.3c-0.2-1.5-1.5-2.7-3-3V1H5.3v1.4c-1.5 0.2-2.7 1.5-3 3H1v1.1h1.4c0.2 1.5 1.4 2.7 3 3v1.4h1.1V9.4c1.5-0.2 2.7-1.5 3-3h1.4V5.3H9.4z" />
-                    </svg>
-                </div>
-                <span>Order Tracking</span>
-            </a>
-        </li>
-        <li class="asi-locator">
-            <a id="asi-locator-button" class="au-header-zip" data-bind="click: populateStoreData" href="javascript:void(0)">
-                <div class="asi-icon" id="location-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8.5 12.9">
-                        <style type="text/css">
-                            .st0 { fill: #FFFFFF; }
-							.st1 { fill: #181818; }
-                        </style>
-                        <polygon class="st0" points="1 6.4 1 1.5 7.5 1.5 7.5 6.4 7.5 11.4 1 11.4 " />
-                        <title> Pin_Icon</title>
-                        <desc> Small  black pin </desc>
-                        <path class="st1" d="M4.3 6.5c-1 0-1.7-0.8-1.7-1.7s0.8-1.7 1.7-1.7S6 3.9 6 4.8 5.2 6.5 4.3 6.5M4.3 1.5C2.5 1.5 1 3 1 4.8 1 5.4 1.2 6 1.4 6.4s2.8 5 2.8 5 2.6-4.6 2.8-5 0.4-1 0.4-1.6C7.5 3 6.1 1.5 4.3 1.5" />
-                    </svg>
-                </div>
-                <span>
-                    Location:
-                    <span role="menuitem" type="text" data-bind="text: UserZipCode" class="zipcode js-header-zip au-header-zip" maxlength="7" data-bind="value: UserZipCode">
-                    </span>
-                </span>
-            </a>
-            <div class="asi-locator-dropdown">
-                <div class="menu-content">
-                    <h3>Change Your Location</h3>
-                    <div class="asi-locator-search-container">
-                        <input id="header-zip" class="asi-locator-input au-header-zip-textbox" data-bind="value: UserZipCode, enterkey: $root.updatePostalCode" type="text" />
-                        <img class="asi-locator-search-icon hand" class="hand" data-bind="click: $root.updatePostalCode" src="http://www.valuecityfurniture.com/Content/ValueCityMix/svg/Search_Icon.svg" />
-                    </div>
-                    <!-- Pickup only -->
-                    <!-- ko if: IsPickUpOnly() === true -->
-                    <div class="asi-locator-notification">
-                        <div class="asi-warning-x red">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
-                                <title> Close_Icon</title>
-                                <desc> Small red x </desc>
-                                <g fill="none">
-                                    <g style="stroke-width: 2; stroke: #181818">
-                                        <path d="M1.4 1.4L13.6 13.6" />
-                                        <path d="M13.6 1.4L1.4 13.6" />
-                                    </g>
-                                </g>
+<div id="page-container" class="page-container">
+    <div id="headerContainer2">
+        <header id="top">
+          <nav class="asi-utility-menu">
+            <ul>
+            	<li>
+                    <a id="asi-order-tracking-button" href="http://www.valuecityfurniture.com/track-my-order">
+                        <div class="asi-icon" id="order-tracking-icon">
+                        	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12">
+                                <style type="text/css">
+                                    .st0 { fill: #FFFFFF; }
+        							.st1 { fill: #181818; }
+                                </style>
+                                <polygon class="st0" points="10.8 10.8 10.8 1 1 1 1 10.8 " />
+                                <path class="st1" d="M8.3 6.4c-0.2 0.9-1 1.7-1.9 1.9v-1H5.3v1c-0.9-0.2-1.6-1-1.8-1.9h1V5.3h-1c0.2-0.9 0.9-1.6 1.8-1.8v1h1.1v-1C7.3 3.7 8 4.4 8.2 5.3H7.3v1.1H8.3zM9.4 5.3c-0.2-1.5-1.5-2.7-3-3V1H5.3v1.4c-1.5 0.2-2.7 1.5-3 3H1v1.1h1.4c0.2 1.5 1.4 2.7 3 3v1.4h1.1V9.4c1.5-0.2 2.7-1.5 3-3h1.4V5.3H9.4z" />
                             </svg>
                         </div>
-                        Delivery not available to your postal code
-                    </div>
-                    <!-- /ko -->
-                    <!-- ko if: IsPickUpOnly() === false -->
-                    <!-- Delivery -->
-                    <div class="asi-locator-notification">
-                        <div class="asi-warning-x">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 16 12.5">
-                                <desc> Small black check</desc>
-                                <path d="M5 12.5L0.3 7.7c-0.4-0.4-0.4-1 0-1.4 0.4-0.4 1-0.4 1.4 0L5 9.7l9.3-9.4c0.4-0.4 1-0.4 1.4 0 0.4 0.4 0.4 1 0 1.4L5 12.5z" />
+                        <span>Order Tracking</span>
+                    </a>
+                </li>
+                <li class="asi-locator">
+                    <a id="asi-locator-button" class="au-header-zip" data-bind="click: populateStoreData" href="javascript:void(0)">
+                        <div class="asi-icon" id="location-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8.5 12.9">
+                                <style type="text/css">
+                                    .st0 { fill: #FFFFFF; }
+        							.st1 { fill: #181818; }
+                                </style>
+                                <polygon class="st0" points="1 6.4 1 1.5 7.5 1.5 7.5 6.4 7.5 11.4 1 11.4 " />
+                                <title> Pin_Icon</title>
+                                <desc> Small  black pin </desc>
+                                <path class="st1" d="M4.3 6.5c-1 0-1.7-0.8-1.7-1.7s0.8-1.7 1.7-1.7S6 3.9 6 4.8 5.2 6.5 4.3 6.5M4.3 1.5C2.5 1.5 1 3 1 4.8 1 5.4 1.2 6 1.4 6.4s2.8 5 2.8 5 2.6-4.6 2.8-5 0.4-1 0.4-1.6C7.5 3 6.1 1.5 4.3 1.5" />
                             </svg>
                         </div>
-                        We deliver to you
-                    </div>
-                    <!-- /ko -->
-                    <!-- Has PickUp-->
-                    <!-- ko if: HasPickUp() === true -->
-                    <div class="asi-locator-notification">
-                        <div class="asi-warning-x">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 16 12.5">
-                                <desc> Small black check</desc>
-                                <path d="M5 12.5L0.3 7.7c-0.4-0.4-0.4-1 0-1.4 0.4-0.4 1-0.4 1.4 0L5 9.7l9.3-9.4c0.4-0.4 1-0.4 1.4 0 0.4 0.4 0.4 1 0 1.4L5 12.5z" />
-                            </svg>
-                        </div>
-                        Buy online, pick-up here.
-                    </div>
-                    <!-- /ko -->
-                    <div class="asi-locator-separator">
-                        <h3>Your closest store:</h3>
-                    </div>
-                    <div class="asi-locator-map-section">
-                        <div class="asi-locator-map-img">
-                            <img data-bind="attr:{ src: StoreMapImageUrl}" class="header-zip-store-map" />
-                            
-                            <button data-bind="click: openStoreDetails">Directions</button>
-                        </div>
-                        <div class="asi-location-details">
-                            <h4 data-bind="html: StoreName"></h4>
-                            <div>
-                                <span data-bind="html: StoreAddress"></span><br />
-                                <span data-bind="text: StoreCity"></span>, <span data-bind="text: StoreState"></span> <span data-bind="text: StorePostalCode"></span><br />
-
-                                <a href="tel:+(888) 751-8552" data-bind="text: StorePhoneNumber"></a>
+                        <span>
+                            Location:
+                            <span role="menuitem" type="text" data-bind="text: UserZipCode" class="zipcode js-header-zip au-header-zip" maxlength="7" data-bind="value: UserZipCode">
+                            </span>
+                        </span>
+                    </a>
+                    <div class="asi-locator-dropdown">
+                        <div class="menu-content">
+                            <h3>Change Your Location</h3>
+                            <div class="asi-locator-search-container">
+                                <input id="header-zip" class="asi-locator-input au-header-zip-textbox" data-bind="value: UserZipCode, enterkey: $root.updatePostalCode" type="text" />
+                                <img class="asi-locator-search-icon hand" class="hand" data-bind="click: $root.updatePostalCode" src="./_assets/media/svg/Search_Icon.svg" />
                             </div>
-                            <div class="asi-location-hours">
-                                <span>Regular Hours:</span><br />
-                                <!-- ko if: StoreDaysArray().length > 0 -->
-                                <!-- ko foreach: StoreDaysArray -->
-                                <span data-bind="html: $data"></span> <span data-bind="html: $root.StoreHoursArray()[$index()]"></span><br />
-                                <!-- /ko -->
-                                <!-- /ko -->
+                            <div class="asi-locator-notification">
+                                <div class="asi-warning-x">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 16 12.5">
+                                        <desc> Small black check</desc>
+                                        <path d="M5 12.5L0.3 7.7c-0.4-0.4-0.4-1 0-1.4 0.4-0.4 1-0.4 1.4 0L5 9.7l9.3-9.4c0.4-0.4 1-0.4 1.4 0 0.4 0.4 0.4 1 0 1.4L5 12.5z" />
+                                    </svg>
+                                </div>
+                                We deliver to you
                             </div>
-                        </div>
-                    </div>
-                    <div class="asi-locator-endcap">
-                        <a href="http://www.valuecityfurniture.com/store-locator">
-                            Store Locator
-                            <img class="asi-arrow-icon" src="http://www.valuecityfurniture.com/Content/ValueCityMix/svg/Arrow_Icon.svg" />
-                        </a>
-                    </div>
-                	</div>
-            	</div>
-        	</li>
-			<!-- ko if: IsSignedIn() == false || IsSignedInAsGuest() == true -->
-	        <li>
-	            <a id="asi-wishlist-button" href="https://www.valuecityfurniture.com/account/register">
-	                <div class="asi-icon" id="wishlist-icon">
-	                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11 11.2">
-	                        <style type="text/css">
-	                            .st0 { fill: #FFFFFF; }
-								.st1 { fill: #181818; }
-	                        </style>
-	                        <polygon class="st0" points="1 5.7 1 10.4 10.2 10.4 10.2 5.7 10.2 1 1 1 " />
-	                        <title> Page 1</title>
-	                        <desc> Heart </desc>
-	                        <path class="st1" d="M4.6 10.2L1.4 6.6c0 0-1.2-1.3-1.2-2.7C0.2 2.1 1.1 1 2.7 1c0.9 0 1.7 0.8 2.2 1.3C5.2 1.8 6.1 1 7 1c1.5 0 2.5 1.1 2.5 2.8 0 1.5-1.1 2.7-1.2 2.7L5 10.2c0 0.1-0.1 0.2-0.2 0.2S4.7 10.3 4.6 10.2" />
-	                    </svg>
-		                </div>
-		                <span>Wishlist</span>
-		            </a>
-	        </li>
-	        <li>
-	            <a id="asi-my-account-button" href="https://www.valuecityfurniture.com/account/sign-in" class="au-header-signin">
-	                <div class="asi-icon" id="my-account-icon">
-	                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11 12">
-	                        <style type="text/css">
-	                            .st0 { fill: #FFFFFF; }
-								.st1 { fill: #181818; }
-	                        </style>
-	                        <polygon class="st0" points="10 10.9 1 10.9 1 1.1 10 1.1 "/>
-	                        <path class="st1" d="M9.8 8.4L9.8 8.4C9.7 8 9.5 7.7 9.2 7.4l0 0 0 0 0 0 0 0 -2-1.3C7.6 5.6 7.9 5 7.9 4.3V3.6c0-1.4-1-2.5-2.3-2.5S3.3 2.2 3.3 3.6v0.6C3.3 4.9 3.6 5.5 4 6L2 7.3l0 0 0 0 0 0 0 0c-0.4 0.3-0.6 0.6-0.6 1l0 0L1 10.5c0 0.1 0 0.2 0.1 0.3 0 0.1 0.1 0.1 0.2 0.1h8.5c0.1 0 0.1 0 0.2-0.1 0-0.1 0-0.2 0-0.3L9.8 8.4z"/>
-	                    </svg>
-	                </div>
-	                <span>Sign in</span>
-	            </a>
-	        </li>
-        	<!-- /ko -->
-        	<!-- ko if: IsSignedIn() && IsSignedInAsGuest() != true --> 
-	        <li>
-	            <a id="asi-wishlist-button" href="https://www.valuecityfurniture.com/account/wish-list">
-	                <div class="asi-icon" id="wishlist-icon">
-	                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11 11.2">
-	                        <style type="text/css">
-	                            .st0 {
-	                                fill: #FFFFFF;
-	                            }
+                            <div class="asi-locator-map-section">
+                                <div class="asi-locator-map-img">
+                                    <img data-bind="attr:{ src: StoreMapImageUrl}" class="header-zip-store-map" />
+                                    
+                                    <button data-bind="click: openStoreDetails">Directions</button>
+                                </div>
+                                <div class="asi-location-details">
+                                    <h4 data-bind="html: StoreName"></h4>
+                                    <div>
+                                        <span data-bind="html: StoreAddress"></span><br />
+                                        <span data-bind="text: StoreCity"></span>, <span data-bind="text: StoreState"></span> <span data-bind="text: StorePostalCode"></span><br />
 
-	                            .st1 {
-	                                fill: #181818;
-	                            }
-	                        </style>
-	                        <polygon class="st0" points="1 5.7 1 10.4 10.2 10.4 10.2 5.7 10.2 1 1 1 " />
-	                        <title> Page 1</title>
-	                        <desc> Heart </desc>
-	                        <path class="st1" d="M4.6 10.2L1.4 6.6c0 0-1.2-1.3-1.2-2.7C0.2 2.1 1.1 1 2.7 1c0.9 0 1.7 0.8 2.2 1.3C5.2 1.8 6.1 1 7 1c1.5 0 2.5 1.1 2.5 2.8 0 1.5-1.1 2.7-1.2 2.7L5 10.2c0 0.1-0.1 0.2-0.2 0.2S4.7 10.3 4.6 10.2" />
-	                    </svg>
-	                </div>
-	                <span>Wishlist</span>
-	            </a>
-	        </li>
-	        <li>
-	            <a id="asi-my-account-button" href="https://www.valuecityfurniture.com/account" class="au-header-signin">
-	                <div class="asi-icon" id="my-account-icon">
-	                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11 12">
-	                        <style type="text/css">
-	                            .st0 { fill: #FFFFFF; }
-								.st1 { fill: #181818; }
-	                        </style>
-	                        <polygon class="st0" points="10 10.9 1 10.9 1 1.1 10 1.1 " />
-	                        <path class="st1" d="M9.8 8.4L9.8 8.4C9.7 8 9.5 7.7 9.2 7.4l0 0 0 0 0 0 0 0 -2-1.3C7.6 5.6 7.9 5 7.9 4.3V3.6c0-1.4-1-2.5-2.3-2.5S3.3 2.2 3.3 3.6v0.6C3.3 4.9 3.6 5.5 4 6L2 7.3l0 0 0 0 0 0 0 0c-0.4 0.3-0.6 0.6-0.6 1l0 0L1 10.5c0 0.1 0 0.2 0.1 0.3 0 0.1 0.1 0.1 0.2 0.1h8.5c0.1 0 0.1 0 0.2-0.1 0-0.1 0-0.2 0-0.3L9.8 8.4z" />
-	                    </svg>
-	                </div>
-	                <span data-bind="text: CustomerName"></span>
-	            </a>
-        	</li>
-        	<!-- /ko -->
-    	</ul>
-	</nav>
-<!-- Dynamic menu -->
+                                        <a href="tel:+(888) 751-8552" data-bind="text: StorePhoneNumber"></a>
+                                    </div>
+                                    <div class="asi-location-hours">
+                                        <span>Regular Hours:</span><br />
+                                        <!-- ko if: StoreDaysArray().length > 0 -->
+                                        <!-- ko foreach: StoreDaysArray -->
+                                        <span data-bind="html: $data"></span> <span data-bind="html: $root.StoreHoursArray()[$index()]"></span><br />
+                                        <!-- /ko -->
+                                        <!-- /ko -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="asi-locator-endcap">
+                                <a href="http://www.valuecityfurniture.com/store-locator">
+                                    Store Locator
+                                    <img class="asi-arrow-icon" src="./_assets/media/svg/Arrow_Icon.svg" />
+                                </a>
+                            </div>
+                        	</div>
+                    	</div>
+                	</li>
+        			<!-- ko if: IsSignedIn() == false || IsSignedInAsGuest() == true -->
+        	        <li>
+        	            <a id="asi-wishlist-button" href="/register">
+        	                <div class="asi-icon" id="wishlist-icon">
+        	                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11 11.2">
+        	                        <style type="text/css">
+        	                            .st0 { fill: #FFFFFF; }
+        								.st1 { fill: #181818; }
+        	                        </style>
+        	                        <polygon class="st0" points="1 5.7 1 10.4 10.2 10.4 10.2 5.7 10.2 1 1 1 " />
+        	                        <title> Page 1</title>
+        	                        <desc> Heart </desc>
+        	                        <path class="st1" d="M4.6 10.2L1.4 6.6c0 0-1.2-1.3-1.2-2.7C0.2 2.1 1.1 1 2.7 1c0.9 0 1.7 0.8 2.2 1.3C5.2 1.8 6.1 1 7 1c1.5 0 2.5 1.1 2.5 2.8 0 1.5-1.1 2.7-1.2 2.7L5 10.2c0 0.1-0.1 0.2-0.2 0.2S4.7 10.3 4.6 10.2" />
+        	                    </svg>
+        		                </div>
+        		                <span>Wishlist</span>
+        		            </a>
+        	        </li>
+        	        <li>
+        	            <a id="asi-my-account-button" href="/sign-in" class="au-header-signin">
+        	                <div class="asi-icon" id="my-account-icon">
+        	                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11 12">
+        	                        <style type="text/css">
+        	                            .st0 { fill: #FFFFFF; }
+        								.st1 { fill: #181818; }
+        	                        </style>
+        	                        <polygon class="st0" points="10 10.9 1 10.9 1 1.1 10 1.1 "/>
+        	                        <path class="st1" d="M9.8 8.4L9.8 8.4C9.7 8 9.5 7.7 9.2 7.4l0 0 0 0 0 0 0 0 -2-1.3C7.6 5.6 7.9 5 7.9 4.3V3.6c0-1.4-1-2.5-2.3-2.5S3.3 2.2 3.3 3.6v0.6C3.3 4.9 3.6 5.5 4 6L2 7.3l0 0 0 0 0 0 0 0c-0.4 0.3-0.6 0.6-0.6 1l0 0L1 10.5c0 0.1 0 0.2 0.1 0.3 0 0.1 0.1 0.1 0.2 0.1h8.5c0.1 0 0.1 0 0.2-0.1 0-0.1 0-0.2 0-0.3L9.8 8.4z"/>
+        	                    </svg>
+        	                </div>
+        	                <span>Sign in</span>
+        	            </a>
+        	        </li>
+                	<!-- /ko -->
+                	<!-- ko if: IsSignedIn() && IsSignedInAsGuest() != true --> 
+        	        <li>
+        	            <a id="asi-wishlist-button" href="/wish-list">
+        	                <div class="asi-icon" id="wishlist-icon">
+        	                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11 11.2">
+        	                        <style type="text/css">
+        	                            .st0 {
+        	                                fill: #FFFFFF;
+        	                            }
+
+        	                            .st1 {
+        	                                fill: #181818;
+        	                            }
+        	                        </style>
+        	                        <polygon class="st0" points="1 5.7 1 10.4 10.2 10.4 10.2 5.7 10.2 1 1 1 " />
+        	                        <title> Page 1</title>
+        	                        <desc> Heart </desc>
+        	                        <path class="st1" d="M4.6 10.2L1.4 6.6c0 0-1.2-1.3-1.2-2.7C0.2 2.1 1.1 1 2.7 1c0.9 0 1.7 0.8 2.2 1.3C5.2 1.8 6.1 1 7 1c1.5 0 2.5 1.1 2.5 2.8 0 1.5-1.1 2.7-1.2 2.7L5 10.2c0 0.1-0.1 0.2-0.2 0.2S4.7 10.3 4.6 10.2" />
+        	                    </svg>
+        	                </div>
+        	                <span>Wishlist</span>
+        	            </a>
+        	        </li>
+        	        <li>
+        	            <a id="asi-my-account-button" href="https://www.valuecityfurniture.com/account" class="au-header-signin">
+        	                <div class="asi-icon" id="my-account-icon">
+        	                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11 12">
+        	                        <style type="text/css">
+        	                            .st0 { fill: #FFFFFF; }
+        								.st1 { fill: #181818; }
+        	                        </style>
+        	                        <polygon class="st0" points="10 10.9 1 10.9 1 1.1 10 1.1 " />
+        	                        <path class="st1" d="M9.8 8.4L9.8 8.4C9.7 8 9.5 7.7 9.2 7.4l0 0 0 0 0 0 0 0 -2-1.3C7.6 5.6 7.9 5 7.9 4.3V3.6c0-1.4-1-2.5-2.3-2.5S3.3 2.2 3.3 3.6v0.6C3.3 4.9 3.6 5.5 4 6L2 7.3l0 0 0 0 0 0 0 0c-0.4 0.3-0.6 0.6-0.6 1l0 0L1 10.5c0 0.1 0 0.2 0.1 0.3 0 0.1 0.1 0.1 0.2 0.1h8.5c0.1 0 0.1 0 0.2-0.1 0-0.1 0-0.2 0-0.3L9.8 8.4z" />
+        	                    </svg>
+        	                </div>
+        	                <span data-bind="text: CustomerName"></span>
+        	            </a>
+                	</li>
+                	<!-- /ko -->
+            	</ul>
+        	</nav>
+        <!-- Dynamic menu -->
 
 
 <nav class="asi-main-menu-outline">
 
     <div class="asi-logo">
-        <a href="http://www.valuecityfurniture.com/" class="asi-full-logo"><img src="http://www.valuecityfurniture.com/Content/ValueCityMix/svg/Logo_Full.svg"></a>
-        <a href="http://www.valuecityfurniture.com/" class="asi-tile-icon"><img src="http://www.valuecityfurniture.com/Content/ValueCityMix/svg/Logo_Tile.svg"></a>
+        <a href="http://www.valuecityfurniture.com/" class="asi-full-logo"><img src="./_assets/media/svg/Logo_Full.svg"></a>
+        <a href="http://www.valuecityfurniture.com/" class="asi-tile-icon"><img src="./_assets/media/svg/Logo_Tile.svg"></a>
     </div>
 
     <nav id="main-navigation">
@@ -220,7 +182,7 @@
                                      <div class="asi-menu-content-centered">
                                              <div class="asi-dropdown-menu-section-list made-to-mix-menu-col ">
                                                              <div class="menu-item-image-container">
-                                                                        <img class="menu-item-image" src="http://www.valuecityfurniture.com/Content/ValueCityMix/svg/Menu/Mix_Traditional_Logo_Black.svg" />
+                                                                        <img class="menu-item-image" src="./_assets/media/svg/Menu/Mix_Traditional_Logo_Black.svg" />
                                                              </div>
                                                          <h3>[un]Traditional</h3>
                                                          <ul>
@@ -233,7 +195,7 @@
                                              </div>
                                              <div class="asi-dropdown-menu-section-list made-to-mix-menu-col ">
                                                              <div class="menu-item-image-container">
-                                                                        <img class="menu-item-image" src="http://www.valuecityfurniture.com/Content/ValueCityMix/svg/Menu/Mix_Modern_Logo_Black.svg" />
+                                                                        <img class="menu-item-image" src="./_assets/media/svg/Menu/Mix_Modern_Logo_Black.svg" />
                                                              </div>
                                                          <h3>Modern[ish]</h3>
                                                          <ul>
@@ -309,7 +271,7 @@
                                      <div class="asi-menu-content-centered">
                                              <div class="asi-dropdown-menu-section-list living-menu-col ">
                                                              <div class="menu-item-image-container">
-                                                                         <img class="menu-item-image" src="http://www.valuecityfurniture.com/Content/ValueCityMix/svg/Menu/Menu_Seating_Icon.svg"/>
+                                                                         <img class="menu-item-image" src="./_assets/media/svg/Menu/Menu_Seating_Icon.svg"/>
                                                              </div>
                                                          <h3>Seating</h3>
                                                          <ul>
@@ -326,7 +288,7 @@
                                              </div>
                                              <div class="asi-dropdown-menu-section-list living-menu-col ">
                                                              <div class="menu-item-image-container">
-                                                                         <img class="menu-item-image" src="http://www.valuecityfurniture.com/Content/ValueCityMix/svg/Menu/Menu_CabsStorage_Icon.svg"/>
+                                                                         <img class="menu-item-image" src="./_assets/media/svg/Menu/Menu_CabsStorage_Icon.svg"/>
                                                              </div>
                                                          <h3>Cabinets &amp; Storage</h3>
                                                          <ul>
@@ -338,7 +300,7 @@
                                              </div>
                                              <div class="asi-dropdown-menu-section-list living-menu-col ">
                                                              <div class="menu-item-image-container">
-                                                                         <img class="menu-item-image" src="http://www.valuecityfurniture.com/Content/ValueCityMix/svg/Menu/Menu_Tables_Icon.svg"/>
+                                                                         <img class="menu-item-image" src="./_assets/media/svg/Menu/Menu_Tables_Icon.svg"/>
                                                              </div>
                                                          <h3>Tables</h3>
                                                          <ul>
@@ -349,7 +311,7 @@
                                              </div>
                                              <div class="asi-dropdown-menu-section-list living-menu-col ">
                                                              <div class="menu-item-image-container">
-                                                                         <img class="menu-item-image" src="http://www.valuecityfurniture.com/Content/ValueCityMix/svg/Menu/Menu_Accents_Icon.svg"/>
+                                                                         <img class="menu-item-image" src="./_assets/media/svg/Menu/Menu_Accents_Icon.svg"/>
                                                              </div>
                                                          <h3>Accents</h3>
                                                          <ul>
@@ -405,7 +367,7 @@
                                      <div class="asi-menu-content-centered">
                                              <div class="asi-dropdown-menu-section-list dining-menu-col ">
                                                              <div class="menu-item-image-container">
-                                                                         <img class="menu-item-image" src="http://www.valuecityfurniture.com/Content/ValueCityMix/svg/Menu/Menu_Tables_Icon.svg"/>
+                                                                         <img class="menu-item-image" src="./_assets/media/svg/Menu/Menu_Tables_Icon.svg"/>
                                                              </div>
                                                          <h3>Tables</h3>
                                                          <ul>
@@ -415,7 +377,7 @@
                                              </div>
                                              <div class="asi-dropdown-menu-section-list dining-menu-col ">
                                                              <div class="menu-item-image-container">
-                                                                         <img class="menu-item-image" src="http://www.valuecityfurniture.com/Content/ValueCityMix/svg/Menu/Menu_CabsStorage_Icon.svg"/>
+                                                                         <img class="menu-item-image" src="./_assets/media/svg/Menu/Menu_CabsStorage_Icon.svg"/>
                                                              </div>
                                                          <h3>Cabinets &amp; Storage</h3>
                                                          <ul>
@@ -425,7 +387,7 @@
                                              </div>
                                              <div class="asi-dropdown-menu-section-list dining-menu-col ">
                                                              <div class="menu-item-image-container">
-                                                                         <img class="menu-item-image" src="http://www.valuecityfurniture.com/Content/ValueCityMix/svg/Menu/Menu_Seating_Icon.svg"/>
+                                                                         <img class="menu-item-image" src="./_assets/media/svg/Menu/Menu_Seating_Icon.svg"/>
                                                              </div>
                                                          <h3>Seating</h3>
                                                          <ul>
@@ -436,7 +398,7 @@
                                              </div>
                                              <div class="asi-dropdown-menu-section-list dining-menu-col ">
                                                              <div class="menu-item-image-container">
-                                                                         <img class="menu-item-image" src="http://www.valuecityfurniture.com/Content/ValueCityMix/svg/Menu/Menu_Accents_Icon.svg"/>
+                                                                         <img class="menu-item-image" src="./_assets/media/svg/Menu/Menu_Accents_Icon.svg"/>
                                                              </div>
                                                          <h3>Accents</h3>
                                                          <ul>
@@ -475,7 +437,7 @@
                                      <div class="asi-menu-content-centered">
                                              <div class="asi-dropdown-menu-section-list bedroom-menu-col ">
                                                 	<div class="menu-item-image-container">
-                                                    	<img class="menu-item-image" src="http://www.valuecityfurniture.com/Content/ValueCityMix/svg/Menu/Menu_Beds_Icon.svg"/>
+                                                    	<img class="menu-item-image" src="./_assets/media/svg/Menu/Menu_Beds_Icon.svg"/>
                                                     </div>
                                                     <h3>Beds</h3>
                                                     <ul>
@@ -491,7 +453,7 @@
                                              	</div>
                                              	<div class="asi-dropdown-menu-section-list bedroom-menu-col ">
                                                 	<div class="menu-item-image-container">
-                                                   		<img class="menu-item-image" src="http://www.valuecityfurniture.com/Content/ValueCityMix/svg/Menu/Menu_CabsStorage_Icon.svg"/>
+                                                   		<img class="menu-item-image" src="./_assets/media/svg/Menu/Menu_CabsStorage_Icon.svg"/>
                                                     </div>
                                                          <h3>Cabinets &amp; Storage</h3>
                                                          <ul>
@@ -502,7 +464,7 @@
                                              	</div>
                                              	<div class="asi-dropdown-menu-section-list bedroom-menu-col ">
                                                              <div class="menu-item-image-container">
-                                                                         <img class="menu-item-image" src="http://www.valuecityfurniture.com/Content/ValueCityMix/svg/Menu/Menu_Seating_Icon.svg"/>
+                                                                         <img class="menu-item-image" src="./_assets/media/svg/Menu/Menu_Seating_Icon.svg"/>
                                                              </div>
                                                          <h3>Seating</h3>
                                                          <ul>
@@ -511,7 +473,7 @@
                                              	</div>
                                              	<div class="asi-dropdown-menu-section-list bedroom-menu-col ">
                                                              <div class="menu-item-image-container">
-                                                                         <img class="menu-item-image" src="http://www.valuecityfurniture.com/Content/ValueCityMix/svg/Menu/Menu_Accents_Icon.svg"/>
+                                                                         <img class="menu-item-image" src="./_assets/media/svg/Menu/Menu_Accents_Icon.svg"/>
                                                              </div>
                                                          <h3>Accents</h3>
                                                          <ul>
@@ -558,7 +520,7 @@
                                      	<div class="asi-menu-content-centered">
                                             <div class="asi-dropdown-menu-section-list mattresses-menu-col ">
                                                 <div class="menu-item-image-container">
-                                                	<img class="menu-item-image" src="http://www.valuecityfurniture.com/Content/ValueCityMix/svg/Menu/Menu_MattressSets_Icon.svg"/>
+                                                	<img class="menu-item-image" src="./_assets/media/svg/Menu/Menu_MattressSets_Icon.svg"/>
                                                	</div>
                                                	<h3>Mattress Sets</h3>
                                              	<ul>
@@ -575,7 +537,7 @@
                                          	</div>
                                          	<div class="asi-dropdown-menu-section-list mattresses-menu-col ">
                                                              <div class="menu-item-image-container">
-                                                                         <img class="menu-item-image" src="http://www.valuecityfurniture.com/Content/ValueCityMix/svg/Menu/Menu_Accessories_Icon.svg"/>
+                                                                         <img class="menu-item-image" src="./_assets/media/svg/Menu/Menu_Accessories_Icon.svg"/>
                                                              </div>
                                                          <h3>Accessories</h3>
                                                          <ul>
@@ -587,7 +549,7 @@
                                             </div>
                                             <div class="asi-dropdown-menu-section-list mattresses-menu-col ">
                                                              <div class="menu-item-image-container">
-                                                                         <img class="menu-item-image" src="http://www.valuecityfurniture.com/Content/ValueCityMix/svg/Menu/Menu_Brands_Icon.svg"/>
+                                                                         <img class="menu-item-image" src="./_assets/media/svg/Menu/Menu_Brands_Icon.svg"/>
                                                              </div>
                                                          <h3>Brands</h3>
                                                          <ul>
@@ -605,7 +567,7 @@
                                             </div>
                                             <div class="asi-dropdown-menu-section-list mattresses-menu-col ">
                                                              <div class="menu-item-image-container">
-                                                                         <img class="menu-item-image" src="http://www.valuecityfurniture.com/Content/ValueCityMix/svg/Menu/Menu_Manufacturers_Icon.svg"/>
+                                                                         <img class="menu-item-image" src="./_assets/media/svg/Menu/Menu_Manufacturers_Icon.svg"/>
                                                              </div>
                                                          <h3>Manufacturers</h3>
                                                          <ul>
@@ -646,7 +608,7 @@
                              		<div class="asi-menu-content-centered">
                                      	<div class="asi-dropdown-menu-section-list accents-menu-col ">
                                                      <div class="menu-item-image-container">
-                                                                 <img class="menu-item-image" src="http://www.valuecityfurniture.com/Content/ValueCityMix/svg/Menu/Menu_HomeAccessories_Icon.svg"/>
+                                                                 <img class="menu-item-image" src="./_assets/media/svg/Menu/Menu_HomeAccessories_Icon.svg"/>
                                                      </div>
                                                  <h3>Home Accessories</h3>
                                                  <ul>
@@ -660,7 +622,7 @@
                                      	</div>
                                      	<div class="asi-dropdown-menu-section-list accents-menu-col ">
                                                      <div class="menu-item-image-container">
-                                                                 <img class="menu-item-image" src="http://www.valuecityfurniture.com/Content/ValueCityMix/svg/Menu/Menu_Furniture_Icon.svg"/>
+                                                                 <img class="menu-item-image" src="./_assets/media/svg/Menu/Menu_Furniture_Icon.svg"/>
                                                      </div>
                                                  <h3>Furniture</h3>
                                                  <ul>
@@ -677,7 +639,7 @@
                                      	</div>
                                      	<div class="asi-dropdown-menu-section-list accents-menu-col ">
                                             <div class="menu-item-image-container">
-                                            	<img class="menu-item-image" src="http://www.valuecityfurniture.com/Content/ValueCityMix/svg/Menu/Menu_Patio_Icon.svg"/>
+                                            	<img class="menu-item-image" src="./_assets/media/svg/Menu/Menu_Patio_Icon.svg"/>
                                             </div>
                                             <h3>Patio</h3>
                                             <ul>
@@ -722,7 +684,7 @@
                             	<div class="asi-menu-content-centered">
                                     <div class="asi-dropdown-menu-section-list inspiration-menu-col ">
                                         <div class="menu-item-image-container">
-                                        	<img class="menu-item-image" src="http://www.valuecityfurniture.com/Content/ValueCityMix/svg/Menu/Menu_Inspiration_Icon.svg"/>
+                                        	<img class="menu-item-image" src="./_assets/media/svg/Menu/Menu_Inspiration_Icon.svg"/>
                                         </div>
                                         <h3>Inspiration</h3>
                                         <ul>
@@ -735,7 +697,7 @@
                                     </div>
                                     <div class="asi-dropdown-menu-section-list inspiration-menu-col ">
                                     <div class="menu-item-image-container">
-                                    	<img class="menu-item-image" src="http://www.valuecityfurniture.com/Content/ValueCityMix/svg/Menu/Menu_Experiences_Icon.svg"/>
+                                    	<img class="menu-item-image" src="./_assets/media/svg/Menu/Menu_Experiences_Icon.svg"/>
                                     </div>
                                 <h3>Experiences</h3>
                                 <ul>
@@ -773,21 +735,21 @@
 		    <li class="asi-search-close">
 		        <div id="asi-close-icon">
 		            <div class="asi-icon">
-		                <img src="http://www.valuecityfurniture.com/content/ValueCityMix/SVG/Close_Icon.svg" alt=""/>
+		                <img src="./_assets/media/svg/Close_Icon.svg" alt=""/>
 		            </div>
 		        </div>
 		    </li>
 		    <li class="asi-search-open">
 		        <div id="asi-search-icon">
 		            <div class="asi-icon">
-		                <img src="http://www.valuecityfurniture.com/Content/ValueCityMix/svg/Search_Icon.svg" alt=""/>
+		                <img src="./_assets/media/svg/Search_Icon.svg" alt=""/>
 		            </div>
 		        </div>
 		    </li>
 			<li class="last">  
 				<!--Cart Icon-->
 				<div class="asi-icon" id="asi-cart-icon" data-toggle="dropdown" data-bind="click: populateShoppingCartForDropDown">
-				    <img src="http://www.valuecityfurniture.com/Content/ValueCityMix/svg/Cart_Icon.svg" alt="" />
+				    <img src="./_assets/media/svg/Cart_Icon.svg" alt="" />
 				</div>
 				<div>
 					<span class="asi-cart-number" id="header-right-features-sc-count" data-bind="text: CartTotalCount"></span>
@@ -828,7 +790,7 @@
 				<!--
 				<div id="asi-cart-icon">
 				    <div class="asi-icon">
-				        <img src="http://www.valuecityfurniture.com/Content/ValueCityMix/svg/Cart_Icon.svg" alt="" />
+				        <img src="./_assets/media/svg/Cart_Icon.svg" alt="" />
 				    </div>
 				    <div class="asi-cart-number">2</div>
 				</div>
@@ -860,7 +822,7 @@
 </nav>
 	<div class="asi-search-panel">
 		<div class="asi-search-field-container container-fluid">
-    		<img id="asi-search-icon" class="asi-icon" src="http://www.valuecityfurniture.com/Content/ValueCityMix/svg/Search_Icon.svg" />
+    		<img id="asi-search-icon" class="asi-icon" src="./_assets/media/svg/Search_Icon.svg" />
     		<input class="asi-search-input" id="search-textbox" type="search" placeholder="Sectionals, modern, coffee tables, etc." autocomplete="off" />
     		<button id="search-submit-button" class="asi-search-enter-btn asi-mix-button white">Search</button>
 			</div>
@@ -868,7 +830,7 @@
 </nav>
 			<div id="asi-mobile-header">
 			    <div class="asi-mobile-header-logo-container">
-			        <a href="/home"><img class="asi-mobile-header-logo" src="http://www.valuecityfurniture.com/Content/ValueCityMix/svg/Logo_Mobile.svg" alt="VCF" /></a>
+			        <a href="/home"><img class="asi-mobile-header-logo" src="./_assets/media/svg/Logo_Mobile.svg" alt="VCF" /></a>
 			    </div>
 			    <button class="asi-mobile-header-location-pin" onclick="location.href='/store-locator'">
 			        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 8.5 12.9" style="enable-background:new 0 0 8.5 12.9;" xml:space="preserve">
@@ -890,7 +852,7 @@
 			    </svg>
 			    </button>
 			    <a href="/shoppingcart" class="asi-mobile-header-cart-icon-container">
-			        <div class="asi-mobile-header-cart-icon"><img src="http://www.valuecityfurniture.com/Content/ValueCityMix/svg/Cart_Icon.svg" alt="" /></div><div class="asi-mobile-header-cart-number" id="header-right-features-sc-count" data-bind="text: CartTotalCount"></div>
+			        <div class="asi-mobile-header-cart-icon"><img src="./_assets/media/svg/Cart_Icon.svg" alt="" /></div><div class="asi-mobile-header-cart-number" id="header-right-features-sc-count" data-bind="text: CartTotalCount"></div>
 			    </a>
 			</div>
 			<nav id="mobile-navigation">
@@ -1316,11 +1278,11 @@
 		            <li class="asi-mobile-order-tracking"><a href="http://www.valuecityfurniture.com/track-my-order">Order Tracking</a></li>
 
 		            <!-- ko if: IsSignedIn() == false || IsSignedInAsGuest() == true -->
-		            <li class="asi-mobile-wishlist"><a href="https://www.valuecityfurniture.com/account/register"> Wishlist</a></li>
-		            <li class="asi-mobile-my-account"><a href="https://www.valuecityfurniture.com/account/register"> Create Account </a></li>
+		            <li class="asi-mobile-wishlist"><a href="/register"> Wishlist</a></li>
+		            <li class="asi-mobile-my-account"><a href="/register"> Create Account </a></li>
 		            <!--/ko-->
 		            <!-- ko if: IsSignedIn() && IsSignedInAsGuest() != true --> 
-		            <li class="asi-mobile-wishlist"><a href="https://www.valuecityfurniture.com/account/wish-list"> Wishlist</a></li>
+		            <li class="asi-mobile-wishlist"><a href="/wish-list"> Wishlist</a></li>
 		            <li class="asi-mobile-my-account"><a href="https://www.valuecityfurniture.com/account"><span data-bind="text: CustomerName"></span></a></li>
 		            <!--/ko-->
 

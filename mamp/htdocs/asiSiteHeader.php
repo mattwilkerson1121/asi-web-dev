@@ -1,16 +1,12 @@
 
 <!DOCTYPE html>
-<!--[if lt IE 7 ]>              <html class="ie ie6" lang="en"> <![endif]-->
-<!--[if IE 7 ]>                 <html class="ie ie7" lang="en"> <![endif]-->
-<!--[if IE 8 ]>                 <html class="ie ie8" lang="en"> <![endif]-->
+<!--[if lt IE 7 ]> <html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]> <html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]> <html class="ie ie8" lang="en"> <![endif]-->
 <!--[if (gte IE 9)|!(IE)]><!-->
-<html lang="en" prefix="og: http://ogp.me/ns#">
+<html lang="en" prefix="og: https://ogp.me/ns#">
 <!--<![endif]-->
 <head>
-	<!-- <link id="FavIcon" rel="shortcut icon" type="image/x-icon" href="/Content/ValueCityMix/Images/Icons/favicon.ico" /> !-->
-    <!-- Meta and Link Section -->
-    <!-- <link rel="canonical" href="http://www.valuecityfurniture.com" /> !-->
-
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="user-scalable=0, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
@@ -39,7 +35,7 @@
     <!-- STYLES -->
     <link href="/Content/ValueCityMix/styles/styles.css" rel="stylesheet"/>
 	<link href="/Content/ValueCityMix/less/ValueCityMix.min.css" rel="stylesheet"/>
-    <!--[if lte IE 9 ]> <link href="/Content/ValueCityMix/less/ie9.min.css" rel="stylesheet"/> !-->
+    <!--[if lte IE 9 ]> <link href="https://www.valuecityfurniture.com/Content/ValueCityMix/less/ie9.min.css" rel="stylesheet"/> !-->
 
 	<!--
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -47,8 +43,8 @@
 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 	!-->
-	<script src="http://www.valuecityfurniture.com/bundles/polyfill?v=4vju97btl44fCYpr2J_S86cEPp_DduLiRm2_X0cJrjQ1"></script>
-	<script src="http://www.valuecityfurniture.com/bundles/jquery?v=dRtwv9vq5lYQ-fR-ADhx2h12SFn-D7_xD0i7xvcnIMI1" type="text/javascript"></script>
+	<script src="https://www.valuecityfurniture.com/bundles/polyfill?v=4vju97btl44fCYpr2J_S86cEPp_DduLiRm2_X0cJrjQ1"></script>
+	<script src="https://www.valuecityfurniture.com/bundles/jquery?v=dRtwv9vq5lYQ-fR-ADhx2h12SFn-D7_xD0i7xvcnIMI1" type="text/javascript"></script>
     
 
 	<!-- HawkSearch Auto-complete Scripts -->
@@ -65,10 +61,10 @@
                     var regionId = getSession('PortalRegionId');
                     
                     // desktop
-                    hawkSearch.initSuggester('search-textbox', $('#search-textbox').width() + 'px', 'http://search.blueport.com/sites/asi//ajax.aspx?f=GetSuggestions' + hawkString + '&regionid=' + regionId + '&availabilityregionid=' + avRegions, '') + qci;
+                    hawkSearch.initSuggester('search-textbox', $('#search-textbox').width() + 'px', 'https://search.blueport.com/sites/asi//ajax.aspx?f=GetSuggestions' + hawkString + '&regionid=' + regionId + '&availabilityregionid=' + avRegions, '') + qci;
 
                     // mobile header
-                    hawkSearch.initSuggester('mobile-search-textbox', $('#mobile-search-textbox').width() + 'px', 'http://search.blueport.com/sites/asi//ajax.aspx?f=GetSuggestions' + hawkString + '&regionid=' + regionId + '&availabilityregionid=' + avRegions, '') + qci;
+                    hawkSearch.initSuggester('mobile-search-textbox', $('#mobile-search-textbox').width() + 'px', 'https://search.blueport.com/sites/asi//ajax.aspx?f=GetSuggestions' + hawkString + '&regionid=' + regionId + '&availabilityregionid=' + avRegions, '') + qci;
                 };
 
                 if (window.addEventListener) {
@@ -92,16 +88,16 @@
         var linkAccountText = 'Your Account';
         var linkLogoutText = 'Logout';
         // page urls
-        var linkSearchResult = 'http://www.valuecityfurniture.com/search';
-        var linkStoreMap = 'http://www.valuecityfurniture.com/store/locator';
+        var linkSearchResult = '/search';
+        var linkStoreMap = '/store/locator';
         var linkSignUpForDeals = '';
         var linkShoppingCart = '/shoppingcart';
         var linkHawkSearchResult = '';
         // image server url
-        var imageServer = 'http://content.valuecityfurniture.com';
+        var imageServer = 'https://content.valuecityfurniture.com';
         var portalImageServer = '';
-        var imageProductFolder = 'http://content.valuecityfurniture.com/ProductImages/0/';
-        var RemoteImageServerURL = 'http://content.valuecityfurniture.com';
+        var imageProductFolder = 'https://content.valuecityfurniture.com/ProductImages/0/';
+        var RemoteImageServerURL = 'https://content.valuecityfurniture.com';
         // host
         var SSLModeAbsoluteHost = 'www.valuecityfurniture.com';
         // portal session

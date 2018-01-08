@@ -1,0 +1,737 @@
+
+#asi-hero-section [data-content="version-1"]{
+  background-image:url('https://asf.scene7.com/is/image/ASF/asi-hero-black-friday-11wk4v1-bg-d.jpg');
+}
+#asi-hero-section [data-content="version-2"]{
+  background-image:url('https://asf.scene7.com/is/image/ASF/asi-hero-black-friday-11wk4v2-bg-d.jpg');
+}
+#asi-hero-section [data-content="version-3"]{
+  background-image:url('https://asf.scene7.com/is/image/ASF/asi-hero-black-friday-11wk4v3-bg-d.jpg');
+}
+#asi-hero-section [data-content="version-4"]{
+  background-image:url('https://asf.scene7.com/is/image/ASF/asi-hero-black-friday-11wk4v4-bg-d.jpg');
+}
+#asi-hero-section [data-content="version-5"]{
+  background-image:url('https://asf.scene7.com/is/image/ASF/asi-hero-black-friday-11wk4v5-bg-d.jpg');
+}
+#asi-home-page-body{
+  width:100%;
+  max-width:100%;
+  padding:0;
+  margin:0 0 2rem;
+}
+.asi-offer-banner .asi-category-banner-content {
+  font-size: 16px;
+  padding: 1em 1em 1em 2em;
+  width: 35%;
+}
+.m-t-2{margin-top:2em !important;}
+.asi-asterisk small{ color:#FFFFFF !important; }
+.asi-asterisk sup,
+sup {
+  vertical-align: baseline !important;
+  position: relative !important;
+  top: -0.75em !important;
+  left:0.1em !important;
+  color:#FFFFFF !important;
+}
+.asi-semibold{ 
+    font-family:'ProximaNova-Semibold',sans-serif !important;
+    font-weight:600;
+}
+.asi-content-button{ font-size:16px; }
+button.asi-offer-details-link,
+a.asi-text-link{
+  color:#FFFFFF;
+  font-family:'ProximaNova-Bold',sans-serif !important;
+  letter-spacing:2px;
+  font-size:1em;
+  background:none;
+}
+  button.asi-offer-details-link::after,
+  a.asi-offer-details-link::after{
+    content:' \f105';
+    font-family:'FontAwesome';
+  }
+  button.asi-offer-details-link:hover,
+  button.asi-offer-details-link:focus,
+  a.asi-offer-details-link:hover,
+  a.asi-text-link:focus{
+    color:#f0f0f1;
+  }
+
+#asi-details-modal .close {
+    float: right;
+    font-size:2.5em;
+    font-weight: 600;
+    line-height: 1;
+    color: #181818;
+    text-shadow: none;
+    opacity: .8;
+    filter: alpha(opacity=80);
+    margin-right:0;
+    margin-top:0;
+    padding:5px 12px;
+    background-color:#efefea;
+}
+#asi-details-modal .close:hover{
+    color:white;
+    background-color:#ee3d42;
+    opacity:1;
+    filter:alpha(opacity=100);
+}
+#asi-details-modal .modal-header{ padding:0; margin:0; }
+#asi-details-modal h4.modal-title{ padding:14px 25px 0px; }
+#asi-details-modal .modal-body p,
+p#asi-offer-details-content { padding:4px; color:#181818; font-size:11px; }
+
+.asi-promo-banner {
+  font-size:16px;
+  text-align:center;
+  font-family:'ProximaNova-Regular',sans-serif;
+  width: 100%;
+  padding:2em 1em 1em 1.75em;
+  margin:0;
+}
+.asi-promo-banner h1,
+.asi-promo-banner h2,
+.asi-promo-banner h3,
+.asi-promo-banner h4{
+  padding:0;
+  margin-top:0;
+  margin-bottom:0;
+}
+
+.asi-promo-banner > p{
+  padding:1em 1em;
+  margin:0 auto;
+  text-align:center;
+  max-width:90%;
+  font-family:'ProximaNova-Regular',sans-serif;
+  line-height:22px;
+  letter-spacing:1px;
+  color:#FFFFFF;
+}
+[data-campaign="black-friday"] > p{
+  font-size:1.125em;
+}
+.asi-promo-banner > div.asi-content-button{
+  margin-right:auto;
+  margin-left:auto;
+  padding-bottom:1em;
+  text-align:center;
+}
+.asi-promo-banner > img{
+  margin-bottom:0.8625em;
+}
+
+p.asi-text-callout{
+  padding:0.5em;
+  margin:0 auto;
+  font-family:'ProximaNova-Semibold',sans-serif;
+  font-size:26px;
+  line-height:30px;
+  letter-spacing:4px;
+}
+p.asi-text-callout + p{
+  padding-top:0;
+}
+.asi-promo-heading{
+  font-size:16px;
+  text-align:center;
+  font-family:'ProximaNova-Regular',sans-serif;
+  width: 100%;
+  padding:1.5em 1em 0.25em;
+  margin:0 auto;
+}
+  .m-t-2 > .asi-promo-heading{
+    border-top:2px solid #f0f0f1;
+  }
+  .asi-promo-heading > .asi-subtitle{
+    font-family:'ProximaNova-Bold',sans-serif;
+    font-size:26px;
+    letter-spacing:4px;
+    line-height:22px;
+  }
+h3.asi-display-80,
+.asi-display-80{
+  font-family:'Knockout-HTF29-JuniorLiteweight','ProximaNova-Semibold',sans-serif;
+  font-size:80px;
+  letter-spacing:2px;
+  line-height:70px;
+  color:#F33E3B;
+}
+
+#asi-top-banner{ 
+  padding:0;
+  margin:0;
+  width:100%;
+  min-height:50px;
+  font-size:16px;
+}
+#asi-top-banner p{
+  padding:1.1325rem 1rem 1.025rem;
+  margin:0 auto;
+  font-family: 'ProximaNova-Regular',sans-serif;
+  font-size:24px;
+  line-height:28px;
+  color:#FFFFFF;
+  letter-spacing:3px;
+  text-align:center;
+}
+#asi-hero-content-main{
+  background-size:cover;
+  background-position:bottom center;
+}
+.asi-red-bg {background: #EE3D42; opacity:1;}
+.asi-black-bg {background: black;}
+
+#asi-hero-section + .asi-container-fluid,
+.asi-container-fluid + .asi-container-fluid {
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+#asi-page-content *{
+    font-size:16px !important;
+}
+.asi-black-bg-85{
+    background-color:rgba(0,0,0,0.80) !important;
+}
+div.asi-content-button > a > button.asi-brand-red-2-bg{
+  color:#FFFFFF;
+}
+.asi-black-bg-85 > div > div.asi-content-button > a > button{ color:#ffffff; background:#ee3d42;}
+.asi-black-bg-85 > div > div.asi-content-button > a:hover > button{ color:#181818; background:#ffffff;}
+
+#asi-hero-content-main .asi-card-body{background:transparent !important;}
+#asi-page-content{
+    position:relative;
+    padding: 0 0;
+    margin:0 0;
+    width:100%;
+    height:auto;
+    display:block;
+    font-family:'ProximaNova-Regular',sans-serif;
+}
+#asi-page-content a:hover,
+#asi-page-content a:focus,
+#asi-page-content a:link,
+#asi-page-content a{
+    text-decoration:none !important;
+    font-size:1em;
+}
+#asi-page-content p,
+#asi-page-content p.asi-lead{
+    font-size:1em;
+    letter-spacing:1px;
+}
+h1 + p,
+h2 + p,
+h3 + p{
+    padding-top:1em;
+}
+.asi-lead + .asi-content-button{
+    margin-top:1em;
+}
+#asi-hero-item{ 
+    position:absolute;
+    position:relative;
+    z-index:2;
+    width:100%;
+    margin:0 auto; 
+}
+.asi-hero-flex{
+    display: flex;
+    align-items: center;
+    width:100%;
+}
+.asi-card-body-flex{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    padding:1.25em;
+}
+#asi-hero-content-main + div.asi-card-block{
+  font-size:16px !important;
+  padding:0 0 !important;
+}
+#asi-hero-content-main div.asi-card{
+  font-size:16px !important;
+  width:620px;
+  height:680px;
+}
+#asi-hero-content-main span.asi-sale-name {
+  position:relative;
+  display:block;
+  padding:0;
+  margin:0 auto;
+  text-align:center;
+  color:#FFFFFF;
+  font-family: 'ProximaNova-Regular',sans-serif !important;
+}
+  #asi-hero-content-main h1 {
+    margin-top:0 !important;
+    margin-bottom:0 !important;
+    line-height:1 !important;
+  }
+  #asi-hero-content-main h1 span:nth-of-type(1){
+    font-family: 'ProximaNova-Bold',sans-serif !important;
+    font-size: 32px !important;
+    letter-spacing: 5.33px !important;
+  }
+  #asi-hero-content-main h1 span:nth-of-type(2){
+    font-size: 180px !important;
+    letter-spacing: 15px !important;
+    margin-left:5px !important;
+  }
+
+#asi-hero-content-main #asi-offer-msg{
+  font-size:16px;
+  position:relative;
+  border:2px solid #ffffff;
+  padding:60px 44px 20px;
+  margin-top:1.25em;
+  margin-bottom:2em;
+}
+#asi-hero-content-main .asi-offer-off-msg{
+  position:relative;
+  padding:0 0 0 10px;
+  margin:0 0;
+}
+#asi-hero-content-main .asi-offer-off-msg{
+  display:flex;
+  flex-direction:row;
+  align-items:stretch;
+  justify-content:center;
+  position:relative;
+  max-height:200px;
+}
+#asi-hero-content-main #asi-offer-lead-box {
+  position:absolute;
+  top:0;
+  left:0;
+  padding:0;
+  margin:-24px 0 0;
+  width:100%;
+  height:auto;
+  text-align:center;
+}
+  #asi-offer-lead-box > img{
+    height:47px;
+    width:350px;
+  }
+#asi-hero-content-main .asi-offer-off-msg span.asi-20-off{
+  font-family: 'ProximaNova-Light', sans-serif;
+  font-size: 260px !important;
+  color: #F33E3B;
+  letter-spacing:-30px !important;
+  line-height:230px !important;
+}
+#asi-hero-content-main .asi-offer-off-msg span.asi-percent{
+  font-family: 'Knockout-HTF29-JuniorLiteweight','ProximaNova-Regular',sans-serif;
+  font-size: 152px !important;
+  color: #F33E3B !important;
+  margin-left:0.175em !important;
+  line-height:140px;
+}
+#asi-hero-content-main .asi-offer-off-msg span.asi-off{
+  font-family: 'Knockout-HTF29-JuniorLiteweight','ProximaNova-Regular',sans-serif;
+  font-size: 75px !important;
+  color: #F33E3B !important;
+  letter-spacing: 0.01px !important;
+  margin-left:0.375em !important;
+  line-height:54px;
+}
+#asi-offer-min-box{
+  padding-bottom:1.75em;
+}
+#asi-hero-content-main #asi-offer-msg span.asi-offer-min{
+  padding:0;
+  margin:0 auto;
+  text-align:center;
+  font-family: 'ProximaNova-Light',sans-serif !important;
+  font-weight:200;
+  font-size: 36px !important;
+  color: #FFFFFF;
+  letter-spacing:1px !important;
+  line-height: 60px !important;
+}
+#asi-offer-min-box + div{
+  position:absolute;
+  bottom:0;
+  left:0;
+  padding:0;
+  margin:0 0 -24px;
+  width:100%;
+  height:auto;
+  text-align:center;
+}
+.asi-db-header{}
+.asi-db-header-text{
+  font-family:'ProximaNova-Light',sans-serif;
+  font-size:28px;
+  letter-spacing:2px;
+}
+[data-content="free-delivery"]{
+  position:relative;
+  max-width:100%;
+  display:block;
+  background:#F33E3B;
+  max-width:100%;
+  width:100%;
+  padding:1.375em 0.5em 1em;
+  margin:0;
+}
+[data-content="free-delivery"] div.asi-content-button{
+  position:absolute;
+  bottom:0px;
+  width:100%;
+  margin:0 auto;
+}
+[data-content="free-delivery"] p.asi-lead{
+  padding:0;
+  margin:0 auto;
+  font-family:'ProximaNova-Light',sans-serif;
+  font-size:2.8125em;
+  line-height:1;
+}
+
+[data-content="free-delivery"] h2.asi-display-90{
+  font-size:90px;
+  letter-spacing:4.5px;
+  line-height:1;
+}
+[data-content="60-months-financing"] h3.asi-display-64{
+  font-family:'Knockout-HTF29-JuniorLiteweight','ProximaNova-Semibold',sans-serif;
+  font-size:64px;
+  letter-spacing:2px;
+  line-height:54px;
+}
+p.asi-disclaimer{
+  margin-bottom:0;
+  padding-top:2em;
+  padding-bottom:2em;
+  border-bottom:2px solid #f0f0f1;
+}
+[data-content="doorbusters"] > h3.asi-display-3{
+  margin-top:15px;
+  margin-bottom:12px !important;
+  padding-top:15px !important;
+  border-top:2px solid #F0F0F1;
+}
+.flexcontentbody{
+  padding:0;
+  margin:0;
+}
+.flexcontainer{
+  display:flex;
+  flex-direction:row;
+  justify-content: center;
+  max-width:1220px;
+  margin:0 auto;
+  padding:0;
+}
+.flex-bd-small{
+  min-height:240px;
+  max-height:570px;
+}
+.flex-bd-big{
+  min-height:510px;
+  max-height:570px;
+}
+.flexcontainer > div{
+  margin:5px;
+}
+.flexcontainer.growshrink {
+   align-items: center;
+}
+.bigitem {
+  flex: 2 0 0;
+}
+.smallitem {
+  flex: 1 0 0;
+}
+.asi-black-bg-85{ margin-bottom:0 !important; padding-bottom:0px; }
+
+@media (max-width:768px){
+  #asi-hero-section [data-content="version-1"]{
+    background-image:url('https://asf.scene7.com/is/image/ASF/asi-hero-black-friday-11wk4v1-bg-m.jpg');
+  }
+  #asi-hero-section [data-content="version-2"]{
+    background-image:url('https://asf.scene7.com/is/image/ASF/asi-hero-black-friday-11wk4v2-bg-m.jpg');
+  }
+  #asi-hero-section [data-content="version-3"]{
+    background-image:url('https://asf.scene7.com/is/image/ASF/asi-hero-black-friday-11wk4v3-bg-m.jpg');
+  }
+  #asi-hero-section [data-content="version-4"]{
+    background-image:url('https://asf.scene7.com/is/image/ASF/asi-hero-black-friday-11wk4v4-bg-m.jpg');
+  }
+  #asi-hero-section [data-content="version-5"]{
+    background-image:url('https://asf.scene7.com/is/image/ASF/asi-hero-black-friday-11wk4v5-bg-m.jpg');
+  }
+  #asi-details-modal .modal-body p,
+  p#asi-offer-details-content { padding:4px; color:#181818; font-size:14px; }
+  .asi-offer-banner .asi-category-banner-content {
+    font-size: 16px;
+    padding: 1em 1em 1em 2em;
+    width: 100%;
+  }
+  .asi-first + .asi-container-fluid{
+    margin-top:0;
+    padding-top:0;
+  }
+  .asi-content-body + .asi-content-body,
+  .asi-content-body + .asi-content-body [class*="col-"]{
+    margin-top:4px;
+    margin-bottom:4px;
+    padding:0;
+  }
+  .asi-top-banner > p{
+    font-size:16px;
+    padding:8px 8px 6px;
+    letter-spacing:1px;
+  }
+  #asi-hero-content-main div.asi-card {
+    font-size: 16px !important;
+    width: 100%;
+    height:450px;
+  }
+  #asi-hero-content-main #asi-offer-msg{
+    padding:0 2px !important;
+    margin-top:1em;
+    margin-bottom:1.325em;
+  }
+  #asi-hero-content-main .asi-card-body-flex{
+    padding:0.5em 1em !important;
+  }
+  #asi-hero-content-main h1 {
+    margin-top:0 !important;
+  }
+  #asi-hero-content-main h1 span:nth-of-type(1),
+  #asi-hero-content-main h1 span.asi-sale-name:nth-of-type(1){
+    font-size:20px !important;
+    letter-spacing:5px !important;
+    line-height:24px !important;
+  }
+  #asi-hero-content-main h1 span:nth-of-type(2),
+  #asi-hero-content-main h1 span.asi-sale-name:nth-of-type(2){
+    font-size:120px !important;
+    letter-spacing: 4px !important;
+    margin-left:0px !important;
+  }
+  #asi-offer-lead-box {
+    margin-top:-16px !important;
+  }
+  #asi-offer-lead-box > img,
+  img.asi-first-time-img{
+    height:auto;
+    width:225px !important;
+  }
+  #asi-hero-content-main .asi-offer-off-msg{
+    padding-top:24px !important;
+  }
+  #asi-hero-content-main .asi-offer-off-msg span.asi-20-off{
+    font-size:185px !important;
+    letter-spacing:-20px !important;
+    line-height:160px !important;
+    padding-right:15px !important;
+  }
+  #asi-hero-content-main .asi-offer-off-msg span.asi-percent{
+    font-size:106px !important;
+    color: #EE3D42 !important;
+    margin-left:0 !important;
+    padding-right:15px !important;
+    line-height:98px;
+  }
+  #asi-hero-content-main .asi-offer-off-msg span.asi-off{
+    font-size:50px !important;
+    letter-spacing: 0.01px !important;
+    margin-left:0 !important;
+    padding-right:15px !important;
+    line-height:36px;
+  }
+  #asi-hero-content-main #asi-offer-msg span.asi-offer-min{
+    padding:0;
+    margin:0 auto;
+    text-align:center;
+    font-family: 'ProximaNova-Light',sans-serif !important;
+    font-weight:200;
+    font-size:24px !important;
+    color: #FFFFFF;
+    letter-spacing:1px !important;
+    line-height:36px !important;
+  }
+  #asi-offer-min-box{
+    margin-top:-1.475em;
+  }
+  #asi-hero-content-main button,
+  #asi-hero-content-main button.asi-mix-button{
+    font-size:16px !important;
+    letter-spacing:2px;
+    background:#F33E3B !important;
+    transition:0.3s;
+  }
+  #asi-hero-content-main button:hover,
+  #asi-hero-content-main button.asi-mix-button:hover{
+    background:#cc0000 !important;
+  }
+  .asi-db-header{}
+  .asi-db-header-text{
+    font-family:'ProximaNova-Semibold',sans-serif;
+    font-size:11px;
+    letter-spacing:0.5px;
+  }
+  [data-content="free-delivery"]{
+    padding:0.25em 0.25em 1.125em ;
+  }
+  [data-content="free-delivery"] h2.asi-display-90{
+    font-size:48px;
+    letter-spacing:3px;
+    line-height:1;
+    margin-top:0.375em;
+    margin-bottom:0;
+  }
+  [data-content="free-delivery"] > img{
+    width:100%;
+    max-width:100%;
+    margin:0 auto;
+    text-align:center;
+  }
+  [data-content="free-delivery"] div.asi-content-button{
+    bottom:-15px;
+  }
+  [data-content="free-delivery"] p.asi-lead{
+    font-size:24px;
+    line-height:26px;
+    padding-top:0;
+    margin-top:0;
+  }
+  [data-content="60-months-financing"]{
+    padding:1em 0.25em 1em;
+  }
+  [data-content="60-months-financing"] h3.asi-display-64{
+    font-size:40px;
+    line-height:1;
+    margin-top:0.375em;
+    margin-bottom:0;
+    padding-left:5px;
+    padding-right:5px;
+  }
+  [data-content="60-months-financing"] > img{
+    width:260px;
+    margin:0 auto;
+    text-align:center;
+  }
+  [data-content="60-months-financing"] p{
+    font-size:13px;
+    line-height:16px;
+    padding:0 0 1em;
+    margin:0 auto;
+    text-align:center;
+    width:100%;
+    max-width:100%;
+    display:block;
+  }
+  [data-content="60-months-financing"] p.asi-text-callout{
+    font-size:16px;
+    line-height:20px;
+    padding:0.375em 0;
+    margin:0 auto;
+    text-align:center;
+    color:#F33E3B;
+    width:100%;
+    max-width:100%;
+    display:block;
+  }
+  [data-content="doorbusters"] {
+    padding: 0em 1em 0em;
+    margin-top:0;
+    margin-bottom:0;
+  }
+  h3.asi-display-80, .asi-display-80 {
+    font-size: 54px;
+    letter-spacing: 2px;
+    line-height:45px;
+  }
+  [data-content="doorbusters"] .asi-subtitle{
+    padding-bottom:0.5em;
+  }
+  .asi-promo-heading > .asi-subtitle {
+    font-size:16px;
+    letter-spacing:2px;
+    line-height:18px;
+  }
+  .m-t-2{margin-top:0.5em !important;}
+  .m-b-2{margin-bottom:0.5em !important;}
+  .asi-content-body{
+    padding-top:0 !important;
+    padding-bottom:0 !important;
+  }
+  .asi-container-fluid{margin-top:0 !important;}
+  [data-content="doorbusters"] .asi-content-button{
+    padding-bottom:12px;
+  }
+  [data-content="doorbusters-disclaimer"]{
+    margin:10px 0 !important;
+  }
+  p.asi-disclaimer{
+    padding-top:0.5em !important;
+    padding-bottom:0.5em !important;
+  }
+  [data-content="doorbusters"] > h3.asi-display-3{
+    margin-bottom:12px !important;
+    padding-top:15px !important;
+    border-top:2px solid #F0F0F1;
+  }
+  [data-content="free-delivery"]{
+    margin-bottom:10px;
+    margin-top:6px;
+  }
+  .flexcontainer.growshrink{
+    align-content: stretch;
+  }
+  .flexcontainer {
+    max-width:100%;
+    height:256px;
+  }
+  .flexcontainer > div{
+    margin:4px;
+  }
+  .bigitem, .smallitem {
+    flex: 1 0 0;
+  }
+  .flex-bd-big, .flex-bd-small{
+    min-height:245px;
+    height:245px;
+    max-height:245px;
+  }
+  [data-content="doorbusters-button"] > .asi-content-button{ padding-top:5px !important;}
+}
+
+.asi-brand-red-2,
+.asi-brand-2-red{
+  color:#F33E3B !important;
+}
+.asi-brand-red-2-bg{
+  background:#F33E3B !important;
+}
+
+.asi-content-button a button.asi-mix-button{
+  border:none !important;
+  font-size:16px !important;
+  padding:12px 45px !important;
+}
+@media (max-width:768px){
+  .asi-content-button a button.asi-mix-button{
+    border:none !important;
+    font-size:14px !important;
+    padding:10px 34px !important;
+  }
+  #asi-top-banner p.top-banner-text {
+    padding:6px 8px 8px !important;
+    font-size:16px !important;
+    line-height:16px !important;
+    letter-spacing:1px !important;
+  }
+}

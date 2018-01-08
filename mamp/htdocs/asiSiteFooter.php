@@ -5,24 +5,24 @@
                 <div id="shop-footer-item" class="asi-footer-section-list">
                     <h3>Shop With VCF</h3>
                     <ul>
-                        <li><a href="http://www.valuecityfurniture.com/store/locator">Find a Store</a></li>
-                        <li><a href="http://www.valuecityfurniture.com/weekly-ad">Weekly Circular</a></li>
+                        <li><a href="https://www.valuecityfurniture.com/store/locator">Find a Store</a></li>
+                        <li><a href="https://www.valuecityfurniture.com/weekly-ad">Weekly Circular</a></li>
                         <li><a href="https://www.valuecityfurniture.com/easy-pass">Easy Pass</a></li>
-                        <li><a href="http://www.valuecityfurniture.com/financing">Financing Options</a></li>
+                        <li><a href="https://www.valuecityfurniture.com/financing">Financing Options</a></li>
                         <li><a href="https://www.mysynchrony.com/merchants/cmp-index.html?market=homefurnishings&amp;store=valuecityfurniture">Manage My Value Plus Card</a></li>
-                        <li><a href="http://www.valuecityfurniture.com/search/v/bestsellers">Best Sellers</a></li>
-                        <li><a href="http://www.valuecityfurniture.com/search/v/new-arrivals">New Arrivals</a></li>
-                        <li><a href="http://www.valuecityfurniture.com/search/v/on-sale">What&#39;s On Sale</a></li>
+                        <li><a href="https://www.valuecityfurniture.com/search/v/bestsellers">Best Sellers</a></li>
+                        <li><a href="https://www.valuecityfurniture.com/search/v/new-arrivals">New Arrivals</a></li>
+                        <li><a href="https://www.valuecityfurniture.com/search/v/on-sale">What&#39;s On Sale</a></li>
                     </ul>
                 </div>
 
                 <div id="familiarize-footer-item" class="asi-footer-section-list">
                     <h3>Get to Know Us</h3>
                     <ul>
-                        <li><a href="http://www.valuecityfurniture.com/about-us">About Us</a></li>
-                        <li><a href="http://www.valuecityfurniture.com/careers">Careers</a></li>
-                        <li><a href="http://www.valuecityfurniture.com/frequently-asked-questions">FAQs</a></li>
-                        <li><a href="http://blog.valuecityfurniture.com/">Blog</a></li>
+                        <li><a href="https://www.valuecityfurniture.com/about-us">About Us</a></li>
+                        <li><a href="https://www.valuecityfurniture.com/careers">Careers</a></li>
+                        <li><a href="https://www.valuecityfurniture.com/frequently-asked-questions">FAQs</a></li>
+                        <li><a href="https://blog.valuecityfurniture.com/">Blog</a></li>
                     </ul>
                 </div>
 
@@ -30,20 +30,20 @@
                     <h3>Customer Care</h3>
                     <ul>
                         <li><a href="tel:(888) 751-8552"><b>(888) 751-8552</b></a></li>
-                        <li><a href="http://www.valuecityfurniture.com/contact-us">Contact Us</a></li>
-                        <li><a href="http://www.valuecityfurniture.com/recalls">Product Recalls</a></li>
-                        <li><a href="http://www.valuecityfurniture.com/track-my-order">Track My Order</a></li>
-                        <li><a href="http://www.valuecityfurniture.com/refunds-exchanges">Refunds and Exchanges</a></li>
+                        <li><a href="https://www.valuecityfurniture.com/contact-us">Contact Us</a></li>
+                        <li><a href="https://www.valuecityfurniture.com/recalls">Product Recalls</a></li>
+                        <li><a href="https://www.valuecityfurniture.com/track-my-order">Track My Order</a></li>
+                        <li><a href="https://www.valuecityfurniture.com/refunds-exchanges">Refunds and Exchanges</a></li>
                     </ul>
                 </div>
 
                 <div class="asi-social-icons asi-footer-social-col">
                     <h3>FOLLOW US</h3>
-                    <a href="http://www.facebook.com/ValueCityFurnitureUSA"><img class="facebook-icon" src="http://www.valuecityfurniture.com/Content/ValueCityMix/svg/Facebook_Icon.svg" /></a>
-                    <a href="http://twitter.com/valuecityfurn"><img class="twitter-icon" src="http://www.valuecityfurniture.com/Content/ValueCityMix/svg/Twitter_Icon.svg" /></a>
-                    <a href="http://pinterest.com/valuecityfurn/"><img class="pinterest-icon" src="http://www.valuecityfurniture.com/Content/ValueCityMix/svg/Pinterest_Icon.svg" /></a>
-                    <a href="http://www.youtube.com/vcfuser"><img class="youtube-icon" src="http://www.valuecityfurniture.com/Content/ValueCityMix/svg/Youtube_Icon.svg" /></a>
-                    <a href="http://instagram.com/valuecityfurn/"><img class="insta-icon" src="http://www.valuecityfurniture.com/Content/ValueCityMix/svg/Insta_Icon.svg" /></a>
+                    <a href="https://www.facebook.com/ValueCityFurnitureUSA"><img class="facebook-icon" src="https://www.valuecityfurniture.com/Content/ValueCityMix/svg/Facebook_Icon.svg" /></a>
+                    <a href="https://twitter.com/valuecityfurn"><img class="twitter-icon" src="https://www.valuecityfurniture.com/Content/ValueCityMix/svg/Twitter_Icon.svg" /></a>
+                    <a href="https://pinterest.com/valuecityfurn/"><img class="pinterest-icon" src="https://www.valuecityfurniture.com/Content/ValueCityMix/svg/Pinterest_Icon.svg" /></a>
+                    <a href="https://www.youtube.com/vcfuser"><img class="youtube-icon" src="https://www.valuecityfurniture.com/Content/ValueCityMix/svg/Youtube_Icon.svg" /></a>
+                    <a href="https://instagram.com/valuecityfurn/"><img class="insta-icon" src="https://www.valuecityfurniture.com/Content/ValueCityMix/svg/Insta_Icon.svg" /></a>
                 </div>
 
                 <div class="asi-email-sign-up">
@@ -68,7 +68,7 @@
                 <h4 class="modal-title" id="SignUpModalLabel">Thanks for signing up!</h4>
             </div>
             <div class="modal-body">
-                <img src="http://www.valuecityfurniture.com/Content/ValueCity/Images/modal-logo.png" alt="" class="desk-logo img-responsive" /><br /><br />
+                <img src="https://www.valuecityfurniture.com/Content/ValueCity/Images/modal-logo.png" alt="" class="desk-logo img-responsive" /><br /><br />
                 Now, you&#39;ll be among the first to hear about new items, special promotions, in-store events and more.<br /><br />
             </div>
             <div class="modal-footer">
@@ -84,11 +84,11 @@
 
             <div class="asi-social-icons asi-footer-social-row">
                 <h3>FOLLOW US</h3>
-                <a href="http://www.facebook.com/ValueCityFurnitureUSA"><img class="facebook-icon" src="http://www.valuecityfurniture.com/Content/ValueCityMix/svg/Facebook_Icon.svg" /></a>
-                <a href="http://twitter.com/valuecityfurn"><img class="twitter-icon" src="http://www.valuecityfurniture.com/Content/ValueCityMix/svg/Twitter_Icon.svg" /></a>
-                <a href="http://pinterest.com/valuecityfurn/"><img class="pinterest-icon" src="http://www.valuecityfurniture.com/Content/ValueCityMix/svg/Pinterest_Icon.svg" /></a>
-                <a href="http://www.youtube.com/vcfuser"><img class="youtube-icon" src="http://www.valuecityfurniture.com/Content/ValueCityMix/svg/Youtube_Icon.svg" /></a>
-                <a href="http://instagram.com/valuecityfurn/"><img class="insta-icon" src="http://www.valuecityfurniture.com/Content/ValueCityMix/svg/Insta_Icon.svg" /></a>
+                <a href="https://www.facebook.com/ValueCityFurnitureUSA"><img class="facebook-icon" src="https://www.valuecityfurniture.com/Content/ValueCityMix/svg/Facebook_Icon.svg" /></a>
+                <a href="https://twitter.com/valuecityfurn"><img class="twitter-icon" src="https://www.valuecityfurniture.com/Content/ValueCityMix/svg/Twitter_Icon.svg" /></a>
+                <a href="https://pinterest.com/valuecityfurn/"><img class="pinterest-icon" src="https://www.valuecityfurniture.com/Content/ValueCityMix/svg/Pinterest_Icon.svg" /></a>
+                <a href="https://www.youtube.com/vcfuser"><img class="youtube-icon" src="https://www.valuecityfurniture.com/Content/ValueCityMix/svg/Youtube_Icon.svg" /></a>
+                <a href="https://instagram.com/valuecityfurn/"><img class="insta-icon" src="https://www.valuecityfurniture.com/Content/ValueCityMix/svg/Insta_Icon.svg" /></a>
             </div>
 
 
@@ -101,7 +101,7 @@
                 <a href="/privacy-policy">Privacy Policy</a> |
                 <a href="/terms-and-conditions">Terms &amp; Conditions</a> &nbsp;&nbsp;&nbsp;
 
-                <a href="http://www.blueport.com">Powered by Blueport Commerce </a>
+                <a href="https://www.blueport.com">Powered by Blueport Commerce </a>
             </div>
 
         </div>
@@ -134,7 +134,7 @@
                 <h4 class="modal-title" id="MobileSignUpModalLabel">Thanks for signing up!</h4>
             </div>
             <div class="modal-body">
-                <img src="http://www.valuecityfurniture.com/Content/ValueCity/Images/modal-logo.png" alt="" class="desk-logo img-responsive" /><br /><br />
+                <img src="https://www.valuecityfurniture.com/Content/ValueCity/Images/modal-logo.png" alt="" class="desk-logo img-responsive" /><br /><br />
                 Now, you&#39;ll be among the first to hear about new items, special promotions, in-store events and more.<br /><br />
             </div>
             <div class="modal-footer">
@@ -152,11 +152,11 @@
                     <h3 class="asi-mobile-footer-accordion-header">
                         Shop With VCF
                         <div class="asi-arrow">
-                            <img src="http://www.valuecityfurniture.com/Content/ValueCityMix/svg/Arrow_Icon.svg" />
+                            <img src="https://www.valuecityfurniture.com/Content/ValueCityMix/svg/Arrow_Icon.svg" />
                         </div>
                     </h3>
                     <ul>
-                        <li><a href="http://www.valuecityfurniture.com/store/locator">Find a Store</a></li>
+                        <li><a href="https://www.valuecityfurniture.com/store/locator">Find a Store</a></li>
                         <li><a href="/weekly-ad">Weekly Circular</a></li>
                         <li><a href="/easy-pass">Easy Pass</a></li>
                         <li><a href="/financing">Financing Options</a></li>
@@ -172,7 +172,7 @@
                     <h3 class="asi-mobile-footer-accordion-header">
                         Customer Care
                         <div class="asi-arrow">
-                            <img src="http://www.valuecityfurniture.com/Content/ValueCityMix/svg/Arrow_Icon.svg" />
+                            <img src="https://www.valuecityfurniture.com/Content/ValueCityMix/svg/Arrow_Icon.svg" />
                         </div>
                     </h3>
                     <ul>
@@ -189,24 +189,24 @@
                     <h3 class="asi-mobile-footer-accordion-header">
                         Get to Know Us
                         <div class="asi-arrow">
-                            <img src="http://www.valuecityfurniture.com/Content/ValueCityMix/svg/Arrow_Icon.svg" />
+                            <img src="https://www.valuecityfurniture.com/Content/ValueCityMix/svg/Arrow_Icon.svg" />
                         </div>
                     </h3>
                     <ul>
                         <li><a href="/about-us">About Us</a></li>
-                        <li><a href="http://careers.vcf.com">Careers</a></li>
+                        <li><a href="https://careers.vcf.com">Careers</a></li>
                         <li><a href="/frequently-asked-questions">FAQs</a></li>
-                        <li><a href="http://blog.valuecityfurniture.com/">Blog</a></li>
+                        <li><a href="https://blog.valuecityfurniture.com/">Blog</a></li>
                     </ul>
                 </div>
             </div>
 
             <div class="asi-social-icons asi-footer-social-row">
-                <a href="http://www.facebook.com/ValueCityFurnitureUSA"><img class="facebook-icon" src="http://www.valuecityfurniture.com/Content/ValueCityMix/svg/Facebook_Icon.svg" /></a>
-                <a href="http://twitter.com/valuecityfurn"><img class="twitter-icon" src="http://www.valuecityfurniture.com/Content/ValueCityMix/svg/Twitter_Icon.svg" /></a>
-                <a href="http://pinterest.com/valuecityfurn/"><img class="pinterest-icon" src="http://www.valuecityfurniture.com/Content/ValueCityMix/svg/Pinterest_Icon.svg" /></a>
-                <a href="http://www.youtube.com/vcfuser"><img class="youtube-icon" src="http://www.valuecityfurniture.com/Content/ValueCityMix/svg/Youtube_Icon.svg" /></a>
-                <a href="http://instagram.com/valuecityfurn/"><img class="insta-icon" src="http://www.valuecityfurniture.com/Content/ValueCityMix/svg/Insta_Icon.svg" /></a>
+                <a href="https://www.facebook.com/ValueCityFurnitureUSA"><img class="facebook-icon" src="https://www.valuecityfurniture.com/Content/ValueCityMix/svg/Facebook_Icon.svg" /></a>
+                <a href="https://twitter.com/valuecityfurn"><img class="twitter-icon" src="https://www.valuecityfurniture.com/Content/ValueCityMix/svg/Twitter_Icon.svg" /></a>
+                <a href="https://pinterest.com/valuecityfurn/"><img class="pinterest-icon" src="https://www.valuecityfurniture.com/Content/ValueCityMix/svg/Pinterest_Icon.svg" /></a>
+                <a href="https://www.youtube.com/vcfuser"><img class="youtube-icon" src="https://www.valuecityfurniture.com/Content/ValueCityMix/svg/Youtube_Icon.svg" /></a>
+                <a href="https://instagram.com/valuecityfurn/"><img class="insta-icon" src="https://www.valuecityfurniture.com/Content/ValueCityMix/svg/Insta_Icon.svg" /></a>
             </div>
 
             <div class="asi-copyright">
@@ -216,14 +216,14 @@
                 <a href="/privacy-policy">Privacy Policy</a> |
                 <a href="/terms-and-conditions">Terms &amp; Conditions</a> <br>
 
-                <a href="http://www.blueport.com">Powered by Blueport Commerce </a>
+                <a href="https://www.blueport.com">Powered by Blueport Commerce </a>
             </div>
 
         </div>
     </footer>
     </div>
 
-    <div class="scroll-to-top affix" data-spy="affix" data-offset-top="200"><a href="#page" class="smooth-scroll"><img src="http://www.valuecityfurniture.com/Content/ValueCity/Images/icon-up-arrow.png" /></a></div>
+    <div class="scroll-to-top affix" data-spy="affix" data-offset-top="200"><a href="#page" class="smooth-scroll"><img src="https://www.valuecityfurniture.com/Content/ValueCity/Images/icon-up-arrow.png" /></a></div>
 
     <!-- Error Message Modal -->
     <div class="error-modal modal fade" id="ErrorMessageModal" tabindex="-1" role="dialog" aria-labelledby="ErrorMessageModalLabel" aria-hidden="true">
@@ -254,7 +254,7 @@
             <!-- title -->
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                <h4 class="modal-title" id="enter-zip-title"><img align="absmiddle" src="http://www.valuecityfurniture.com/Content/ValueCityMix/Images/Icons/map-pin.png"> Enter Your Zip Code</h4>
+                <h4 class="modal-title" id="enter-zip-title"><img align="absmiddle" src="https://www.valuecityfurniture.com/Content/ValueCityMix/Images/Icons/map-pin.png"> Enter Your Zip Code</h4>
                 <h4 class="modal-title" id="good-news-title" style="display: none;">Good news!</h4>
                 <h4 class="modal-title" id="pickup-only-title" style="display: none;">Available for Pick-up Only</h4>
             </div>
@@ -336,7 +336,7 @@
                 <div id="pickuponly-response-container" style="display: none">
 
                     <div class="zip-code-overlay-content text-small">
-                        <span>Although you live outside our delivery area,<br/> we invite you to order online and pick up your merchandise at your closest store or <a href="http://www.valuecityfurniture.com/store-locator">find another store here.</a></span><br />
+                        <span>Although you live outside our delivery area,<br/> we invite you to order online and pick up your merchandise at your closest store or <a href="https://www.valuecityfurniture.com/store-locator">find another store here.</a></span><br />
                         <br />
 
                         <!-- store content! -->
@@ -380,7 +380,7 @@
 
 
 <script language="javascript" type="text/javascript">
-    $(document).ready(function() {
+    /*$(document).ready(function() {
         var isValidPe = false;
         var addToCart = getQueryStringItem("add");
         var showEmailModal = addToCart !== "1";
@@ -390,11 +390,12 @@
             });
             setCookie("RegistrationOverlay", null, "1", 90);
         }
+    */
         // UNCOMMENT OUT TO ALWAYS SHOW THE OVERLAY:
         //$(".js-email-reg-modal").modal({
         //    keyboard: false
         //});
-    });
+   // });
 </script>
 
 <div class="js-email-reg-modal email-reg-modal modal fade" id="EmailRegistrationModal" tabindex="-1" role="dialog" aria-hidden="true">
@@ -436,14 +437,14 @@
 
     <!-- Check Local Price Modal -->
 
-    <script src='http://www.valuecityfurniture.com/bundles/layout?v=SE-0UUBvA4ABsZJvPDUwmywnT6Tht-jUkIkk7TLEC4I1' defer></script>
+    <script src='https://www.valuecityfurniture.com/bundles/layout?v=SE-0UUBvA4ABsZJvPDUwmywnT6Tht-jUkIkk7TLEC4I1' defer></script>
 
-    <script src='http://www.valuecityfurniture.com/bundles/blueport?v=6-dz_VPVG1J9mhSFyeT06Hh5gpZmUf9kzHAnzliRr6c1' defer></script>
+    <script src='https://www.valuecityfurniture.com/bundles/blueport?v=6-dz_VPVG1J9mhSFyeT06Hh5gpZmUf9kzHAnzliRr6c1' defer></script>
 
 
     <!-- HawkSearch CSS  & JS -->
         <!-- HawkSearch Style Sheet
-    <link rel="stylesheet" type="text/css" href="http://search.blueport.com/sites/asi/includes/hawksearch.css" /> -->
+    <link rel="stylesheet" type="text/css" href="https://search.blueport.com/sites/asi/includes/hawksearch.css" /> -->
     <!-- HawkSearch Initialization Script -->
     <!--
     <script type="text/javascript">
@@ -452,23 +453,23 @@
             hawkSearch.TrackingEnabled = 'True' === 'True';
             if (hawkSearch.TrackingEnabled) {
                 // Setup the HawkSearch dependent URLs
-                hawkSearch.BaseUrl = 'http://www.valuecityfurniture.com/search/proxy';
-                hawkSearch.HawkUrl = 'http://search.blueport.com/sites/asi/';
-                hawkSearch.TrackingUrl = 'http://tracking.hawksearch.com';
-                hawkSearch.RecommenderUrl = 'http://recs.hawksearch.com';
+                hawkSearch.BaseUrl = 'https://www.valuecityfurniture.com/search/proxy';
+                hawkSearch.HawkUrl = 'https://search.blueport.com/sites/asi/';
+                hawkSearch.TrackingUrl = 'https://tracking.hawksearch.com';
+                hawkSearch.RecommenderUrl = 'https://recs.hawksearch.com';
                 hawkSearch.ClientGuid = '5bc1277a6f9d43cd8354885b9306382f';
             } else {
                 // In the situation that tracking functionality is not found or enabled we need to
                 // revert back to using the proxy url.
-                hawkSearch.BaseUrl = 'http://www.valuecityfurniture.com/search/proxy';
-                hawkSearch.TrackingUrl = 'http://search.blueport.com/sites/asi/';
+                hawkSearch.BaseUrl = 'https://www.valuecityfurniture.com/search/proxy';
+                hawkSearch.TrackingUrl = 'https://search.blueport.com/sites/asi/';
             }
         }(window.HawkSearch = window.HawkSearch || {}));
     </script>
     -->
     <!-- HawkSearch Library Script -->
     <!--
-    <script type="text/javascript" src="http://search.blueport.com/sites/asi/includes/hawksearch.min.js"></script>
+    <script type="text/javascript" src="https://search.blueport.com/sites/asi/includes/hawksearch.min.js"></script>
     <script type="text/javascript">
         if (HawkSearch.TrackingEnabled && HawkSearch.Context) {
             var hasHawkHost = 'False' === 'False';
@@ -484,7 +485,6 @@
     </script> -->
 
     <link href="/Content/ValueCityMix/less/bottom.css" rel="stylesheet"/>
-    <link href="../../Content/ValueCityMix/less/bottom.css" rel="stylesheet"/>
 
 
     <script type="text/javascript">
@@ -560,11 +560,11 @@
 
     <!-- JsWidget-->
     <!--
-<script src="http://www.valuecityfurniture.com/bundles/widget-dependencies?v=bFlBfe4FcTQQ2fyuB3vdXoZ9BIe-bxUJx6dMdX9Mybg1"></script>
+<script src="https://www.valuecityfurniture.com/bundles/widget-dependencies?v=bFlBfe4FcTQQ2fyuB3vdXoZ9BIe-bxUJx6dMdX9Mybg1"></script>
 
-<script src="http://www.valuecityfurniture.com/bundles/widget?v=ima9s905ABfrrAjXZ2fyqFFIzTPteTx8gk9z405l6eI1"></script>
+<script src="https://www.valuecityfurniture.com/bundles/widget?v=ima9s905ABfrrAjXZ2fyqFFIzTPteTx8gk9z405l6eI1"></script>
 
-<script src="http://www.valuecityfurniture.com/bundles/widget-renderers?v=xdsCMlQI3m1XFfAGvBhrnlU_22u9TUMNu_Q5ACs0GPI1"></script>
+<script src="https://www.valuecityfurniture.com/bundles/widget-renderers?v=xdsCMlQI3m1XFfAGvBhrnlU_22u9TUMNu_Q5ACs0GPI1"></script>
 
 
 <script type="text/javascript">
@@ -623,7 +623,7 @@ var btData = {
 <!--- XSELL HiPer VERSION 2 - BLUE-9678 -->
         <!-- begin XSELL HiPer Chat code -->
         <!--
-        <script src="http://d1yiokhomxj7yf.cloudfront.net/production/clients/e1a322c9-e19f-4a3a-9c62-fda12ce8d7b8/live/app/hiper-build.js"></script>
+        <script src="https://d1yiokhomxj7yf.cloudfront.net/production/clients/e1a322c9-e19f-4a3a-9c62-fda12ce8d7b8/live/app/hiper-build.js"></script>
         <script>
             hiper.require(["hiper-chat"], function () {
                 // XsellHiPer loaded

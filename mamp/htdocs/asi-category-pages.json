@@ -1,0 +1,106 @@
+[
+  {
+    "heroImgSrc": "assets/images/asi-category-hero-lr-d.png",
+    "heroImgLrg": "assets/images/asi-category-hero-lr-d.png",
+    "heroImgMed": "assets/images/asi-category-hero-lr-m.png",
+    "heroImgSml": "assets/images/asi-category-hero-lr-m.png",
+    "heroImgAlt": "living room furniture for less",
+    "asiCategoryHeadline": "living room furniture",
+    "asiCategoryMainCTA": "SHOP ALL LIVING ROOMS",
+    "asiCategoryMainHREF": "/search/v/living-room-furniture",
+    "asiCategoryIntroTXT": "Whether it's a loveseat for two or a sectional for the whole family,our amazing selection of living room furniture is sure to have the perfect size and style to fit your family's needs.",
+    "asiCategoryTitle":"FIND YOUR PERFECT LIVING ROOM",
+    "asiCategorySubTitle":"SHOP BY CATEGORY",
+    "cards":[
+      {
+        "id":1,
+        "catlink":"/search/v/living-room/seating/sofas",
+        "imgsrc":"assets/images/M_Sofas.png",
+        "imgalt":"image alt text 1",
+        "cattitle":"sofas",
+        "cardlead":"Tufts, leather, or curved arms? You’ll find tons of fashionable and comfy designs.",
+        "cardcta":"shop sofas"
+      },
+      {
+        "id":2,
+        "catlink":"/search/v/living-room/seating/sectionals",
+        "imgsrc":"assets/images/M_Sectionals.png",
+        "imgalt":"image alt text 2",
+        "cattitle":"sectionals",
+        "cardlead":"More seating means more space for friends, family, and memories.",
+        "cardcta":"shop sectionals"
+      },
+      {
+        "id":3,
+        "catlink":"/search/v/living-room/seating/chairs-chaises",
+        "imgsrc":"assets/images/M_Chairs_Chaises.png",
+        "imgalt":"image alt text 3",
+        "cattitle":"chairs & chaises",
+        "cardlead":"Add an accent chair with flair, or add some extra lounge-worthy space with a chaise.",
+        "cardcta":"shop chairs & chaises"
+      },
+      {
+        "id":4,
+        "catlink":"/search/v/living-room/seating/recliners-rockers",
+        "imgsrc":"assets/images/M_Recliners.png",
+        "imgalt":"image alt text 1",
+        "cattitle":"recliners & rockers",
+        "cardlead":"This selection of relaxing seating really rocks (or reclines) while inclining your style.",
+        "cardcta":"shop recliners and rockers"
+      },
+      {
+        "id":5,
+        "catlink":"/search/v/living-room/seating/sleeper-sofas",
+        "imgsrc":"assets/images/M_Sleepers.png",
+        "imgalt":"image alt text 2",
+        "cattitle":"sleepers",
+        "cardlead":"Cleverly versatile, so you can unfold for guests, and tuck away when they’re gone.",
+        "cardcta":"shop sleepers"
+      },
+      {
+        "id":6,
+        "catlink":"/search/v/living-room/cabinets-storage/tv-stands-media-centers",
+        "imgsrc":"assets/images/M_TV_MedialCenters.png",
+        "imgalt":"image alt text 3",
+        "cattitle":"tv & media centers",
+        "cardlead":"Set your screens on a base that reflects your great taste.",
+        "cardcta":"shop tv & media centers"
+      }
+    ],
+    "asiPromotionSection":[
+      {
+        "asiCategoryTitle":"DESIGNER LOOKS",
+        "asiCategorySubTitle":"WITH ONE BIG DIFFERENCE | THE PRICE",
+        "tiles":[
+          {
+            "id":1,
+            "asiBdLink": "/search/keyword=moda",
+            "asiBdAltTXT": "moda sectional",
+            "asiBdImgLrg": "assets/images/D_Moda_LG.png",
+            "asiBdImgMed": "assets/images/D_Moda_LG.png", 
+            "asiBdImgSml": "assets/images/M_Moda_LG.png",
+            "asiBdImgSrc": "assets/images/D_Moda_LG.png"
+          },
+          {
+            "id":2,
+            "asiBdLink": "/search/keyword=arden",
+            "asiBdAltTXT": "arden sofa",
+            "asiBdImgLrg": "assets/images/D_Arden_Sm.png",
+            "asiBdImgMed": "assets/images/D_Arden_Sm.png", 
+            "asiBdImgSml": "assets/images/M_Arden_Sm.png",
+            "asiBdImgSrc": "assets/images/D_Arden_Sm.png"
+          },
+          {
+            "id":3,
+            "asiBdLink": "/search/keyword=gabe",
+            "asiBdAltTXT": "gabe sofa",
+            "asiBdImgLrg": "assets/images/D_Gabe_Sm.png",
+            "asiBdImgMed": "assets/images/D_Gabe_Sm.png", 
+            "asiBdImgSml": "assets/images/M_Gabe_Sm.png",
+            "asiBdImgSrc": "assets/images/D_Gabe_Sm.png"
+          }
+        ]
+      }
+    ]
+  }
+]
