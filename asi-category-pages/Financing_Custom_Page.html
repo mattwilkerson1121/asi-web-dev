@@ -1,4 +1,5 @@
-<!-- Updated: MIX :: 01/10/2018 5:55pm !-->
+<style>#header-banner-page-element-1{ display:none !important; }</style>
+<!-- Updated: 04/04/2018 4:00pm !-->
 <div class="custom-page-maxwidth">
 	<h1 class="financeH1">Exclusive Financing<span class="hidden-sm hidden-xs"> Offers</span></h1>
 	<div class="col-md-12">
@@ -11,18 +12,27 @@
 		<div id="getFinancePromotions" style="min-height:480px">
 			<span id="ajaxSpinner"><div id="mvcSpinner" class="loading-content-spinner"></div></span>
 			<br>
-		</div>
-		<!-- END : getFinancePromotions -->
+		</div><!-- END : getFinancePromotions -->
 	</div>
+	<div class="clear clearfix"><!-- clear !--></div>
 </div>
 <div class="custom-page-maxwidth">
 	<div id="asi_rac_offer_box" style="max-width: 100%; background-color: #ffffff;padding-bottom:1em;margin-bottom:1em;">
-		<a name="ACNOffer"></a>
-		
-		<img class="img-responsive" src="https://asf.scene7.com/is/image/ASF/120DayNoCredit_600x272?fmt=png&wid=600" alt="exclusive AccepptanceNow offer - take 120 days to pay + No Credit Needed!" style="max-width: 100%;" height="272" border="0">
+		<a name="ACNOffer" style="display:block;position:relative;"><!-- anchor !--></a>
+		<div class="asi-acn-offer-banner center-block" style="display:block;position:relative;padding:2em;margin-bottom:1em;background:#efefea;">
+      		<span class="asi-banner-lead" class="text-left text-uppercase asi-black">exclusive offer!</span>
+      		<div class="asi-divider"><div class="asi-divider-line asi-red-bg"></div></div>
+      		<h2 class="asi-display-2 asi-black text-left text-uppercase" style="font-family:'Knockout-HTF29-JuniorLiteweight',sans-serif !important;">90-day same as cash payment option</h2>
+      		<p class="asi-black text-left" style="font-size:20px;letter-spacing:1px;line-height:1.5;margin-bottom:0.5em;">
+      			Available in-store only. $299 minimum purchase and $79 minimum down payment required.
+      		</p>
+      		<img id="asi-acn-logo" class="img-responsive" src="https://asf.scene7.com/is/image/ASF/asi-acceptance-now-logo?fmt=png-alpha&wid=360" alt="acceptanceNOW logo" style="width:100%;max-width:360px !important;">
+  		</div>
+		<!--
+		<img class="img-responsive" src="https://asf.scene7.com/is/image/ASF/90DayNoCredit_600x272?fmt=png&wid=600" alt="exclusive AccepptanceNow offer - take 90 days to pay + No Credit Needed!" style="max-width: 100%;" height="272" border="0">
 		<br class="hidden-xs">
 		<img class="img-responsive" src="https://content.valuecityfurniture.com/ProductImages/0/362463.png" alt="AcceptanceNow - Shop With Confidence" style="max-width: 100%;" border="0">
-	
+		!-->
 		<h3 class="financeH3">No Credit Needed!</h3>
 
 		<p class="financeCopy">Select the merchandise you want, and set up delivery. We&rsquo;ll buy that item and lease it to you. You simply make affordable monthly payments &mdash; no long term obligation.</p>
@@ -96,6 +106,24 @@
 	#custom-page-body h4,
 	#custom-page-body h5 {
 		font-family:"ProximaNova-Regular", sans-serif !important;
+	}
+	#custom-page-body .asi-acn-offer-banner h2{
+		font-family:"Knockout-HTF29-JuniorLiteweight", sans-serif !important;
+		letter-spacing:1.5px;
+		text-transform:uppercase !important;
+		color:#181818 !important;
+		margin-left:0 !important;
+		text-align:left !important;
+	}
+	#custom-page-body .asi-acn-offer-banner span.asi-banner-lead{
+		display:block;
+		font-size:20px;
+		font-family:'ProximaNova-Bold',sans-serif !important;
+		letter-spacing:2.5px;
+		text-transform:uppercase !important;
+		color:#181818 !important;
+		margin-left:0;
+		text-align:left !important;
 	}
 	.bold {
 		padding-top: 20px;
@@ -420,4 +448,23 @@ if (document.domain.indexOf("valuecityfurniture") >= 0){
 })(window,document,'script','_smtr','valuecity')
 }
 </script>
-<link rel="stylesheet" type="text/css" href="https://shopvcf.com/css/asi-main-styles.min.css">
+<link rel="stylesheet" href="https://shopvcf.com/css/asi-category.css" type="text/css">
+<link rel="stylesheet" href="https://shopvcf.com/css/asi-main-styles.css" type="text/css">
+<style>
+@media(min-width:769px){
+	#custom-page-body .asi-acn-offer-banner h2{
+		font-size:72px !important;
+	}
+}
+@media(min-width:575px){
+	#custom-page-body .asi-acn-offer-banner h2{
+		font-size:64px !important;
+	}
+}
+@media(max-width:480px){
+	#custom-page-body .asi-acn-offer-banner h2{
+		font-size:32px !important;
+	}
+}
+</style>
+<!-- END:: FINANCING PAGE CODE !-->
