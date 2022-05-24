@@ -34,10 +34,10 @@ args = vars(parser.parse_args())
 def salsifyAPI(d):
 	# set domain
 	if args['d'] == 'single':
-		domain = "https://app.salsify.com/api/channels/54837/runs/latest?access_token=2618a717246c8a24538dd82f312f0ee406e57f928185437d8f26c377f54feb3b"
+		domain = "https://app.salsify.com/api/channels/54837/runs/latest?access_token="
 		return domain
 	elif args['d'] == 'full':
-		domain = "https://app.salsify.com/api/channels/50740/runs/latest?access_token=2618a717246c8a24538dd82f312f0ee406e57f928185437d8f26c377f54feb3b"
+		domain = "https://app.salsify.com/api/channels/50740/runs/latest?access_token="
 		return domain
 	else:
 		pass
